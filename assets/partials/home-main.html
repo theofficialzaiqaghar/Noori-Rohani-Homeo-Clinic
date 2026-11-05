@@ -1,0 +1,486 @@
+
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-title">
+        <picture class="hero__picture">
+          <source type="image/avif" srcset="assets/img/hero.avif" />
+          <source type="image/webp" srcset="assets/img/hero.webp" />
+          <img
+            src="assets/img/hero.svg"
+            width="640"
+            height="480"
+            alt=""
+            decoding="async"
+            fetchpriority="high"
+          />
+        </picture>
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <span class="hero__label" data-i18n="home.hero.label">Local clinic · Rohani &amp; Homeo</span>
+            <h1 id="hero-title" class="hero__title" data-i18n="home.hero.title">Noori Roohani Homeo Clinic</h1>
+            <p class="hero__subtitle" data-i18n="home.hero.subtitle">
+              Homeopathy, Rohani Ilaj, and trusted herbal products in one place. We listen first, then guide you with care.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn-primary" href="#contact" data-i18n="btn.bookAppointment" data-i18n-attr="aria-label:btn.bookAppointmentAria">Book Appointment</a>
+              <a class="btn btn-outline" href="https://wa.me/923000000000" rel="noopener noreferrer" data-i18n-attr="aria-label:home.hero.whatsappAria">
+                <span data-i18n="home.hero.whatsapp">WhatsApp Us</span>
+              </a>
+            </div>
+            <ul class="hero__trust">
+              <li>
+                <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-check"></use></svg>
+                <span data-i18n="home.hero.trust1">Free school education for deserving students</span>
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-check"></use></svg>
+                <span data-i18n="home.hero.trust2">Quran teaching and Madrasa support</span>
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-check"></use></svg>
+                <span data-i18n="home.hero.trust3">Private consultation for sensitive matters</span>
+              </li>
+            </ul>
+          </div>
+          <div class="hero__visual" aria-hidden="true">
+            <div class="hero__pattern">
+              <svg class="hero__pattern-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" stroke="#D8B132" stroke-width="0.6">
+                  <polygon points="100,10 190,100 100,190 10,100"/>
+                  <polygon points="100,35 165,100 100,165 35,100"/>
+                  <circle cx="100" cy="100" r="28" stroke="#FFF7B6"/>
+                </g>
+              </svg>
+            </div>
+            <div class="hero__chips">
+              <a class="hero__chip" href="#services-rohani" data-i18n="home.hero.chips.rohani">Rohani Ilaj</a>
+              <a class="hero__chip" href="#services-homeo" data-i18n="home.hero.chips.homeo">Homeo</a>
+              <a class="hero__chip" href="#products" data-i18n="home.hero.chips.herbal">Herbal</a>
+              <a class="hero__chip" href="#education" data-i18n="home.hero.chips.quran">Quran</a>
+              <a class="hero__chip" href="#services-nikkah" data-i18n="home.hero.chips.nikkah">Nikkah</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services overview -->
+      <section id="about" class="section" aria-labelledby="services-overview-title">
+        <div class="container">
+          <header class="section__header" data-reveal>
+            <span class="section__label" data-i18n="home.services.label">What we do</span>
+            <h2 id="services-overview-title" class="section__title" data-i18n="home.services.title">Services at the clinic</h2>
+            <p class="section__lead" data-i18n="home.services.lead">
+              Clear help for spiritual, physical, and community needs. Ask us if you are unsure where to start.
+            </p>
+          </header>
+          <div class="services-grid">
+            <article class="service-card" data-reveal id="services-rohani">
+              <span class="service-card__icon"><svg class="icon icon--md" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-heart-hand"></use></svg></span>
+              <h3 class="service-card__title" data-i18n="home.services.items.rohani.title">Rohani Ilaj</h3>
+              <p class="service-card__desc" data-i18n="home.services.items.rohani.desc">Guidance for nazar, blockages, and worries, with respect for your privacy.</p>
+              <a class="service-card__link" href="#services-rohani-detail"><span data-i18n="home.services.learnMore">Learn more</span><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-arrow-right"></use></svg></a>
+            </article>
+            <article class="service-card" data-reveal>
+              <span class="service-card__icon"><svg class="icon icon--md" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-flask"></use></svg></span>
+              <h3 class="service-card__title" data-i18n="home.services.items.homeo.title">Homeo</h3>
+              <p class="service-card__desc" data-i18n="home.services.items.homeo.desc">Consultation-based homeopathic care for common health concerns.</p>
+              <a class="service-card__link" href="#services-homeo"><span data-i18n="home.services.learnMore">Learn more</span><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-arrow-right"></use></svg></a>
+            </article>
+            <article class="service-card" data-reveal id="services-herbal">
+              <span class="service-card__icon"><svg class="icon icon--md" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-leaf"></use></svg></span>
+              <h3 class="service-card__title" data-i18n="home.services.items.herbal.title">Herbal Products</h3>
+              <p class="service-card__desc" data-i18n="home.services.items.herbal.desc">Hair oil, skin care, and seasonal lotions prepared with familiar recipes.</p>
+              <a class="service-card__link" href="#products"><span data-i18n="home.services.learnMore">Learn more</span><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-arrow-right"></use></svg></a>
+            </article>
+            <article class="service-card" data-reveal>
+              <span class="service-card__icon"><svg class="icon icon--md" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-star"></use></svg></span>
+              <h3 class="service-card__title" data-i18n="home.services.items.istikhara.title">Istikhara</h3>
+              <p class="service-card__desc" data-i18n="home.services.items.istikhara.desc">Support when you need clarity before an important decision.</p>
+              <a class="service-card__link" href="#contact"><span data-i18n="home.services.learnMore">Learn more</span><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-arrow-right"></use></svg></a>
+            </article>
+            <article class="service-card" data-reveal>
+              <span class="service-card__icon"><svg class="icon icon--md" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-users"></use></svg></span>
+              <h3 class="service-card__title" data-i18n="home.services.items.mehfil.title">Mehfil Conduct</h3>
+              <p class="service-card__desc" data-i18n="home.services.items.mehfil.desc">Arrangement of mehfils with adab and simple, dignified planning.</p>
+              <a class="service-card__link" href="#education"><span data-i18n="home.services.learnMore">Learn more</span><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-arrow-right"></use></svg></a>
+            </article>
+            <article class="service-card" data-reveal>
+              <span class="service-card__icon"><svg class="icon icon--md" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-book"></use></svg></span>
+              <h3 class="service-card__title" data-i18n="home.services.items.quran.title">Quran Teaching</h3>
+              <p class="service-card__desc" data-i18n="home.services.items.quran.desc">Tajweed and daily recitation for children and adults.</p>
+              <a class="service-card__link" href="#education"><span data-i18n="home.services.learnMore">Learn more</span><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-arrow-right"></use></svg></a>
+            </article>
+            <article class="service-card" data-reveal>
+              <span class="service-card__icon"><svg class="icon icon--md" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-building"></use></svg></span>
+              <h3 class="service-card__title" data-i18n="home.services.items.madrasa.title">Madrasa</h3>
+              <p class="service-card__desc" data-i18n="home.services.items.madrasa.desc">Structured deeni education in a calm classroom setting.</p>
+              <a class="service-card__link" href="#education"><span data-i18n="home.services.learnMore">Learn more</span><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-arrow-right"></use></svg></a>
+            </article>
+            <article class="service-card" data-reveal id="services-nikkah">
+              <span class="service-card__icon"><svg class="icon icon--md" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-users"></use></svg></span>
+              <h3 class="service-card__title" data-i18n="home.services.items.nikkah.title">Nikkah</h3>
+              <p class="service-card__desc" data-i18n="home.services.items.nikkah.desc">Simple Nikkah services with clear guidance for families.</p>
+              <a class="service-card__link" href="#education"><span data-i18n="home.services.learnMore">Learn more</span><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-arrow-right"></use></svg></a>
+            </article>
+            <article class="service-card" data-reveal>
+              <span class="service-card__icon"><svg class="icon icon--md" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-book"></use></svg></span>
+              <h3 class="service-card__title" data-i18n="home.services.items.freeSchool.title">Free School Education</h3>
+              <p class="service-card__desc" data-i18n="home.services.items.freeSchool.desc">Support for students who need help continuing school.</p>
+              <a class="service-card__link" href="#education"><span data-i18n="home.services.learnMore">Learn more</span><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-arrow-right"></use></svg></a>
+            </article>
+            <article class="service-card" data-reveal>
+              <span class="service-card__icon"><svg class="icon icon--md" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-building"></use></svg></span>
+              <h3 class="service-card__title" data-i18n="home.services.items.darUlUloom.title">Dar ul Uloom</h3>
+              <p class="service-card__desc" data-i18n="home.services.items.darUlUloom.desc">Higher deeni learning for serious students.</p>
+              <a class="service-card__link" href="#education"><span data-i18n="home.services.learnMore">Learn more</span><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-arrow-right"></use></svg></a>
+            </article>
+            <article class="service-card" data-reveal>
+              <span class="service-card__icon"><svg class="icon icon--md" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-star"></use></svg></span>
+              <h3 class="service-card__title" data-i18n="home.services.items.nazim.title">Nazim-e-Ala Ulma Mashaikh</h3>
+              <p class="service-card__desc" data-i18n="home.services.items.nazim.desc">Coordination with ulama and mashaaikh for community programmes.</p>
+              <a class="service-card__link" href="#contact"><span data-i18n="home.services.learnMore">Learn more</span><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-arrow-right"></use></svg></a>
+            </article>
+            <article class="service-card" data-reveal>
+              <span class="service-card__icon"><svg class="icon icon--md" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-building"></use></svg></span>
+              <h3 class="service-card__title" data-i18n="home.services.items.research.title">International Research Council</h3>
+              <p class="service-card__desc" data-i18n="home.services.items.research.desc">Research and publications linked to our clinic network.</p>
+              <a class="service-card__link" href="#contact"><span data-i18n="home.services.learnMore">Learn more</span><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-arrow-right"></use></svg></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Rohani Ilaj detail -->
+      <section id="services-rohani-detail" class="section section--cream" aria-labelledby="rohani-title">
+        <div class="container rohani-split">
+          <div data-reveal>
+            <span class="section__label" data-i18n="home.rohani.label">Rohani Ilaj</span>
+            <h2 id="rohani-title" class="section__title" data-i18n="home.rohani.title">When the heart feels heavy</h2>
+            <p class="section__lead" data-i18n="home.rohani.text">
+              Many families come to us quietly. We take time to understand your situation, offer ruqyah and guidance, and remind you that relief is with Allah. We do not claim instant results.
+            </p>
+            <a class="btn btn-primary" href="#contact" data-i18n="home.rohani.cta">Private consultation</a>
+          </div>
+          <div class="tick-grid" data-reveal>
+            <div class="tick-tile"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-check"></use></svg><p class="tick-tile__text" data-i18n="home.rohani.items.nazar">Nazar-e-Bad</p></div>
+            <div class="tick-tile"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-check"></use></svg><p class="tick-tile__text" data-i18n="home.rohani.items.jadu">Jadu</p></div>
+            <div class="tick-tile"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-check"></use></svg><p class="tick-tile__text" data-i18n="home.rohani.items.bandish">Bandish</p></div>
+            <div class="tick-tile"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-check"></use></svg><p class="tick-tile__text" data-i18n="home.rohani.items.rishton">Rishton ki Bandish</p></div>
+            <div class="tick-tile"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-check"></use></svg><p class="tick-tile__text" data-i18n="home.rohani.items.beAulaadi">Be-Aulaadi</p></div>
+            <div class="tick-tile"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-check"></use></svg><p class="tick-tile__text" data-i18n="home.rohani.items.berozgari">Berozgari</p></div>
+            <div class="tick-tile"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-check"></use></svg><p class="tick-tile__text" data-i18n="home.rohani.items.asraat">Asraat</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Homeo & Herbal -->
+      <section id="products" class="section" aria-labelledby="homeo-herbal-title">
+        <div class="container">
+          <header class="section__header" data-reveal>
+            <span class="section__label" data-i18n="home.homeoHerbal.label">Clinic care &amp; products</span>
+            <h2 id="homeo-herbal-title" class="section__title" data-i18n="home.homeoHerbal.title">Homeo and herbal support</h2>
+          </header>
+          <div class="split-two">
+            <div class="panel" id="services-homeo" data-reveal>
+              <h3 class="panel__title" data-i18n="home.homeo.title">Homeopathy</h3>
+              <p class="panel__text" data-i18n="home.homeo.text">
+                We ask about your symptoms and daily routine, then suggest homeopathic medicine where appropriate. Follow-up visits help us adjust with you.
+              </p>
+              <a class="btn btn-outline" href="#contact" data-i18n="btn.bookAppointment">Book Appointment</a>
+            </div>
+            <div class="panel" data-reveal>
+              <h3 class="panel__title" data-i18n="home.herbal.title">Herbal products</h3>
+              <p class="panel__text" data-i18n="home.herbal.text">Ask about availability and use. We explain simple directions before you take anything home.</p>
+              <div class="product-mini-grid">
+                <div class="product-mini">
+                  <figure class="product-mini__picture">
+                    <picture>
+                      <source type="image/avif" srcset="assets/img/products/hair-oil.avif" />
+                      <source type="image/webp" srcset="assets/img/products/hair-oil.webp" />
+                      <img src="assets/img/products/hair-oil.svg" width="240" height="240" loading="lazy" alt="" data-i18n-attr="alt:home.products.hairOil.alt" />
+                    </picture>
+                  </figure>
+                  <p class="product-mini__name" data-i18n="home.products.hairOil.name">Hair Oil</p>
+                  <a class="btn btn-whatsapp" href="https://wa.me/923000000000" rel="noopener noreferrer" data-i18n="home.products.askWhatsApp">Ask on WhatsApp</a>
+                </div>
+                <div class="product-mini">
+                  <figure class="product-mini__picture">
+                    <picture>
+                      <source type="image/avif" srcset="assets/img/products/winter-lotion.avif" />
+                      <source type="image/webp" srcset="assets/img/products/winter-lotion.webp" />
+                      <img src="assets/img/products/winter-lotion.svg" width="240" height="240" loading="lazy" alt="" data-i18n-attr="alt:home.products.winterLotion.alt" />
+                    </picture>
+                  </figure>
+                  <p class="product-mini__name" data-i18n="home.products.winterLotion.name">Winter Lotion</p>
+                  <a class="btn btn-whatsapp" href="https://wa.me/923000000000" rel="noopener noreferrer" data-i18n="home.products.askWhatsApp">Ask on WhatsApp</a>
+                </div>
+                <div class="product-mini">
+                  <figure class="product-mini__picture">
+                    <picture>
+                      <source type="image/avif" srcset="assets/img/products/acne-cream.avif" />
+                      <source type="image/webp" srcset="assets/img/products/acne-cream.webp" />
+                      <img src="assets/img/products/acne-cream.svg" width="240" height="240" loading="lazy" alt="" data-i18n-attr="alt:home.products.acneCream.alt" />
+                    </picture>
+                  </figure>
+                  <p class="product-mini__name" data-i18n="home.products.acneCream.name">Acne Cream</p>
+                  <a class="btn btn-whatsapp" href="https://wa.me/923000000000" rel="noopener noreferrer" data-i18n="home.products.askWhatsApp">Ask on WhatsApp</a>
+                </div>
+                <div class="product-mini">
+                  <figure class="product-mini__picture">
+                    <picture>
+                      <source type="image/avif" srcset="assets/img/products/hair-care.avif" />
+                      <source type="image/webp" srcset="assets/img/products/hair-care.webp" />
+                      <img src="assets/img/products/hair-care.svg" width="240" height="240" loading="lazy" alt="" data-i18n-attr="alt:home.products.hairCare.alt" />
+                    </picture>
+                  </figure>
+                  <p class="product-mini__name" data-i18n="home.products.hairCare.name">Hair Care</p>
+                  <a class="btn btn-whatsapp" href="https://wa.me/923000000000" rel="noopener noreferrer" data-i18n="home.products.askWhatsApp">Ask on WhatsApp</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education & community -->
+      <section id="education" class="section section--navy" aria-labelledby="education-title">
+        <div class="container">
+          <header class="section__header" data-reveal>
+            <span class="section__label" data-i18n="home.education.label">Community</span>
+            <h2 id="education-title" class="section__title" data-i18n="home.education.title">Education and family services</h2>
+            <p class="section__lead" data-i18n="home.education.lead">Alongside clinic work, we run programmes that stay close to the neighbourhood.</p>
+          </header>
+          <div class="community-list">
+            <article class="community-item" data-reveal>
+              <h3 class="community-item__title" data-i18n="home.education.items.quran.title">Quran Teaching</h3>
+              <p class="community-item__text" data-i18n="home.education.items.quran.text">Morning and evening slots for children and adults.</p>
+            </article>
+            <article class="community-item" data-reveal>
+              <h3 class="community-item__title" data-i18n="home.education.items.madrasa.title">Madrasa</h3>
+              <p class="community-item__text" data-i18n="home.education.items.madrasa.text">Regular classes with qualified teachers.</p>
+            </article>
+            <article class="community-item" data-reveal>
+              <h3 class="community-item__title" data-i18n="home.education.items.freeSchool.title">Free School Education</h3>
+              <p class="community-item__text" data-i18n="home.education.items.freeSchool.text">Fee support and books where we can help.</p>
+            </article>
+            <article class="community-item" data-reveal>
+              <h3 class="community-item__title" data-i18n="home.education.items.darUlUloom.title">Dar ul Uloom</h3>
+              <p class="community-item__text" data-i18n="home.education.items.darUlUloom.text">Advanced studies for selected students.</p>
+            </article>
+            <article class="community-item" data-reveal>
+              <h3 class="community-item__title" data-i18n="home.education.items.nikkah.title">Nikkah Services</h3>
+              <p class="community-item__text" data-i18n="home.education.items.nikkah.text">Simple, shariah-aligned Nikkah with family guidance.</p>
+            </article>
+            <article class="community-item" data-reveal>
+              <h3 class="community-item__title" data-i18n="home.education.items.mehfil.title">Mehfil</h3>
+              <p class="community-item__text" data-i18n="home.education.items.mehfil.text">Help with venue planning and mehfil conduct.</p>
+            </article>
+          </div>
+          <!-- EDITABLE COUNTERS: update data-counter-value before launch -->
+          <div class="counters" data-reveal>
+            <p class="counters__note" data-i18n="home.counters.note">Sample figures below — replace with your real numbers.</p>
+            <div class="counters__grid">
+              <div class="counter">
+                <span class="counter__value" data-counter-value="450">450</span>
+                <span class="counter__label" data-i18n="home.counters.students">Students supported</span>
+              </div>
+              <div class="counter">
+                <span class="counter__value" data-counter-value="18">18</span>
+                <span class="counter__label" data-i18n="home.counters.years">Years serving locally</span>
+              </div>
+              <div class="counter">
+                <span class="counter__value" data-counter-value="12">12</span>
+                <span class="counter__label" data-i18n="home.counters.teachers">Teachers &amp; staff</span>
+              </div>
+              <div class="counter">
+                <span class="counter__value" data-counter-value="6">6</span>
+                <span class="counter__label" data-i18n="home.counters.programmes">Active programmes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why choose us -->
+      <section class="section" aria-labelledby="why-title">
+        <div class="container">
+          <header class="section__header" data-reveal>
+            <span class="section__label" data-i18n="home.why.label">Why families come here</span>
+            <h2 id="why-title" class="section__title" data-i18n="home.why.title">Plain reasons, no big claims</h2>
+          </header>
+          <div class="reasons-grid">
+            <article class="reason-card" data-reveal>
+              <h3 class="reason-card__title" data-i18n="home.why.items.one.title">We listen first</h3>
+              <p class="reason-card__text" data-i18n="home.why.items.one.text">You can explain your concern without being rushed.</p>
+            </article>
+            <article class="reason-card" data-reveal>
+              <h3 class="reason-card__title" data-i18n="home.why.items.two.title">One roof for many needs</h3>
+              <p class="reason-card__text" data-i18n="home.why.items.two.text">Rohani Ilaj, homeo, herbal products, and education links in one place.</p>
+            </article>
+            <article class="reason-card" data-reveal>
+              <h3 class="reason-card__title" data-i18n="home.why.items.three.title">Privacy matters</h3>
+              <p class="reason-card__text" data-i18n="home.why.items.three.text">Sensitive cases are handled quietly and with adab.</p>
+            </article>
+            <article class="reason-card" data-reveal>
+              <h3 class="reason-card__title" data-i18n="home.why.items.four.title">Community work continues</h3>
+              <p class="reason-card__text" data-i18n="home.why.items.four.text">Free school help and Quran classes run alongside clinic hours.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section class="section section--cream" aria-labelledby="steps-title">
+        <div class="container">
+          <header class="section__header" data-reveal>
+            <span class="section__label" data-i18n="home.steps.label">Process</span>
+            <h2 id="steps-title" class="section__title" data-i18n="home.steps.title">How a visit usually works</h2>
+          </header>
+          <div class="steps-grid">
+            <article class="step-card" data-reveal>
+              <span class="step-card__num" aria-hidden="true">1</span>
+              <h3 class="step-card__title" data-i18n="home.steps.one.title">Contact</h3>
+              <p class="step-card__text" data-i18n="home.steps.one.text">Call, WhatsApp, or send the form below with your name and concern.</p>
+            </article>
+            <article class="step-card" data-reveal>
+              <span class="step-card__num" aria-hidden="true">2</span>
+              <h3 class="step-card__title" data-i18n="home.steps.two.title">Consultation</h3>
+              <p class="step-card__text" data-i18n="home.steps.two.text">We meet at the clinic or talk by phone, depending on the case.</p>
+            </article>
+            <article class="step-card" data-reveal>
+              <span class="step-card__num" aria-hidden="true">3</span>
+              <h3 class="step-card__title" data-i18n="home.steps.three.title">Guidance and follow-up</h3>
+              <p class="step-card__text" data-i18n="home.steps.three.text">We share next steps, medicine or ruqyah advice, and check in when needed.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials: SAMPLE CONTENT — replace with real stories before launch -->
+      <section class="section" aria-labelledby="testimonials-title">
+        <div class="container">
+          <header class="section__header" data-reveal>
+            <span class="section__label" data-i18n="home.testimonials.label">Voices</span>
+            <h2 id="testimonials-title" class="section__title" data-i18n="home.testimonials.title">What visitors share</h2>
+          </header>
+          <div class="testimonials-grid">
+            <figure class="testimonial" data-reveal>
+              <blockquote class="testimonial__quote" data-i18n="home.testimonials.one.quote">They listened to our family problem with patience. We felt calm leaving the clinic.</blockquote>
+              <figcaption class="testimonial__footer">
+                <span class="testimonial__name" data-i18n="home.testimonials.one.name">Amina K.</span>
+                <span data-i18n="home.testimonials.one.place">Lahore</span>
+              </figcaption>
+            </figure>
+            <figure class="testimonial" data-reveal>
+              <blockquote class="testimonial__quote" data-i18n="home.testimonials.two.quote">Homeo medicine suited my child. The doctor explained everything clearly.</blockquote>
+              <figcaption class="testimonial__footer">
+                <span class="testimonial__name" data-i18n="home.testimonials.two.name">Imran S.</span>
+                <span data-i18n="home.testimonials.two.place">Faisalabad</span>
+              </figcaption>
+            </figure>
+            <figure class="testimonial" data-reveal>
+              <blockquote class="testimonial__quote" data-i18n="home.testimonials.three.quote">Our son joined Quran class here. Timing is easy for working parents.</blockquote>
+              <figcaption class="testimonial__footer">
+                <span class="testimonial__name" data-i18n="home.testimonials.three.name">Sadia B.</span>
+                <span data-i18n="home.testimonials.three.place">Multan</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section section--cream" aria-labelledby="faq-title">
+        <div class="container">
+          <header class="section__header" data-reveal>
+            <span class="section__label" data-i18n="home.faq.label">Questions</span>
+            <h2 id="faq-title" class="section__title" data-i18n="home.faq.title">Common questions</h2>
+          </header>
+          <div class="faq-list">
+            <details class="faq-item" data-reveal>
+              <summary data-i18n="home.faq.one.q">Do you guarantee cure in Rohani Ilaj?</summary>
+              <div class="faq-item__body" data-i18n="home.faq.one.a">No. We offer ruqyah and guidance with sincerity. Healing is with Allah's will, and results differ for each person.</div>
+            </details>
+            <details class="faq-item" data-reveal>
+              <summary data-i18n="home.faq.two.q">Can I come only for homeopathic treatment?</summary>
+              <div class="faq-item__body" data-i18n="home.faq.two.a">Yes. Book a homeo consultation and we will focus on your health history and symptoms.</div>
+            </details>
+            <details class="faq-item" data-reveal>
+              <summary data-i18n="home.faq.three.q">Are herbal products safe to use with other medicine?</summary>
+              <div class="faq-item__body" data-i18n="home.faq.three.a">Tell us what you already take. We will advise if something should be avoided or spaced apart.</div>
+            </details>
+            <details class="faq-item" data-reveal>
+              <summary data-i18n="home.faq.four.q">Is my visit kept private?</summary>
+              <div class="faq-item__body" data-i18n="home.faq.four.a">We do not share your details. Sensitive cases are discussed in a separate, quiet space when possible.</div>
+            </details>
+            <details class="faq-item" data-reveal>
+              <summary data-i18n="home.faq.five.q">How do I apply for free school support?</summary>
+              <div class="faq-item__body" data-i18n="home.faq.five.a">Contact us with basic family information. Our team reviews cases as seats and funds allow.</div>
+            </details>
+            <details class="faq-item" data-reveal>
+              <summary data-i18n="home.faq.six.q">What should I bring to the first visit?</summary>
+              <div class="faq-item__body" data-i18n="home.faq.six.a">Your ID, any previous reports, and a list of medicines you use. For Rohani cases, come with wudu if you can.</div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+        <div class="container contact-wrap">
+          <div data-reveal>
+            <span class="section__label" data-i18n="home.contact.label">Get in touch</span>
+            <h2 id="contact-title" class="section__title" data-i18n="home.contact.title">Tell us how we can help</h2>
+            <p class="section__lead" data-i18n="home.contact.lead">We reply during clinic hours. For urgent spiritual help, please call instead of waiting on a message.</p>
+            <ul class="contact-aside__list">
+              <li data-i18n="home.contact.aside.phone">Phone: [PHONE]</li>
+              <li data-i18n="home.contact.aside.address">Address: [ADDRESS]</li>
+              <li data-i18n="home.contact.aside.hours">Hours: [CLINIC TIMINGS]</li>
+            </ul>
+          </div>
+          <form
+            class="contact-form"
+            data-contact-form
+            data-reveal
+            novalidate
+            data-i18n-attr="data-error-name:home.form.errors.name,data-error-phone:home.form.errors.phone,data-error-service:home.form.errors.service,data-error-summary:home.form.errors.summary,data-success-message:home.form.success"
+          >
+            <div class="form-field">
+              <label for="contact-name" data-i18n="home.form.name">Full name</label>
+              <input id="contact-name" name="name" type="text" autocomplete="name" required data-i18n-attr="placeholder:home.form.namePlaceholder" />
+              <p class="field-error" data-error-for="name" role="alert"></p>
+            </div>
+            <div class="form-field">
+              <label for="contact-phone" data-i18n="home.form.phone">Phone / WhatsApp</label>
+              <input id="contact-phone" name="phone" type="tel" autocomplete="tel" required data-i18n-attr="placeholder:home.form.phonePlaceholder" />
+              <p class="field-error" data-error-for="phone" role="alert"></p>
+            </div>
+            <div class="form-field">
+              <label for="contact-service" data-i18n="home.form.service">Service</label>
+              <select id="contact-service" name="service" required>
+                <option value="" data-i18n="home.form.servicePlaceholder">Choose a service</option>
+                <option value="rohani" data-i18n="home.form.serviceOptions.rohani">Rohani Ilaj</option>
+                <option value="homeo" data-i18n="home.form.serviceOptions.homeo">Homeo</option>
+                <option value="herbal" data-i18n="home.form.serviceOptions.herbal">Herbal products</option>
+                <option value="education" data-i18n="home.form.serviceOptions.education">Education / Madrasa</option>
+                <option value="nikkah" data-i18n="home.form.serviceOptions.nikkah">Nikkah / Mehfil</option>
+                <option value="other" data-i18n="home.form.serviceOptions.other">Other</option>
+              </select>
+              <p class="field-error" data-error-for="service" role="alert"></p>
+            </div>
+            <div class="form-field">
+              <label for="contact-message" data-i18n="home.form.message">Message (optional)</label>
+              <textarea id="contact-message" name="message" rows="4" data-i18n-attr="placeholder:home.form.messagePlaceholder"></textarea>
+            </div>
+            <div class="form-honeypot" aria-hidden="true">
+              <label for="contact-website">Website</label>
+              <input id="contact-website" type="text" name="website" tabindex="-1" autocomplete="off" data-honeypot />
+            </div>
+            <button type="submit" class="btn btn-primary" data-i18n="home.form.submit">Send via WhatsApp</button>
+            <p class="form-status" data-form-status role="status"></p>
+            <p class="form-fallback">
+              <span data-i18n="home.form.fallback">Prefer email?</span>
+              <a href="mailto:info@example.com" data-mailto-fallback data-i18n="home.form.emailLink">Send an email instead</a>
+            </p>
+          </form>
+        </div>
+      </section>

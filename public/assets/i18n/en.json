@@ -1,0 +1,423 @@
+{
+  "meta": {
+    "title": "Noori Roohani Homeo Clinic | Rohani Ilaj & Homeo",
+    "description": "Homeopathic clinic for rohani ilaj, nazar-e-bad guidance, herbal hair oil, Quran teaching, madrasa, istikhara and nikkah services in [City].",
+    "ogTitle": "Noori Roohani Homeo Clinic | Rohani Ilaj & Homeo",
+    "ogDescription": "Homeopathic clinic for rohani ilaj, nazar-e-bad guidance, herbal hair oil, Quran teaching, madrasa, istikhara and nikkah services in [City]."
+  },
+  "topbar": {
+    "phone": "+92 300 0000000",
+    "phoneAria": "Call clinic",
+    "whatsapp": "WhatsApp",
+    "whatsappAria": "Chat on WhatsApp",
+    "hours": "Mon–Sat: 9:00 AM – 8:00 PM"
+  },
+  "lang": {
+    "switcher": "Language",
+    "en": "EN",
+    "ur": "اردو",
+    "enAria": "Switch to English",
+    "urAria": "Switch to Urdu"
+  },
+  "logo": {
+    "name": "Noori Roohani",
+    "subtitle": "Homeo Clinic",
+    "aria": "Noori Roohani Homeo Clinic — Home"
+  },
+  "nav": {
+    "label": "Primary navigation",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "products": "Products",
+    "contact": "Contact",
+    "servicesMenu": {
+      "rohani": "Rohani Ilaj",
+      "homeo": "Homeopathy",
+      "herbal": "Herbal Products",
+      "quran": "Quran & Madrasa",
+      "nikkah": "Nikkah & Mehfil",
+      "education": "Education & Dar ul Uloom"
+    }
+  },
+  "btn": {
+    "bookAppointment": "Book Appointment",
+    "bookAppointmentAria": "Book an appointment"
+  },
+  "mobile": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menuTitle": "Menu"
+  },
+  "footer": {
+    "aria": "Site footer",
+    "cta": {
+      "kicker": "Appointments & enquiries",
+      "title": "Book a visit or call the clinic",
+      "lede": "Share your concern by phone or WhatsApp. Our team will suggest the next step — consultation, product, or referral.",
+      "callNow": "Call clinic",
+      "callNowAria": "Call the clinic now",
+      "whatsapp": "Message on WhatsApp",
+      "whatsappAria": "Message the clinic on WhatsApp"
+    },
+    "about": {
+      "line1": "A trusted centre for Rohani Ilaj, homeopathy, and herbal care, serving families with compassion and discretion.",
+      "line2": "We also support Quran teaching, madrasa education, and dignified Nikkah and community services."
+    },
+    "social": {
+      "label": "Follow us on social media",
+      "facebook": "Facebook",
+      "youtube": "YouTube",
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram"
+    },
+    "quickLinks": {
+      "title": "Quick Links"
+    },
+    "services": {
+      "title": "Our Services",
+      "rohani": "Rohani Ilaj",
+      "homeo": "Homeo",
+      "herbal": "Herbal Products",
+      "istikhara": "Istikhara",
+      "quranTeaching": "Quran Teaching",
+      "madrasa": "Madrasa",
+      "nikkah": "Nikkah",
+      "freeSchool": "Free School Education",
+      "darUlUloom": "Dar ul Uloom"
+    },
+    "contact": {
+      "title": "Contact",
+      "addressLabel": "Address",
+      "address": "[ADDRESS]",
+      "phoneLabel": "Phone",
+      "phone": "[PHONE]",
+      "whatsappLabel": "WhatsApp",
+      "whatsapp": "[PHONE]",
+      "emailLabel": "Email",
+      "email": "[EMAIL]",
+      "hoursLabel": "Clinic timings",
+      "hours": "[CLINIC TIMINGS]"
+    },
+    "nav": {
+      "quickLinks": "Footer quick links",
+      "services": "Footer services links",
+      "legal": "Legal links"
+    },
+    "legal": {
+      "copyright": "© {year} Noori Roohani Homeo Clinic. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use"
+    },
+    "disclaimer": "Information on this website is for general guidance and does not replace professional medical advice."
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "backToTop": "Back to top"
+  },
+  "page": {
+    "contact": {
+      "documentTitle": "Contact us | Noori Roohani Homeo Clinic",
+      "heroKicker": "Contact",
+      "heroTitle": "Visit or message the clinic",
+      "heroLead": "Call, WhatsApp, or send the form below. We reply during clinic hours.",
+      "mapNote": "Replace [ADDRESS] in settings with your map link or directions when ready.",
+      "viewContactPage": "Full contact page"
+    }
+  },
+  "home": {
+    "hero": {
+      "label": "Noori Roohani Homeo Clinic",
+      "title": "Homeopathy and Rohani ilaj",
+      "subtitle": "Walk-in consultations, herbal products, and Quran education — in person or on WhatsApp.",
+      "whatsapp": "WhatsApp Us",
+      "whatsappAria": "Message us on WhatsApp",
+      "trust1": "Free school education for deserving students",
+      "trust2": "Quran teaching and Madrasa support",
+      "trust3": "Private consultation for sensitive matters",
+      "chips": {
+        "rohani": "Rohani Ilaj",
+        "homeo": "Homeo",
+        "herbal": "Herbal",
+        "quran": "Quran",
+        "nikkah": "Nikkah"
+      }
+    },
+    "services": {
+      "label": "What we do",
+      "title": "Services at the clinic",
+      "lead": "Clear help for spiritual, physical, and community needs. Ask us if you are unsure where to start.",
+      "learnMore": "Learn more",
+      "items": {
+        "rohani": {
+          "title": "Rohani Ilaj",
+          "desc": "Guidance for nazar, blockages, and worries, with respect for your privacy."
+        },
+        "homeo": {
+          "title": "Homeo",
+          "desc": "Consultation-based homeopathic care for common health concerns."
+        },
+        "herbal": {
+          "title": "Herbal Products",
+          "desc": "Hair oil, skin care, and seasonal lotions prepared with familiar recipes."
+        },
+        "istikhara": {
+          "title": "Istikhara",
+          "desc": "Support when you need clarity before an important decision."
+        },
+        "mehfil": {
+          "title": "Mehfil Conduct",
+          "desc": "Arrangement of mehfils with adab and simple, dignified planning."
+        },
+        "quran": {
+          "title": "Quran Teaching",
+          "desc": "Tajweed and daily recitation for children and adults."
+        },
+        "madrasa": {
+          "title": "Madrasa",
+          "desc": "Structured deeni education in a calm classroom setting."
+        },
+        "nikkah": {
+          "title": "Nikkah",
+          "desc": "Simple Nikkah services with clear guidance for families."
+        },
+        "freeSchool": {
+          "title": "Free School Education",
+          "desc": "Support for students who need help continuing school."
+        },
+        "darUlUloom": {
+          "title": "Dar ul Uloom",
+          "desc": "Higher deeni learning for serious students."
+        },
+        "nazim": {
+          "title": "Nazim-e-Ala Ulma Mashaikh",
+          "desc": "Coordination with ulama and mashaaikh for community programmes."
+        },
+        "research": {
+          "title": "International Research Council",
+          "desc": "Research and publications linked to our clinic network."
+        }
+      }
+    },
+    "rohani": {
+      "label": "Rohani Ilaj",
+      "title": "When the heart feels heavy",
+      "text": "Many families come to us quietly. We take time to understand your situation, offer ruqyah and guidance, and remind you that relief is with Allah. We do not claim instant results.",
+      "cta": "Private consultation",
+      "items": {
+        "nazar": "Nazar-e-Bad",
+        "jadu": "Jadu",
+        "bandish": "Bandish",
+        "rishton": "Rishton ki Bandish",
+        "beAulaadi": "Be-Aulaadi",
+        "berozgari": "Berozgari",
+        "asraat": "Asraat"
+      }
+    },
+    "homeoHerbal": {
+      "label": "Clinic care & products",
+      "title": "Homeo and herbal support"
+    },
+    "aboutClinic": {
+      "label": "About us",
+      "title": "Our clinic & founder",
+      "text": "We ask about your symptoms and daily routine, then suggest homeopathic medicine where appropriate. Follow-up visits help us adjust with you.",
+      "imageAlt": "Founder of Noori Roohani Homeo Clinic"
+    },
+    "homeo": {
+      "title": "Homeopathy",
+      "text": "We ask about your symptoms and daily routine, then suggest homeopathic medicine where appropriate. Follow-up visits help us adjust with you."
+    },
+    "herbal": {
+      "title": "Herbal products",
+      "text": "Ask about availability and use. We explain simple directions before you take anything home."
+    },
+    "productsSection": {
+      "label": "Shop",
+      "title": "Herbal products",
+      "lead": "Oils, creams, and seasonal remedies prepared at the clinic. Message us for availability, price, and directions.",
+      "placeholderName": "Herbal product",
+      "placeholderNote": "Details coming soon"
+    },
+    "products": {
+      "askWhatsApp": "Ask on WhatsApp",
+      "hairOil": {
+        "name": "Hair Oil",
+        "alt": "Hair oil product"
+      },
+      "winterLotion": {
+        "name": "Winter Lotion",
+        "alt": "Winter lotion product"
+      },
+      "acneCream": {
+        "name": "Acne Cream",
+        "alt": "Acne cream product"
+      },
+      "hairCare": {
+        "name": "Hair Care",
+        "alt": "Hair care product"
+      }
+    },
+    "education": {
+      "label": "Community",
+      "title": "Education and family services",
+      "lead": "Alongside clinic work, we run programmes that stay close to the neighbourhood.",
+      "items": {
+        "quran": {
+          "title": "Quran Teaching",
+          "text": "Morning and evening slots for children and adults."
+        },
+        "madrasa": {
+          "title": "Madrasa",
+          "text": "Regular classes with qualified teachers."
+        },
+        "freeSchool": {
+          "title": "Free School Education",
+          "text": "Fee support and books where we can help."
+        },
+        "darUlUloom": {
+          "title": "Dar ul Uloom",
+          "text": "Advanced studies for selected students."
+        },
+        "nikkah": {
+          "title": "Nikkah Services",
+          "text": "Simple, shariah-aligned Nikkah with family guidance."
+        },
+        "mehfil": {
+          "title": "Mehfil",
+          "text": "Help with venue planning and mehfil conduct."
+        }
+      }
+    },
+    "counters": {
+      "note": "Sample figures below — replace with your real numbers.",
+      "students": "Students supported",
+      "years": "Years serving locally",
+      "teachers": "Teachers & staff",
+      "programmes": "Active programmes"
+    },
+    "why": {
+      "label": "Why families come here",
+      "title": "Plain reasons, no big claims",
+      "items": {
+        "one": {
+          "title": "We listen first",
+          "text": "You can explain your concern without being rushed."
+        },
+        "two": {
+          "title": "One roof for many needs",
+          "text": "Rohani Ilaj, homeo, herbal products, and education links in one place."
+        },
+        "three": {
+          "title": "Privacy matters",
+          "text": "Sensitive cases are handled quietly and with adab."
+        },
+        "four": {
+          "title": "Community work continues",
+          "text": "Free school help and Quran classes run alongside clinic hours."
+        }
+      }
+    },
+    "steps": {
+      "label": "Process",
+      "title": "How a visit usually works",
+      "one": {
+        "title": "Contact",
+        "text": "Call, WhatsApp, or send the form below with your name and concern."
+      },
+      "two": {
+        "title": "Consultation",
+        "text": "We meet at the clinic or talk by phone, depending on the case."
+      },
+      "three": {
+        "title": "Guidance and follow-up",
+        "text": "We share next steps, medicine or ruqyah advice, and check in when needed."
+      }
+    },
+    "testimonials": {
+      "label": "Voices",
+      "title": "What visitors share",
+      "one": {
+        "quote": "They listened to our family problem with patience. We felt calm leaving the clinic.",
+        "name": "Amina K.",
+        "place": "Lahore"
+      },
+      "two": {
+        "quote": "Homeo medicine suited my child. The doctor explained everything clearly.",
+        "name": "Imran S.",
+        "place": "Faisalabad"
+      },
+      "three": {
+        "quote": "Our son joined Quran class here. Timing is easy for working parents.",
+        "name": "Sadia B.",
+        "place": "Multan"
+      }
+    },
+    "faq": {
+      "label": "Questions",
+      "title": "Common questions",
+      "one": {
+        "q": "Do you guarantee cure in Rohani Ilaj?",
+        "a": "No. We offer ruqyah and guidance with sincerity. Healing is with Allah's will, and results differ for each person."
+      },
+      "two": {
+        "q": "Can I come only for homeopathic treatment?",
+        "a": "Yes. Book a homeo consultation and we will focus on your health history and symptoms."
+      },
+      "three": {
+        "q": "Are herbal products safe to use with other medicine?",
+        "a": "Tell us what you already take. We will advise if something should be avoided or spaced apart."
+      },
+      "four": {
+        "q": "Is my visit kept private?",
+        "a": "We do not share your details. Sensitive cases are discussed in a separate, quiet space when possible."
+      },
+      "five": {
+        "q": "How do I apply for free school support?",
+        "a": "Contact us with basic family information. Our team reviews cases as seats and funds allow."
+      },
+      "six": {
+        "q": "What should I bring to the first visit?",
+        "a": "Your ID, any previous reports, and a list of medicines you use. For Rohani cases, come with wudu if you can."
+      }
+    },
+    "contact": {
+      "label": "Get in touch",
+      "title": "Tell us how we can help",
+      "lead": "We reply during clinic hours. For urgent spiritual help, please call instead of waiting on a message.",
+      "aside": {
+        "phone": "Phone: [PHONE]",
+        "address": "Address: [ADDRESS]",
+        "hours": "Hours: [CLINIC TIMINGS]"
+      }
+    },
+    "form": {
+      "name": "Full name",
+      "namePlaceholder": "Your name",
+      "phone": "Phone / WhatsApp",
+      "phonePlaceholder": "03XX XXXXXXX",
+      "service": "Service",
+      "servicePlaceholder": "Choose a service",
+      "serviceOptions": {
+        "rohani": "Rohani Ilaj",
+        "homeo": "Homeo",
+        "herbal": "Herbal products",
+        "education": "Education / Madrasa",
+        "nikkah": "Nikkah / Mehfil",
+        "other": "Other"
+      },
+      "message": "Message (optional)",
+      "messagePlaceholder": "Briefly describe your concern",
+      "submit": "Send via WhatsApp",
+      "fallback": "Prefer email?",
+      "emailLink": "Send an email instead",
+      "success": "Opening WhatsApp. You can also use email if needed.",
+      "errors": {
+        "name": "Please enter your name.",
+        "phone": "Please enter a valid phone number.",
+        "service": "Please choose a service.",
+        "summary": "Please fix the highlighted fields."
+      }
+    }
+  }
+}

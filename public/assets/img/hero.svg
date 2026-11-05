@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-labelledby="heroArtTitle">
+  <title id="heroArtTitle">Decorative clinic pattern</title>
+  <rect width="640" height="480" fill="#02243D"/>
+  <g fill="none" stroke="#D8B132" stroke-width="1" opacity="0.35">
+    <path d="M0 120h640M0 240h640M0 360h640"/>
+    <path d="M160 0v480M320 0v480M480 0v480"/>
+  </g>
+  <circle cx="320" cy="240" r="88" fill="#D8B132" opacity="0.12"/>
+  <path fill="#D8B132" opacity="0.55" d="M320 168c-12 18-36 28-56 30 14 8 30 12 56 12s42-4 56-12c-20-2-44-12-56-30z"/>
+  <path fill="#FFF7B6" opacity="0.25" d="M320 300c-28 0-52-8-68-22 16 10 38 16 68 16s52-6 68-16c-16 14-40 22-68 22z"/>
+</svg>

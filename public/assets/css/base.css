@@ -1,0 +1,235 @@
+/* ==========================================================================
+   Noori Roohani Homeo Clinic — base tokens, reset, typography
+   ========================================================================== */
+
+:root {
+  /* Brand */
+  --primary: #02243d;
+  --primary-light: #0a3a5c;
+  --primary-dark: #011829;
+  --gold: #d8b132;
+  --gold-hover: #c4a02a;
+  --gold-soft: rgba(216, 177, 50, 0.18);
+  --cream: #fff7b6;
+  --cream-soft: #fffef5;
+  --cream-muted: #f5f0c8;
+
+  /* Neutrals derived from primary + cream */
+  --text: var(--primary);
+  --text-muted: rgba(2, 36, 61, 0.72);
+  --text-on-primary: var(--cream-soft);
+  --surface: var(--cream-soft);
+  --surface-elevated: #ffffff;
+  --border: rgba(2, 36, 61, 0.12);
+  --border-strong: rgba(2, 36, 61, 0.22);
+
+  /* Spacing scale (rem) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+  --space-9: 4rem;
+
+  /* Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(2, 36, 61, 0.06);
+  --shadow-md: 0 4px 16px rgba(2, 36, 61, 0.08);
+  --shadow-header: 0 2px 12px rgba(2, 36, 61, 0.1);
+
+  /* Layout */
+  --container-max: 72rem;
+  --container-padding: clamp(var(--space-4), 4vw, var(--space-6));
+  --header-main-height: 4.25rem;
+  --topbar-height: 2.5rem;
+  --header-total: calc(var(--topbar-height) + var(--header-main-height));
+
+  /* Typography — fluid scale */
+  --font-heading: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-body: "Inter", "Poppins", system-ui, sans-serif;
+  --font-urdu: "Noto Nastaliq Urdu", "Noto Naskh Arabic", serif;
+
+  --text-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.8125rem);
+  --text-sm: clamp(0.8125rem, 0.78rem + 0.25vw, 0.875rem);
+  --text-base: clamp(0.9375rem, 0.88rem + 0.3vw, 1rem);
+  --text-lg: clamp(1.0625rem, 1rem + 0.35vw, 1.125rem);
+  --text-xl: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+  --text-3xl: clamp(1.875rem, 1.5rem + 1.5vw, 2.5rem);
+
+  --leading-body: 1.6;
+  --leading-urdu: 2;
+  --leading-heading: 1.2;
+
+  /* Motion */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration: 250ms;
+
+  /* Focus */
+  --focus-ring: 0 0 0 3px var(--gold-soft), 0 0 0 1px var(--gold);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: clip;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+  color: var(--text);
+  background-color: var(--surface);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+html[lang="ur"] body {
+  font-family: var(--font-urdu), var(--font-body);
+  line-height: var(--leading-urdu);
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--primary-light);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: var(--leading-heading);
+  color: var(--primary);
+  text-wrap: balance;
+}
+
+html[lang="ur"] h1,
+html[lang="ur"] h2,
+html[lang="ur"] h3,
+html[lang="ur"] h4,
+html[lang="ur"] h5,
+html[lang="ur"] h6 {
+  font-family: var(--font-urdu), var(--font-heading);
+  font-weight: 400;
+}
+
+p {
+  margin-block: 0 1em;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  inset-inline-start: var(--space-4);
+  top: var(--space-4);
+  z-index: 10000;
+  padding: var(--space-3) var(--space-4);
+  background: var(--gold);
+  color: var(--primary);
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  transform: translateY(-200%);
+  transition: transform var(--duration) var(--ease);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.icon {
+  width: 1.125rem;
+  height: 1.125rem;
+  flex-shrink: 0;
+}
+
+.icon--md {
+  width: 1.25rem;
+  height: 1.25rem;
+}

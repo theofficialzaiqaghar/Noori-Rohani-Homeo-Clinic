@@ -1,0 +1,30 @@
+{
+  "name": "Noori Roohani Homeo Clinic",
+  "short_name": "Noori Clinic",
+  "description": "Homeopathic clinic for rohani ilaj, herbal products, Quran teaching, and community services.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#02243D",
+  "theme_color": "#0B1F2A",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

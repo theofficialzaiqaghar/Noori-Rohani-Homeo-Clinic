@@ -25,7 +25,7 @@ export function ServicesSection() {
   const ref = useReveal({ childSelector: "[data-reveal-item]", stagger: 0.04 });
 
   return (
-    <section id="about" className="section section--paper services-section" aria-labelledby="services-title">
+    <section id="services" className="section section--paper services-section" aria-labelledby="services-title">
       <div className="shell" ref={ref}>
         <header className="section-head section-head--center section-head--wide">
           <p className="section-head__kicker" data-reveal-item>
@@ -39,7 +39,7 @@ export function ServicesSection() {
           </p>
         </header>
 
-        <div id="services" className="services-grid">
+        <div className="services-grid">
           {SERVICE_ITEMS.map((item) => (
             <ServiceCardLink key={item.id} href={item.href} className="service-card" data-reveal-item>
               <span className="service-card__icon" aria-hidden="true">

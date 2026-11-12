@@ -2,8 +2,8 @@
  * Home page: scroll reveal, contact form validation, honeypot.
  */
 
-const WHATSAPP_NUMBER = "923000000000";
-const CLINIC_EMAIL = "info@example.com";
+const WHATSAPP_NUMBER = "923141000717";
+const CLINIC_EMAIL = "nooriroohaniclinic@gmail.com";
 
 function prefersReducedMotion() {
   return window.matchMedia("(prefers-reduced-motion: reduce)").matches;

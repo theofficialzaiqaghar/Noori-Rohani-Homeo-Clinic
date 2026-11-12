@@ -5,7 +5,7 @@ import { useSiteSettings } from "../providers/SiteSettingsProvider";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import { Icon } from "./Icon";
-import { CLINIC_PHONE_E164, CLINIC_WHATSAPP } from "../lib/contactInfo";
+import { CLINIC_PHONE_DISPLAY, CLINIC_PHONE_E164, CLINIC_WHATSAPP } from "../lib/clinicInfo";
 import { BRAND_LOGO_SRC } from "../lib/brandAssets";
 
 const SERVICE_LINKS = [
@@ -79,7 +79,7 @@ export function SiteHeader({ overlay = false, className = "" }) {
           <div className="topbar__group">
             <a className="topbar__link" href={`tel:${CLINIC_PHONE_E164.replace(/\s/g, "")}`} aria-label={t("topbar.phoneAria")}>
               <Icon name="icon-phone" />
-              <span>{t("topbar.phone")}</span>
+              <span>{CLINIC_PHONE_DISPLAY}</span>
             </a>
             <a
               className="topbar__link"

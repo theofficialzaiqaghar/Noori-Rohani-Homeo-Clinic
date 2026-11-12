@@ -671,6 +671,45 @@ html[lang="ur"] .contact-page-hero__kicker {
   line-height: 1.15;
 }
 
+.contact-page-hero__clinic {
+  margin: 0.35rem 0 0;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.contact-grid__meta--rich {
+  display: grid;
+  gap: 0.45rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+.contact-section .contact-grid__meta--rich {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.contact-section .contact-grid__meta-link {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.footer-grid__address,
+.footer-grid__hours {
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+  margin: 0.5rem 0 0;
+  max-width: 36ch;
+}
+
+.contact-page__map-actions {
+  margin-top: 0.75rem;
+}
+
 .contact-page-hero__lede {
   margin: 0;
   font-size: var(--text-base);

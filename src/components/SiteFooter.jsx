@@ -1,13 +1,27 @@
 import { Link } from "react-router-dom";
 import { useI18n } from "../providers/I18nProvider";
-import { CLINIC_EMAIL, CLINIC_PHONE_E164, CLINIC_WHATSAPP } from "../lib/contactInfo";
+import {
+  CLINIC_EMAIL,
+  CLINIC_HOURS_EN,
+  CLINIC_HOURS_UR,
+  CLINIC_NAME,
+  CLINIC_ADDRESS_EN,
+  CLINIC_ADDRESS_UR,
+  CLINIC_PHONE_DISPLAY,
+  CLINIC_PHONE_E164,
+  CLINIC_WHATSAPP,
+} from "../lib/clinicInfo";
 import { BRAND_LOGO_SRC } from "../lib/brandAssets";
 import { useSiteSettings } from "../providers/SiteSettingsProvider";
 import { Icon } from "./Icon";
 import { Button } from "./Button";
 
 export function SiteFooter() {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
+  const address = lang === "ur" ? CLINIC_ADDRESS_UR : CLINIC_ADDRESS_EN;
+  const hours = lang === "ur" ? CLINIC_HOURS_UR : CLINIC_HOURS_EN;
+  const telHref = `tel:${CLINIC_PHONE_E164.replace(/\s/g, "")}`;
+  const waHref = `https://wa.me/${CLINIC_WHATSAPP}`;
   const { settings, getSlot } = useSiteSettings() || {};
   const social = settings?.footer || {};
   const cmsLogo = getSlot?.("brand.logo");
@@ -25,17 +39,17 @@ export function SiteFooter() {
               <p className="footer-cta__lede">{t("footer.cta.lede")}</p>
             </div>
             <div className="footer-cta__aside">
-              <a className="footer-cta__phone" href={`tel:${CLINIC_PHONE_E164.replace(/\s/g, "")}`}>
-                {t("topbar.phone")}
+              <a className="footer-cta__phone" href={telHref}>
+                {CLINIC_PHONE_DISPLAY}
               </a>
               <div className="footer-cta__actions">
-                <Button as="a" href={`tel:${CLINIC_PHONE_E164.replace(/\s/g, "")}`} variant="light" aria-label={t("footer.cta.callNowAria")}>
+                <Button as="a" href={telHref} variant="light" aria-label={t("footer.cta.callNowAria")}>
                   {t("footer.cta.callNow")}
                 </Button>
                 <Button
                   as="a"
                   variant="ghost"
-                  href={`https://wa.me/${CLINIC_WHATSAPP}`}
+                  href={waHref}
                   rel="noopener noreferrer"
                   className="footer-cta__btn-ghost"
                   aria-label={t("footer.cta.whatsappAria")}
@@ -62,10 +76,12 @@ export function SiteFooter() {
                 decoding="async"
               />
             </span>
-            <span className="visually-hidden">
-              {t("logo.name")} — {t("logo.subtitle")}
+            <span className="brand__copy brand__copy--footer">
+              <span className="brand__name">{CLINIC_NAME}</span>
             </span>
           </Link>
+          <p className="footer-grid__address">{address}</p>
+          <p className="footer-grid__hours">{hours}</p>
           <p>{t("footer.about.line1")}</p>
           <p>{t("footer.about.line2")}</p>
           <ul className="footer-social" aria-label={t("footer.social.label")}>
@@ -80,7 +96,7 @@ export function SiteFooter() {
               </a>
             </li>
             <li>
-              <a href={social.socialWhatsapp || "https://wa.me/923000000000"} rel="noopener noreferrer" aria-label={t("footer.social.whatsapp")}>
+              <a href={social.socialWhatsapp || waHref} rel="noopener noreferrer" aria-label={t("footer.social.whatsapp")}>
                 <Icon name="icon-whatsapp" />
               </a>
             </li>
@@ -118,16 +134,27 @@ export function SiteFooter() {
 
         <address className="footer-contact">
           <h3>{t("footer.contact.title")}</h3>
-          <p>{t("footer.contact.addressLabel")}: {t("footer.contact.address")}</p>
+          <p>
+            <strong>{CLINIC_NAME}</strong>
+          </p>
+          <p>
+            {t("footer.contact.addressLabel")}: {address}
+          </p>
           <p>
             {t("footer.contact.phoneLabel")}:{" "}
-            <a href={`tel:${CLINIC_PHONE_E164.replace(/\s/g, "")}`}>{t("footer.contact.phone")}</a>
+            <a href={telHref}>{CLINIC_PHONE_DISPLAY}</a>
           </p>
           <p>
-            {t("footer.contact.emailLabel")}: <a href={`mailto:${CLINIC_EMAIL}`}>{t("footer.contact.email")}</a>
+            {t("footer.contact.whatsappLabel")}:{" "}
+            <a href={waHref} rel="noopener noreferrer">
+              {CLINIC_PHONE_DISPLAY}
+            </a>
           </p>
           <p>
-            {t("footer.contact.hoursLabel")}: {t("footer.contact.hours")}
+            {t("footer.contact.emailLabel")}: <a href={`mailto:${CLINIC_EMAIL}`}>{CLINIC_EMAIL}</a>
+          </p>
+          <p>
+            {t("footer.contact.hoursLabel")}: {hours}
           </p>
         </address>
       </div>

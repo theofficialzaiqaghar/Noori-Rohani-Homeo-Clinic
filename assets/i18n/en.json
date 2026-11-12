@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "Noori Roohani Homeo Clinic | Rohani Ilaj & Homeo",
-    "description": "Rohani ilaj, homeopathy, and herbal care at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu.",
+    "description": "Noori Roohani Homeo Clinic — Rohani ilaj, homeopathy, and herbal care in Surjani Town, Karachi. Evening consultations Sunday–Thursday, 7–9 PM. Friday & Saturday closed.",
     "ogTitle": "Noori Roohani Homeo Clinic | Rohani Ilaj & Homeo",
-    "ogDescription": "Rohani ilaj, homeopathy, and herbal care at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu."
+    "ogDescription": "Noori Roohani Homeo Clinic — Rohani ilaj, homeopathy, and herbal care in Surjani Town, Karachi. Evening consultations Sunday–Thursday, 7–9 PM. Friday & Saturday closed."
   },
   "topbar": {
     "phone": "0314-1000717",
@@ -103,11 +103,11 @@
       "phoneLabel": "Phone",
       "phone": "0314-1000717",
       "whatsappLabel": "WhatsApp",
-      "whatsapp": "[PHONE]",
+      "whatsapp": "0314-1000717",
       "emailLabel": "Email",
       "email": "nooriroohaniclinic@gmail.com",
       "hoursLabel": "Clinic timings",
-      "hours": "Sun–Thu: 7:00 PM – 9:00 PM · Fri & Sat: Closed"
+      "hours": "Sunday–Thursday: 7:00 PM – 9:00 PM · Friday: Closed · Saturday: Closed"
     },
     "nav": {
       "quickLinks": "Footer quick links",
@@ -132,13 +132,15 @@
       "heroKicker": "Contact",
       "heroTitle": "Visit or message the clinic",
       "heroLead": "Call, WhatsApp, or send the form below. We reply during clinic hours.",
-      "mapNote": "We are in Moon Arcade, Surjani Town — near Makkah Hotel. Call before your visit to confirm availability.",
+      "mapNote": "Find us at Plot No. CI-05, Moon Arcade, Flat, Sector L-1, Near Makkah Hotel, Surjani Town, Karachi, Pakistan. Open in Google Maps for directions. Call 0314-1000717 before your visit.",
       "viewContactPage": "Full contact page",
-      "metaDescription": "Contact Noori Roohani Homeo Clinic in Surjani Town, Karachi. Evening hours Sun–Thu 7–9 PM. Phone, WhatsApp, or appointment form."
+      "metaDescription": "Contact Noori Roohani Homeo Clinic in Surjani Town, Karachi. Sunday–Thursday: 7:00 PM – 9:00 PM · Friday: Closed · Saturday: Closed Phone 0314-1000717, WhatsApp, or form.",
+      "clinicName": "Noori Roohani Homeo Clinic",
+      "openMaps": "Open in Google Maps"
     },
     "about": {
       "documentTitle": "About the clinic | Noori Roohani Homeo Clinic",
-      "metaDescription": "Learn about Noori Roohani Homeo Clinic in Surjani Town, Karachi — homeopathy, Rohani ilaj, and herbal care with evening consultations."
+      "metaDescription": "Learn about Noori Roohani Homeo Clinic in Surjani Town, Karachi — homeopathy, Rohani ilaj, and herbal care. Sunday–Thursday: 7:00 PM – 9:00 PM · Friday: Closed · Saturday: Closed"
     }
   },
   "home": {
@@ -443,11 +445,11 @@
     "contact": {
       "label": "Get in touch",
       "title": "Tell us how we can help",
-      "lead": "Message or call during evening clinic hours (Sun–Thu, 7–9 PM). For urgent spiritual matters, please phone rather than wait on a reply.",
+      "lead": "Message or call Noori Roohani Homeo Clinic during clinic hours (Sun–Thu: 7:00 PM – 9:00 PM · Fri & Sat: Closed). For urgent spiritual matters, please phone rather than wait on a reply.",
       "aside": {
         "phone": "Phone: 0314-1000717",
-        "address": "Plot No. CI-05, Moon Arcade, Sector L-1, Near Makkah Hotel, Surjani Town, Karachi",
-        "hours": "Sun–Thu: 7:00 PM – 9:00 PM (Fri & Sat closed)",
+        "address": "Plot No. CI-05, Moon Arcade, Flat, Sector L-1, Near Makkah Hotel, Surjani Town, Karachi, Pakistan.",
+        "hours": "Sunday–Thursday: 7:00 PM – 9:00 PM · Friday: Closed · Saturday: Closed",
         "email": "Email: nooriroohaniclinic@gmail.com"
       }
     },
@@ -455,7 +457,7 @@
       "name": "Full name",
       "namePlaceholder": "Your name",
       "phone": "Phone / WhatsApp",
-      "phonePlaceholder": "03XX XXXXXXX",
+      "phonePlaceholder": "0314-1000717",
       "service": "Service",
       "servicePlaceholder": "Choose a service",
       "serviceOptions": {
@@ -740,12 +742,12 @@
           "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours."
         },
         "international-research-center": {
-          "title": "International research centre",
-          "summary": "International research centre at Noori Roohani Homeo Clinic with adab, privacy, and community care.",
-          "documentTitle": "International research centre | Noori Roohani Homeo Clinic",
-          "metaDescription": "International research centre in Surjani Town, Karachi. Contact 0314-1000717 — Sun–Thu 7–9 PM.",
-          "imageAlt": "International research centre — Noori Roohani Homeo Clinic",
-          "overview": "Our clinic provides international research centre as part of Rohani and community services listed on the official schedule.",
+          "title": "International Research Council",
+          "summary": "International Research Council at Noori Roohani Homeo Clinic with adab, privacy, and community care.",
+          "documentTitle": "International Research Council | Noori Roohani Homeo Clinic",
+          "metaDescription": "International Research Council in Surjani Town, Karachi. Contact 0314-1000717 — Sun–Thu 7–9 PM.",
+          "imageAlt": "International Research Council — Noori Roohani Homeo Clinic",
+          "overview": "Our clinic provides international research council as part of Rohani and community services listed on the official schedule.",
           "whatToExpect": "Call ahead to confirm timing, requirements, and whether an appointment is needed.",
           "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours."
         }

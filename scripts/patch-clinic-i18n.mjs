@@ -1,47 +1,59 @@
 /**
- * Inject official clinic address & hours into en.json / ur.json (and public copy on sync).
+ * Inject official clinic address, hours, phone, email into en.json / ur.json (synced to public/).
  */
 import { readFileSync, writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  CLINIC_NAME,
+  CLINIC_ADDRESS_EN,
+  CLINIC_ADDRESS_UR,
+  CLINIC_HOURS_EN,
+  CLINIC_HOURS_UR,
+  CLINIC_HOURS_TOPBAR_EN,
+  CLINIC_HOURS_TOPBAR_UR,
+  CLINIC_PHONE_DISPLAY,
+  CLINIC_EMAIL,
+} from "../src/lib/clinicInfo.js";
+import { HOME_SERVICES_COPY } from "./home-services-copy.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
-const PHONE_DISPLAY = "0314-1000717";
-const PHONE_E164 = "+923141000717";
-const CLINIC_EMAIL = "nooriroohaniclinic@gmail.com";
-
 const EN = {
-  metaDescription:
-    "Rohani ilaj, homeopathy, and herbal care at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu.",
-  topbarPhone: PHONE_DISPLAY,
-  topbarHours: "Sun–Thu: 7:00 PM – 9:00 PM · Fri & Sat: Closed",
-  footerPhone: PHONE_DISPLAY,
+  metaDescription: `${CLINIC_NAME} — Rohani ilaj, homeopathy, and herbal care in Surjani Town, Karachi. ${CLINIC_HOURS_SHORT_EN_PHRASE()}`,
+  topbarPhone: CLINIC_PHONE_DISPLAY,
+  topbarHours: CLINIC_HOURS_TOPBAR_EN,
+  footerPhone: CLINIC_PHONE_DISPLAY,
+  footerWhatsapp: CLINIC_PHONE_DISPLAY,
   footerEmail: CLINIC_EMAIL,
-  footerAddress:
-    "Plot No. CI-05, Moon Arcade, Flat, Sector L-1, Near Makkah Hotel, Surjani Town, Karachi, Pakistan.",
-  footerHours: "Sun–Thu: 7:00 PM – 9:00 PM · Fri & Sat: Closed",
-  contactAsideAddress:
-    "Plot No. CI-05, Moon Arcade, Sector L-1, Near Makkah Hotel, Surjani Town, Karachi",
-  contactAsideHours: "Sun–Thu: 7:00 PM – 9:00 PM (Fri & Sat closed)",
-  mapNote: "We are in Moon Arcade, Surjani Town — near Makkah Hotel. Call before your visit to confirm availability.",
+  footerAddress: CLINIC_ADDRESS_EN,
+  footerHours: CLINIC_HOURS_EN,
+  contactAsideAddress: CLINIC_ADDRESS_EN,
+  contactAsideHours: CLINIC_HOURS_EN,
+  mapNote: `Find us at ${CLINIC_ADDRESS_EN} Open in Google Maps for directions. Call ${CLINIC_PHONE_DISPLAY} before your visit.`,
+  phonePlaceholder: CLINIC_PHONE_DISPLAY,
 };
 
 const UR = {
   metaDescription:
-    "نوری روحانی ہومیو کلینک، سرجانی ٹاؤن کراچی — روحانی علاج، ہومیوپathic اور جڑی بوٹیاں۔ اتوار سے جمعرات شام 7 سے 9 بجے۔",
-  topbarPhone: PHONE_DISPLAY,
-  topbarHours: "اتوار–جمعرات: شام 7:00 سے 9:00 · جمعہ و ہفتہ: بند",
-  footerPhone: PHONE_DISPLAY,
+    "نوری روحانی ہومیو کلینک، سرجانی ٹاؤن کراچی — روحانی علاج، ہومیوپathic اور جڑی بوٹیاں۔ اتوار–جمعرات شام 7–9 بجے۔",
+  topbarPhone: CLINIC_PHONE_DISPLAY,
+  topbarHours: CLINIC_HOURS_TOPBAR_UR,
+  footerPhone: CLINIC_PHONE_DISPLAY,
+  footerWhatsapp: CLINIC_PHONE_DISPLAY,
   footerEmail: CLINIC_EMAIL,
-  footerAddress:
-    "پلاٹ نمبر CI-05، مون آرکیڈ، فلیٹ، سیکٹر L-1، مکہ ہوٹل کے قریب، سرجانی ٹاؤن، کراچی، پاکستان۔",
-  footerHours: "اتوار تا جمعرات: شام 7:00 سے 9:00 · جمعہ و ہفتہ: بند",
-  contactAsideAddress:
-    "پلاٹ CI-05، مون آرکیڈ، سیکٹر L-1، مکہ ہوٹل کے قریب، سرجانی ٹاؤن، کراچی",
-  contactAsideHours: "اتوار–جمعرات: شام 7–9 (جمعہ و ہفتہ بند)",
-  mapNote: "مون آرکیڈ، سرجانی ٹاؤن — مکہ ہوٹل کے قریب۔ آنے سے پہلے فون کر کے تصدیق کر لیں۔",
+  footerAddress: CLINIC_ADDRESS_UR,
+  footerHours: CLINIC_HOURS_UR,
+  contactAsideAddress: CLINIC_ADDRESS_UR,
+  contactAsideHours: CLINIC_HOURS_UR,
+  mapNote:
+    "پتہ مندرجہ بالا۔ گوگل میپس سے راستہ دیکھیں۔ آنے سے پہلے فون کر کے تصدیق کر لیں۔",
+  phonePlaceholder: CLINIC_PHONE_DISPLAY,
 };
+
+function CLINIC_HOURS_SHORT_EN_PHRASE() {
+  return "Evening consultations Sunday–Thursday, 7–9 PM. Friday & Saturday closed.";
+}
 
 function patch(file, lang) {
   const data = JSON.parse(readFileSync(file, "utf8"));
@@ -57,42 +69,51 @@ function patch(file, lang) {
     data.footer.contact.address = copy.footerAddress;
     data.footer.contact.hours = copy.footerHours;
     data.footer.contact.phone = copy.footerPhone;
+    data.footer.contact.whatsapp = copy.footerWhatsapp;
     data.footer.contact.email = copy.footerEmail;
   }
-  data.home.contact.aside.address = copy.contactAsideAddress;
-  data.home.contact.aside.hours = copy.contactAsideHours;
-  data.page = data.page || {};
-  data.page.about = data.page.about || {};
-  data.page.about.documentTitle =
-    lang === "en"
-      ? "About the clinic | Noori Roohani Homeo Clinic"
-      : "کلینک کے بارے میں | نوری روحانی ہومیو کلینک";
-  data.page.about.metaDescription =
-    lang === "en"
-      ? "Learn about Noori Roohani Homeo Clinic in Surjani Town, Karachi — homeopathy, Rohani ilaj, and herbal care with evening consultations."
-      : "سرجانی ٹاؤن، کراچی — نوری روحانی ہومیو کلینک، ہومیو، روحانی علاج اور جڑی بوٹی۔";
-
-  data.page.contact.mapNote = copy.mapNote;
-  data.page.contact.metaDescription =
-    lang === "en"
-      ? "Contact Noori Roohani Homeo Clinic in Surjani Town, Karachi. Evening hours Sun–Thu 7–9 PM. Phone, WhatsApp, or appointment form."
-      : "سرجانی ٹاؤن کراچی، نوری روحانی ہومیو کلینک — رابطہ۔ اتوار سے جمعرات شام 7–9 بجے۔ فون، واٹس ایپ یا فارم۔";
-
   if (data.home?.contact?.aside) {
+    data.home.contact.aside.address = copy.contactAsideAddress;
+    data.home.contact.aside.hours = copy.contactAsideHours;
     data.home.contact.aside.phone =
       lang === "en" ? `Phone: ${copy.footerPhone}` : `فون: ${copy.footerPhone}`;
     data.home.contact.aside.email =
       lang === "en" ? `Email: ${copy.footerEmail}` : `ای میل: ${copy.footerEmail}`;
   }
-  if (data.home?.form?.emailLink) {
+  data.page = data.page || {};
+  data.page.about = data.page.about || {};
+  data.page.about.documentTitle =
+    lang === "en"
+      ? `About the clinic | ${CLINIC_NAME}`
+      : `کلینک کے بارے میں | ${CLINIC_NAME}`;
+  data.page.about.metaDescription =
+    lang === "en"
+      ? `Learn about ${CLINIC_NAME} in Surjani Town, Karachi — homeopathy, Rohani ilaj, and herbal care. ${CLINIC_HOURS_EN}`
+      : `سرجانی ٹاؤن — ${CLINIC_NAME}، ہومیو اور روحانی علاج۔`;
+
+  data.page.contact = data.page.contact || {};
+  if (data.page.contact) {
+    data.page.contact.mapNote = copy.mapNote;
+    data.page.contact.clinicName = CLINIC_NAME;
+    data.page.contact.openMaps = lang === "en" ? "Open in Google Maps" : "گوگل میپس کھولیں";
+    data.page.contact.metaDescription =
+      lang === "en"
+        ? `Contact ${CLINIC_NAME} in Surjani Town, Karachi. ${CLINIC_HOURS_EN} Phone ${CLINIC_PHONE_DISPLAY}, WhatsApp, or form.`
+        : `سرجانی ٹاؤن — ${CLINIC_NAME}۔ رابطہ: ${CLINIC_PHONE_DISPLAY}`;
+  }
+  if (data.home?.form) {
+    data.home.form.phonePlaceholder = copy.phonePlaceholder;
     data.home.form.emailValue = copy.footerEmail;
   }
+
+  data.home = data.home || {};
+  data.home.services = HOME_SERVICES_COPY[lang];
 
   if (data.home?.contact?.lead) {
     data.home.contact.lead =
       lang === "en"
-        ? "Message or call during evening clinic hours (Sun–Thu, 7–9 PM). For urgent spiritual matters, please phone rather than wait on a reply."
-        : "شام کے اوقات (اتوار–جمعرات، 7–9 بجے) میں رابطہ کریں۔ فوری روحانی معاملے میں پیغام کی بجائے فون کریں۔";
+        ? `Message or call ${CLINIC_NAME} during clinic hours (${CLINIC_HOURS_TOPBAR_EN}). For urgent spiritual matters, please phone rather than wait on a reply.`
+        : "شام کے اوقات میں رابطہ کریں۔ فوری روحانی معاملے میں فون کریں۔";
   }
 
   data.errors = data.errors || {};
@@ -102,7 +123,7 @@ function patch(file, lang) {
     lede:
       lang === "en"
         ? "The link may be outdated. Return home or contact the clinic during evening hours."
-        : "لنک پرانا ہو سکتا ہے۔ ہوم پر جائیں یا شام کے اوقات میں کلینک سے رابطہ کریں۔",
+        : "لنک پرانا ہو سکتا ہے۔ ہوم پر واپس جائیں یا کلینک سے رابطہ کریں۔",
     home: lang === "en" ? "Back to home" : "ہوم پر واپس",
   };
 
@@ -111,4 +132,4 @@ function patch(file, lang) {
 
 patch(join(root, "assets", "i18n", "en.json"), "en");
 patch(join(root, "assets", "i18n", "ur.json"), "ur");
-console.log("Clinic address & hours patched in i18n.");
+console.log("Clinic address, hours, phone & email patched in i18n.");

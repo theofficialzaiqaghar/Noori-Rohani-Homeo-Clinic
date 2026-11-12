@@ -84,7 +84,7 @@ const SPIRITUAL = [
   ["nikah-khawan", "Nikah Khawan (Nikkah services)", "نکاح خواں خدمات"],
   ["free-schooling-education", "Free schooling / education", "مفت تعلیم / سکولنگ"],
   ["nazim-e-ala-ulama-mashaikh", "Nazim-e-Aala Ulama & Mashaikh", "ناظم اعلیٰ علماء و مشائخ"],
-  ["international-research-center", "International research centre", "انٹرنیشنل ریسرچ سینٹر"],
+  ["international-research-center", "International Research Council", "بین الاقوامی تحقیقی کونسل"],
 ];
 
 const PRODUCTS = [

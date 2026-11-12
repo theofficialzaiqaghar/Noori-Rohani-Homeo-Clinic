@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useI18n } from "../providers/I18nProvider";
 import { Button } from "./Button";
-import { CLINIC_EMAIL, CLINIC_WHATSAPP } from "../lib/contactInfo";
+import { CLINIC_EMAIL, CLINIC_WHATSAPP, CLINIC_PHONE_DISPLAY } from "../lib/clinicInfo";
 
 export function ContactForm({ idPrefix = "", className = "" }) {
   const { t } = useI18n();
@@ -57,7 +57,14 @@ export function ContactForm({ idPrefix = "", className = "" }) {
       </div>
       <div className="field">
         <label htmlFor={fieldId("phone")}>{t("home.form.phone")}</label>
-        <input id={fieldId("phone")} name="phone" type="tel" autoComplete="tel" aria-invalid={Boolean(errors.phone)} />
+        <input
+          id={fieldId("phone")}
+          name="phone"
+          type="tel"
+          autoComplete="tel"
+          placeholder={CLINIC_PHONE_DISPLAY}
+          aria-invalid={Boolean(errors.phone)}
+        />
         {errors.phone && <p className="field__error">{errors.phone}</p>}
       </div>
       <div className="field">

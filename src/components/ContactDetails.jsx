@@ -1,28 +1,37 @@
 import { useI18n } from "../providers/I18nProvider";
 import { Icon } from "./Icon";
 import { Button } from "./Button";
-import { CLINIC_EMAIL, CLINIC_PHONE_DISPLAY, CLINIC_PHONE_E164, CLINIC_WHATSAPP } from "../lib/contactInfo";
+import {
+  CLINIC_ADDRESS_EN,
+  CLINIC_ADDRESS_UR,
+  CLINIC_EMAIL,
+  CLINIC_HOURS_EN,
+  CLINIC_HOURS_UR,
+  CLINIC_MAP_URL,
+  CLINIC_NAME,
+  CLINIC_PHONE_DISPLAY,
+  CLINIC_PHONE_E164,
+  CLINIC_WHATSAPP,
+} from "../lib/clinicInfo";
 
 export function ContactDetails({ variant = "compact" }) {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const isPage = variant === "page";
-
-  if (!isPage) {
-    return (
-      <ul className="contact-grid__meta">
-        <li>{t("home.contact.aside.phone")}</li>
-        <li>{t("home.contact.aside.address")}</li>
-        <li>{t("home.contact.aside.hours")}</li>
-      </ul>
-    );
-  }
+  const address = lang === "ur" ? CLINIC_ADDRESS_UR : CLINIC_ADDRESS_EN;
+  const hours = lang === "ur" ? CLINIC_HOURS_UR : CLINIC_HOURS_EN;
+  const telHref = `tel:${CLINIC_PHONE_E164.replace(/\s/g, "")}`;
 
   const items = [
     {
+      icon: "icon-building",
+      label: lang === "ur" ? "کلینک" : "Clinic",
+      value: CLINIC_NAME,
+    },
+    {
       icon: "icon-phone",
       label: t("footer.contact.phoneLabel"),
-      value: t("footer.contact.phone"),
-      href: `tel:${CLINIC_PHONE_E164.replace(/\s/g, "")}`,
+      value: CLINIC_PHONE_DISPLAY,
+      href: telHref,
     },
     {
       icon: "icon-whatsapp",
@@ -34,20 +43,46 @@ export function ContactDetails({ variant = "compact" }) {
     {
       icon: "icon-email",
       label: t("footer.contact.emailLabel"),
-      value: t("footer.contact.email"),
+      value: CLINIC_EMAIL,
       href: `mailto:${CLINIC_EMAIL}`,
     },
     {
       icon: "icon-location",
       label: t("footer.contact.addressLabel"),
-      value: t("footer.contact.address"),
+      value: address,
+      href: CLINIC_MAP_URL,
+      external: true,
+      linkLabel: lang === "ur" ? "گوگل میپس" : "Google Maps",
     },
     {
       icon: "icon-clock",
       label: t("footer.contact.hoursLabel"),
-      value: t("footer.contact.hours"),
+      value: hours,
     },
   ];
+
+  if (!isPage) {
+    return (
+      <ul className={`contact-grid__meta contact-grid__meta--rich${isPage ? "" : ""}`}>
+        {items.map((item) => (
+          <li key={item.label} className="contact-grid__meta-item">
+            <strong>{item.label}:</strong>{" "}
+            {item.href ? (
+              <a
+                href={item.href}
+                rel={item.external ? "noopener noreferrer" : undefined}
+                className="contact-grid__meta-link"
+              >
+                {item.linkLabel || item.value}
+              </a>
+            ) : (
+              <span>{item.value}</span>
+            )}
+          </li>
+        ))}
+      </ul>
+    );
+  }
 
   return (
     <div className="contact-details">
@@ -65,7 +100,7 @@ export function ContactDetails({ variant = "compact" }) {
                   className="contact-details__value"
                   rel={item.external ? "noopener noreferrer" : undefined}
                 >
-                  {item.value}
+                  {item.linkLabel ? `${item.value} — ${item.linkLabel}` : item.value}
                 </a>
               ) : (
                 <p className="contact-details__value">{item.value}</p>
@@ -75,11 +110,14 @@ export function ContactDetails({ variant = "compact" }) {
         ))}
       </ul>
       <div className="contact-details__actions">
-        <Button as="a" href={`tel:${CLINIC_PHONE_E164.replace(/\s/g, "")}`}>
+        <Button as="a" href={telHref}>
           {t("footer.cta.callNow")}
         </Button>
         <Button as="a" variant="ghost" href={`https://wa.me/${CLINIC_WHATSAPP}`} rel="noopener noreferrer">
           {t("footer.cta.whatsapp")}
+        </Button>
+        <Button as="a" variant="ghost" href={CLINIC_MAP_URL} rel="noopener noreferrer">
+          {lang === "ur" ? "نقشہ کھولیں" : "Open map"}
         </Button>
       </div>
     </div>

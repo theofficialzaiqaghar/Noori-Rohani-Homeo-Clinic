@@ -12,7 +12,7 @@ npm start         # Serve dist + API + uploads (set NODE_ENV=production)
 npm run qa        # en.json / ur.json key parity
 ```
 
-Copy `.env.example` to `.env` and set `SESSION_SECRET`, `ADMIN_USERNAME`, and `ADMIN_PASSWORD`. Admin password is bcrypt-hashed on first server start; credentials are never exposed to the browser.
+Copy `.env.example` to `.env` and set `SESSION_SECRET`, `ADMIN_USERNAME`, and `ADMIN_PASSWORD`. Optional: `VITE_SITE_URL=https://nooriroohanihomeoclinic.com` (default is in `src/lib/clinicInfo.js`; sitemap, robots, and `index.html` SEO URLs refresh on `npm run build`). Admin password is bcrypt-hashed on first server start; credentials are never exposed to the browser.
 
 ## Admin
 

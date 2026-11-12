@@ -4,6 +4,7 @@ import PublicApp from "./PublicApp";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import ServicesLandingPage from "./pages/ServicesLandingPage";
 import ServicesHubHomeopathyPage from "./pages/ServicesHubHomeopathyPage";
 import ServiceDetailHomeopathyPage from "./pages/ServiceDetailHomeopathyPage";
 import ServicesHubSpiritualPage from "./pages/ServicesHubSpiritualPage";
@@ -30,6 +31,7 @@ export function AppRouter() {
         <Route path="/" element={<PublicApp />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/services" element={<ServicesLandingPage />} />
         <Route path="/services/homeopathy" element={<ServicesHubHomeopathyPage />} />
         <Route path="/services/homeopathy/:slug" element={<ServiceDetailHomeopathyPage />} />
         <Route path="/services/spiritual" element={<ServicesHubSpiritualPage />} />

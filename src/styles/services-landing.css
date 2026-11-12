@@ -1,0 +1,144 @@
+.inner-page-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+}
+
+.services-landing__intro-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 48rem) {
+  .services-landing__intro-grid {
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+  }
+}
+
+.services-landing__visual {
+  max-height: 22rem;
+  object-fit: cover;
+}
+
+.services-grid--dense {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15.5rem), 1fr));
+}
+
+.services-section__all {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.why-choose-band {
+  position: relative;
+}
+
+.why-choose-grid {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+}
+
+.why-choose-card {
+  padding: 1.1rem 1.15rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.why-choose-card h3 {
+  font-size: var(--text-md);
+  margin: 0 0 0.4rem;
+}
+
+.why-choose-card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: var(--text-sm);
+}
+
+.services-cta-panel {
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.5rem 1.25rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background: var(--paper-elevated);
+}
+
+@media (min-width: 40rem) {
+  .services-cta-panel {
+    grid-template-columns: 1fr auto;
+    padding: 1.75rem 1.5rem;
+  }
+}
+
+.services-cta-panel__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.services-cta-panel__phone {
+  margin: 0.35rem 0 0;
+  font-weight: 600;
+}
+
+.services-cta-panel--compact {
+  margin-top: 1.5rem;
+}
+
+.detail-article__cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.75rem;
+}
+
+.detail-article--full .detail-article__faq {
+  margin-top: 0;
+  padding-top: 2.5rem;
+}
+
+.related-cards__list--rich {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.related-cards__tile {
+  display: block;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--ease);
+}
+
+.related-cards__tile:hover {
+  border-color: var(--accent);
+}
+
+.related-cards__tile-title {
+  display: block;
+  font-weight: 600;
+}
+
+.related-cards__tile-desc {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+  margin-top: 0.25rem;
+}
+
+.related-cards__back {
+  margin: 1rem 0 0;
+  font-size: var(--text-sm);
+}

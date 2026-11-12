@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useReveal } from "../hooks/useReveal";
 import { useI18n } from "../providers/I18nProvider";
 import { ContactForm } from "../components/ContactForm";
@@ -18,7 +19,7 @@ export function ContactSection() {
           </h2>
           <p className="contact-grid__lede">{t("home.contact.lead")}</p>
           <ContactDetails variant="compact" />
-          <Button as="a" href="/contact" variant="light" className="contact-section__more">
+          <Button as={Link} to="/contact" variant="light" className="contact-section__more">
             {t("page.contact.viewContactPage")}
           </Button>
         </div>

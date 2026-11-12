@@ -1,25 +1,27 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useI18n } from "../providers/I18nProvider";
 import { Button } from "../components/Button";
 import { useSiteSettings } from "../providers/SiteSettingsProvider";
 import { SITE_IMAGES } from "../lib/siteImagery";
 import { HERO_SLIDES } from "../lib/heroSlides";
+import { useHeroCarousel } from "../hooks/useHeroCarousel";
+import { SplitWords } from "../components/hero/SplitWords";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
-
-const AUTOPLAY_MS = 7000;
 
 export function HeroSection() {
   const { t } = useI18n();
   const { getSlot } = useSiteSettings() || {};
   const root = useRef(null);
-  const [index, setIndex] = useState(0);
-  const [paused, setPaused] = useState(false);
+  const copyRef = useRef(null);
+  const progressRef = useRef(null);
+  const slideImgRefs = useRef([]);
+  const autoplayTween = useRef(null);
+  const contentTween = useRef(null);
 
   const cmsBg = getSlot?.("hero.background");
   const cmsMain = getSlot?.("hero.main");
@@ -28,42 +30,114 @@ export function HeroSection() {
     ? [{ ...HERO_SLIDES[0], image: cmsBg?.url || cmsMain?.url || SITE_IMAGES.hero }]
     : HERO_SLIDES;
 
-  const len = slides.length;
+  const { index, go, goTo, autoplayActive, autoplayMs, reduceMotion, hoverPaused, setHoverPaused, bindTouch, len } =
+    useHeroCarousel(slides.length);
+
   const active = slides[Math.min(index, len - 1)];
-
-  const go = useCallback((delta) => setIndex((i) => (i + delta + len) % len), [len]);
-
-  useEffect(() => {
-    if (len <= 1 || paused) return undefined;
-    const id = window.setInterval(() => go(1), AUTOPLAY_MS);
-    return () => window.clearInterval(id);
-  }, [len, paused, go]);
+  const slideCounter = `${String(index + 1).padStart(2, "0")} / ${String(len).padStart(2, "0")}`;
 
   useEffect(() => {
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const sync = () => setPaused(mq.matches);
-    sync();
-    mq.addEventListener("change", sync);
-    return () => mq.removeEventListener("change", sync);
-  }, []);
+    return bindTouch(root.current);
+  }, [bindTouch]);
+
+  const runContentAnimation = useCallback(() => {
+    if (!copyRef.current) return;
+    if (reduceMotion) {
+      gsap.set(copyRef.current.querySelectorAll(".hero-word__inner, .hero-reveal"), {
+        yPercent: 0,
+        opacity: 1,
+        filter: "none",
+      });
+      return;
+    }
+    contentTween.current?.kill();
+    const targets = copyRef.current.querySelectorAll(".hero-word__inner, .hero-reveal");
+    if (!targets.length) return;
+
+    contentTween.current = gsap.fromTo(
+      targets,
+      { yPercent: 108, opacity: 0, filter: "blur(6px)" },
+      {
+        yPercent: 0,
+        opacity: 1,
+        filter: "blur(0px)",
+        duration: 0.85,
+        stagger: { each: 0.045, from: "start" },
+        ease: "power3.out",
+      }
+    );
+  }, [reduceMotion]);
+
+  const runSlideImageAnimation = useCallback(() => {
+    if (reduceMotion) return;
+    const img = slideImgRefs.current[index];
+    if (!img) return;
+    gsap.killTweensOf(img);
+    gsap.fromTo(
+      img,
+      { scale: 1.14, clipPath: "inset(12% 8% 0% 8% round 0.5rem)" },
+      { scale: 1.06, clipPath: "inset(0% 0% 0% 0% round 0)", duration: 1.35, ease: "power2.inOut" }
+    );
+  }, [index, reduceMotion]);
+
+  useLayoutEffect(() => {
+    slideImgRefs.current.forEach((img, i) => {
+      if (!img) return;
+      if (i === index) {
+        img.parentElement?.classList.add("is-active");
+        gsap.set(img, { opacity: 1 });
+      } else {
+        img.parentElement?.classList.remove("is-active");
+        gsap.set(img, { opacity: reduceMotion ? (i === index ? 1 : 0) : 0 });
+      }
+    });
+    runSlideImageAnimation();
+    runContentAnimation();
+  }, [index, reduceMotion, runContentAnimation, runSlideImageAnimation]);
+
+  useEffect(() => {
+    autoplayTween.current?.kill();
+    if (!progressRef.current) return undefined;
+
+    gsap.set(progressRef.current, { scaleX: 0, transformOrigin: "0% 50%" });
+
+    if (!autoplayActive) return undefined;
+
+    autoplayTween.current = gsap.to(progressRef.current, {
+      scaleX: 1,
+      duration: autoplayMs / 1000,
+      ease: "none",
+      onComplete: () => go(1),
+    });
+
+    return () => autoplayTween.current?.kill();
+  }, [index, autoplayActive, autoplayMs, go]);
+
+  useEffect(() => {
+    if (!autoplayTween.current) return;
+    if (hoverPaused) autoplayTween.current.pause();
+    else autoplayTween.current.resume();
+  }, [hoverPaused]);
 
   useGSAP(
     () => {
-      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       if (reduceMotion || !root.current) return;
-      const targets = root.current.querySelectorAll(".hero-banner__slide-media img");
-      if (!targets.length) return;
-      gsap.to(targets, {
-        yPercent: 8,
+      gsap.to(root.current.querySelectorAll(".hero-banner__slide.is-active .hero-banner__slide-img"), {
+        scale: 1.1,
         ease: "none",
-        scrollTrigger: { trigger: root.current, start: "top top", end: "bottom top", scrub: true },
+        scrollTrigger: {
+          trigger: root.current,
+          start: "top top",
+          end: "bottom top",
+          scrub: 0.6,
+        },
       });
     },
-    { scope: root, dependencies: [useCmsOnly] }
+    { scope: root, dependencies: [index, useCmsOnly, reduceMotion] }
   );
 
   const CtaButton = ({ href, variant, className, children }) => {
-    const internal = href.startsWith("/");
+    const internal = typeof href === "string" && href.startsWith("/");
     if (internal) {
       return (
         <Button as={Link} to={href} variant={variant} className={className}>
@@ -78,83 +152,120 @@ export function HeroSection() {
     );
   };
 
+  const bgPos =
+    useCmsOnly && cmsBg ? `${(cmsBg.focalX ?? 0.5) * 100}% ${(cmsBg.focalY ?? 0.5) * 100}%` : "center 42%";
+
   return (
     <section
-      className="hero-banner hero-banner--slider"
+      className={`hero-banner hero-banner--premium hero-banner--layout-${active.layout || "editorial"}`}
       ref={root}
       aria-labelledby="hero-title"
       aria-roledescription="carousel"
-      onMouseEnter={() => len > 1 && setPaused(true)}
-      onMouseLeave={() => len > 1 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches && setPaused(false)}
+      data-reduce-motion={reduceMotion ? "true" : "false"}
+      onMouseEnter={() => len > 1 && setHoverPaused(true)}
+      onMouseLeave={() => len > 1 && setHoverPaused(false)}
+      onFocusCapture={() => len > 1 && setHoverPaused(true)}
+      onBlurCapture={(e) => {
+        if (!root.current?.contains(e.relatedTarget)) setHoverPaused(false);
+      }}
     >
-      <div className="hero-banner__media" aria-hidden="true">
-        {slides.map((slide, i) => {
-          const isActive = i === index;
-          const bgPos =
-            useCmsOnly && cmsBg
-              ? `${(cmsBg.focalX ?? 0.5) * 100}% ${(cmsBg.focalY ?? 0.5) * 100}%`
-              : "center 40%";
-          return (
-            <div
-              key={slide.id}
-              className={`hero-banner__slide-media${isActive ? " is-active" : ""}`}
-              aria-hidden={!isActive}
-            >
-              <img src={slide.image} alt="" style={{ objectPosition: bgPos }} />
-            </div>
-          );
-        })}
-        <div className="hero-banner__overlay" />
+      <div className="hero-banner__progress-track" aria-hidden="true">
+        <span ref={progressRef} className="hero-banner__progress-fill" />
       </div>
 
-      <div className="shell hero-banner__inner">
-        <div className="hero-banner__copy">
-          <AnimatePresence mode="wait" initial={false}>
-            <motion.div
-              key={active.id}
-              initial={{ opacity: 0, y: 14 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <p className="hero-banner__eyebrow">{t(`home.hero.slides.${active.id}.label`)}</p>
-              <h1 id="hero-title" className="hero-banner__title">
-                {t(`home.hero.slides.${active.id}.title`)}
-              </h1>
-              <p className="hero-banner__lede">{t(`home.hero.slides.${active.id}.subtitle`)}</p>
-              <div className="hero-banner__cta-row">
-                <CtaButton href={active.primaryHref} className="btn--on-dark">
-                  {t(`home.hero.slides.${active.id}.primaryCta`)}
-                </CtaButton>
-                <CtaButton href={active.secondaryHref} variant="ghost" className="btn--ghost-on-dark">
-                  {t(`home.hero.slides.${active.id}.secondaryCta`)}
-                </CtaButton>
-              </div>
-            </motion.div>
-          </AnimatePresence>
+      <div className="hero-banner__media" aria-hidden="true">
+        {slides.map((slide, i) => (
+          <div
+            key={slide.id}
+            className={`hero-banner__slide${i === index ? " is-active" : ""}`}
+            data-slide-index={i}
+          >
+            <img
+              ref={(el) => {
+                slideImgRefs.current[i] = el;
+              }}
+              className="hero-banner__slide-img"
+              src={slide.image}
+              alt=""
+              style={{ objectPosition: bgPos }}
+              loading={i === 0 ? "eager" : "lazy"}
+              decoding="async"
+            />
+          </div>
+        ))}
+        <div className="hero-banner__overlay" />
+        <div className="hero-banner__vignette" aria-hidden="true" />
+      </div>
+
+      <div className="shell hero-banner__stage">
+        <div className="hero-banner__grid">
+          <div className="hero-banner__copy hero-banner__copy--premium" ref={copyRef}>
+            <p className="hero-banner__eyebrow hero-reveal">
+              <span className="hero-banner__eyebrow-line" aria-hidden="true" />
+              {t(`home.hero.slides.${active.id}.label`)}
+            </p>
+
+            <SplitWords
+              as="h1"
+              id="hero-title"
+              className="hero-banner__title"
+              text={t(`home.hero.slides.${active.id}.title`)}
+            />
+
+            <p className="hero-banner__lede hero-reveal">{t(`home.hero.slides.${active.id}.subtitle`)}</p>
+
+            <div className="hero-banner__cta-row hero-reveal">
+              <CtaButton href={active.primaryHref} className="btn--on-dark hero-cta-primary">
+                {t(`home.hero.slides.${active.id}.primaryCta`)}
+              </CtaButton>
+              <CtaButton href={active.secondaryHref} variant="ghost" className="btn--ghost-on-dark hero-cta-secondary">
+                {t(`home.hero.slides.${active.id}.secondaryCta`)}
+              </CtaButton>
+            </div>
+          </div>
 
           {len > 1 ? (
-            <div className="hero-banner__slider-ui" aria-label={t("home.hero.slider.controlsAria")}>
-              <button type="button" className="hero-banner__slider-btn" onClick={() => go(-1)} aria-label={t("home.hero.slider.prevAria")}>
-                <span aria-hidden="true">‹</span>
-              </button>
-              <div className="hero-banner__dots" role="tablist">
-                {slides.map((slide, i) => (
-                  <button
-                    key={slide.id}
-                    type="button"
-                    role="tab"
-                    aria-selected={i === index}
-                    aria-label={t("home.hero.slider.goToSlide", { n: String(i + 1) })}
-                    className={`hero-banner__dot${i === index ? " is-active" : ""}`}
-                    onClick={() => setIndex(i)}
-                  />
-                ))}
+            <aside className="hero-banner__controls" aria-label={t("home.hero.slider.controlsAria")}>
+              <p className="hero-banner__counter" aria-live="polite">
+                <span className="hero-banner__counter-label">{t("home.hero.slider.slideLabel")}</span>
+                <span className="hero-banner__counter-value">{slideCounter}</span>
+              </p>
+
+              <div className="hero-banner__nav-row">
+                <button
+                  type="button"
+                  className="hero-banner__nav-btn"
+                  onClick={() => go(-1)}
+                  aria-label={t("home.hero.slider.prevAria")}
+                >
+                  <span aria-hidden="true">←</span>
+                </button>
+                <button
+                  type="button"
+                  className="hero-banner__nav-btn"
+                  onClick={() => go(1)}
+                  aria-label={t("home.hero.slider.nextAria")}
+                >
+                  <span aria-hidden="true">→</span>
+                </button>
               </div>
-              <button type="button" className="hero-banner__slider-btn" onClick={() => go(1)} aria-label={t("home.hero.slider.nextAria")}>
-                <span aria-hidden="true">›</span>
-              </button>
-            </div>
+
+              <ul className="hero-banner__thumbs" role="tablist" aria-label={t("home.hero.slider.thumbsAria")}>
+                {slides.map((slide, i) => (
+                  <li key={slide.id}>
+                    <button
+                      type="button"
+                      role="tab"
+                      className={`hero-banner__thumb${i === index ? " is-active" : ""}`}
+                      aria-selected={i === index}
+                      aria-label={t("home.hero.slider.goToSlide", { n: String(i + 1) })}
+                      onClick={() => goTo(i)}
+                      style={{ backgroundImage: `url(${slide.image})` }}
+                    />
+                  </li>
+                ))}
+              </ul>
+            </aside>
           ) : null}
         </div>
       </div>

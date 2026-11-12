@@ -39,7 +39,8 @@
       "nikkah": "Nikkah services",
       "education": "Education & Dar ul Uloom",
       "mehfilNav": "Monthly Mehfil",
-      "spiritualAll": "All Islamic services"
+      "spiritualAll": "All Islamic services",
+      "all": "All services"
     },
     "drawer": {
       "homeopathy": "Homeopathic services",
@@ -164,7 +165,9 @@
         "controlsAria": "Hero slides",
         "prevAria": "Previous slide",
         "nextAria": "Next slide",
-        "goToSlide": "Go to slide {n}"
+        "goToSlide": "Go to slide {n}",
+        "slideLabel": "Slide",
+        "thumbsAria": "Slide thumbnails"
       },
       "slides": {
         "professor": {
@@ -531,9 +534,15 @@
       "detail": {
         "kicker": "Homeopathic service",
         "overviewHeading": "Overview",
-        "approachHeading": "Treatment approach",
+        "approachHeading": "What to expect",
         "consultHeading": "Book a consultation",
-        "relatedHeading": "Related services"
+        "relatedHeading": "Related services",
+        "whoBenefitsHeading": "Who may benefit",
+        "benefitsHeading": "Key information",
+        "faqLabel": "Questions",
+        "faqHeading": "Service FAQs",
+        "finalCtaTitle": "Ready to book?",
+        "finalCtaLede": "Evening appointments at Surjani Town — call or message during clinic hours."
       },
       "items": {
         "kidney-problems": {
@@ -544,7 +553,23 @@
           "imageAlt": "Kidney problems — consultation at Noori Roohani Homeo Clinic",
           "overview": "Homeopathic case-taking for kidney-related complaints. We discuss your symptoms, history, and reports you bring to the clinic.",
           "approach": "Consultations are private. Remedy selection follows classical homeopathy with follow-up visits when needed.",
-          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM."
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for kidney problems. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "faq": {
+            "one": {
+              "q": "How do I request kidney problems?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
         },
         "hair-problems": {
           "title": "Hair problems",
@@ -554,7 +579,23 @@
           "imageAlt": "Hair problems — consultation at Noori Roohani Homeo Clinic",
           "overview": "Hair fall, thinning, dryness, and related scalp issues discussed in a structured consultation.",
           "approach": "We note pattern, duration, and triggers before suggesting homeopathic support alongside lifestyle advice where helpful.",
-          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM."
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for hair problems. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "faq": {
+            "one": {
+              "q": "How do I request hair problems?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
         },
         "male-female-infertility": {
           "title": "Infertility (male & female)",
@@ -564,7 +605,23 @@
           "imageAlt": "Infertility (male & female) — consultation at Noori Roohani Homeo Clinic",
           "overview": "Male and female infertility concerns are handled with discretion. Couples may attend together when comfortable.",
           "approach": "We review medical history and prior tests you share. Treatment plans are adjusted at follow-up — no guaranteed outcomes.",
-          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM."
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for infertility (male & female). Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "faq": {
+            "one": {
+              "q": "How do I request infertility (male & female)?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
         },
         "sexual-health": {
           "title": "Sexual health concerns",
@@ -574,7 +631,23 @@
           "imageAlt": "Sexual health concerns — consultation at Noori Roohani Homeo Clinic",
           "overview": "Sensitive sexual health matters for men and women. Sessions are confidential and conducted with adab.",
           "approach": "Often linked with stress or general health — we take a whole-person history before any remedy plan.",
-          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM."
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for sexual health concerns. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "faq": {
+            "one": {
+              "q": "How do I request sexual health concerns?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
         },
         "psychological-mental-health": {
           "title": "Psychological issues",
@@ -584,7 +657,23 @@
           "imageAlt": "Psychological issues — consultation at Noori Roohani Homeo Clinic",
           "overview": "Psychological and emotional difficulties such as anxiety, low mood, stress, or sleep disturbance.",
           "approach": "Homeopathic support complements — not replaces — urgent psychiatric care. Seek emergency help when needed.",
-          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM."
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for psychological issues. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "faq": {
+            "one": {
+              "q": "How do I request psychological issues?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
         },
         "digestive-problems": {
           "title": "Digestive problems",
@@ -594,7 +683,23 @@
           "imageAlt": "Digestive problems — consultation at Noori Roohani Homeo Clinic",
           "overview": "Stomach pain, acidity, bloating, irregular appetite, and other digestive complaints.",
           "approach": "Diet and routine are reviewed along with symptoms. Follow-up helps track response over time.",
-          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM."
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for digestive problems. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "faq": {
+            "one": {
+              "q": "How do I request digestive problems?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
         },
         "joint-muscular-problems": {
           "title": "Joint & muscular complaints",
@@ -604,7 +709,23 @@
           "imageAlt": "Joint & muscular complaints — consultation at Noori Roohani Homeo Clinic",
           "overview": "Joint stiffness, muscular aches, and mobility-related complaints.",
           "approach": "We document pain pattern, aggravations, and relief factors typical of homeopathic case-taking.",
-          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM."
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for joint & muscular complaints. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "faq": {
+            "one": {
+              "q": "How do I request joint & muscular complaints?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
         },
         "womens-health": {
           "title": "Women's health",
@@ -614,7 +735,23 @@
           "imageAlt": "Women's health — consultation at Noori Roohani Homeo Clinic",
           "overview": "Women's health issues across age groups — cycles, hormones, and general wellbeing.",
           "approach": "Private consultations for female patients. Bring any recent lab reports if available.",
-          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM."
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for women's health. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "faq": {
+            "one": {
+              "q": "How do I request women's health?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
         },
         "childrens-health": {
           "title": "Children's health",
@@ -624,7 +761,23 @@
           "imageAlt": "Children's health — consultation at Noori Roohani Homeo Clinic",
           "overview": "Children's acute and recurring complaints suitable for homeopathic assessment.",
           "approach": "Parents attend with the child. We explain remedies and follow-up clearly before you leave.",
-          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM."
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for children's health. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "faq": {
+            "one": {
+              "q": "How do I request children's health?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
         },
         "mens-health": {
           "title": "Men's health",
@@ -634,7 +787,23 @@
           "imageAlt": "Men's health — consultation at Noori Roohani Homeo Clinic",
           "overview": "Men's health including vitality, prostate-related symptoms, and general preventive care.",
           "approach": "Evening appointments at the clinic. Referral to hospital care when symptoms need urgent attention.",
-          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM."
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for men's health. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "faq": {
+            "one": {
+              "q": "How do I request men's health?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
         },
         "skin-scalp-concerns": {
           "title": "Skin disorders & scalp concerns",
@@ -644,7 +813,23 @@
           "imageAlt": "Skin disorders & scalp concerns — consultation at Noori Roohani Homeo Clinic",
           "overview": "Support for skin disorders and scalp concerns such as itching, rash, dryness, or recurring irritation.",
           "approach": "Skin and scalp cases need careful history. We avoid online diagnosis — visit or call during clinic hours.",
-          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM."
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for skin disorders & scalp concerns. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "faq": {
+            "one": {
+              "q": "How do I request skin disorders & scalp concerns?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
         }
       }
     },
@@ -668,7 +853,13 @@
         "whatHeading": "What to expect",
         "contactHeading": "Contact & next steps",
         "contactCta": "Contact clinic",
-        "relatedHeading": "Related services"
+        "relatedHeading": "Related services",
+        "whoBenefitsHeading": "Who may benefit",
+        "benefitsHeading": "Key information",
+        "faqLabel": "Questions",
+        "faqHeading": "Service FAQs",
+        "finalCtaTitle": "Speak with the clinic",
+        "finalCtaLede": "Confirm timing and adab for this service before you visit."
       },
       "items": {
         "rohani-ilaj": {
@@ -679,7 +870,23 @@
           "imageAlt": "Rohani Ilaj — Noori Roohani Homeo Clinic",
           "overview": "Our clinic provides rohani ilaj as part of Rohani and community services listed on the official schedule.",
           "whatToExpect": "Call ahead to confirm timing, requirements, and whether an appointment is needed.",
-          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours."
+          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours.",
+          "whoBenefits": "Individuals seeking confidential Rohani guidance with adab — including concerns about nazar, jadu, or household unrest.",
+          "benefits": "Handled with privacy and adab; clear next steps after you contact the clinic; no sensational claims online.",
+          "faq": {
+            "one": {
+              "q": "How do I request rohani ilaj?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
         },
         "istikhara": {
           "title": "Istakhara",
@@ -689,7 +896,23 @@
           "imageAlt": "Istakhara — Noori Roohani Homeo Clinic",
           "overview": "Our clinic provides istakhara as part of Rohani and community services listed on the official schedule.",
           "whatToExpect": "Call ahead to confirm timing, requirements, and whether an appointment is needed.",
-          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours."
+          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours.",
+          "whoBenefits": "Those who need istakhara through the clinic's Islamic and community services.",
+          "benefits": "Handled with privacy and adab; clear next steps after you contact the clinic; no sensational claims online.",
+          "faq": {
+            "one": {
+              "q": "How do I request istakhara?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
         },
         "quran-teaching": {
           "title": "Quran teaching",
@@ -699,7 +922,23 @@
           "imageAlt": "Quran teaching — Noori Roohani Homeo Clinic",
           "overview": "Our clinic provides quran teaching as part of Rohani and community services listed on the official schedule.",
           "whatToExpect": "Call ahead to confirm timing, requirements, and whether an appointment is needed.",
-          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours."
+          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours.",
+          "whoBenefits": "Those who need quran teaching through the clinic's Islamic and community services.",
+          "benefits": "Handled with privacy and adab; clear next steps after you contact the clinic; no sensational claims online.",
+          "faq": {
+            "one": {
+              "q": "How do I request quran teaching?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
         },
         "madarsa": {
           "title": "Madarsa",
@@ -709,7 +948,23 @@
           "imageAlt": "Madarsa — Noori Roohani Homeo Clinic",
           "overview": "Our clinic provides madarsa as part of Rohani and community services listed on the official schedule.",
           "whatToExpect": "Call ahead to confirm timing, requirements, and whether an appointment is needed.",
-          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours."
+          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours.",
+          "whoBenefits": "Those who need madarsa through the clinic's Islamic and community services.",
+          "benefits": "Handled with privacy and adab; clear next steps after you contact the clinic; no sensational claims online.",
+          "faq": {
+            "one": {
+              "q": "How do I request madarsa?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
         },
         "nikah-khawan": {
           "title": "Nikah Khawan (Nikkah services)",
@@ -719,7 +974,23 @@
           "imageAlt": "Nikah Khawan (Nikkah services) — Noori Roohani Homeo Clinic",
           "overview": "Our clinic provides nikah khawan (nikkah services) as part of Rohani and community services listed on the official schedule.",
           "whatToExpect": "Call ahead to confirm timing, requirements, and whether an appointment is needed.",
-          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours."
+          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours.",
+          "whoBenefits": "Those who need nikah khawan (nikkah services) through the clinic's Islamic and community services.",
+          "benefits": "Handled with privacy and adab; clear next steps after you contact the clinic; no sensational claims online.",
+          "faq": {
+            "one": {
+              "q": "How do I request nikah khawan (nikkah services)?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
         },
         "free-schooling-education": {
           "title": "Free schooling / education",
@@ -729,7 +1000,23 @@
           "imageAlt": "Free schooling / education — Noori Roohani Homeo Clinic",
           "overview": "Our clinic provides free schooling / education as part of Rohani and community services listed on the official schedule.",
           "whatToExpect": "Call ahead to confirm timing, requirements, and whether an appointment is needed.",
-          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours."
+          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours.",
+          "whoBenefits": "Those who need free schooling / education through the clinic's Islamic and community services.",
+          "benefits": "Handled with privacy and adab; clear next steps after you contact the clinic; no sensational claims online.",
+          "faq": {
+            "one": {
+              "q": "How do I request free schooling / education?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
         },
         "nazim-e-ala-ulama-mashaikh": {
           "title": "Nazim-e-Aala Ulama & Mashaikh",
@@ -739,7 +1026,23 @@
           "imageAlt": "Nazim-e-Aala Ulama & Mashaikh — Noori Roohani Homeo Clinic",
           "overview": "Our clinic provides nazim-e-aala ulama & mashaikh as part of Rohani and community services listed on the official schedule.",
           "whatToExpect": "Call ahead to confirm timing, requirements, and whether an appointment is needed.",
-          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours."
+          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours.",
+          "whoBenefits": "Those who need nazim-e-aala ulama & mashaikh through the clinic's Islamic and community services.",
+          "benefits": "Handled with privacy and adab; clear next steps after you contact the clinic; no sensational claims online.",
+          "faq": {
+            "one": {
+              "q": "How do I request nazim-e-aala ulama & mashaikh?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
         },
         "international-research-center": {
           "title": "International Research Council",
@@ -749,7 +1052,23 @@
           "imageAlt": "International Research Council — Noori Roohani Homeo Clinic",
           "overview": "Our clinic provides international research council as part of Rohani and community services listed on the official schedule.",
           "whatToExpect": "Call ahead to confirm timing, requirements, and whether an appointment is needed.",
-          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours."
+          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours.",
+          "whoBenefits": "Those who need international research council through the clinic's Islamic and community services.",
+          "benefits": "Handled with privacy and adab; clear next steps after you contact the clinic; no sensational claims online.",
+          "faq": {
+            "one": {
+              "q": "How do I request international research council?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
         }
       }
     },
@@ -863,6 +1182,106 @@
       "participateHeading": "Participate",
       "participateText": "[PLACEHOLDER] RSVP or contact instructions.",
       "cta": "Contact about Mehfil"
+    },
+    "services": {
+      "index": {
+        "documentTitle": "Clinic services | Noori Roohani Homeo Clinic",
+        "metaDescription": "Homeopathic consultations, Rohani ilaj, Quran teaching, herbal products, and community programmes in Surjani Town, Karachi.",
+        "breadcrumbCurrent": "Services",
+        "kicker": "Our services",
+        "title": "Complete clinic services",
+        "lead": "Homeopathy, Islamic support, herbal products, and community programmes — each with its own page and clear contact path.",
+        "heroSecondary": "Homeopathic services",
+        "viewAll": "View all services",
+        "backToAll": "← All services",
+        "backToCategory": "← Back to {category}",
+        "intro": {
+          "label": "At the clinic",
+          "title": "Care across body, spirit, and community",
+          "lede": "Noori Roohani Homeo Clinic combines evening homeopathic consultations with Rohani ilaj and education listed on the official schedule.",
+          "body": "Browse by category below or open any service for overview, who it may help, what to expect, and how to book. General information only — not medical advice online.",
+          "imageAlt": "Clinic consultation room"
+        },
+        "hubs": {
+          "label": "Categories",
+          "title": "Start by service type",
+          "lede": "Four main areas — each hub links to detailed pages."
+        },
+        "catalog": {
+          "label": "Full list",
+          "title": "All consultation & community services",
+          "lede": "19 dedicated pages for homeopathic and Islamic services at this clinic."
+        },
+        "why": {
+          "label": "Why families choose us",
+          "title": "Professional, private, and local",
+          "lede": "Verified clinic details — no invented statistics.",
+          "items": {
+            "one": {
+              "title": "Evening appointments",
+              "text": "Sunday–Thursday, 7:00–9:00 PM at Surjani Town — easy for working families."
+            },
+            "two": {
+              "title": "Clear contact",
+              "text": "Phone 0314-1000717, WhatsApp, and nooriroohaniclinic@gmail.com."
+            },
+            "three": {
+              "title": "Adab in spiritual care",
+              "text": "Rohani and Islamic services handled with privacy — no sensational claims."
+            },
+            "four": {
+              "title": "Follow-up care",
+              "text": "Homeopathic cases include follow-up visits when your doctor advises."
+            }
+          }
+        },
+        "process": {
+          "label": "Your visit",
+          "title": "A simple, reassuring process",
+          "steps": {
+            "one": {
+              "title": "Contact or arrive",
+              "text": "Call, WhatsApp, or use the contact form during clinic hours."
+            },
+            "two": {
+              "title": "Consultation",
+              "text": "Share history and concerns in a private setting with the clinic team."
+            },
+            "three": {
+              "title": "Next steps",
+              "text": "Remedy plan, spiritual guidance, or product advice — with follow-up when needed."
+            }
+          }
+        },
+        "faq": {
+          "label": "FAQ",
+          "title": "Common questions",
+          "one": {
+            "q": "Where is the clinic?",
+            "a": "Plot No. CI-05, Moon Arcade, Sector L-1, Near Makkah Hotel, Surjani Town, Karachi."
+          },
+          "two": {
+            "q": "What are clinic hours?",
+            "a": "Sunday–Thursday, 7:00–9:00 PM. Friday and Saturday closed."
+          },
+          "three": {
+            "q": "How do I book?",
+            "a": "Use the contact page, call 0314-1000717, or WhatsApp during open hours."
+          },
+          "four": {
+            "q": "Are products sold online?",
+            "a": "Herbal products are listed for information — confirm price and stock by phone or at the clinic."
+          },
+          "five": {
+            "q": "Is emergency care available here?",
+            "a": "This is an evening clinic. Use hospital emergency services for urgent medical emergencies."
+          }
+        },
+        "cta": {
+          "title": "Book your consultation",
+          "lede": "We respond during published hours. Bring any reports you already have."
+        }
+      }
     }
   }
 }

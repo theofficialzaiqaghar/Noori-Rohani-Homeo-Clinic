@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useReveal } from "../hooks/useReveal";
 import { useI18n } from "../providers/I18nProvider";
 import { Button } from "../components/Button";
@@ -32,7 +33,7 @@ export function RohaniSection() {
               </li>
             ))}
           </ul>
-          <Button as="a" href="#contact" variant="light" data-reveal-item>
+          <Button as={Link} to="/contact" variant="light" data-reveal-item>
             {t("home.rohani.cta")}
           </Button>
         </div>

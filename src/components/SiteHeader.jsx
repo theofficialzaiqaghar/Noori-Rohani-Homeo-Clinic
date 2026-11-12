@@ -9,6 +9,7 @@ import { CLINIC_PHONE_DISPLAY, CLINIC_PHONE_E164, CLINIC_WHATSAPP } from "../lib
 import { BRAND_LOGO_SRC } from "../lib/brandAssets";
 
 const SERVICE_LINKS = [
+  { href: "/services", key: "nav.servicesMenu.all", route: true },
   { href: "/services/spiritual/rohani-ilaj", key: "nav.servicesMenu.rohani", route: true },
   { href: "/services/homeopathy", key: "nav.servicesMenu.homeo", route: true },
   { href: "/products", key: "nav.servicesMenu.herbal", route: true },
@@ -219,6 +220,9 @@ export function SiteHeader({ overlay = false, className = "" }) {
               <nav className="drawer__nav">
                 <Link to="/about" onClick={() => setOpen(false)}>
                   {t("nav.about")}
+                </Link>
+                <Link to="/services" onClick={() => setOpen(false)}>
+                  {t("nav.servicesMenu.all")}
                 </Link>
                 <Link to="/services/homeopathy" onClick={() => setOpen(false)}>
                   {t("nav.drawer.homeopathy")}

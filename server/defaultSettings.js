@@ -21,8 +21,8 @@ export const DEFAULT_SETTINGS = {
     letterSpacingBody: "0",
   },
   footer: {
-    socialFacebook: "https://facebook.com/",
-    socialYoutube: "https://youtube.com/",
+    socialFacebook: "https://www.facebook.com/share/1CKiMegiXf/",
+    socialYoutube: "https://www.youtube.com/@nooriroohaniclinic",
     socialInstagram: "https://instagram.com/",
     socialWhatsapp: "https://wa.me/923141000717",
   },

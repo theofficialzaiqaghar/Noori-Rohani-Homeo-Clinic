@@ -5,7 +5,7 @@
 ## Business
 
 - Name: Noori Roohani Homeo Clinic
-- Website: https://www.example.com/ (set your live domain in deployment)
+- Website: https://nooriroohanihomeoclinic.com/
 - Address: Plot No. CI-05, Moon Arcade, Flat, Sector L-1, Near Makkah Hotel, Surjani Town, Karachi, Pakistan
 - Phone: 0314-1000717
 - Email: nooriroohaniclinic@gmail.com
@@ -13,22 +13,15 @@
 
 ## Main pages
 
-- Home: https://www.example.com/
-- About: https://www.example.com/about
-- Contact & appointments: https://www.example.com/contact
-- Homeopathic services hub: https://www.example.com/services/homeopathy
-- Islamic & spiritual services hub: https://www.example.com/services/spiritual
-- Herbal products catalogue: https://www.example.com/products
-- Monthly Mehfil: https://www.example.com/events/mehfil
-
-## Service detail routes
-
-Each item under `/services/homeopathy/{slug}` and `/services/spiritual/{slug}` has its own page (see sitemap.xml for the full list).
-
-## Product detail routes
-
-Each product under `/products/{slug}` has its own page (see sitemap.xml).
+- Home: https://nooriroohanihomeoclinic.com/
+- About: https://nooriroohanihomeoclinic.com/about
+- Contact: https://nooriroohanihomeoclinic.com/contact
+- All services: https://nooriroohanihomeoclinic.com/services
+- Homeopathic services: https://nooriroohanihomeoclinic.com/services/homeopathy
+- Islamic & spiritual services: https://nooriroohanihomeoclinic.com/services/spiritual
+- Products: https://nooriroohanihomeoclinic.com/products
+- Monthly Mehfil: https://nooriroohanihomeoclinic.com/events/mehfil
 
 ## Note
 
-This file summarizes public information from the website. It does not guarantee indexing or AI assistant visibility.
+See https://nooriroohanihomeoclinic.com/sitemap.xml for all public routes.

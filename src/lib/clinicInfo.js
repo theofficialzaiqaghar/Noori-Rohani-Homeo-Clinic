@@ -1,6 +1,9 @@
 /** Official clinic details — single source of truth for UI, i18n sync, SEO, and scripts. */
 export const CLINIC_NAME = "Noori Roohani Homeo Clinic";
 
+/** Canonical public site URL (no trailing slash). Override at build with VITE_SITE_URL. */
+export const SITE_URL = "https://nooriroohanihomeoclinic.com";
+
 export const CLINIC_ADDRESS_EN =
   "Plot No. CI-05, Moon Arcade, Flat, Sector L-1, Near Makkah Hotel, Surjani Town, Karachi, Pakistan.";
 
@@ -32,3 +35,6 @@ export const CLINIC_MAP_QUERY =
   "Plot CI-05 Moon Arcade Sector L-1 Surjani Town Karachi Near Makkah Hotel";
 
 export const CLINIC_MAP_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(CLINIC_MAP_QUERY)}`;
+
+export const CLINIC_SOCIAL_FACEBOOK = "https://www.facebook.com/share/1CKiMegiXf/";
+export const CLINIC_SOCIAL_YOUTUBE = "https://www.youtube.com/@nooriroohaniclinic";

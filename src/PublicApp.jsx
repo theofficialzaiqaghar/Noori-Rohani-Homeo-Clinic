@@ -10,7 +10,6 @@ import { MehfilPreviewSection } from "./sections/MehfilPreviewSection";
 import { EducationSection } from "./sections/EducationSection";
 import { WhySection } from "./sections/WhySection";
 import { ProcessSection } from "./sections/ProcessSection";
-import { TestimonialsSection } from "./sections/TestimonialsSection";
 import { FAQSection } from "./sections/FAQSection";
 import { ContactSection } from "./sections/ContactSection";
 import { useI18n } from "./providers/I18nProvider";
@@ -45,7 +44,6 @@ export default function PublicApp() {
         <EducationSection />
         <WhySection />
         <ProcessSection />
-        <TestimonialsSection />
         <FAQSection />
         <ContactSection />
       </main>

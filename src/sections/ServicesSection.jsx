@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useReveal } from "../hooks/useReveal";
 import { useI18n } from "../providers/I18nProvider";
 import { Icon } from "../components/Icon";
+import { Button } from "../components/Button";
 import { SERVICE_ITEMS } from "../lib/serviceItems";
 
 function ServiceCardLink({ href, className, children, ...rest }) {
@@ -54,6 +55,11 @@ export function ServicesSection() {
             </ServiceCardLink>
           ))}
         </div>
+        <p className="services-section__all" data-reveal-item>
+          <Button as={Link} to="/services" variant="ghost">
+            {t("pages.services.index.viewAll")}
+          </Button>
+        </p>
       </div>
     </section>
   );

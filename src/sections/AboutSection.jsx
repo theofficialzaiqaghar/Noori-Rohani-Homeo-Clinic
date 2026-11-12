@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useReveal } from "../hooks/useReveal";
 import { useI18n } from "../providers/I18nProvider";
 import { Button } from "../components/Button";
@@ -25,7 +26,7 @@ export function AboutSection() {
           <p className="split-section__lede" data-reveal-item>
             {t("home.aboutClinic.text")}
           </p>
-          <Button as="a" href="#contact" data-reveal-item>
+          <Button as={Link} to="/contact" data-reveal-item>
             {t("btn.bookAppointment")}
           </Button>
         </div>

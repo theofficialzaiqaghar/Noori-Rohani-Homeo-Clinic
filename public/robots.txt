@@ -4,4 +4,4 @@ Allow: /assets/
 Disallow: /admin
 Disallow: /api/
 
-Sitemap: https://www.example.com/sitemap.xml
+Sitemap: https://nooriroohanihomeoclinic.com/sitemap.xml

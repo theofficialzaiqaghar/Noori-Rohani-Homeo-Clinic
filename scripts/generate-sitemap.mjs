@@ -1,10 +1,11 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { SITE_URL as DEFAULT_SITE_URL } from "../src/lib/clinicInfo.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
-const SITE_URL = (process.env.VITE_SITE_URL || "https://www.example.com").replace(/\/$/, "");
+const SITE_URL = (process.env.VITE_SITE_URL || DEFAULT_SITE_URL).replace(/\/$/, "");
 
 const HOMEOPATHY = [
   "kidney-problems",
@@ -45,6 +46,7 @@ const PATHS = [
   "/",
   "/about",
   "/contact",
+  "/services",
   "/services/homeopathy",
   ...HOMEOPATHY.map((s) => `/services/homeopathy/${s}`),
   "/services/spiritual",
@@ -77,4 +79,9 @@ ${body}
 `;
 
 writeFileSync(join(root, "public", "sitemap.xml"), xml);
-console.log(`sitemap.xml — ${PATHS.length} URLs`);
+try {
+  writeFileSync(join(root, "sitemap.xml"), xml);
+} catch {
+  /* optional root copy */
+}
+console.log(`sitemap.xml — ${PATHS.length} URLs → ${SITE_URL}`);

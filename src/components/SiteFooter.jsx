@@ -10,6 +10,8 @@ import {
   CLINIC_PHONE_DISPLAY,
   CLINIC_PHONE_E164,
   CLINIC_WHATSAPP,
+  CLINIC_SOCIAL_FACEBOOK,
+  CLINIC_SOCIAL_YOUTUBE,
 } from "../lib/clinicInfo";
 import { BRAND_LOGO_SRC } from "../lib/brandAssets";
 import { useSiteSettings } from "../providers/SiteSettingsProvider";
@@ -86,12 +88,20 @@ export function SiteFooter() {
           <p>{t("footer.about.line2")}</p>
           <ul className="footer-social" aria-label={t("footer.social.label")}>
             <li>
-              <a href={social.socialFacebook || "https://facebook.com/"} rel="noopener noreferrer" aria-label={t("footer.social.facebook")}>
+              <a
+                href={social.socialFacebook || CLINIC_SOCIAL_FACEBOOK}
+                rel="noopener noreferrer"
+                aria-label={t("footer.social.facebook")}
+              >
                 <Icon name="icon-facebook" />
               </a>
             </li>
             <li>
-              <a href={social.socialYoutube || "https://youtube.com/"} rel="noopener noreferrer" aria-label={t("footer.social.youtube")}>
+              <a
+                href={social.socialYoutube || CLINIC_SOCIAL_YOUTUBE}
+                rel="noopener noreferrer"
+                aria-label={t("footer.social.youtube")}
+              >
                 <Icon name="icon-youtube" />
               </a>
             </li>
@@ -112,6 +122,7 @@ export function SiteFooter() {
           <h3>{t("footer.quickLinks.title")}</h3>
           <Link to="/">{t("nav.home")}</Link>
           <Link to="/about">{t("nav.about")}</Link>
+          <Link to="/services">{t("nav.servicesMenu.all")}</Link>
           <Link to="/services/homeopathy">{t("footer.quickLinks.homeopathy")}</Link>
           <Link to="/services/spiritual">{t("footer.quickLinks.spiritual")}</Link>
           <Link to="/products">{t("nav.products")}</Link>
@@ -163,8 +174,8 @@ export function SiteFooter() {
         <div className="shell footer-bar">
           <p>{t("footer.legal.copyright").replace("{year}", String(year))}</p>
           <nav aria-label={t("footer.nav.legal")}>
-            <a href="/contact">{t("footer.legal.privacy")}</a>
-            <a href="/contact">{t("footer.legal.terms")}</a>
+            <Link to="/contact">{t("footer.legal.privacy")}</Link>
+            <Link to="/contact">{t("footer.legal.terms")}</Link>
           </nav>
         </div>
         <p className="shell footer-disclaimer">{t("footer.disclaimer")}</p>

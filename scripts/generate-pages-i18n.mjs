@@ -141,6 +141,40 @@ function deepMerge(target, source) {
   return target;
 }
 
+function faqBlockEn(topic) {
+  return {
+    one: {
+      q: `How do I request ${topic}?`,
+      a: "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM.",
+    },
+    two: {
+      q: "Is this medical advice on the website?",
+      a: "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact.",
+    },
+    three: {
+      q: "What should I bring to a visit?",
+      a: "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours.",
+    },
+  };
+}
+
+function faqBlockUr(topic) {
+  return {
+    one: {
+      q: `${topic} کے لیے رابطہ کیسے کریں؟`,
+      a: "0314-1000717، واٹس ایپ، یا رابطہ صفحہ۔ کلینک: اتوار–جمعرات شام 7–9 بجے۔",
+    },
+    two: {
+      q: "کیا ویب سائٹ طبی مشورہ ہے؟",
+      a: "نہیں — عام معلومات ہیں۔ معائنہ کلینک میں یا طے شدہ رابطے پر ہوتا ہے۔",
+    },
+    three: {
+      q: "وزٹ پر کیا لائیں؟",
+      a: "حالیہ رپورٹیں، ادویات کی فہرست، اور کلینک کے اوقات میں آئیں۔",
+    },
+  };
+}
+
 function homeoItem(slug, enTitle, urTitle) {
   const extra = HOMEOPATHY_DETAIL[slug] || {};
   const consultEn =
@@ -155,7 +189,11 @@ function homeoItem(slug, enTitle, urTitle) {
       imageAlt: `${enTitle} — consultation at Noori Roohani Homeo Clinic`,
       overview: extra.overview || `Consultation for ${enTitle.toLowerCase()} at the clinic.`,
       approach: extra.approach || "History-led homeopathic care with follow-up when needed.",
+      whoBenefits: `Adults and families seeking a private homeopathic consultation for ${enTitle.toLowerCase()}. Suitable when you want case-based care — not emergency treatment.`,
+      benefits:
+        "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
       consult: consultEn,
+      faq: faqBlockEn(enTitle.toLowerCase()),
     },
     ur: {
       title: urTitle,
@@ -165,12 +203,23 @@ function homeoItem(slug, enTitle, urTitle) {
       imageAlt: `${urTitle} — نوری روحانی ہومیو کلینک`,
       overview: extra.overview || `${urTitle} کے لیے کلینک میں مشاورت۔`,
       approach: extra.approach || "تاریخ اور فالو اپ کے ساتھ ہومیوopathic دیکھ بھال۔",
+      whoBenefits: `${urTitle} کے لیے نجی ہومیوopathic مشاورت چاہنے والے مریض اور خاندان۔`,
+      benefits: "سرجانی ٹاؤن پر نجی مشاورت؛ تاریخ پر مبنی علاج؛ فالو اپ۔",
       consult: consultUr,
+      faq: faqBlockUr(urTitle),
     },
   };
 }
 
-function spiritualItem(enTitle, urTitle) {
+function spiritualItem(slug, enTitle, urTitle) {
+  const whoEn =
+    slug === "rohani-ilaj"
+      ? "Individuals seeking confidential Rohani guidance with adab — including concerns about nazar, jadu, or household unrest."
+      : `Those who need ${enTitle.toLowerCase()} through the clinic's Islamic and community services.`;
+  const whoUr =
+    slug === "rohani-ilaj"
+      ? "روحانی رہنمائی چاہنے والے — ناز، جادو، یا گھریلو پریشانی — ادب کے ساتھ۔"
+      : `${urTitle} کے لیے کلینک کی اسلامی و کمیونٹی خدمات چاہنے والے۔`;
   return {
     en: {
       title: enTitle,
@@ -180,7 +229,10 @@ function spiritualItem(enTitle, urTitle) {
       imageAlt: `${enTitle} — Noori Roohani Homeo Clinic`,
       overview: `Our clinic provides ${enTitle.toLowerCase()} as part of Rohani and community services listed on the official schedule.`,
       whatToExpect: "Call ahead to confirm timing, requirements, and whether an appointment is needed.",
+      whoBenefits: whoEn,
+      benefits: "Handled with privacy and adab; clear next steps after you contact the clinic; no sensational claims online.",
       contactNote: "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours.",
+      faq: faqBlockEn(enTitle.toLowerCase()),
     },
     ur: {
       title: urTitle,
@@ -190,7 +242,10 @@ function spiritualItem(enTitle, urTitle) {
       imageAlt: `${urTitle} — کلینک`,
       overview: `کلینک کی سرکاری فہرست کے مطابق ${urTitle} کی سہولت۔`,
       whatToExpect: "وقت اور ضروریات کے لیے پہلے فون کریں۔",
+      whoBenefits: whoUr,
+      benefits: "رازداری و ادب؛ رابطے کے بعد اگلے قدم؛ آن لائن کوئی دعوے نہیں۔",
       contactNote: "0314-1000717 یا nooriroohaniclinic@gmail.com",
+      faq: faqBlockUr(urTitle),
     },
   };
 }
@@ -230,7 +285,7 @@ function buildPages(lang) {
   }
   const spiritualItems = {};
   for (const [slug, enT, urT] of SPIRITUAL) {
-    const pair = spiritualItem(enT, urT);
+    const pair = spiritualItem(slug, enT, urT);
     spiritualItems[slug] = isEn ? pair.en : pair.ur;
   }
   const productItems = {};
@@ -359,34 +414,58 @@ function buildPages(lang) {
     ? {
         kicker: "Homeopathic service",
         overviewHeading: "Overview",
-        approachHeading: "Treatment approach",
+        whoBenefitsHeading: "Who may benefit",
+        approachHeading: "What to expect",
+        benefitsHeading: "Key information",
         consultHeading: "Book a consultation",
         relatedHeading: "Related services",
+        faqLabel: "Questions",
+        faqHeading: "Service FAQs",
+        finalCtaTitle: "Ready to book?",
+        finalCtaLede: "Evening appointments at Surjani Town — call or message during clinic hours.",
       }
     : {
         kicker: "ہومیوopathic خدمت",
         overviewHeading: "خلاصہ",
-        approachHeading: "علاج کا طریقہ",
+        whoBenefitsHeading: "کس کے لیے موزوں",
+        approachHeading: "کیا توقع رکھیں",
+        benefitsHeading: "اہم معلومات",
         consultHeading: "مشاورت بک کریں",
         relatedHeading: "متعلقہ خدمات",
+        faqLabel: "سوالات",
+        faqHeading: "عام سوالات",
+        finalCtaTitle: "بکنگ کے لیے تیار؟",
+        finalCtaLede: "سرجانی ٹاؤن — کلینک کے اوقات میں رابطہ کریں۔",
       };
 
   const detailSpiritual = isEn
     ? {
         kicker: "Islamic service",
         overviewHeading: "Service overview",
+        whoBenefitsHeading: "Who may benefit",
         whatHeading: "What to expect",
+        benefitsHeading: "Key information",
         contactHeading: "Contact & next steps",
         contactCta: "Contact clinic",
         relatedHeading: "Related services",
+        faqLabel: "Questions",
+        faqHeading: "Service FAQs",
+        finalCtaTitle: "Speak with the clinic",
+        finalCtaLede: "Confirm timing and adab for this service before you visit.",
       }
     : {
         kicker: "اسلامی خدمت",
         overviewHeading: "خدمت کا تعارف",
+        whoBenefitsHeading: "کس کے لیے",
         whatHeading: "کیا توقع رکھیں",
+        benefitsHeading: "اہم معلومات",
         contactHeading: "رابطہ",
         contactCta: "کلینک سے رابطہ",
         relatedHeading: "متعلقہ خدمات",
+        faqLabel: "سوالات",
+        faqHeading: "عام سوالات",
+        finalCtaTitle: "کلینک سے رابطہ",
+        finalCtaLede: "آنے سے پہلے وقت اور ادب کی تصدیق کریں۔",
       };
 
   const detailProducts = isEn
@@ -407,7 +486,135 @@ function buildPages(lang) {
         inquiryCta: "رابطہ صفحہ پر پوچھیں",
       };
 
+  const servicesIndex = isEn
+    ? {
+        documentTitle: "Clinic services | Noori Roohani Homeo Clinic",
+        metaDescription:
+          "Homeopathic consultations, Rohani ilaj, Quran teaching, herbal products, and community programmes in Surjani Town, Karachi.",
+        breadcrumbCurrent: "Services",
+        kicker: "Our services",
+        title: "Complete clinic services",
+        lead: "Homeopathy, Islamic support, herbal products, and community programmes — each with its own page and clear contact path.",
+        heroSecondary: "Homeopathic services",
+        viewAll: "View all services",
+        backToAll: "← All services",
+        backToCategory: "← Back to {category}",
+        intro: {
+          label: "At the clinic",
+          title: "Care across body, spirit, and community",
+          lede: "Noori Roohani Homeo Clinic combines evening homeopathic consultations with Rohani ilaj and education listed on the official schedule.",
+          body: "Browse by category below or open any service for overview, who it may help, what to expect, and how to book. General information only — not medical advice online.",
+          imageAlt: "Clinic consultation room",
+        },
+        hubs: {
+          label: "Categories",
+          title: "Start by service type",
+          lede: "Four main areas — each hub links to detailed pages.",
+        },
+        catalog: {
+          label: "Full list",
+          title: "All consultation & community services",
+          lede: "19 dedicated pages for homeopathic and Islamic services at this clinic.",
+        },
+        why: {
+          label: "Why families choose us",
+          title: "Professional, private, and local",
+          lede: "Verified clinic details — no invented statistics.",
+          items: {
+            one: { title: "Evening appointments", text: "Sunday–Thursday, 7:00–9:00 PM at Surjani Town — easy for working families." },
+            two: { title: "Clear contact", text: "Phone 0314-1000717, WhatsApp, and nooriroohaniclinic@gmail.com." },
+            three: { title: "Adab in spiritual care", text: "Rohani and Islamic services handled with privacy — no sensational claims." },
+            four: { title: "Follow-up care", text: "Homeopathic cases include follow-up visits when your doctor advises." },
+          },
+        },
+        process: {
+          label: "Your visit",
+          title: "A simple, reassuring process",
+          steps: {
+            one: { title: "Contact or arrive", text: "Call, WhatsApp, or use the contact form during clinic hours." },
+            two: { title: "Consultation", text: "Share history and concerns in a private setting with the clinic team." },
+            three: { title: "Next steps", text: "Remedy plan, spiritual guidance, or product advice — with follow-up when needed." },
+          },
+        },
+        faq: {
+          label: "FAQ",
+          title: "Common questions",
+          one: { q: "Where is the clinic?", a: "Plot No. CI-05, Moon Arcade, Sector L-1, Near Makkah Hotel, Surjani Town, Karachi." },
+          two: { q: "What are clinic hours?", a: "Sunday–Thursday, 7:00–9:00 PM. Friday and Saturday closed." },
+          three: { q: "How do I book?", a: "Use the contact page, call 0314-1000717, or WhatsApp during open hours." },
+          four: { q: "Are products sold online?", a: "Herbal products are listed for information — confirm price and stock by phone or at the clinic." },
+          five: { q: "Is emergency care available here?", a: "This is an evening clinic. Use hospital emergency services for urgent medical emergencies." },
+        },
+        cta: {
+          title: "Book your consultation",
+          lede: "We respond during published hours. Bring any reports you already have.",
+        },
+      }
+    : {
+        documentTitle: "کلینک کی خدمات | نوری روحانی ہومیو کلینک",
+        metaDescription: "ہومیو، روحانی علاج، قرآن، جڑی بوٹی — سرجانی ٹاؤن۔",
+        breadcrumbCurrent: "خدمات",
+        kicker: "ہماری خدمات",
+        title: "مکمل کلینک خدمات",
+        lead: "ہر شعبے کا الگ صفحہ — واضح رابطہ۔",
+        heroSecondary: "ہومیوopathic خدمات",
+        viewAll: "تمام خدمات",
+        backToAll: "← تمام خدمات",
+        backToCategory: "← {category}",
+        intro: {
+          label: "کلینک پر",
+          title: "جسم، روح اور کمیونٹی",
+          lede: "شام کی ہومیو مشاورت اور روحانی و تعلیمی خدمات۔",
+          body: "نیچے زمرے یا ہر خدمت کا صفحہ کھولیں — عام معلومات، طبی مشورہ نہیں۔",
+          imageAlt: "مشاورت",
+        },
+        hubs: {
+          label: "زمرے",
+          title: "قسم کے لحاظ سے",
+          lede: "چار اہم شعبے — ہر ہب تفصیلی صفحات سے جڑا ہے۔",
+        },
+        catalog: {
+          label: "مکمل فہرست",
+          title: "تمام مشاورت و کمیونٹی خدمات",
+          lede: "19 صفحات — ہومیو اور اسلامی خدمات۔",
+        },
+        why: {
+          label: "اہلیت",
+          title: "پیشہ ورانہ و مقامی",
+          lede: "حقیقی کلینک تفصیلات۔",
+          items: {
+            one: { title: "شام کے اوقات", text: "اتوار–جمعرات 7–9 بجے، سرجانی ٹاؤن۔" },
+            two: { title: "واضح رابطہ", text: "0314-1000717، واٹس ایپ، ای میل۔" },
+            three: { title: "ادب", text: "روحانی خدمات بغیر دعوے کے۔" },
+            four: { title: "فالو اپ", text: "ہومیو کیسز میں فالو اپ جب مشورہ دیا جائے۔" },
+          },
+        },
+        process: {
+          label: "آپ کا دورہ",
+          title: "آسان عمل",
+          steps: {
+            one: { title: "رابطہ", text: "فون، واٹس ایپ، یا فارم — کلینک کے اوقات میں۔" },
+            two: { title: "مشاورت", text: "نجی ماحول میں تاریخ اور مسائل۔" },
+            three: { title: "اگلے قدم", text: "علاج، رہنمائی، یا مصنوع — ضرورت پر فالو اپ۔" },
+          },
+        },
+        faq: {
+          label: "سوالات",
+          title: "عام سوالات",
+          one: { q: "پتہ؟", a: "سرجانی ٹاؤن، سیکٹر L-1، نزد مکہ ہوٹل۔" },
+          two: { q: "اوقات؟", a: "اتوار–جمعرات 7–9 شام۔ جمعہ و ہفتہ بند۔" },
+          three: { q: "بکنگ؟", a: "رابطہ صفحہ، 0314-1000717، یا واٹس ایپ۔" },
+          four: { q: "آن لائن مصنوعات؟", a: "قیمت و اسٹاک فون یا کلینک سے تصدیق کریں۔" },
+          five: { q: "ایمرجنسی؟", a: "فوری طبی ایمرجنسی کے لیے ہسپتال جائیں۔" },
+        },
+        cta: {
+          title: "مشاورت بک کریں",
+          lede: "اوقات میں رابطہ کریں؛ رپورٹیں ساتھ لائیں۔",
+        },
+      };
+
   return {
+    services: { index: servicesIndex },
     homeopathy: { hub: hubHomeo, detail: detailHomeo, items: homeoItems },
     spiritual: { hub: hubSpiritual, detail: detailSpiritual, items: spiritualItems },
     products: { hub: hubProducts, detail: detailProducts, items: productItems },
@@ -424,8 +631,18 @@ function buildUiExtension(lang) {
         ? { homeopathy: "Homeopathic services", spiritual: "Islamic & spiritual services", mehfil: "Monthly Mehfil" }
         : { homeopathy: "ہومیوopathic خدمات", spiritual: "اسلامی و روحانی خدمات", mehfil: "ماہانہ محفل" },
       servicesMenu: isEn
-        ? { mehfilNav: "Monthly Mehfil", spiritualAll: "All Islamic services", nikkah: "Nikkah services" }
-        : { mehfilNav: "ماہانہ محفل", spiritualAll: "تمام اسلامی خدمات", nikkah: "نکاح کی خدمات" },
+        ? {
+            all: "All services",
+            mehfilNav: "Monthly Mehfil",
+            spiritualAll: "All Islamic services",
+            nikkah: "Nikkah services",
+          }
+        : {
+            all: "تمام خدمات",
+            mehfilNav: "ماہانہ محفل",
+            spiritualAll: "تمام اسلامی خدمات",
+            nikkah: "نکاح کی خدمات",
+          },
     },
     footer: {
       quickLinks: isEn
@@ -440,12 +657,16 @@ function buildUiExtension(lang) {
               prevAria: "Previous slide",
               nextAria: "Next slide",
               goToSlide: "Go to slide {n}",
+              slideLabel: "Slide",
+              thumbsAria: "Slide thumbnails",
             }
           : {
               controlsAria: "ہیرو سلائیڈز",
               prevAria: "پچھلی سلائیڈ",
               nextAria: "اگلی سلائیڈ",
               goToSlide: "سلائیڈ {n}",
+              slideLabel: "سلائیڈ",
+              thumbsAria: "سلائیڈ thumbnails",
             },
         slides: isEn
           ? {

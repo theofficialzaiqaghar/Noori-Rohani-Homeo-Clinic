@@ -2,11 +2,275 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.example.com/</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://nooriroohanihomeoclinic.com/</loc>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/"/>
-    <xhtml:link rel="alternate" hreflang="ur" href="https://www.example.com/?lang=ur"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.example.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/about"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/about?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/about"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/contact?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/contact"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/kidney-problems</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/kidney-problems"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/kidney-problems?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/kidney-problems"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/skin-scalp-concerns</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/skin-scalp-concerns"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/skin-scalp-concerns?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/skin-scalp-concerns"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/hair-problems</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/hair-problems"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/hair-problems?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/hair-problems"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/male-female-infertility</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/male-female-infertility"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/male-female-infertility?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/male-female-infertility"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/sexual-health</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/sexual-health"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/sexual-health?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/sexual-health"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/psychological-mental-health</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/psychological-mental-health"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/psychological-mental-health?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/psychological-mental-health"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/digestive-problems</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/digestive-problems"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/digestive-problems?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/digestive-problems"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/joint-muscular-problems</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/joint-muscular-problems"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/joint-muscular-problems?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/joint-muscular-problems"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/womens-health</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/womens-health"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/womens-health?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/womens-health"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/childrens-health</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/childrens-health"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/childrens-health?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/childrens-health"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/mens-health</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/mens-health"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/mens-health?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/mens-health"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/spiritual</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/spiritual"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/spiritual?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/spiritual"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/spiritual/rohani-ilaj</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/spiritual/rohani-ilaj"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/spiritual/rohani-ilaj?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/spiritual/rohani-ilaj"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/spiritual/istikhara</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/spiritual/istikhara"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/spiritual/istikhara?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/spiritual/istikhara"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/spiritual/quran-teaching</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/spiritual/quran-teaching"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/spiritual/quran-teaching?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/spiritual/quran-teaching"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/spiritual/madarsa</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/spiritual/madarsa"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/spiritual/madarsa?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/spiritual/madarsa"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/spiritual/nikah-khawan</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/spiritual/nikah-khawan"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/spiritual/nikah-khawan?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/spiritual/nikah-khawan"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/spiritual/free-schooling-education</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/spiritual/free-schooling-education"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/spiritual/free-schooling-education?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/spiritual/free-schooling-education"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/spiritual/nazim-e-ala-ulama-mashaikh</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/spiritual/nazim-e-ala-ulama-mashaikh"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/spiritual/nazim-e-ala-ulama-mashaikh?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/spiritual/nazim-e-ala-ulama-mashaikh"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/spiritual/international-research-center</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/spiritual/international-research-center"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/spiritual/international-research-center?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/spiritual/international-research-center"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/products</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/products"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/products?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/products"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/products/attar-perfumes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/products/attar-perfumes"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/products/attar-perfumes?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/products/attar-perfumes"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/products/hair-oil</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/products/hair-oil"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/products/hair-oil?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/products/hair-oil"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/products/ban-child-bam-bam</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/products/ban-child-bam-bam"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/products/ban-child-bam-bam?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/products/ban-child-bam-bam"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/products/winter-lotion</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/products/winter-lotion"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/products/winter-lotion?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/products/winter-lotion"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/products/herbal-soap</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/products/herbal-soap"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/products/herbal-soap?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/products/herbal-soap"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/products/acne-whitening-cream</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/products/acne-whitening-cream"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/products/acne-whitening-cream?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/products/acne-whitening-cream"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/products/majoon-e-khas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/products/majoon-e-khas"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/products/majoon-e-khas?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/products/majoon-e-khas"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/events/mehfil</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/events/mehfil"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/events/mehfil?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/events/mehfil"/>
   </url>
 </urlset>

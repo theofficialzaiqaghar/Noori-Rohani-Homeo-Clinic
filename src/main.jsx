@@ -5,6 +5,8 @@ import "./styles/app.css";
 import "./styles/redesign.css";
 import "./styles/responsive.css";
 import "./styles/inner-pages.css";
+import "./styles/services-landing.css";
+import "./styles/hero-premium.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

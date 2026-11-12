@@ -20,6 +20,7 @@ export default function ServicesHubHomeopathyPage() {
     pathname: "/services/homeopathy",
     breadcrumb: [
       { name: t("nav.home"), item: "/" },
+      { name: t("pages.services.index.breadcrumbCurrent"), item: "/services" },
       { name: t("pages.homeopathy.hub.breadcrumbCurrent") },
     ],
   });
@@ -37,6 +38,7 @@ export default function ServicesHubHomeopathyPage() {
             <Breadcrumbs
               items={[
                 { label: t("nav.home"), href: "/" },
+                { label: t("pages.services.index.breadcrumbCurrent"), href: "/services" },
                 { label: t("pages.homeopathy.hub.breadcrumbCurrent") },
               ]}
             />

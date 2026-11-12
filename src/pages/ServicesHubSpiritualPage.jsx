@@ -20,6 +20,7 @@ export default function ServicesHubSpiritualPage() {
     pathname: "/services/spiritual",
     breadcrumb: [
       { name: t("nav.home"), item: "/" },
+      { name: t("pages.services.index.breadcrumbCurrent"), item: "/services" },
       { name: t("pages.spiritual.hub.breadcrumbCurrent") },
     ],
   });
@@ -37,6 +38,7 @@ export default function ServicesHubSpiritualPage() {
             <Breadcrumbs
               items={[
                 { label: t("nav.home"), href: "/" },
+                { label: t("pages.services.index.breadcrumbCurrent"), href: "/services" },
                 { label: t("pages.spiritual.hub.breadcrumbCurrent") },
               ]}
             />

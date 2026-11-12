@@ -6,10 +6,10 @@ Replace every placeholder before go-live. Run `npm run qa` to verify i18n key pa
 
 | Item | File(s) | Placeholder |
 |------|---------|-------------|
-| Canonical URL | `index.html` `<link rel="canonical">` | `https://www.example.com/` |
+| Canonical URL | `index.html` `<link rel="canonical">` | `https://nooriroohanihomeoclinic.com/` (via `clinicInfo.js` + `patch-index-site-url.mjs`) |
 | Open Graph URL | `index.html` `og:url` | same |
 | `hreflang` links | `index.html` | `en`, `ur` (`/?lang=ur`), `x-default` |
-| JSON-LD `@id` / URLs | `index.html` `<script type="application/ld+json">` | `https://www.example.com/` |
+| JSON-LD `@id` / URLs | `index.html` `<script type="application/ld+json">` | `https://nooriroohanihomeoclinic.com/` |
 | Sitemap | `sitemap.xml` | all `<loc>` values |
 | Robots sitemap line | `robots.txt` | Sitemap URL |
 

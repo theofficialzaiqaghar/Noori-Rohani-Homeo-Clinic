@@ -9,7 +9,6 @@ import { HomeoHerbalSection } from "./sections/HomeoHerbalSection";
 import { EducationSection } from "./sections/EducationSection";
 import { WhySection } from "./sections/WhySection";
 import { ProcessSection } from "./sections/ProcessSection";
-import { TestimonialsSection } from "./sections/TestimonialsSection";
 import { FAQSection } from "./sections/FAQSection";
 import { ContactSection } from "./sections/ContactSection";
 
@@ -26,7 +25,6 @@ export default function App() {
         <EducationSection />
         <WhySection />
         <ProcessSection />
-        <TestimonialsSection />
         <FAQSection />
         <ContactSection />
       </main>

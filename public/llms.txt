@@ -1,0 +1,23 @@
+# Noori Roohani Homeo Clinic
+
+> Rohani ilaj, homeopathic consultations, herbal products, Quran teaching, and community education in Karachi, Pakistan.
+
+## Business
+
+- Name: Noori Roohani Homeo Clinic
+- Website: https://www.example.com/ (set your live domain in deployment)
+- Address: Plot No. CI-05, Moon Arcade, Flat, Sector L-1, Near Makkah Hotel, Surjani Town, Karachi, Pakistan
+- Hours: Sunday–Thursday 7:00 PM – 9:00 PM; Friday and Saturday closed
+
+## Main pages
+
+- Home: https://www.example.com/
+- Contact & appointments: https://www.example.com/contact
+
+## Services (homepage sections)
+
+Homeopathic care, Rohani ilaj, herbal products, Quran and madrasa education, community programmes — described on the home page. Consultation is by appointment during evening clinic hours.
+
+## Note
+
+This file summarizes public information from the website. It does not guarantee indexing or AI assistant visibility.

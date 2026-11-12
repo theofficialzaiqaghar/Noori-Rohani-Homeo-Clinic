@@ -1,16 +1,16 @@
 {
   "meta": {
     "title": "Noori Roohani Homeo Clinic | Rohani Ilaj & Homeo",
-    "description": "Homeopathic clinic for rohani ilaj, nazar-e-bad guidance, herbal hair oil, Quran teaching, madrasa, istikhara and nikkah services in [City].",
+    "description": "Rohani ilaj, homeopathy, and herbal care at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu.",
     "ogTitle": "Noori Roohani Homeo Clinic | Rohani Ilaj & Homeo",
-    "ogDescription": "Homeopathic clinic for rohani ilaj, nazar-e-bad guidance, herbal hair oil, Quran teaching, madrasa, istikhara and nikkah services in [City]."
+    "ogDescription": "Rohani ilaj, homeopathy, and herbal care at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu."
   },
   "topbar": {
     "phone": "+92 300 0000000",
     "phoneAria": "Call clinic",
     "whatsapp": "WhatsApp",
     "whatsappAria": "Chat on WhatsApp",
-    "hours": "Mon–Sat: 9:00 AM – 8:00 PM"
+    "hours": "Sun–Thu: 7:00 PM – 9:00 PM"
   },
   "lang": {
     "switcher": "Language",
@@ -89,7 +89,7 @@
     "contact": {
       "title": "Contact",
       "addressLabel": "Address",
-      "address": "[ADDRESS]",
+      "address": "Plot No. CI-05, Moon Arcade, Flat, Sector L-1, Near Makkah Hotel, Surjani Town, Karachi, Pakistan.",
       "phoneLabel": "Phone",
       "phone": "[PHONE]",
       "whatsappLabel": "WhatsApp",
@@ -97,7 +97,7 @@
       "emailLabel": "Email",
       "email": "[EMAIL]",
       "hoursLabel": "Clinic timings",
-      "hours": "[CLINIC TIMINGS]"
+      "hours": "Sun–Thu: 7:00 PM – 9:00 PM · Fri & Sat: Closed"
     },
     "nav": {
       "quickLinks": "Footer quick links",
@@ -121,8 +121,9 @@
       "heroKicker": "Contact",
       "heroTitle": "Visit or message the clinic",
       "heroLead": "Call, WhatsApp, or send the form below. We reply during clinic hours.",
-      "mapNote": "Replace [ADDRESS] in settings with your map link or directions when ready.",
-      "viewContactPage": "Full contact page"
+      "mapNote": "We are in Moon Arcade, Surjani Town — near Makkah Hotel. Call before your visit to confirm availability.",
+      "viewContactPage": "Full contact page",
+      "metaDescription": "Contact Noori Roohani Homeo Clinic in Surjani Town, Karachi. Evening hours Sun–Thu 7–9 PM. Phone, WhatsApp, or appointment form."
     }
   },
   "home": {
@@ -384,11 +385,11 @@
     "contact": {
       "label": "Get in touch",
       "title": "Tell us how we can help",
-      "lead": "We reply during clinic hours. For urgent spiritual help, please call instead of waiting on a message.",
+      "lead": "Message or call during evening clinic hours (Sun–Thu, 7–9 PM). For urgent spiritual matters, please phone rather than wait on a reply.",
       "aside": {
         "phone": "Phone: [PHONE]",
-        "address": "Address: [ADDRESS]",
-        "hours": "Hours: [CLINIC TIMINGS]"
+        "address": "Plot No. CI-05, Moon Arcade, Sector L-1, Near Makkah Hotel, Surjani Town, Karachi",
+        "hours": "Sun–Thu: 7:00 PM – 9:00 PM (Fri & Sat closed)"
       }
     },
     "form": {
@@ -418,6 +419,14 @@
         "service": "Please choose a service.",
         "summary": "Please fix the highlighted fields."
       }
+    }
+  },
+  "errors": {
+    "notFound": {
+      "kicker": "Page not found",
+      "title": "We could not find that page",
+      "lede": "The link may be outdated. Return home or contact the clinic during evening hours.",
+      "home": "Back to home"
     }
   }
 }

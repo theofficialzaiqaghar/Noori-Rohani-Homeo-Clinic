@@ -2,8 +2,11 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useI18n } from "../providers/I18nProvider";
 import { useSiteSettings } from "../providers/SiteSettingsProvider";
+import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import { Icon } from "./Icon";
+import { CLINIC_PHONE_E164, CLINIC_WHATSAPP } from "../lib/contactInfo";
+import { BRAND_LOGO_SRC } from "../lib/brandAssets";
 
 const SERVICE_LINKS = [
   { href: "/#rohani", key: "nav.servicesMenu.rohani" },
@@ -17,7 +20,8 @@ const SERVICE_LINKS = [
 export function SiteHeader({ overlay = false, className = "" }) {
   const { t, lang, setLanguage } = useI18n();
   const { getSlot } = useSiteSettings() || {};
-  const logo = getSlot?.("brand.logo");
+  const cmsLogo = getSlot?.("brand.logo");
+  const logoSrc = cmsLogo?.url || BRAND_LOGO_SRC;
   const [solid, setSolid] = useState(!overlay);
   const [open, setOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -72,13 +76,13 @@ export function SiteHeader({ overlay = false, className = "" }) {
       <div className={topbarClass}>
         <div className="shell topbar__inner">
           <div className="topbar__group">
-            <a className="topbar__link" href="tel:+923000000000" aria-label={t("topbar.phoneAria")}>
+            <a className="topbar__link" href={`tel:${CLINIC_PHONE_E164.replace(/\s/g, "")}`} aria-label={t("topbar.phoneAria")}>
               <Icon name="icon-phone" />
               <span>{t("topbar.phone")}</span>
             </a>
             <a
               className="topbar__link"
-              href="https://wa.me/923000000000"
+              href={`https://wa.me/${CLINIC_WHATSAPP}`}
               rel="noopener noreferrer"
               aria-label={t("topbar.whatsappAria")}
             >
@@ -111,18 +115,17 @@ export function SiteHeader({ overlay = false, className = "" }) {
 
       <header className={mastClass}>
         <div className="shell masthead__inner">
-          <a className="brand" href="/" aria-label={t("logo.aria")}>
-            <span className="brand__sigil" aria-hidden="true">
-              {logo ? <img src={logo.url} alt="" className="brand__logo-img" /> : <Icon name="icon-mark" />}
+          <Link className="brand brand--with-logo" to="/" aria-label={t("logo.aria")}>
+            <span className="brand__sigil brand__sigil--official" aria-hidden="true">
+              <img src={logoSrc} alt="" className="brand__logo-img brand__logo-img--official" width={140} height={48} decoding="async" />
             </span>
-            <span className="brand__copy">
-              <span className="brand__name">{t("logo.name")}</span>
-              <span className="brand__role">{t("logo.subtitle")}</span>
+            <span className="visually-hidden">
+              {t("logo.name")} — {t("logo.subtitle")}
             </span>
-          </a>
+          </Link>
 
           <nav className="mastnav" aria-label={t("nav.label")}>
-            <a href="/#about">{t("nav.about")}</a>
+            <a href="/#homeo">{t("nav.about")}</a>
             <div
               className="mastnav__drop"
               onMouseEnter={() => setServicesOpen(true)}
@@ -160,7 +163,12 @@ export function SiteHeader({ overlay = false, className = "" }) {
           </nav>
 
           <div className="masthead__actions">
-            <Button as="a" href="/contact" aria-label={t("btn.bookAppointmentAria")} className={solid ? "" : "btn--on-dark"}>
+            <Button
+              as="a"
+              href="/contact"
+              aria-label={t("btn.bookAppointmentAria")}
+              className={`masthead__book-btn${solid ? "" : " btn--on-dark"}`}
+            >
               {t("btn.bookAppointment")}
             </Button>
             <button
@@ -202,7 +210,7 @@ export function SiteHeader({ overlay = false, className = "" }) {
                 </button>
               </div>
               <nav className="drawer__nav">
-                <a href="/#about" onClick={() => setOpen(false)}>
+                <a href="/#homeo" onClick={() => setOpen(false)}>
                   {t("nav.about")}
                 </a>
                 <a href="/#services" onClick={() => setOpen(false)}>

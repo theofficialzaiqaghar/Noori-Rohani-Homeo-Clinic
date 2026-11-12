@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import { useI18n } from "../providers/I18nProvider";
+import { usePageMeta } from "../hooks/usePageMeta";
 import { PublicLayout } from "../layout/PublicLayout";
 import { ContactForm } from "../components/ContactForm";
 import { ContactDetails } from "../components/ContactDetails";
@@ -17,10 +17,16 @@ function ContactPageMain() {
   const { t } = useI18n();
   const ref = useReveal({ childSelector: "[data-reveal-item]" });
 
-  useEffect(() => {
-    document.title = t("page.contact.documentTitle");
-    window.scrollTo(0, 0);
-  }, [t]);
+  usePageMeta({
+    title: t("page.contact.documentTitle"),
+    description: t("page.contact.metaDescription") || t("meta.description"),
+    pathname: "/contact",
+    type: "website",
+    breadcrumb: [
+      { name: t("nav.home"), item: "/" },
+      { name: t("nav.contact") },
+    ],
+  });
 
   return (
     <main id="main" tabIndex={-1} className="contact-page">

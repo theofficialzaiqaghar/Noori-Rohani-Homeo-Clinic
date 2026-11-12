@@ -1,0 +1,280 @@
+/* Official logo — never stretch */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.brand--with-logo {
+  gap: 0;
+  min-width: 0;
+}
+
+.brand__sigil--official {
+  width: auto;
+  height: auto;
+  max-height: 3.25rem;
+  background: transparent;
+  border: none;
+}
+
+.brand__logo-img--official {
+  display: block;
+  width: auto;
+  height: 3rem;
+  max-width: min(11rem, 46vw);
+  object-fit: contain;
+  object-position: left center;
+}
+
+.brand--footer .brand__logo-img--official {
+  height: 3.25rem;
+  max-width: 12rem;
+}
+
+@media (max-width: 23.99rem) {
+  .brand__logo-img--official {
+    height: 2.5rem;
+    max-width: min(9.5rem, 52vw);
+  }
+}
+
+/* Global responsive — all public pages */
+
+.shell {
+  width: min(100% - 2 * var(--gutter), var(--max-width));
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Topbar & header */
+@media (max-width: 47.99rem) {
+  .topbar__inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .topbar__group {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 0.75rem;
+  }
+
+  .topbar__hours {
+    font-size: var(--text-xs);
+    text-align: center;
+  }
+
+  .masthead__inner {
+    gap: 0.75rem;
+  }
+
+  .mastnav {
+    display: none;
+  }
+
+  .masthead__actions .btn:not(.menu-toggle) {
+    display: none;
+  }
+
+  .masthead__book-btn {
+    display: none;
+  }
+
+  .brand__name {
+    font-size: var(--text-sm);
+  }
+
+  .brand__role {
+    font-size: var(--text-xs);
+  }
+
+  .hero-banner__inner {
+    padding-block: clamp(5rem, 18vh, 7.5rem) clamp(2.5rem, 8vh, 4rem);
+  }
+
+  .hero-banner__title {
+    font-size: clamp(1.65rem, 6.5vw, 2.25rem);
+  }
+
+  .hero-banner__lede {
+    font-size: var(--text-sm);
+  }
+
+  .hero-banner__cta-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-banner__cta-row .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 48rem) and (max-width: 63.99rem) {
+  .mastnav a,
+  .mastnav__trigger {
+    font-size: var(--text-sm);
+    padding-inline: 0.5rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Sections & grids */
+@media (max-width: 47.99rem) {
+  .section {
+    padding-block: clamp(2.5rem, 8vw, 3.5rem);
+  }
+
+  .section-head__title {
+    font-size: clamp(1.35rem, 5vw, 1.75rem);
+  }
+
+  .services-grid,
+  .products-grid,
+  .reason-stack,
+  .voice-cards,
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .split-section__grid,
+  .split-section__grid--reverse {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .split-section__grid--reverse .split-section__visual {
+    order: -1;
+  }
+
+  .stats-panel--overlay {
+    position: relative;
+    inset: auto;
+    margin-top: var(--space-3);
+    width: 100%;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .footer-cta__panel {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-3);
+  }
+
+  .footer-cta__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer-cta__actions .btn {
+    width: 100%;
+  }
+
+  .contact-page__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-details__actions {
+    flex-direction: column;
+  }
+
+  .contact-details__actions .btn {
+    width: 100%;
+  }
+
+  .faq-item summary {
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 23.99rem) {
+  :root {
+    --gutter: 0.875rem;
+  }
+
+  .topbar__link span {
+    font-size: 0.75rem;
+  }
+
+  .service-card,
+  .product-tile__body {
+    padding: var(--space-2);
+  }
+}
+
+/* Contact page hero */
+@media (max-width: 47.99rem) {
+  .contact-page-hero__inner h1 {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .contact-form .field input,
+  .contact-form .field select,
+  .contact-form .field textarea {
+    font-size: 16px; /* prevents iOS zoom */
+  }
+}
+
+/* Drawer safe area */
+.drawer__panel {
+  padding-bottom: max(var(--space-4), env(safe-area-inset-bottom));
+}
+
+.drawer__cta {
+  min-height: 48px;
+}
+
+/* Prevent horizontal overflow */
+.section-head--wide,
+.hero-banner__inner,
+.shell {
+  overflow-wrap: anywhere;
+}
+
+.service-card__desc,
+.split-section__lede,
+.section-head__lede {
+  max-width: 65ch;
+}
+
+html[dir="rtl"] .masthead__inner,
+html[dir="rtl"] .footer-grid {
+  text-align: start;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .drawer__panel,
+  .mastnav__panel {
+    transition: none !important;
+  }
+}

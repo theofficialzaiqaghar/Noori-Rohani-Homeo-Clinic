@@ -1,4 +1,7 @@
+import { Link } from "react-router-dom";
 import { useI18n } from "../providers/I18nProvider";
+import { CLINIC_EMAIL, CLINIC_PHONE_E164, CLINIC_WHATSAPP } from "../lib/contactInfo";
+import { BRAND_LOGO_SRC } from "../lib/brandAssets";
 import { useSiteSettings } from "../providers/SiteSettingsProvider";
 import { Icon } from "./Icon";
 import { Button } from "./Button";
@@ -7,7 +10,8 @@ export function SiteFooter() {
   const { t } = useI18n();
   const { settings, getSlot } = useSiteSettings() || {};
   const social = settings?.footer || {};
-  const logo = getSlot?.("brand.logo");
+  const cmsLogo = getSlot?.("brand.logo");
+  const logoSrc = cmsLogo?.url || BRAND_LOGO_SRC;
   const year = new Date().getFullYear();
 
   return (
@@ -21,17 +25,17 @@ export function SiteFooter() {
               <p className="footer-cta__lede">{t("footer.cta.lede")}</p>
             </div>
             <div className="footer-cta__aside">
-              <a className="footer-cta__phone" href="tel:+923000000000">
+              <a className="footer-cta__phone" href={`tel:${CLINIC_PHONE_E164.replace(/\s/g, "")}`}>
                 {t("topbar.phone")}
               </a>
               <div className="footer-cta__actions">
-                <Button as="a" href="tel:+923000000000" variant="light" aria-label={t("footer.cta.callNowAria")}>
+                <Button as="a" href={`tel:${CLINIC_PHONE_E164.replace(/\s/g, "")}`} variant="light" aria-label={t("footer.cta.callNowAria")}>
                   {t("footer.cta.callNow")}
                 </Button>
                 <Button
                   as="a"
                   variant="ghost"
-                  href="https://wa.me/923000000000"
+                  href={`https://wa.me/${CLINIC_WHATSAPP}`}
                   rel="noopener noreferrer"
                   className="footer-cta__btn-ghost"
                   aria-label={t("footer.cta.whatsappAria")}
@@ -46,15 +50,22 @@ export function SiteFooter() {
 
       <div className="shell footer-grid">
         <div className="footer-grid__brand">
-          <a className="brand brand--footer" href="/" aria-label={t("logo.aria")}>
-            <span className="brand__sigil" aria-hidden="true">
-              {logo ? <img src={logo.url} alt="" className="brand__logo-img" /> : <Icon name="icon-mark" />}
+          <Link className="brand brand--footer brand--with-logo" to="/" aria-label={t("logo.aria")}>
+            <span className="brand__sigil brand__sigil--official" aria-hidden="true">
+              <img
+                src={logoSrc}
+                alt=""
+                className="brand__logo-img brand__logo-img--official"
+                width={160}
+                height={54}
+                loading="lazy"
+                decoding="async"
+              />
             </span>
-            <span className="brand__copy">
-              <span className="brand__name">{t("logo.name")}</span>
-              <span className="brand__role">{t("logo.subtitle")}</span>
+            <span className="visually-hidden">
+              {t("logo.name")} — {t("logo.subtitle")}
             </span>
-          </a>
+          </Link>
           <p>{t("footer.about.line1")}</p>
           <p>{t("footer.about.line2")}</p>
           <ul className="footer-social" aria-label={t("footer.social.label")}>
@@ -83,34 +94,35 @@ export function SiteFooter() {
 
         <nav aria-label={t("footer.nav.quickLinks")}>
           <h3>{t("footer.quickLinks.title")}</h3>
-          <a href="#about">{t("nav.home")}</a>
-          <a href="#about">{t("nav.about")}</a>
-          <a href="#services">{t("nav.services")}</a>
-          <a href="#products">{t("nav.products")}</a>
-          <a href="/contact">{t("nav.contact")}</a>
+          <Link to="/">{t("nav.home")}</Link>
+          <a href="/#homeo">{t("nav.about")}</a>
+          <a href="/#services">{t("nav.services")}</a>
+          <a href="/#products">{t("nav.products")}</a>
+          <Link to="/contact">{t("nav.contact")}</Link>
         </nav>
 
         <nav aria-label={t("footer.nav.services")}>
           <h3>{t("footer.services.title")}</h3>
-          <a href="#rohani">{t("footer.services.rohani")}</a>
-          <a href="#homeo">{t("footer.services.homeo")}</a>
-          <a href="#products">{t("footer.services.herbal")}</a>
-          <a href="#contact">{t("footer.services.istikhara")}</a>
-          <a href="#education">{t("footer.services.quranTeaching")}</a>
-          <a href="#education">{t("footer.services.madrasa")}</a>
-          <a href="#education">{t("footer.services.nikkah")}</a>
-          <a href="#education">{t("footer.services.freeSchool")}</a>
-          <a href="#education">{t("footer.services.darUlUloom")}</a>
+          <a href="/#rohani">{t("footer.services.rohani")}</a>
+          <a href="/#homeo">{t("footer.services.homeo")}</a>
+          <a href="/#products">{t("footer.services.herbal")}</a>
+          <a href="/#contact">{t("footer.services.istikhara")}</a>
+          <a href="/#education">{t("footer.services.quranTeaching")}</a>
+          <a href="/#education">{t("footer.services.madrasa")}</a>
+          <a href="/#education">{t("footer.services.nikkah")}</a>
+          <a href="/#education">{t("footer.services.freeSchool")}</a>
+          <a href="/#education">{t("footer.services.darUlUloom")}</a>
         </nav>
 
         <address className="footer-contact">
           <h3>{t("footer.contact.title")}</h3>
           <p>{t("footer.contact.addressLabel")}: {t("footer.contact.address")}</p>
           <p>
-            {t("footer.contact.phoneLabel")}: <a href="tel:+923000000000">{t("footer.contact.phone")}</a>
+            {t("footer.contact.phoneLabel")}:{" "}
+            <a href={`tel:${CLINIC_PHONE_E164.replace(/\s/g, "")}`}>{t("footer.contact.phone")}</a>
           </p>
           <p>
-            {t("footer.contact.emailLabel")}: <a href="mailto:info@example.com">{t("footer.contact.email")}</a>
+            {t("footer.contact.emailLabel")}: <a href={`mailto:${CLINIC_EMAIL}`}>{t("footer.contact.email")}</a>
           </p>
           <p>
             {t("footer.contact.hoursLabel")}: {t("footer.contact.hours")}
@@ -122,8 +134,8 @@ export function SiteFooter() {
         <div className="shell footer-bar">
           <p>{t("footer.legal.copyright").replace("{year}", String(year))}</p>
           <nav aria-label={t("footer.nav.legal")}>
-            <a href="#privacy">{t("footer.legal.privacy")}</a>
-            <a href="#terms">{t("footer.legal.terms")}</a>
+            <a href="/contact">{t("footer.legal.privacy")}</a>
+            <a href="/contact">{t("footer.legal.terms")}</a>
           </nav>
         </div>
         <p className="shell footer-disclaimer">{t("footer.disclaimer")}</p>

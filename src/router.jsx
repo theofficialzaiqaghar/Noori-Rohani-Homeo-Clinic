@@ -1,6 +1,8 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashScroll } from "./components/HashScroll";
 import PublicApp from "./PublicApp";
 import ContactPage from "./pages/ContactPage";
+import NotFoundPage from "./pages/NotFoundPage";
 import { AdminLoginPage } from "./admin/pages/AdminLoginPage";
 import { AdminLayout } from "./admin/AdminLayout";
 import { DashboardPage } from "./admin/pages/DashboardPage";
@@ -15,6 +17,7 @@ import { ProtectedRoute } from "./admin/ProtectedRoute";
 export function AppRouter() {
   return (
     <BrowserRouter>
+      <HashScroll />
       <Routes>
         <Route path="/" element={<PublicApp />} />
         <Route path="/contact" element={<ContactPage />} />
@@ -35,7 +38,7 @@ export function AppRouter() {
           <Route path="footer" element={<FooterSettingsPage />} />
           <Route path="profile" element={<ProfilePage />} />
         </Route>
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );

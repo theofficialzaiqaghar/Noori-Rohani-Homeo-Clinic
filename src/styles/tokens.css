@@ -9,8 +9,8 @@
   --accent-deep: #8f7318;
   --line: rgba(11, 31, 42, 0.12);
   --line-strong: rgba(11, 31, 42, 0.22);
-  --shadow-soft: 0 4px 24px rgba(11, 31, 42, 0.06);
-  --shadow-card: 0 2px 12px rgba(11, 31, 42, 0.05);
+  --shadow-soft: 0 2px 16px rgba(11, 31, 42, 0.05);
+  --shadow-card: 0 1px 3px rgba(11, 31, 42, 0.06);
 
   --font-display: var(--font-display-custom, "Plus Jakarta Sans", system-ui, sans-serif);
   --font-body: var(--font-body-custom, "Plus Jakarta Sans", system-ui, sans-serif);

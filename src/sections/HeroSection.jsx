@@ -30,15 +30,9 @@ export function HeroSection() {
     ? [{ ...HERO_SLIDES[0], image: cmsBg?.url || cmsMain?.url || SITE_IMAGES.hero }]
     : HERO_SLIDES;
 
-  const { index, go, goTo, autoplayActive, autoplayMs, reduceMotion, hoverPaused, setHoverPaused, bindTouch, len } =
-    useHeroCarousel(slides.length);
+  const { index, go, autoplayActive, autoplayMs, reduceMotion, len } = useHeroCarousel(slides.length);
 
   const active = slides[Math.min(index, len - 1)];
-  const slideCounter = `${String(index + 1).padStart(2, "0")} / ${String(len).padStart(2, "0")}`;
-
-  useEffect(() => {
-    return bindTouch(root.current);
-  }, [bindTouch]);
 
   const runContentAnimation = useCallback(() => {
     if (!copyRef.current) return;
@@ -113,12 +107,6 @@ export function HeroSection() {
     return () => autoplayTween.current?.kill();
   }, [index, autoplayActive, autoplayMs, go]);
 
-  useEffect(() => {
-    if (!autoplayTween.current) return;
-    if (hoverPaused) autoplayTween.current.pause();
-    else autoplayTween.current.resume();
-  }, [hoverPaused]);
-
   useGSAP(
     () => {
       if (reduceMotion || !root.current) return;
@@ -162,12 +150,6 @@ export function HeroSection() {
       aria-labelledby="hero-title"
       aria-roledescription="carousel"
       data-reduce-motion={reduceMotion ? "true" : "false"}
-      onMouseEnter={() => len > 1 && setHoverPaused(true)}
-      onMouseLeave={() => len > 1 && setHoverPaused(false)}
-      onFocusCapture={() => len > 1 && setHoverPaused(true)}
-      onBlurCapture={(e) => {
-        if (!root.current?.contains(e.relatedTarget)) setHoverPaused(false);
-      }}
     >
       <div className="hero-banner__progress-track" aria-hidden="true">
         <span ref={progressRef} className="hero-banner__progress-fill" />
@@ -223,50 +205,6 @@ export function HeroSection() {
               </CtaButton>
             </div>
           </div>
-
-          {len > 1 ? (
-            <aside className="hero-banner__controls" aria-label={t("home.hero.slider.controlsAria")}>
-              <p className="hero-banner__counter" aria-live="polite">
-                <span className="hero-banner__counter-label">{t("home.hero.slider.slideLabel")}</span>
-                <span className="hero-banner__counter-value">{slideCounter}</span>
-              </p>
-
-              <div className="hero-banner__nav-row">
-                <button
-                  type="button"
-                  className="hero-banner__nav-btn"
-                  onClick={() => go(-1)}
-                  aria-label={t("home.hero.slider.prevAria")}
-                >
-                  <span aria-hidden="true">←</span>
-                </button>
-                <button
-                  type="button"
-                  className="hero-banner__nav-btn"
-                  onClick={() => go(1)}
-                  aria-label={t("home.hero.slider.nextAria")}
-                >
-                  <span aria-hidden="true">→</span>
-                </button>
-              </div>
-
-              <ul className="hero-banner__thumbs" role="tablist" aria-label={t("home.hero.slider.thumbsAria")}>
-                {slides.map((slide, i) => (
-                  <li key={slide.id}>
-                    <button
-                      type="button"
-                      role="tab"
-                      className={`hero-banner__thumb${i === index ? " is-active" : ""}`}
-                      aria-selected={i === index}
-                      aria-label={t("home.hero.slider.goToSlide", { n: String(i + 1) })}
-                      onClick={() => goTo(i)}
-                      style={{ backgroundImage: `url(${slide.image})` }}
-                    />
-                  </li>
-                ))}
-              </ul>
-            </aside>
-          ) : null}
         </div>
       </div>
     </section>

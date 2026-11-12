@@ -1,5 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { HashScroll } from "./components/HashScroll";
+import { RouteScrollRefresh } from "./components/RouteScrollRefresh";
+import { AppProviders } from "./layout/AppProviders";
 import PublicApp from "./PublicApp";
 import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
@@ -26,8 +28,10 @@ import { ProtectedRoute } from "./admin/ProtectedRoute";
 export function AppRouter() {
   return (
     <BrowserRouter>
-      <HashScroll />
-      <Routes>
+      <AppProviders>
+        <HashScroll />
+        <RouteScrollRefresh />
+        <Routes>
         <Route path="/" element={<PublicApp />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
@@ -57,7 +61,8 @@ export function AppRouter() {
           <Route path="profile" element={<ProfilePage />} />
         </Route>
         <Route path="*" element={<NotFoundPage />} />
-      </Routes>
+        </Routes>
+      </AppProviders>
     </BrowserRouter>
   );
 }

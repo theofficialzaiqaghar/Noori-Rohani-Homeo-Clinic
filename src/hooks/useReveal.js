@@ -16,22 +16,30 @@ export function useReveal(options = {}) {
       if (!root || reduceMotion) return;
 
       const items = root.querySelectorAll(childSelector);
-      gsap.set(items.length ? items : root, { opacity: 0, y });
+      const list = items.length ? [...items] : [root];
+      gsap.set(list, { opacity: 0, y });
 
-      ScrollTrigger.batch(items.length ? items : [root], {
+      const reveal = (batch) => {
+        gsap.to(batch, {
+          opacity: 1,
+          y: 0,
+          duration,
+          stagger,
+          ease: "power2.out",
+          overwrite: true,
+        });
+      };
+
+      ScrollTrigger.batch(list, {
         start: "top 88%",
-        onEnter: (batch) => {
-          gsap.to(batch, {
-            opacity: 1,
-            y: 0,
-            duration,
-            stagger,
-            ease: "power2.out",
-            overwrite: true,
-          });
-        },
+        onEnter: reveal,
         once: true,
       });
+
+      const inView = list.filter((el) => el.getBoundingClientRect().top < window.innerHeight * 0.9);
+      if (inView.length) reveal(inView);
+
+      requestAnimationFrame(() => ScrollTrigger.refresh());
     },
     { scope: ref }
   );

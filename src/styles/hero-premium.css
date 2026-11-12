@@ -71,10 +71,10 @@
 }
 
 @media (min-width: 56rem) {
-  .hero-banner__grid {
-    grid-template-columns: minmax(0, 1fr) minmax(10rem, 14rem);
+  .hero-banner--premium .hero-banner__grid {
+    grid-template-columns: minmax(0, 1fr);
     gap: clamp(1.5rem, 4vw, 3rem);
-    align-items: stretch;
+    align-items: end;
   }
 }
 

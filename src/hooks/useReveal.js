@@ -40,6 +40,17 @@ export function useReveal(options = {}) {
       if (inView.length) reveal(inView);
 
       requestAnimationFrame(() => ScrollTrigger.refresh());
+
+      const fallback = window.setTimeout(() => {
+        list.forEach((el) => {
+          const opacity = gsap.getProperty(el, "opacity");
+          if (opacity === 0 || opacity === "0") {
+            gsap.set(el, { opacity: 1, y: 0 });
+          }
+        });
+      }, 1600);
+
+      return () => window.clearTimeout(fallback);
     },
     { scope: ref }
   );

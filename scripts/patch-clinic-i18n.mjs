@@ -7,10 +7,17 @@ import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
+const PHONE_DISPLAY = "0314-1000717";
+const PHONE_E164 = "+923141000717";
+const CLINIC_EMAIL = "nooriroohaniclinic@gmail.com";
+
 const EN = {
   metaDescription:
     "Rohani ilaj, homeopathy, and herbal care at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu.",
-  topbarHours: "Sun–Thu: 7:00 PM – 9:00 PM",
+  topbarPhone: PHONE_DISPLAY,
+  topbarHours: "Sun–Thu: 7:00 PM – 9:00 PM · Fri & Sat: Closed",
+  footerPhone: PHONE_DISPLAY,
+  footerEmail: CLINIC_EMAIL,
   footerAddress:
     "Plot No. CI-05, Moon Arcade, Flat, Sector L-1, Near Makkah Hotel, Surjani Town, Karachi, Pakistan.",
   footerHours: "Sun–Thu: 7:00 PM – 9:00 PM · Fri & Sat: Closed",
@@ -23,7 +30,10 @@ const EN = {
 const UR = {
   metaDescription:
     "نوری روحانی ہومیو کلینک، سرجانی ٹاؤن کراچی — روحانی علاج، ہومیوپathic اور جڑی بوٹیاں۔ اتوار سے جمعرات شام 7 سے 9 بجے۔",
-  topbarHours: "اتوار–جمعرات: شام 7:00 سے 9:00",
+  topbarPhone: PHONE_DISPLAY,
+  topbarHours: "اتوار–جمعرات: شام 7:00 سے 9:00 · جمعہ و ہفتہ: بند",
+  footerPhone: PHONE_DISPLAY,
+  footerEmail: CLINIC_EMAIL,
   footerAddress:
     "پلاٹ نمبر CI-05، مون آرکیڈ، فلیٹ، سیکٹر L-1، مکہ ہوٹل کے قریب، سرجانی ٹاؤن، کراچی، پاکستان۔",
   footerHours: "اتوار تا جمعرات: شام 7:00 سے 9:00 · جمعہ و ہفتہ: بند",
@@ -39,16 +49,44 @@ function patch(file, lang) {
 
   data.meta.description = copy.metaDescription;
   data.meta.ogDescription = copy.metaDescription;
-  data.topbar.hours = copy.topbarHours;
-  data.footer.contact.address = copy.footerAddress;
-  data.footer.contact.hours = copy.footerHours;
+  if (data.topbar) {
+    data.topbar.phone = copy.topbarPhone;
+    data.topbar.hours = copy.topbarHours;
+  }
+  if (data.footer?.contact) {
+    data.footer.contact.address = copy.footerAddress;
+    data.footer.contact.hours = copy.footerHours;
+    data.footer.contact.phone = copy.footerPhone;
+    data.footer.contact.email = copy.footerEmail;
+  }
   data.home.contact.aside.address = copy.contactAsideAddress;
   data.home.contact.aside.hours = copy.contactAsideHours;
+  data.page = data.page || {};
+  data.page.about = data.page.about || {};
+  data.page.about.documentTitle =
+    lang === "en"
+      ? "About the clinic | Noori Roohani Homeo Clinic"
+      : "کلینک کے بارے میں | نوری روحانی ہومیو کلینک";
+  data.page.about.metaDescription =
+    lang === "en"
+      ? "Learn about Noori Roohani Homeo Clinic in Surjani Town, Karachi — homeopathy, Rohani ilaj, and herbal care with evening consultations."
+      : "سرجانی ٹاؤن، کراچی — نوری روحانی ہومیو کلینک، ہومیو، روحانی علاج اور جڑی بوٹی۔";
+
   data.page.contact.mapNote = copy.mapNote;
   data.page.contact.metaDescription =
     lang === "en"
       ? "Contact Noori Roohani Homeo Clinic in Surjani Town, Karachi. Evening hours Sun–Thu 7–9 PM. Phone, WhatsApp, or appointment form."
       : "سرجانی ٹاؤن کراچی، نوری روحانی ہومیو کلینک — رابطہ۔ اتوار سے جمعرات شام 7–9 بجے۔ فون، واٹس ایپ یا فارم۔";
+
+  if (data.home?.contact?.aside) {
+    data.home.contact.aside.phone =
+      lang === "en" ? `Phone: ${copy.footerPhone}` : `فون: ${copy.footerPhone}`;
+    data.home.contact.aside.email =
+      lang === "en" ? `Email: ${copy.footerEmail}` : `ای میل: ${copy.footerEmail}`;
+  }
+  if (data.home?.form?.emailLink) {
+    data.home.form.emailValue = copy.footerEmail;
+  }
 
   if (data.home?.contact?.lead) {
     data.home.contact.lead =

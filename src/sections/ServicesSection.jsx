@@ -1,7 +1,24 @@
+import { Link } from "react-router-dom";
 import { useReveal } from "../hooks/useReveal";
 import { useI18n } from "../providers/I18nProvider";
 import { Icon } from "../components/Icon";
 import { SERVICE_ITEMS } from "../lib/serviceItems";
+
+function ServiceCardLink({ href, className, children, ...rest }) {
+  const internal = href.startsWith("/") && !href.startsWith("//");
+  if (internal) {
+    return (
+      <Link to={href} className={className} {...rest}>
+        {children}
+      </Link>
+    );
+  }
+  return (
+    <a href={href} className={className} {...rest}>
+      {children}
+    </a>
+  );
+}
 
 export function ServicesSection() {
   const { t } = useI18n();
@@ -24,7 +41,7 @@ export function ServicesSection() {
 
         <div id="services" className="services-grid">
           {SERVICE_ITEMS.map((item) => (
-            <a key={item.id} href={item.href} className="service-card" data-reveal-item>
+            <ServiceCardLink key={item.id} href={item.href} className="service-card" data-reveal-item>
               <span className="service-card__icon" aria-hidden="true">
                 <Icon name={item.icon} />
               </span>
@@ -34,7 +51,7 @@ export function ServicesSection() {
                 {t("home.services.learnMore")}
                 <Icon name="icon-arrow-right" className="service-card__arrow" />
               </span>
-            </a>
+            </ServiceCardLink>
           ))}
         </div>
       </div>

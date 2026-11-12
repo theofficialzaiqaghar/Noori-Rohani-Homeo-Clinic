@@ -1,0 +1,344 @@
+/* Hero carousel (same banner shell) */
+.hero-banner--slider .hero-banner__slide-media {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.85s ease;
+  pointer-events: none;
+}
+
+.hero-banner--slider .hero-banner__slide-media.is-active {
+  opacity: 1;
+  z-index: 0;
+}
+
+.hero-banner__slider-ui {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.15rem;
+}
+
+.hero-banner__slider-btn {
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background var(--ease), border-color var(--ease);
+}
+
+.hero-banner__slider-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+.hero-banner__dots {
+  display: flex;
+  gap: 0.4rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.hero-banner__dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  transition: transform var(--ease), background var(--ease);
+}
+
+.hero-banner__dot.is-active {
+  background: #fff;
+  transform: scale(1.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-banner--slider .hero-banner__slide-media {
+    transition: none;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Inner pages */
+.breadcrumbs {
+  margin: 0 0 1.5rem;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}
+
+.breadcrumbs__link {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.breadcrumbs__link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs__sep::before {
+  content: "/";
+  margin-inline: 0.25rem;
+  opacity: 0.5;
+}
+
+.inner-page__visual {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.inner-page__visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inner-page__cta-panel {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 48rem) {
+  .inner-page__cta-panel {
+    grid-template-columns: 1fr 1.1fr;
+    gap: 2rem;
+  }
+
+  .inner-page__cta-panel--reverse {
+    grid-template-columns: 1.1fr 1fr;
+  }
+
+  .inner-page__cta-panel--reverse > :first-child {
+    order: 2;
+  }
+}
+
+.detail-article__layout {
+  display: grid;
+  gap: 1.75rem;
+}
+
+@media (min-width: 48rem) {
+  .detail-article__layout {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.25fr);
+    gap: 2.25rem;
+    align-items: start;
+  }
+}
+
+.detail-article__body section + section {
+  margin-top: 1.5rem;
+}
+
+.detail-article__body h2,
+.detail-article__body h3 {
+  margin: 0 0 0.65rem;
+}
+
+.detail-article__cta {
+  margin-top: 1rem;
+}
+
+.related-cards__list {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.related-cards__list a {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--line);
+  font-size: var(--text-sm);
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color var(--ease), background var(--ease);
+}
+
+.related-cards__list a:hover {
+  border-color: var(--accent);
+  background: var(--paper-elevated);
+}
+
+.product-detail__figure {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.product-detail__figure img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.product-detail__price {
+  margin: 0.75rem 0 0;
+  font-weight: 600;
+  color: var(--ink-muted);
+}
+
+.product-detail__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.product-tile--link .product-tile__link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background: var(--paper-elevated);
+  overflow: hidden;
+  transition: border-color var(--ease), box-shadow var(--ease);
+}
+
+.product-tile--link .product-tile__link:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-soft);
+}
+
+.product-tile__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.product-tile__more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: 0.5rem;
+}
+
+.products-section__hub-cta,
+.products-section__whatsapp {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.products-section__disclaimer,
+.product-disclaimer {
+  max-width: 40rem;
+  margin: 1.25rem auto 0;
+  text-align: center;
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}
+
+.homeopathy-services__intro,
+.spiritual-hub-section__intro {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+@media (min-width: 48rem) {
+  .homeopathy-services__intro,
+  .spiritual-hub-section__intro {
+    grid-template-columns: 1fr 0.9fr;
+    align-items: center;
+  }
+}
+
+.homeopathy-services__grid,
+.spiritual-hub-section__grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+}
+
+.homeopathy-services__card,
+.spiritual-hub-section__card {
+  display: block;
+  padding: 1rem 1.1rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background: var(--paper-elevated);
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  transition: border-color var(--ease), transform var(--ease);
+}
+
+.homeopathy-services__card:hover,
+.spiritual-hub-section__card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.mehfil-preview__inner {
+  display: grid;
+  gap: 1.75rem;
+  align-items: center;
+}
+
+@media (min-width: 48rem) {
+  .mehfil-preview__inner {
+    grid-template-columns: 0.95fr 1.05fr;
+  }
+}
+
+.mehfil-preview__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.mehfil-preview__date {
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}
+
+.services-grid--hub {
+  margin-top: 0.5rem;
+}

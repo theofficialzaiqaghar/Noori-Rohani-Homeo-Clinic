@@ -6,11 +6,11 @@
     "ogDescription": "نوری روحانی ہومیو کلینک، سرجانی ٹاؤن کراچی — روحانی علاج، ہومیوپathic اور جڑی بوٹیاں۔ اتوار سے جمعرات شام 7 سے 9 بجے۔"
   },
   "topbar": {
-    "phone": "+92 300 0000000",
+    "phone": "0314-1000717",
     "phoneAria": "کلینک پر فون کریں",
     "whatsapp": "واٹس ایپ",
     "whatsappAria": "واٹس ایپ پر رابطہ کریں",
-    "hours": "اتوار–جمعرات: شام 7:00 سے 9:00"
+    "hours": "اتوار–جمعرات: شام 7:00 سے 9:00 · جمعہ و ہفتہ: بند"
   },
   "lang": {
     "switcher": "زبان",
@@ -36,8 +36,15 @@
       "homeo": "ہومیو",
       "herbal": "جڑی بوٹی مصنوعات",
       "quran": "قرآن و مدرسہ",
-      "nikkah": "نکاح و محفل",
-      "education": "تعلیم و دار العلوم"
+      "nikkah": "نکاح کی خدمات",
+      "education": "تعلیم و دار العلوم",
+      "mehfilNav": "ماہانہ محفل",
+      "spiritualAll": "تمام اسلامی خدمات"
+    },
+    "drawer": {
+      "homeopathy": "ہومیوopathic خدمات",
+      "spiritual": "اسلامی و روحانی خدمات",
+      "mehfil": "ماہانہ محفل"
     }
   },
   "btn": {
@@ -72,7 +79,10 @@
       "instagram": "انسٹاگرام"
     },
     "quickLinks": {
-      "title": "فوری روابط"
+      "title": "فوری روابط",
+      "homeopathy": "ہومیوopathic خدمات",
+      "spiritual": "اسلامی و روحانی خدمات",
+      "mehfil": "ماہانہ محفل"
     },
     "services": {
       "title": "ہماری خدمات",
@@ -91,11 +101,11 @@
       "addressLabel": "پتہ",
       "address": "پلاٹ نمبر CI-05، مون آرکیڈ، فلیٹ، سیکٹر L-1، مکہ ہوٹل کے قریب، سرجانی ٹاؤن، کراچی، پاکستان۔",
       "phoneLabel": "فون",
-      "phone": "[PHONE]",
+      "phone": "0314-1000717",
       "whatsappLabel": "واٹس ایپ",
       "whatsapp": "[PHONE]",
       "emailLabel": "ای میل",
-      "email": "[EMAIL]",
+      "email": "nooriroohaniclinic@gmail.com",
       "hoursLabel": "کلینک کے اوقات",
       "hours": "اتوار تا جمعرات: شام 7:00 سے 9:00 · جمعہ و ہفتہ: بند"
     },
@@ -113,7 +123,8 @@
   },
   "a11y": {
     "skipToContent": "مرکزی مواد پر جائیں",
-    "backToTop": "اوپر واپس جائیں"
+    "backToTop": "اوپر واپس جائیں",
+    "breadcrumbs": "بریڈ کرمب نیویگیشن"
   },
   "page": {
     "contact": {
@@ -124,6 +135,10 @@
       "mapNote": "مون آرکیڈ، سرجانی ٹاؤن — مکہ ہوٹل کے قریب۔ آنے سے پہلے فون کر کے تصدیق کر لیں۔",
       "viewContactPage": "مکمل رابطہ صفحہ",
       "metaDescription": "سرجانی ٹاؤن کراچی، نوری روحانی ہومیو کلینک — رابطہ۔ اتوار سے جمعرات شام 7–9 بجے۔ فون، واٹس ایپ یا فارم۔"
+    },
+    "about": {
+      "documentTitle": "کلینک کے بارے میں | نوری روحانی ہومیو کلینک",
+      "metaDescription": "سرجانی ٹاؤن، کراچی — نوری روحانی ہومیو کلینک، ہومیو، روحانی علاج اور جڑی بوٹی۔"
     }
   },
   "home": {
@@ -142,6 +157,46 @@
         "herbal": "جڑی بوٹی",
         "quran": "قرآن",
         "nikkah": "نکاح"
+      },
+      "slider": {
+        "controlsAria": "ہیرو سلائیڈز",
+        "prevAria": "پچھلی سلائیڈ",
+        "nextAria": "اگلی سلائیڈ",
+        "goToSlide": "سلائیڈ {n}"
+      },
+      "slides": {
+        "professor": {
+          "label": "پروفیسر و ماہر",
+          "title": "خاندانوں کے لیے تجربہ کار رہنمائی",
+          "subtitle": "ہومیو، جڑی بوٹی اور روحانی علاج — مشاورت پر مبنی۔",
+          "primaryCta": "اپائنٹمنٹ بک کریں",
+          "secondaryCta": "واٹس ایپ",
+          "imageAlt": "بانی"
+        },
+        "homeopathy": {
+          "label": "ہومیوopathic علاج",
+          "title": "ہومیوopathic مشاورت",
+          "subtitle": "عام صحت کے مسائل کے لیے منظم مشاورت۔",
+          "primaryCta": "خدمات دیکھیں",
+          "secondaryCta": "رابطہ",
+          "imageAlt": "مشاورت"
+        },
+        "spiritual": {
+          "label": "روحانی خدمات",
+          "title": "روحانی علاج و اسلامی تعاون",
+          "subtitle": "ادب اور رازداری — کوئی دعوے نہیں۔",
+          "primaryCta": "روحانی خدمات",
+          "secondaryCta": "سوال پوچھیں",
+          "imageAlt": "روحانی"
+        },
+        "herbal": {
+          "label": "جڑی بوٹی و قدرتی علاج",
+          "title": "مانوس مصنوعات",
+          "subtitle": "عطر، تیل، کریم — قیمت کلینک سے۔",
+          "primaryCta": "مصنوعات",
+          "secondaryCta": "پوچھ گچھ",
+          "imageAlt": "مصنوعات"
+        }
       }
     },
     "services": {
@@ -238,7 +293,10 @@
       "title": "جڑی بوٹی مصنوعات",
       "lead": "کلینک میں تیار تیل، کریم اور موسمی علاج۔ دستیابی، قیمت اور طریقہ کار کے لیے واٹس ایپ کریں۔",
       "placeholderName": "جڑی بوٹی مصنوعات",
-      "placeholderNote": "تفصیل جلد شامل ہوگی"
+      "placeholderNote": "تفصیل جلد شامل ہوگی",
+      "viewCatalog": "تمام مصنوعات",
+      "viewProduct": "مصنوع دیکھیں",
+      "disclaimer": "[PLACEHOLDER] استعمال سے پہلے کلینک سے تصدیق کریں۔"
     },
     "products": {
       "askWhatsApp": "واٹس ایپ پر پوچھیں",
@@ -387,9 +445,10 @@
       "title": "بتائیں ہم کیسے مدد کریں",
       "lead": "شام کے اوقات (اتوار–جمعرات، 7–9 بجے) میں رابطہ کریں۔ فوری روحانی معاملے میں پیغام کی بجائے فون کریں۔",
       "aside": {
-        "phone": "فون: [PHONE]",
+        "phone": "فون: 0314-1000717",
         "address": "پلاٹ CI-05، مون آرکیڈ، سیکٹر L-1، مکہ ہوٹل کے قریب، سرجانی ٹاؤن، کراچی",
-        "hours": "اتوار–جمعرات: شام 7–9 (جمعہ و ہفتہ بند)"
+        "hours": "اتوار–جمعرات: شام 7–9 (جمعہ و ہفتہ بند)",
+        "email": "ای میل: nooriroohaniclinic@gmail.com"
       }
     },
     "form": {
@@ -418,7 +477,31 @@
         "phone": "درست فون نمبر لکھیں۔",
         "service": "براہ کرم خدمت منتخب کریں۔",
         "summary": "براہ کرم غلطی والی فیلڈز درست کریں۔"
-      }
+      },
+      "emailValue": "nooriroohaniclinic@gmail.com"
+    },
+    "homeopathySection": {
+      "label": "ہومیوopathic علاج",
+      "title": "ہومیوopathic خدمات",
+      "lead": "عام شعبے — ہر صفحہ درست کریں۔",
+      "viewAll": "تمام خدمات",
+      "imageAlt": "مشاورت"
+    },
+    "spiritualHub": {
+      "label": "اسلامی و روحانی",
+      "title": "روحانی و تعلیمی خدمات",
+      "lead": "روحانی علاج، قرآن، مدرسہ، نکاح و دیگر۔",
+      "viewAll": "تمام اسلامی خدمات",
+      "imageAlt": "کمیونٹی"
+    },
+    "mehfilPreview": {
+      "label": "کمیونٹی",
+      "title": "ماہانہ محفل",
+      "lead": "ہر ماہ دوسرے ہفتے — {week}۔ تاریخ کلینک سے۔",
+      "dateNote": "[PLACEHOLDER] اگلی تاریخ",
+      "cta": "محفل کی تفصیل",
+      "contactCta": "شرکت کے لیے رابطہ",
+      "imageAlt": "محفل"
     }
   },
   "errors": {
@@ -427,6 +510,357 @@
       "title": "ہم وہ صفحہ نہیں ڈھونڈ سکے",
       "lede": "لنک پرانا ہو سکتا ہے۔ ہوم پر جائیں یا شام کے اوقات میں کلینک سے رابطہ کریں۔",
       "home": "ہوم پر واپس"
+    }
+  },
+  "pages": {
+    "homeopathy": {
+      "hub": {
+        "documentTitle": "ہومیوopathic خدمات | نوری روحانی ہومیو کلینک",
+        "metaDescription": "ہومیوopathic خدمات اور اپائنٹمنٹ۔",
+        "kicker": "خدمات",
+        "title": "ہومیوopathic خدمات",
+        "lead": "ہر شعبے کی الگ صفحہ — کلینک کے مطابق ترمیم کریں۔",
+        "breadcrumbCurrent": "ہومیوopathic خدمات",
+        "gridHeading": "خدمات کی فہرست",
+        "visualAlt": "مشاورت",
+        "approachTitle": "مشاورت کا طریقہ",
+        "approachText": "تاریخ اور فالو اپ۔ آن لائن کوئی ضمانت نہیں۔"
+      },
+      "detail": {
+        "kicker": "ہومیوopathic خدمت",
+        "overviewHeading": "خلاصہ",
+        "approachHeading": "علاج کا طریقہ",
+        "consultHeading": "مشاورت بک کریں",
+        "relatedHeading": "متعلقہ خدمات"
+      },
+      "items": {
+        "kidney-problems": {
+          "title": "گردے کے مسائل",
+          "summary": "گردے کے مسائل کے لیے ہومیوopathic مشاورت۔ عمومی معلومات — طبی مشورے کی جگہ نہیں۔",
+          "documentTitle": "گردے کے مسائل — ہومیو | نوری روحانی ہومیو کلینک",
+          "metaDescription": "نوری روحانی ہومیو کلینک، سرجانی ٹاؤن — گردے کے مسائل۔ شام 7–9 بجے مشاورت۔",
+          "imageAlt": "گردے کے مسائل — نوری روحانی ہومیو کلینک",
+          "overview": "Homeopathic case-taking for kidney-related complaints. We discuss your symptoms, history, and reports you bring to the clinic.",
+          "approach": "Consultations are private. Remedy selection follows classical homeopathy with follow-up visits when needed.",
+          "consult": "سرجانی ٹاؤن کلینک — 0314-1000717 پر فون یا واٹس ایپ (اتوار–جمعرات شام 7–9 بجے)۔"
+        },
+        "hair-problems": {
+          "title": "بالوں کے مسائل",
+          "summary": "بالوں کے مسائل کے لیے ہومیوopathic مشاورت۔ عمومی معلومات — طبی مشورے کی جگہ نہیں۔",
+          "documentTitle": "بالوں کے مسائل — ہومیو | نوری روحانی ہومیو کلینک",
+          "metaDescription": "نوری روحانی ہومیو کلینک، سرجانی ٹاؤن — بالوں کے مسائل۔ شام 7–9 بجے مشاورت۔",
+          "imageAlt": "بالوں کے مسائل — نوری روحانی ہومیو کلینک",
+          "overview": "Hair fall, thinning, dryness, and related scalp issues discussed in a structured consultation.",
+          "approach": "We note pattern, duration, and triggers before suggesting homeopathic support alongside lifestyle advice where helpful.",
+          "consult": "سرجانی ٹاؤن کلینک — 0314-1000717 پر فون یا واٹس ایپ (اتوار–جمعرات شام 7–9 بجے)۔"
+        },
+        "male-female-infertility": {
+          "title": "مردانہ و زنانہ بانجھ پن",
+          "summary": "مردانہ و زنانہ بانجھ پن کے لیے ہومیوopathic مشاورت۔ عمومی معلومات — طبی مشورے کی جگہ نہیں۔",
+          "documentTitle": "مردانہ و زنانہ بانجھ پن — ہومیو | نوری روحانی ہومیو کلینک",
+          "metaDescription": "نوری روحانی ہومیو کلینک، سرجانی ٹاؤن — مردانہ و زنانہ بانجھ پن۔ شام 7–9 بجے مشاورت۔",
+          "imageAlt": "مردانہ و زنانہ بانجھ پن — نوری روحانی ہومیو کلینک",
+          "overview": "Male and female infertility concerns are handled with discretion. Couples may attend together when comfortable.",
+          "approach": "We review medical history and prior tests you share. Treatment plans are adjusted at follow-up — no guaranteed outcomes.",
+          "consult": "سرجانی ٹاؤن کلینک — 0314-1000717 پر فون یا واٹس ایپ (اتوار–جمعرات شام 7–9 بجے)۔"
+        },
+        "sexual-health": {
+          "title": "جنسی صحت کے مسائل",
+          "summary": "جنسی صحت کے مسائل کے لیے ہومیوopathic مشاورت۔ عمومی معلومات — طبی مشورے کی جگہ نہیں۔",
+          "documentTitle": "جنسی صحت کے مسائل — ہومیو | نوری روحانی ہومیو کلینک",
+          "metaDescription": "نوری روحانی ہومیو کلینک، سرجانی ٹاؤن — جنسی صحت کے مسائل۔ شام 7–9 بجے مشاورت۔",
+          "imageAlt": "جنسی صحت کے مسائل — نوری روحانی ہومیو کلینک",
+          "overview": "Sensitive sexual health matters for men and women. Sessions are confidential and conducted with adab.",
+          "approach": "Often linked with stress or general health — we take a whole-person history before any remedy plan.",
+          "consult": "سرجانی ٹاؤن کلینک — 0314-1000717 پر فون یا واٹس ایپ (اتوار–جمعرات شام 7–9 بجے)۔"
+        },
+        "psychological-mental-health": {
+          "title": "نفسیاتی مسائل",
+          "summary": "نفسیاتی مسائل کے لیے ہومیوopathic مشاورت۔ عمومی معلومات — طبی مشورے کی جگہ نہیں۔",
+          "documentTitle": "نفسیاتی مسائل — ہومیو | نوری روحانی ہومیو کلینک",
+          "metaDescription": "نوری روحانی ہومیو کلینک، سرجانی ٹاؤن — نفسیاتی مسائل۔ شام 7–9 بجے مشاورت۔",
+          "imageAlt": "نفسیاتی مسائل — نوری روحانی ہومیو کلینک",
+          "overview": "Psychological and emotional difficulties such as anxiety, low mood, stress, or sleep disturbance.",
+          "approach": "Homeopathic support complements — not replaces — urgent psychiatric care. Seek emergency help when needed.",
+          "consult": "سرجانی ٹاؤن کلینک — 0314-1000717 پر فون یا واٹس ایپ (اتوار–جمعرات شام 7–9 بجے)۔"
+        },
+        "digestive-problems": {
+          "title": "معدے کے مسائل",
+          "summary": "معدے کے مسائل کے لیے ہومیوopathic مشاورت۔ عمومی معلومات — طبی مشورے کی جگہ نہیں۔",
+          "documentTitle": "معدے کے مسائل — ہومیو | نوری روحانی ہومیو کلینک",
+          "metaDescription": "نوری روحانی ہومیو کلینک، سرجانی ٹاؤن — معدے کے مسائل۔ شام 7–9 بجے مشاورت۔",
+          "imageAlt": "معدے کے مسائل — نوری روحانی ہومیو کلینک",
+          "overview": "Stomach pain, acidity, bloating, irregular appetite, and other digestive complaints.",
+          "approach": "Diet and routine are reviewed along with symptoms. Follow-up helps track response over time.",
+          "consult": "سرجانی ٹاؤن کلینک — 0314-1000717 پر فون یا واٹس ایپ (اتوار–جمعرات شام 7–9 بجے)۔"
+        },
+        "joint-muscular-problems": {
+          "title": "جوڑوں اور عضلات کی شکایات",
+          "summary": "جوڑوں اور عضلات کی شکایات کے لیے ہومیوopathic مشاورت۔ عمومی معلومات — طبی مشورے کی جگہ نہیں۔",
+          "documentTitle": "جوڑوں اور عضلات کی شکایات — ہومیو | نوری روحانی ہومیو کلینک",
+          "metaDescription": "نوری روحانی ہومیو کلینک، سرجانی ٹاؤن — جوڑوں اور عضلات کی شکایات۔ شام 7–9 بجے مشاورت۔",
+          "imageAlt": "جوڑوں اور عضلات کی شکایات — نوری روحانی ہومیو کلینک",
+          "overview": "Joint stiffness, muscular aches, and mobility-related complaints.",
+          "approach": "We document pain pattern, aggravations, and relief factors typical of homeopathic case-taking.",
+          "consult": "سرجانی ٹاؤن کلینک — 0314-1000717 پر فون یا واٹس ایپ (اتوار–جمعرات شام 7–9 بجے)۔"
+        },
+        "womens-health": {
+          "title": "خواتین کی صحت",
+          "summary": "خواتین کی صحت کے لیے ہومیوopathic مشاورت۔ عمومی معلومات — طبی مشورے کی جگہ نہیں۔",
+          "documentTitle": "خواتین کی صحت — ہومیو | نوری روحانی ہومیو کلینک",
+          "metaDescription": "نوری روحانی ہومیو کلینک، سرجانی ٹاؤن — خواتین کی صحت۔ شام 7–9 بجے مشاورت۔",
+          "imageAlt": "خواتین کی صحت — نوری روحانی ہومیو کلینک",
+          "overview": "Women's health issues across age groups — cycles, hormones, and general wellbeing.",
+          "approach": "Private consultations for female patients. Bring any recent lab reports if available.",
+          "consult": "سرجانی ٹاؤن کلینک — 0314-1000717 پر فون یا واٹس ایپ (اتوار–جمعرات شام 7–9 بجے)۔"
+        },
+        "childrens-health": {
+          "title": "بچوں کی صحت",
+          "summary": "بچوں کی صحت کے لیے ہومیوopathic مشاورت۔ عمومی معلومات — طبی مشورے کی جگہ نہیں۔",
+          "documentTitle": "بچوں کی صحت — ہومیو | نوری روحانی ہومیو کلینک",
+          "metaDescription": "نوری روحانی ہومیو کلینک، سرجانی ٹاؤن — بچوں کی صحت۔ شام 7–9 بجے مشاورت۔",
+          "imageAlt": "بچوں کی صحت — نوری روحانی ہومیو کلینک",
+          "overview": "Children's acute and recurring complaints suitable for homeopathic assessment.",
+          "approach": "Parents attend with the child. We explain remedies and follow-up clearly before you leave.",
+          "consult": "سرجانی ٹاؤن کلینک — 0314-1000717 پر فون یا واٹس ایپ (اتوار–جمعرات شام 7–9 بجے)۔"
+        },
+        "mens-health": {
+          "title": "مردوں کی صحت",
+          "summary": "مردوں کی صحت کے لیے ہومیوopathic مشاورت۔ عمومی معلومات — طبی مشورے کی جگہ نہیں۔",
+          "documentTitle": "مردوں کی صحت — ہومیو | نوری روحانی ہومیو کلینک",
+          "metaDescription": "نوری روحانی ہومیو کلینک، سرجانی ٹاؤن — مردوں کی صحت۔ شام 7–9 بجے مشاورت۔",
+          "imageAlt": "مردوں کی صحت — نوری روحانی ہومیو کلینک",
+          "overview": "Men's health including vitality, prostate-related symptoms, and general preventive care.",
+          "approach": "Evening appointments at the clinic. Referral to hospital care when symptoms need urgent attention.",
+          "consult": "سرجانی ٹاؤن کلینک — 0314-1000717 پر فون یا واٹس ایپ (اتوار–جمعرات شام 7–9 بجے)۔"
+        },
+        "skin-scalp-concerns": {
+          "title": "جلدی امراض اور کھوپڑی کے مسائل",
+          "summary": "جلدی امراض اور کھوپڑی کے مسائل کے لیے ہومیوopathic مشاورت۔ عمومی معلومات — طبی مشورے کی جگہ نہیں۔",
+          "documentTitle": "جلدی امراض اور کھوپڑی کے مسائل — ہومیو | نوری روحانی ہومیو کلینک",
+          "metaDescription": "نوری روحانی ہومیو کلینک، سرجانی ٹاؤن — جلدی امراض اور کھوپڑی کے مسائل۔ شام 7–9 بجے مشاورت۔",
+          "imageAlt": "جلدی امراض اور کھوپڑی کے مسائل — نوری روحانی ہومیو کلینک",
+          "overview": "Support for skin disorders and scalp concerns such as itching, rash, dryness, or recurring irritation.",
+          "approach": "Skin and scalp cases need careful history. We avoid online diagnosis — visit or call during clinic hours.",
+          "consult": "سرجانی ٹاؤن کلینک — 0314-1000717 پر فون یا واٹس ایپ (اتوار–جمعرات شام 7–9 بجے)۔"
+        }
+      }
+    },
+    "spiritual": {
+      "hub": {
+        "documentTitle": "اسلامی و روحانی خدمات | نوری روحانی ہومیو کلینک",
+        "metaDescription": "روحانی علاج، قرآن، مدرسہ، نکاح و دیگر۔",
+        "kicker": "کمیونٹی",
+        "title": "اسلامی و روحانی خدمات",
+        "lead": "ادب کے ساتھ تعلیمی و روحانی خدمات۔",
+        "breadcrumbCurrent": "اسلامی خدمات",
+        "gridHeading": "خدمات کی فہرست",
+        "visualAlt": "روحانی خدمات",
+        "noteTitle": "رازداری و ادب",
+        "noteText": "حساس معاملات خاموشی سے۔ کلینک سے تصدیق کریں۔",
+        "cta": "رہنمائی کے لیے رابطہ"
+      },
+      "detail": {
+        "kicker": "اسلامی خدمت",
+        "overviewHeading": "خدمت کا تعارف",
+        "whatHeading": "کیا توقع رکھیں",
+        "contactHeading": "رابطہ",
+        "contactCta": "کلینک سے رابطہ",
+        "relatedHeading": "متعلقہ خدمات"
+      },
+      "items": {
+        "rohani-ilaj": {
+          "title": "روحانی علاج",
+          "summary": "روحانی علاج — نوری روحانی ہومیو کلینک میں ادب اور رازداری کے ساتھ۔",
+          "documentTitle": "روحانی علاج | نوری روحانی ہومیو کلینک",
+          "metaDescription": "روحانی علاج — سرجانی ٹاؤن۔ رابطہ: 0314-1000717",
+          "imageAlt": "روحانی علاج — کلینک",
+          "overview": "کلینک کی سرکاری فہرست کے مطابق روحانی علاج کی سہولت۔",
+          "whatToExpect": "وقت اور ضروریات کے لیے پہلے فون کریں۔",
+          "contactNote": "0314-1000717 یا nooriroohaniclinic@gmail.com"
+        },
+        "istikhara": {
+          "title": "استخارہ",
+          "summary": "استخارہ — نوری روحانی ہومیو کلینک میں ادب اور رازداری کے ساتھ۔",
+          "documentTitle": "استخارہ | نوری روحانی ہومیو کلینک",
+          "metaDescription": "استخارہ — سرجانی ٹاؤن۔ رابطہ: 0314-1000717",
+          "imageAlt": "استخارہ — کلینک",
+          "overview": "کلینک کی سرکاری فہرست کے مطابق استخارہ کی سہولت۔",
+          "whatToExpect": "وقت اور ضروریات کے لیے پہلے فون کریں۔",
+          "contactNote": "0314-1000717 یا nooriroohaniclinic@gmail.com"
+        },
+        "quran-teaching": {
+          "title": "قرآن کی تعلیم",
+          "summary": "قرآن کی تعلیم — نوری روحانی ہومیو کلینک میں ادب اور رازداری کے ساتھ۔",
+          "documentTitle": "قرآن کی تعلیم | نوری روحانی ہومیو کلینک",
+          "metaDescription": "قرآن کی تعلیم — سرجانی ٹاؤن۔ رابطہ: 0314-1000717",
+          "imageAlt": "قرآن کی تعلیم — کلینک",
+          "overview": "کلینک کی سرکاری فہرست کے مطابق قرآن کی تعلیم کی سہولت۔",
+          "whatToExpect": "وقت اور ضروریات کے لیے پہلے فون کریں۔",
+          "contactNote": "0314-1000717 یا nooriroohaniclinic@gmail.com"
+        },
+        "madarsa": {
+          "title": "مدرسہ",
+          "summary": "مدرسہ — نوری روحانی ہومیو کلینک میں ادب اور رازداری کے ساتھ۔",
+          "documentTitle": "مدرسہ | نوری روحانی ہومیو کلینک",
+          "metaDescription": "مدرسہ — سرجانی ٹاؤن۔ رابطہ: 0314-1000717",
+          "imageAlt": "مدرسہ — کلینک",
+          "overview": "کلینک کی سرکاری فہرست کے مطابق مدرسہ کی سہولت۔",
+          "whatToExpect": "وقت اور ضروریات کے لیے پہلے فون کریں۔",
+          "contactNote": "0314-1000717 یا nooriroohaniclinic@gmail.com"
+        },
+        "nikah-khawan": {
+          "title": "نکاح خواں خدمات",
+          "summary": "نکاح خواں خدمات — نوری روحانی ہومیو کلینک میں ادب اور رازداری کے ساتھ۔",
+          "documentTitle": "نکاح خواں خدمات | نوری روحانی ہومیو کلینک",
+          "metaDescription": "نکاح خواں خدمات — سرجانی ٹاؤن۔ رابطہ: 0314-1000717",
+          "imageAlt": "نکاح خواں خدمات — کلینک",
+          "overview": "کلینک کی سرکاری فہرست کے مطابق نکاح خواں خدمات کی سہولت۔",
+          "whatToExpect": "وقت اور ضروریات کے لیے پہلے فون کریں۔",
+          "contactNote": "0314-1000717 یا nooriroohaniclinic@gmail.com"
+        },
+        "free-schooling-education": {
+          "title": "مفت تعلیم / سکولنگ",
+          "summary": "مفت تعلیم / سکولنگ — نوری روحانی ہومیو کلینک میں ادب اور رازداری کے ساتھ۔",
+          "documentTitle": "مفت تعلیم / سکولنگ | نوری روحانی ہومیو کلینک",
+          "metaDescription": "مفت تعلیم / سکولنگ — سرجانی ٹاؤن۔ رابطہ: 0314-1000717",
+          "imageAlt": "مفت تعلیم / سکولنگ — کلینک",
+          "overview": "کلینک کی سرکاری فہرست کے مطابق مفت تعلیم / سکولنگ کی سہولت۔",
+          "whatToExpect": "وقت اور ضروریات کے لیے پہلے فون کریں۔",
+          "contactNote": "0314-1000717 یا nooriroohaniclinic@gmail.com"
+        },
+        "nazim-e-ala-ulama-mashaikh": {
+          "title": "ناظم اعلیٰ علماء و مشائخ",
+          "summary": "ناظم اعلیٰ علماء و مشائخ — نوری روحانی ہومیو کلینک میں ادب اور رازداری کے ساتھ۔",
+          "documentTitle": "ناظم اعلیٰ علماء و مشائخ | نوری روحانی ہومیو کلینک",
+          "metaDescription": "ناظم اعلیٰ علماء و مشائخ — سرجانی ٹاؤن۔ رابطہ: 0314-1000717",
+          "imageAlt": "ناظم اعلیٰ علماء و مشائخ — کلینک",
+          "overview": "کلینک کی سرکاری فہرست کے مطابق ناظم اعلیٰ علماء و مشائخ کی سہولت۔",
+          "whatToExpect": "وقت اور ضروریات کے لیے پہلے فون کریں۔",
+          "contactNote": "0314-1000717 یا nooriroohaniclinic@gmail.com"
+        },
+        "international-research-center": {
+          "title": "انٹرنیشنل ریسرچ سینٹر",
+          "summary": "انٹرنیشنل ریسرچ سینٹر — نوری روحانی ہومیو کلینک میں ادب اور رازداری کے ساتھ۔",
+          "documentTitle": "انٹرنیشنل ریسرچ سینٹر | نوری روحانی ہومیو کلینک",
+          "metaDescription": "انٹرنیشنل ریسرچ سینٹر — سرجانی ٹاؤن۔ رابطہ: 0314-1000717",
+          "imageAlt": "انٹرنیشنل ریسرچ سینٹر — کلینک",
+          "overview": "کلینک کی سرکاری فہرست کے مطابق انٹرنیشنل ریسرچ سینٹر کی سہولت۔",
+          "whatToExpect": "وقت اور ضروریات کے لیے پہلے فون کریں۔",
+          "contactNote": "0314-1000717 یا nooriroohaniclinic@gmail.com"
+        }
+      }
+    },
+    "products": {
+      "hub": {
+        "documentTitle": "جڑی بوٹی مصنوعات | نوری روحانی ہومیو کلینک",
+        "metaDescription": "عطر، تیل، صابن — قیمت کلینک سے۔",
+        "kicker": "دکان",
+        "title": "جڑی بوٹی مصنوعات و عطر",
+        "lead": "[PLACEHOLDER] تصاویر و متن درست کریں۔",
+        "breadcrumbCurrent": "مصنوعات",
+        "gridHeading": "مصنوعات کی فہرست",
+        "viewDetails": "تفصیل دیکھیں",
+        "disclaimer": "[PLACEHOLDER] لیبل کے مطابق قیمت و اجزا۔",
+        "inquiryCta": "مصنوع کی پوچھ گچھ"
+      },
+      "detail": {
+        "kicker": "مصنوع",
+        "detailsHeading": "تفصیل",
+        "usageHeading": "استعمال و احتیاط",
+        "relatedHeading": "متعلقہ مصنوعات",
+        "orderCta": "واٹس ایپ پر آرڈر",
+        "inquiryCta": "رابطہ صفحہ پر پوچھیں"
+      },
+      "items": {
+        "attar-perfumes": {
+          "title": "پرفیوم و عطر",
+          "short": "پرفیوم و عطر — کلینک کی جڑی بوٹی رینج؛ دستیابی 0314-1000717 پر پوچھیں۔",
+          "documentTitle": "پرفیوم و عطر | نوری روحانی ہومیو کلینک",
+          "metaDescription": "پرفیوم و عطر — نوری روحانی ہومیو کلینک، سرجانی ٹاؤن۔",
+          "imageAlt": "پرفیوم و عطر — کلینک",
+          "price": "قیمت: کلینک یا واٹس ایپ 0314-1000717 پر تصدیق کریں",
+          "details": "Traditional attar and perfume available at the clinic. Ask for current stock and fragrances.",
+          "usage": "For external use only. Patch-test if you have sensitive skin."
+        },
+        "hair-oil": {
+          "title": "بالوں کا تیل",
+          "short": "بالوں کا تیل — کلینک کی جڑی بوٹی رینج؛ دستیابی 0314-1000717 پر پوچھیں۔",
+          "documentTitle": "بالوں کا تیل | نوری روحانی ہومیو کلینک",
+          "metaDescription": "بالوں کا تیل — نوری روحانی ہومیو کلینک، سرجانی ٹاؤن۔",
+          "imageAlt": "بالوں کا تیل — کلینک",
+          "price": "قیمت: کلینک یا واٹس ایپ 0314-1000717 پر تصدیق کریں",
+          "details": "Clinic-prepared hair oil for dry scalp and hair care. Ingredients and batch details at counter.",
+          "usage": "Apply as directed on the label. Avoid contact with eyes."
+        },
+        "ban-child-bam-bam": {
+          "title": "چائلڈ بم بم",
+          "short": "چائلڈ بم بم — کلینک کی جڑی بوٹی رینج؛ دستیابی 0314-1000717 پر پوچھیں۔",
+          "documentTitle": "چائلڈ بم بم | نوری روحانی ہومیو کلینک",
+          "metaDescription": "چائلڈ بم بم — نوری روحانی ہومیو کلینک، سرجانی ٹاؤن۔",
+          "imageAlt": "چائلڈ بم بم — کلینک",
+          "price": "قیمت: کلینک یا واٹس ایپ 0314-1000717 پر تصدیق کریں",
+          "details": "Child Bam Bam herbal product — enquire availability and age-appropriate use at the clinic.",
+          "usage": "Use only as advised by staff. Keep out of reach of young children unless directed."
+        },
+        "winter-lotion": {
+          "title": "موسم سرما لوشن",
+          "short": "موسم سرما لوشن — کلینک کی جڑی بوٹی رینج؛ دستیابی 0314-1000717 پر پوچھیں۔",
+          "documentTitle": "موسم سرما لوشن | نوری روحانی ہومیو کلینک",
+          "metaDescription": "موسم سرما لوشن — نوری روحانی ہومیو کلینک، سرجانی ٹاؤن۔",
+          "imageAlt": "موسم سرما لوشن — کلینک",
+          "price": "قیمت: کلینک یا واٹس ایپ 0314-1000717 پر تصدیق کریں",
+          "details": "Winter lotion for dry skin in cold weather. Moisturising herbal preparation.",
+          "usage": "Apply to clean skin. Discontinue if irritation occurs."
+        },
+        "herbal-soap": {
+          "title": "جڑی بوٹی صابن (مہاسوں و فیئرنس)",
+          "short": "جڑی بوٹی صابن (مہاسوں و فیئرنس) — کلینک کی جڑی بوٹی رینج؛ دستیابی 0314-1000717 پر پوچھیں۔",
+          "documentTitle": "جڑی بوٹی صابن (مہاسوں و فیئرنس) | نوری روحانی ہومیو کلینک",
+          "metaDescription": "جڑی بوٹی صابن (مہاسوں و فیئرنس) — نوری روحانی ہومیو کلینک، سرجانی ٹاؤن۔",
+          "imageAlt": "جڑی بوٹی صابن (مہاسوں و فیئرنس) — کلینک",
+          "price": "قیمت: کلینک یا واٹس ایپ 0314-1000717 پر تصدیق کریں",
+          "details": "Herbal soap formulated for acne and whitening support alongside regular skincare.",
+          "usage": "Use on face or body as labelled. Rinse well; avoid broken or irritated skin."
+        },
+        "acne-whitening-cream": {
+          "title": "مہاسوں و whitening کریم",
+          "short": "مہاسوں و whitening کریم — کلینک کی جڑی بوٹی رینج؛ دستیابی 0314-1000717 پر پوچھیں۔",
+          "documentTitle": "مہاسوں و whitening کریم | نوری روحانی ہومیو کلینک",
+          "metaDescription": "مہاسوں و whitening کریم — نوری روحانی ہومیو کلینک، سرجانی ٹاؤن۔",
+          "imageAlt": "مہاسوں و whitening کریم — کلینک",
+          "price": "قیمت: کلینک یا واٹس ایپ 0314-1000717 پر تصدیق کریں",
+          "details": "Acne and whitening cream from the clinic herbal range. Confirm suitability for your skin type.",
+          "usage": "Follow label directions. Sun protection is recommended when using whitening products."
+        },
+        "majoon-e-khas": {
+          "title": "معجون خاص",
+          "short": "معجون خاص — کلینک کی جڑی بوٹی رینج؛ دستیابی 0314-1000717 پر پوچھیں۔",
+          "documentTitle": "معجون خاص | نوری روحانی ہومیو کلینک",
+          "metaDescription": "معجون خاص — نوری روحانی ہومیو کلینک، سرجانی ٹاؤن۔",
+          "imageAlt": "معجون خاص — کلینک",
+          "price": "قیمت: کلینک یا واٹس ایپ 0314-1000717 پر تصدیق کریں",
+          "details": "Majoon-e-Khas — specialised herbal majoon. Price and ingredients confirmed at clinic only.",
+          "usage": "Take only as prescribed by clinic staff. Not a substitute for medical treatment."
+        }
+      }
+    },
+    "mehfil": {
+      "documentTitle": "ماہانہ محفل | نوری روحانی ہومیو کلینک",
+      "metaDescription": "ہر ماہ دوسرے ہفتے میں محفل۔",
+      "kicker": "تقریبات",
+      "title": "ماہانہ محفل",
+      "lead": "برادری کی محفل — تاریخیں ماہانہ طے ہوتی ہیں۔",
+      "breadcrumbCurrent": "ماہانہ محفل",
+      "imageAlt": "محفل",
+      "scheduleHeading": "شیڈول",
+      "scheduleText": "ہر ماہ کے {week} ہفتے میں منصوبہ۔ [PLACEHOLDER]",
+      "upcomingDate": "[PLACEHOLDER] اگلی تاریخ: [DATE]",
+      "aboutHeading": "محفل کے بارے میں",
+      "aboutText": "[PLACEHOLDER] تفصیل یہاں۔",
+      "participateHeading": "شرکت",
+      "participateText": "[PLACEHOLDER] رابطہ کی ہدایات۔",
+      "cta": "محفل کے بارے میں رابطہ"
     }
   }
 }

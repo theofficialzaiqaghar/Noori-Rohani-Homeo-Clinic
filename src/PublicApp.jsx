@@ -1,9 +1,12 @@
 import { PublicLayout } from "./layout/PublicLayout";
 import { HeroSection } from "./sections/HeroSection";
 import { ServicesSection } from "./sections/ServicesSection";
+import { HomeopathyServicesSection } from "./sections/HomeopathyServicesSection";
 import { RohaniSection } from "./sections/RohaniSection";
+import { SpiritualServicesHubSection } from "./sections/SpiritualServicesHubSection";
 import { AboutSection } from "./sections/AboutSection";
 import { ProductsSection } from "./sections/ProductsSection";
+import { MehfilPreviewSection } from "./sections/MehfilPreviewSection";
 import { EducationSection } from "./sections/EducationSection";
 import { WhySection } from "./sections/WhySection";
 import { ProcessSection } from "./sections/ProcessSection";
@@ -33,9 +36,12 @@ export default function PublicApp() {
       </div>
       <main id="main" tabIndex={-1}>
         <ServicesSection />
+        <HomeopathyServicesSection />
         <RohaniSection />
+        <SpiritualServicesHubSection />
         <AboutSection />
         <ProductsSection />
+        <MehfilPreviewSection />
         <EducationSection />
         <WhySection />
         <ProcessSection />

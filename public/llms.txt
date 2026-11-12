@@ -7,16 +7,27 @@
 - Name: Noori Roohani Homeo Clinic
 - Website: https://www.example.com/ (set your live domain in deployment)
 - Address: Plot No. CI-05, Moon Arcade, Flat, Sector L-1, Near Makkah Hotel, Surjani Town, Karachi, Pakistan
+- Phone: 0314-1000717
+- Email: nooriroohaniclinic@gmail.com
 - Hours: Sunday–Thursday 7:00 PM – 9:00 PM; Friday and Saturday closed
 
 ## Main pages
 
 - Home: https://www.example.com/
+- About: https://www.example.com/about
 - Contact & appointments: https://www.example.com/contact
+- Homeopathic services hub: https://www.example.com/services/homeopathy
+- Islamic & spiritual services hub: https://www.example.com/services/spiritual
+- Herbal products catalogue: https://www.example.com/products
+- Monthly Mehfil: https://www.example.com/events/mehfil
 
-## Services (homepage sections)
+## Service detail routes
 
-Homeopathic care, Rohani ilaj, herbal products, Quran and madrasa education, community programmes — described on the home page. Consultation is by appointment during evening clinic hours.
+Each item under `/services/homeopathy/{slug}` and `/services/spiritual/{slug}` has its own page (see sitemap.xml for the full list).
+
+## Product detail routes
+
+Each product under `/products/{slug}` has its own page (see sitemap.xml).
 
 ## Note
 

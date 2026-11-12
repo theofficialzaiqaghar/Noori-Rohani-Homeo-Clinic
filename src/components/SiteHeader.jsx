@@ -9,12 +9,13 @@ import { CLINIC_PHONE_E164, CLINIC_WHATSAPP } from "../lib/contactInfo";
 import { BRAND_LOGO_SRC } from "../lib/brandAssets";
 
 const SERVICE_LINKS = [
-  { href: "/#rohani", key: "nav.servicesMenu.rohani" },
-  { href: "/#homeo", key: "nav.servicesMenu.homeo" },
-  { href: "/#products", key: "nav.servicesMenu.herbal" },
-  { href: "/#education", key: "nav.servicesMenu.quran" },
-  { href: "/#education", key: "nav.servicesMenu.nikkah" },
-  { href: "/#education", key: "nav.servicesMenu.education" },
+  { href: "/services/spiritual/rohani-ilaj", key: "nav.servicesMenu.rohani", route: true },
+  { href: "/services/homeopathy", key: "nav.servicesMenu.homeo", route: true },
+  { href: "/products", key: "nav.servicesMenu.herbal", route: true },
+  { href: "/services/spiritual/quran-teaching", key: "nav.servicesMenu.quran", route: true },
+  { href: "/services/spiritual/nikah-khawan", key: "nav.servicesMenu.nikkah", route: true },
+  { href: "/services/spiritual", key: "nav.servicesMenu.spiritualAll", route: true },
+  { href: "/events/mehfil", key: "nav.servicesMenu.mehfilNav", route: true },
 ];
 
 export function SiteHeader({ overlay = false, className = "" }) {
@@ -125,7 +126,7 @@ export function SiteHeader({ overlay = false, className = "" }) {
           </Link>
 
           <nav className="mastnav" aria-label={t("nav.label")}>
-            <a href="/#homeo">{t("nav.about")}</a>
+            <Link to="/about">{t("nav.about")}</Link>
             <div
               className="mastnav__drop"
               onMouseEnter={() => setServicesOpen(true)}
@@ -149,23 +150,29 @@ export function SiteHeader({ overlay = false, className = "" }) {
                     exit={{ opacity: 0, y: 8 }}
                     transition={{ duration: 0.22 }}
                   >
-                    {SERVICE_LINKS.map((item) => (
-                      <a key={item.key} href={item.href} onClick={() => setServicesOpen(false)}>
-                        {t(item.key)}
-                      </a>
-                    ))}
+                    {SERVICE_LINKS.map((item) =>
+                      item.route ? (
+                        <Link key={item.key} to={item.href} onClick={() => setServicesOpen(false)}>
+                          {t(item.key)}
+                        </Link>
+                      ) : (
+                        <a key={item.key} href={item.href} onClick={() => setServicesOpen(false)}>
+                          {t(item.key)}
+                        </a>
+                      )
+                    )}
                   </motion.div>
                 )}
               </AnimatePresence>
             </div>
-            <a href="/#products">{t("nav.products")}</a>
-            <a href="/contact">{t("nav.contact")}</a>
+            <Link to="/products">{t("nav.products")}</Link>
+            <Link to="/contact">{t("nav.contact")}</Link>
           </nav>
 
           <div className="masthead__actions">
             <Button
-              as="a"
-              href="/contact"
+              as={Link}
+              to="/contact"
               aria-label={t("btn.bookAppointmentAria")}
               className={`masthead__book-btn${solid ? "" : " btn--on-dark"}`}
             >
@@ -210,20 +217,26 @@ export function SiteHeader({ overlay = false, className = "" }) {
                 </button>
               </div>
               <nav className="drawer__nav">
-                <a href="/#homeo" onClick={() => setOpen(false)}>
+                <Link to="/about" onClick={() => setOpen(false)}>
                   {t("nav.about")}
-                </a>
-                <a href="/#services" onClick={() => setOpen(false)}>
-                  {t("nav.services")}
-                </a>
-                <a href="/#products" onClick={() => setOpen(false)}>
+                </Link>
+                <Link to="/services/homeopathy" onClick={() => setOpen(false)}>
+                  {t("nav.drawer.homeopathy")}
+                </Link>
+                <Link to="/services/spiritual" onClick={() => setOpen(false)}>
+                  {t("nav.drawer.spiritual")}
+                </Link>
+                <Link to="/products" onClick={() => setOpen(false)}>
                   {t("nav.products")}
-                </a>
-                <a href="/contact" onClick={() => setOpen(false)}>
+                </Link>
+                <Link to="/events/mehfil" onClick={() => setOpen(false)}>
+                  {t("nav.drawer.mehfil")}
+                </Link>
+                <Link to="/contact" onClick={() => setOpen(false)}>
                   {t("nav.contact")}
-                </a>
+                </Link>
               </nav>
-              <Button as="a" href="/contact" className="drawer__cta" onClick={() => setOpen(false)}>
+              <Button as={Link} to="/contact" className="drawer__cta" onClick={() => setOpen(false)}>
                 {t("btn.bookAppointment")}
               </Button>
             </motion.div>

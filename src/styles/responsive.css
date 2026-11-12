@@ -278,3 +278,23 @@ html[dir="rtl"] .footer-grid {
     transition: none !important;
   }
 }
+
+@media (max-width: 48rem) {
+  .detail-article__layout {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .services-grid--hub {
+    grid-template-columns: 1fr;
+  }
+
+  .breadcrumbs__list {
+    flex-wrap: wrap;
+    row-gap: 0.35rem;
+  }
+
+  .inner-page-hero h1 {
+    font-size: var(--text-2xl);
+  }
+}

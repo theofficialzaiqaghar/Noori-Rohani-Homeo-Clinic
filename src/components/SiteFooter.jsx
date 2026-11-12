@@ -95,23 +95,25 @@ export function SiteFooter() {
         <nav aria-label={t("footer.nav.quickLinks")}>
           <h3>{t("footer.quickLinks.title")}</h3>
           <Link to="/">{t("nav.home")}</Link>
-          <a href="/#homeo">{t("nav.about")}</a>
-          <a href="/#services">{t("nav.services")}</a>
-          <a href="/#products">{t("nav.products")}</a>
+          <Link to="/about">{t("nav.about")}</Link>
+          <Link to="/services/homeopathy">{t("footer.quickLinks.homeopathy")}</Link>
+          <Link to="/services/spiritual">{t("footer.quickLinks.spiritual")}</Link>
+          <Link to="/products">{t("nav.products")}</Link>
+          <Link to="/events/mehfil">{t("footer.quickLinks.mehfil")}</Link>
           <Link to="/contact">{t("nav.contact")}</Link>
         </nav>
 
         <nav aria-label={t("footer.nav.services")}>
           <h3>{t("footer.services.title")}</h3>
-          <a href="/#rohani">{t("footer.services.rohani")}</a>
-          <a href="/#homeo">{t("footer.services.homeo")}</a>
-          <a href="/#products">{t("footer.services.herbal")}</a>
-          <a href="/#contact">{t("footer.services.istikhara")}</a>
-          <a href="/#education">{t("footer.services.quranTeaching")}</a>
-          <a href="/#education">{t("footer.services.madrasa")}</a>
-          <a href="/#education">{t("footer.services.nikkah")}</a>
-          <a href="/#education">{t("footer.services.freeSchool")}</a>
-          <a href="/#education">{t("footer.services.darUlUloom")}</a>
+          <Link to="/services/spiritual/rohani-ilaj">{t("footer.services.rohani")}</Link>
+          <Link to="/services/homeopathy">{t("footer.services.homeo")}</Link>
+          <Link to="/products">{t("footer.services.herbal")}</Link>
+          <Link to="/services/spiritual/istikhara">{t("footer.services.istikhara")}</Link>
+          <Link to="/services/spiritual/quran-teaching">{t("footer.services.quranTeaching")}</Link>
+          <Link to="/services/spiritual/madarsa">{t("footer.services.madrasa")}</Link>
+          <Link to="/services/spiritual/nikah-khawan">{t("footer.services.nikkah")}</Link>
+          <Link to="/services/spiritual/free-schooling-education">{t("footer.services.freeSchool")}</Link>
+          <Link to="/services/spiritual/madarsa">{t("footer.services.darUlUloom")}</Link>
         </nav>
 
         <address className="footer-contact">

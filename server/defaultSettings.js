@@ -24,7 +24,7 @@ export const DEFAULT_SETTINGS = {
     socialFacebook: "https://facebook.com/",
     socialYoutube: "https://youtube.com/",
     socialInstagram: "https://instagram.com/",
-    socialWhatsapp: "https://wa.me/923000000000",
+    socialWhatsapp: "https://wa.me/923141000717",
   },
   slots: {
     "hero.main": null,

@@ -2,7 +2,15 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { HashScroll } from "./components/HashScroll";
 import PublicApp from "./PublicApp";
 import ContactPage from "./pages/ContactPage";
+import AboutPage from "./pages/AboutPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import ServicesHubHomeopathyPage from "./pages/ServicesHubHomeopathyPage";
+import ServiceDetailHomeopathyPage from "./pages/ServiceDetailHomeopathyPage";
+import ServicesHubSpiritualPage from "./pages/ServicesHubSpiritualPage";
+import ServiceDetailSpiritualPage from "./pages/ServiceDetailSpiritualPage";
+import ProductsHubPage from "./pages/ProductsHubPage";
+import ProductDetailPage from "./pages/ProductDetailPage";
+import MehfilPage from "./pages/MehfilPage";
 import { AdminLoginPage } from "./admin/pages/AdminLoginPage";
 import { AdminLayout } from "./admin/AdminLayout";
 import { DashboardPage } from "./admin/pages/DashboardPage";
@@ -20,7 +28,15 @@ export function AppRouter() {
       <HashScroll />
       <Routes>
         <Route path="/" element={<PublicApp />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/services/homeopathy" element={<ServicesHubHomeopathyPage />} />
+        <Route path="/services/homeopathy/:slug" element={<ServiceDetailHomeopathyPage />} />
+        <Route path="/services/spiritual" element={<ServicesHubSpiritualPage />} />
+        <Route path="/services/spiritual/:slug" element={<ServiceDetailSpiritualPage />} />
+        <Route path="/products" element={<ProductsHubPage />} />
+        <Route path="/products/:slug" element={<ProductDetailPage />} />
+        <Route path="/events/mehfil" element={<MehfilPage />} />
         <Route path="/admin/login" element={<AdminLoginPage />} />
         <Route
           path="/admin"

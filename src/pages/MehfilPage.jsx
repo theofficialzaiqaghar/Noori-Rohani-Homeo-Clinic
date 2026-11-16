@@ -39,7 +39,7 @@ export default function MehfilPage() {
             <div className="detail-article__layout">
               <div className="detail-article__media" data-reveal-item>
                 <div className="product-detail__figure">
-                  <img src={SITE_IMAGES.education} alt={t("pages.mehfil.imageAlt")} loading="lazy" decoding="async" />
+                  <img src={SITE_IMAGES.mehfil} alt={t("pages.mehfil.imageAlt")} loading="lazy" decoding="async" />
                 </div>
               </div>
               <div className="detail-article__body">

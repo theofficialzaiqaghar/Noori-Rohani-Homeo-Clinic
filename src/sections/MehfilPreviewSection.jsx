@@ -13,7 +13,7 @@ export function MehfilPreviewSection() {
     <section id="mehfil-preview" className="section section--paper mehfil-preview" aria-labelledby="mehfil-preview-title">
       <div className="shell mehfil-preview__inner" ref={ref}>
         <div className="mehfil-preview__visual" data-reveal-item>
-          <SectionVisual imageKey="education" alt={t("home.mehfilPreview.imageAlt")} className="split-section__photo" />
+          <SectionVisual imageKey="mehfil" alt={t("home.mehfilPreview.imageAlt")} className="split-section__photo" />
         </div>
         <div className="mehfil-preview__content">
           <p className="section-head__kicker" data-reveal-item>

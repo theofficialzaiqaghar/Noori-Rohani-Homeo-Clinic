@@ -5,52 +5,65 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
+/**
+ * Light enter motion — content always visible.
+ * Skips on reduced-motion and coarse pointers (phones) for smoother scroll.
+ */
 export function useReveal(options = {}) {
   const ref = useRef(null);
-  const { y = 28, duration = 0.85, stagger = 0.08, childSelector = "[data-reveal-item]" } = options;
+  const { y = 16, duration = 0.45, stagger = 0.04, childSelector = "[data-reveal-item]" } = options;
 
   useGSAP(
     () => {
       const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const coarse = window.matchMedia("(pointer: coarse)").matches;
       const root = ref.current;
-      if (!root || reduceMotion) return;
+      if (!root) return undefined;
 
       const items = root.querySelectorAll(childSelector);
       const list = items.length ? [...items] : [root];
-      gsap.set(list, { opacity: 0, y });
 
-      const reveal = (batch) => {
-        gsap.to(batch, {
-          opacity: 1,
-          y: 0,
-          duration,
-          stagger,
-          ease: "power2.out",
-          overwrite: true,
+      gsap.set(list, { clearProps: "transform,opacity" });
+      list.forEach((el) => {
+        el.style.opacity = "1";
+        el.style.transform = "none";
+      });
+
+      if (reduceMotion || coarse) return undefined;
+
+      ScrollTrigger.batch(list, {
+        start: "top 94%",
+        once: true,
+        onEnter: (batch) => {
+          gsap.fromTo(
+            batch,
+            { y, opacity: 1 },
+            {
+              y: 0,
+              opacity: 1,
+              duration,
+              stagger,
+              ease: "power2.out",
+              overwrite: "auto",
+              clearProps: "transform",
+            }
+          );
+        },
+      });
+
+      const settle = () => {
+        list.forEach((el) => {
+          el.style.opacity = "1";
+          el.style.transform = "none";
         });
       };
 
-      ScrollTrigger.batch(list, {
-        start: "top 88%",
-        onEnter: reveal,
-        once: true,
-      });
+      settle();
+      const t1 = window.setTimeout(settle, 120);
 
-      const inView = list.filter((el) => el.getBoundingClientRect().top < window.innerHeight * 0.9);
-      if (inView.length) reveal(inView);
-
-      requestAnimationFrame(() => ScrollTrigger.refresh());
-
-      const fallback = window.setTimeout(() => {
-        list.forEach((el) => {
-          const opacity = gsap.getProperty(el, "opacity");
-          if (opacity === 0 || opacity === "0") {
-            gsap.set(el, { opacity: 1, y: 0 });
-          }
-        });
-      }, 1600);
-
-      return () => window.clearTimeout(fallback);
+      return () => {
+        window.clearTimeout(t1);
+      };
     },
     { scope: ref }
   );

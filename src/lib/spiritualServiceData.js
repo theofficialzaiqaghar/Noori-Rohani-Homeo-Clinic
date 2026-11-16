@@ -10,8 +10,19 @@ export const SPIRITUAL_SERVICE_SLUGS = [
   "international-research-center",
 ];
 
+const SPIRITUAL_ICONS = {
+  "rohani-ilaj": "icon-star",
+  istikhara: "icon-moon",
+  "quran-teaching": "icon-book",
+  madarsa: "icon-building",
+  "nikah-khawan": "icon-heart-hand",
+  "free-schooling-education": "icon-graduation",
+  "nazim-e-ala-ulama-mashaikh": "icon-users",
+  "international-research-center": "icon-flask",
+};
+
 export const SPIRITUAL_SERVICES = SPIRITUAL_SERVICE_SLUGS.map((slug) => ({
   slug,
-  icon: "icon-star",
+  icon: SPIRITUAL_ICONS[slug] || "icon-star",
   imageKey: "rohani",
 }));

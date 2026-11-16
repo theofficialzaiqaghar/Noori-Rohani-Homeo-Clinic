@@ -63,13 +63,13 @@ export default function ProductsHubPage() {
                 </li>
               ))}
             </ul>
-            <p className="product-disclaimer" data-reveal-item>
-              {t("pages.products.hub.disclaimer")}
-            </p>
-            <div className="inner-page__inline-cta" data-reveal-item>
-              <Button as={Link} to="/contact">
-                {t("pages.products.hub.inquiryCta")}
-              </Button>
+            <div className="products-hub__footer" data-reveal-item>
+              <p className="product-disclaimer">{t("pages.products.hub.disclaimer")}</p>
+              <div className="inner-page__inline-cta">
+                <Button as={Link} to="/contact">
+                  {t("pages.products.hub.inquiryCta")}
+                </Button>
+              </div>
             </div>
           </div>
         </section>

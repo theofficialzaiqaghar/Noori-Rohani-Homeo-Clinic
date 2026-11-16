@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { useReveal } from "../hooks/useReveal";
 import { useI18n } from "../providers/I18nProvider";
-import { SPIRITUAL_SERVICE_SLUGS } from "../lib/spiritualServiceData";
+import { SPIRITUAL_SERVICES } from "../lib/spiritualServiceData";
 import { Icon } from "../components/Icon";
 import { SectionVisual } from "../components/SectionVisual";
 import { Button } from "../components/Button";
 
-const PREVIEW = SPIRITUAL_SERVICE_SLUGS.slice(0, 6);
+const PREVIEW = SPIRITUAL_SERVICES.slice(0, 6);
 
 export function SpiritualServicesHubSection() {
   const { t } = useI18n();
@@ -16,7 +16,7 @@ export function SpiritualServicesHubSection() {
     <section id="spiritual-services" className="section section--sand" aria-labelledby="spiritual-services-title">
       <div className="shell spiritual-hub-section" ref={ref}>
         <div className="spiritual-hub-section__intro">
-          <header className="section-head section-head--wide">
+          <header className="section-head section-head--split">
             <p className="section-head__kicker" data-reveal-item>
               {t("home.spiritualHub.label")}
             </p>
@@ -35,14 +35,14 @@ export function SpiritualServicesHubSection() {
           </div>
         </div>
         <ul className="spiritual-hub-section__grid">
-          {PREVIEW.map((slug) => (
-            <li key={slug} data-reveal-item>
-              <Link to={`/services/spiritual/${slug}`} className="spiritual-hub-section__card">
+          {PREVIEW.map((item) => (
+            <li key={item.slug} data-reveal-item>
+              <Link to={`/services/spiritual/${item.slug}`} className="spiritual-hub-section__card">
                 <span className="spiritual-hub-section__icon" aria-hidden="true">
-                  <Icon name="icon-star" />
+                  <Icon name={item.icon} />
                 </span>
-                <h3 className="spiritual-hub-section__card-title">{t(`pages.spiritual.items.${slug}.title`)}</h3>
-                <p className="spiritual-hub-section__card-desc">{t(`pages.spiritual.items.${slug}.summary`)}</p>
+                <h3 className="spiritual-hub-section__card-title">{t(`pages.spiritual.items.${item.slug}.title`)}</h3>
+                <p className="spiritual-hub-section__card-desc">{t(`pages.spiritual.items.${item.slug}.summary`)}</p>
                 <span className="spiritual-hub-section__card-link">
                   {t("home.services.learnMore")}
                   <Icon name="icon-arrow-right" className="service-card__arrow" />

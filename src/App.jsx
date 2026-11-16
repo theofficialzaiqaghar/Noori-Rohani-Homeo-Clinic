@@ -1,7 +1,7 @@
 import { SkipLink } from "./components/SkipLink";
 import { SiteHeader } from "./components/SiteHeader";
 import { SiteFooter } from "./components/SiteFooter";
-import { BackToTop } from "./components/BackToTop";
+import { WhatsAppFab } from "./components/WhatsAppFab";
 import { HeroSection } from "./sections/HeroSection";
 import { ServicesSection } from "./sections/ServicesSection";
 import { RohaniSection } from "./sections/RohaniSection";
@@ -29,7 +29,7 @@ export default function App() {
         <ContactSection />
       </main>
       <SiteFooter />
-      <BackToTop />
+      <WhatsAppFab />
     </>
   );
 }

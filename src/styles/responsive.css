@@ -12,8 +12,9 @@
 }
 
 .brand--with-logo {
-  gap: 0;
+  gap: 0.65rem;
   min-width: 0;
+  align-items: center;
 }
 
 .brand__sigil--official {
@@ -22,6 +23,7 @@
   max-height: 3.25rem;
   background: transparent;
   border: none;
+  flex-shrink: 0;
 }
 
 .brand__logo-img--official {
@@ -34,14 +36,27 @@
 }
 
 .brand--footer .brand__logo-img--official {
-  height: 3.25rem;
-  max-width: 12rem;
+  height: 2.85rem;
+  max-width: 8.5rem;
 }
 
 @media (max-width: 23.99rem) {
   .brand__logo-img--official {
     height: 2.5rem;
     max-width: min(9.5rem, 52vw);
+  }
+}
+
+/* Reveal items must stay readable if GSAP does not run */
+[data-reveal-item] {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal-item] {
+    opacity: 1 !important;
+    transform: none !important;
   }
 }
 
@@ -59,21 +74,44 @@ video {
 
 /* Topbar & header */
 @media (max-width: 47.99rem) {
+  html {
+    scroll-padding-top: calc(var(--header-offset) + 0.5rem);
+  }
+
+  .topbar {
+    font-size: var(--text-xs);
+  }
+
   .topbar__inner {
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
     gap: 0.5rem;
+    padding-block: 0.35rem;
   }
 
   .topbar__group {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem 0.75rem;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 0.55rem;
+    min-width: 0;
   }
 
   .topbar__hours {
-    font-size: var(--text-xs);
-    text-align: center;
+    display: none;
+  }
+
+  .topbar__link span {
+    font-size: 0.72rem;
+    white-space: nowrap;
+  }
+
+  .lang__btn {
+    min-width: 2.1rem;
+    min-height: 1.85rem;
+    padding-inline: 0.4rem;
+    font-size: 0.68rem;
   }
 
   .masthead__inner {
@@ -142,7 +180,7 @@ video {
 /* Sections & grids */
 @media (max-width: 47.99rem) {
   .section {
-    padding-block: clamp(2.5rem, 8vw, 3.5rem);
+    padding-block: clamp(2.75rem, 7vw, 3.5rem);
   }
 
   .section-head__title {
@@ -296,5 +334,317 @@ html[dir="rtl"] .footer-grid {
 
   .inner-page-hero h1 {
     font-size: var(--text-2xl);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Responsive pass — mobile / tablet / touch (preserves desktop 64rem+ layout)
+   Breakpoints: mobile ≤47.99rem | tablet 48–63.99rem | laptop 64rem+
+   -------------------------------------------------------------------------- */
+
+/* Prevent grid/flex overflow (common horizontal scroll cause) */
+.hero-banner__copy,
+.hero-banner__copy--premium,
+.service-card,
+.product-tile,
+.footer-grid > *,
+.masthead__inner {
+  min-width: 0;
+}
+
+/* Touch-friendly targets (mobile + tablet drawer) */
+@media (max-width: 63.99rem) {
+  .menu-toggle {
+    width: 2.75rem;
+    height: 2.75rem;
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+  }
+
+  .drawer__panel {
+    width: min(100%, 22rem);
+    max-height: 100dvh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .drawer__nav a {
+    min-height: 2.75rem;
+    display: flex;
+    align-items: center;
+    font-size: var(--text-base);
+  }
+
+  .lang button {
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+  }
+}
+
+/* Mobile typography & header offset */
+@media (max-width: 47.99rem) {
+  :root {
+    --header-offset: 5.5rem;
+  }
+
+  .masthead__inner {
+    min-height: 3.6rem;
+  }
+
+  .brand--footer.brand--with-logo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+  }
+
+  .brand--footer .brand__logo-img--official {
+    height: 2.6rem;
+    max-width: 7.75rem;
+  }
+
+  .brand--footer .brand__name {
+    font-size: 1rem;
+  }
+
+  .section-head {
+    margin-bottom: 1.35rem;
+  }
+
+  .section-head__title {
+    font-size: clamp(1.3rem, 5.2vw, 1.7rem);
+  }
+
+  .section-head__lede {
+    font-size: var(--text-base);
+  }
+
+  .footer-cta__panel {
+    text-align: start;
+  }
+
+  .footer-cta__aside {
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .footer-cta__actions .btn,
+  .products-hub__footer .btn,
+  .homeopathy-services__intro .btn,
+  .spiritual-hub-section__intro .btn {
+    width: 100%;
+    max-width: none;
+  }
+
+  .contact-page-hero,
+  .inner-page-hero.contact-page-hero {
+    padding-block: calc(var(--header-offset) + 0.75rem) var(--space-3);
+  }
+
+  .inner-page-hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.55rem;
+  }
+
+  .inner-page-hero__actions .btn {
+    width: 100%;
+    justify-content: center;
+    min-height: 2.75rem;
+  }
+
+  .hero-banner--premium {
+    min-height: max(24rem, 78svh);
+    padding-block-end: 1.75rem;
+  }
+
+  .hero-banner__stage {
+    padding-inline: 0;
+  }
+
+  .hero-banner__copy--premium {
+    padding: var(--space-2);
+    margin-inline: 0;
+  }
+
+  .split-section__photo {
+    max-height: 18.5rem;
+    aspect-ratio: 16 / 11;
+  }
+
+  .inner-page__visual,
+  .services-landing__visual {
+    max-height: 16rem;
+    width: 100%;
+  }
+
+  .detail-article__cta-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .detail-article__cta-row .btn {
+    width: 100%;
+    justify-content: center;
+    min-height: 2.75rem;
+  }
+
+  .services-cta-panel__actions {
+    width: 100%;
+  }
+
+  .services-cta-panel__actions .btn {
+    flex: 1 1 auto;
+    min-height: 2.75rem;
+  }
+
+  .footer-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .footer-bar nav {
+    flex-wrap: wrap;
+    gap: 0.65rem 1rem;
+  }
+
+  .footer-disclaimer {
+    font-size: 0.7rem;
+  }
+
+  .whatsapp-fab {
+    inset-block-end: max(1rem, env(safe-area-inset-bottom));
+    inset-inline-end: max(1rem, env(safe-area-inset-end));
+  }
+
+  .breadcrumb,
+  .breadcrumbs__list {
+    font-size: var(--text-xs);
+    line-height: 1.45;
+  }
+
+  .mastnav__panel {
+    max-height: min(70vh, 20rem);
+    overflow-y: auto;
+  }
+}
+
+/* Small mobile (320–374) */
+@media (max-width: 23.99rem) {
+  .hero-banner--premium {
+    min-height: max(21rem, 72svh);
+  }
+
+  .hero-banner__title {
+    font-size: clamp(1.45rem, 7vw, 1.85rem);
+  }
+
+  .footer-cta__phone {
+    font-size: clamp(1.1rem, 5vw, 1.35rem);
+    word-break: break-word;
+  }
+
+  .topbar__hours {
+    display: none;
+  }
+
+  .topbar__group {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+/* Tablet — intentional 2-column layouts (768–1023) */
+@media (min-width: 48rem) and (max-width: 63.99rem) {
+  .footer-grid__brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-grid {
+    gap: var(--space-3);
+  }
+
+  .services-grid--dense {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .why-choose-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .homeopathy-services__grid,
+  .spiritual-hub-section__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+  }
+
+  .services-landing__intro-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-landing__visual {
+    max-height: 18rem;
+  }
+
+  .inner-page__cta-panel {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  .detail-article__layout {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 1.5rem;
+  }
+
+  .contact-page__grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    gap: var(--space-3);
+    align-items: start;
+  }
+}
+
+/* Laptop tightening (1024–1439) — nav density only */
+@media (min-width: 64rem) and (max-width: 89.99rem) {
+  .mastnav {
+    gap: 0.85rem;
+  }
+
+  .masthead__book-btn {
+    padding-inline: 1rem;
+    font-size: var(--text-sm);
+  }
+
+  .services-grid--dense {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 90rem) {
+  .services-grid--dense {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Service / product cards — equal height stacks on narrow screens */
+@media (max-width: 47.99rem) {
+  .service-card,
+  .homeopathy-services__card,
+  .spiritual-hub-section__card {
+    min-height: auto;
+  }
+
+  .related-cards__tile {
+    padding: 0.75rem 0.85rem;
+  }
+}
+
+/* FAQ — easier tap on mobile */
+@media (max-width: 47.99rem) {
+  .faq-item summary {
+    min-height: 2.75rem;
+    display: flex;
+    align-items: center;
+    padding-block: 0.65rem;
   }
 }

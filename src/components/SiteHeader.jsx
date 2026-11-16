@@ -60,6 +60,22 @@ export function SiteHeader({ overlay = false, className = "" }) {
     };
   }, [open]);
 
+  useEffect(() => {
+    if (!servicesOpen) return undefined;
+    const onKey = (e) => {
+      if (e.key === "Escape") setServicesOpen(false);
+    };
+    const onPointer = (e) => {
+      if (!e.target.closest(".mastnav__drop")) setServicesOpen(false);
+    };
+    document.addEventListener("keydown", onKey);
+    document.addEventListener("pointerdown", onPointer);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.removeEventListener("pointerdown", onPointer);
+    };
+  }, [servicesOpen]);
+
   const mastClass = [
     "masthead",
     overlay ? (solid ? "is-solid" : "is-overlay") : "is-solid",
@@ -127,6 +143,7 @@ export function SiteHeader({ overlay = false, className = "" }) {
           </Link>
 
           <nav className="mastnav" aria-label={t("nav.label")}>
+            <Link to="/">{t("nav.home")}</Link>
             <Link to="/about">{t("nav.about")}</Link>
             <div
               className="mastnav__drop"
@@ -142,18 +159,11 @@ export function SiteHeader({ overlay = false, className = "" }) {
                 {t("nav.services")}
                 <Icon name="icon-chevron" />
               </button>
-              <AnimatePresence>
-                {servicesOpen && (
-                  <motion.div
-                    className="mastnav__panel"
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 8 }}
-                    transition={{ duration: 0.22 }}
-                  >
+              {servicesOpen ? (
+                  <div className="mastnav__panel" role="menu">
                     {SERVICE_LINKS.map((item) =>
                       item.route ? (
-                        <Link key={item.key} to={item.href} onClick={() => setServicesOpen(false)}>
+                        <Link key={item.key} to={item.href} role="menuitem" onClick={() => setServicesOpen(false)}>
                           {t(item.key)}
                         </Link>
                       ) : (
@@ -162,9 +172,8 @@ export function SiteHeader({ overlay = false, className = "" }) {
                         </a>
                       )
                     )}
-                  </motion.div>
-                )}
-              </AnimatePresence>
+                  </div>
+              ) : null}
             </div>
             <Link to="/products">{t("nav.products")}</Link>
             <Link to="/contact">{t("nav.contact")}</Link>
@@ -218,6 +227,9 @@ export function SiteHeader({ overlay = false, className = "" }) {
                 </button>
               </div>
               <nav className="drawer__nav">
+                <Link to="/" onClick={() => setOpen(false)}>
+                  {t("nav.home")}
+                </Link>
                 <Link to="/about" onClick={() => setOpen(false)}>
                   {t("nav.about")}
                 </Link>

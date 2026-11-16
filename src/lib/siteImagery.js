@@ -10,4 +10,12 @@ export const SITE_IMAGES = {
   why: "/assets/img/sections/care-team.jpg",
   process: "/assets/img/sections/consultation.jpg",
   testimonials: "/assets/img/sections/care-team.jpg",
+
+  /* Product photos — from assets/img/products */
+  productHairOil: "/assets/img/products/hair-oil.png",
+  productChildBam: "/assets/img/products/child-bam.png",
+  productWinterLotion: "/assets/img/products/winter-lotion.webp",
+  productHerbalSoap: "/assets/img/products/herbal-soap.png",
+  productWhiteningCream: "/assets/img/products/whitening-cream.webp",
+  productMajoon: "/assets/img/sections/herbal.jpg",
 };

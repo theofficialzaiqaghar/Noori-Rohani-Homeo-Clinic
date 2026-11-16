@@ -1,13 +1,12 @@
 import { SITE_IMAGES } from "./siteImagery.js";
 
 export const HERBAL_PRODUCTS = [
-  { id: "attar-perfumes", slug: "attar-perfumes", icon: "icon-leaf", imageKey: "herbal" },
-  { id: "hair-oil", slug: "hair-oil", icon: "icon-leaf", imageKey: "herbal" },
-  { id: "ban-child-bam-bam", slug: "ban-child-bam-bam", icon: "icon-leaf", imageKey: "herbal" },
-  { id: "winter-lotion", slug: "winter-lotion", icon: "icon-leaf", imageKey: "herbal" },
-  { id: "herbal-soap", slug: "herbal-soap", icon: "icon-leaf", imageKey: "herbal" },
-  { id: "acne-whitening-cream", slug: "acne-whitening-cream", icon: "icon-leaf", imageKey: "herbal" },
-  { id: "majoon-e-khas", slug: "majoon-e-khas", icon: "icon-leaf", imageKey: "herbal" },
+  { id: "hair-oil", slug: "hair-oil", icon: "icon-leaf", imageKey: "productHairOil" },
+  { id: "ban-child-bam-bam", slug: "ban-child-bam-bam", icon: "icon-leaf", imageKey: "productChildBam" },
+  { id: "winter-lotion", slug: "winter-lotion", icon: "icon-leaf", imageKey: "productWinterLotion" },
+  { id: "herbal-soap", slug: "herbal-soap", icon: "icon-leaf", imageKey: "productHerbalSoap" },
+  { id: "acne-whitening-cream", slug: "acne-whitening-cream", icon: "icon-leaf", imageKey: "productWhiteningCream" },
+  { id: "majoon-e-khas", slug: "majoon-e-khas", icon: "icon-leaf", imageKey: "productMajoon" },
 ];
 
 export function getProductBySlug(slug) {

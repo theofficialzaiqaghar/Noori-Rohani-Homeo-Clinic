@@ -82,8 +82,6 @@ export function SiteFooter() {
               <span className="brand__name">{CLINIC_NAME}</span>
             </span>
           </Link>
-          <p className="footer-grid__address">{address}</p>
-          <p className="footer-grid__hours">{hours}</p>
           <p>{t("footer.about.line1")}</p>
           <p>{t("footer.about.line2")}</p>
           <ul className="footer-social" aria-label={t("footer.social.label")}>

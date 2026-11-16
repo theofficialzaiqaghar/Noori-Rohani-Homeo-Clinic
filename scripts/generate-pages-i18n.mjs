@@ -88,7 +88,6 @@ const SPIRITUAL = [
 ];
 
 const PRODUCTS = [
-  ["attar-perfumes", "Perfume & attar", "پرفیوم و عطر"],
   ["hair-oil", "Hair oil", "بالوں کا تیل"],
   ["ban-child-bam-bam", "Child Bam Bam", "چائلڈ بم بم"],
   ["winter-lotion", "Winter lotion", "موسم سرما لوشن"],
@@ -98,10 +97,6 @@ const PRODUCTS = [
 ];
 
 const PRODUCT_DETAIL = {
-  "attar-perfumes": {
-    details: "Traditional attar and perfume available at the clinic. Ask for current stock and fragrances.",
-    usage: "For external use only. Patch-test if you have sensitive skin.",
-  },
   "hair-oil": {
     details: "Clinic-prepared hair oil for dry scalp and hair care. Ingredients and batch details at counter.",
     usage: "Apply as directed on the label. Avoid contact with eyes.",
@@ -350,10 +345,10 @@ function buildPages(lang) {
 
   const hubProducts = isEn
     ? {
-        documentTitle: "Herbal products & perfumes | Noori Roohani Homeo Clinic",
-        metaDescription: "Attar, oils, soaps, and herbal products — confirm price with clinic.",
+        documentTitle: "Herbal products | Noori Roohani Homeo Clinic",
+        metaDescription: "Oils, soaps, and herbal products — confirm price with clinic.",
         kicker: "Shop",
-        title: "Herbal products & perfumes",
+        title: "Herbal products",
         lead: "Placeholder catalogue — replace images and copy when labels are ready.",
         breadcrumbCurrent: "Products",
         gridHeading: "Product catalogue",
@@ -363,9 +358,9 @@ function buildPages(lang) {
       }
     : {
         documentTitle: "جڑی بوٹی مصنوعات | نوری روحانی ہومیو کلینک",
-        metaDescription: "عطر، تیل، صابن — قیمت کلینک سے۔",
+        metaDescription: "تیل، صابن اور جڑی بوٹی مصنوعات — قیمت کلینک سے۔",
         kicker: "دکان",
-        title: "جڑی بوٹی مصنوعات و عطر",
+        title: "جڑی بوٹی مصنوعات",
         lead: "[PLACEHOLDER] تصاویر و متن درست کریں۔",
         breadcrumbCurrent: "مصنوعات",
         gridHeading: "مصنوعات کی فہرست",
@@ -697,7 +692,7 @@ function buildUiExtension(lang) {
               herbal: {
                 label: "Herbal & natural care",
                 title: "Products made familiar",
-                subtitle: "Attar, oils, creams, and soaps — confirm price with the clinic.",
+                subtitle: "Oils, creams, and soaps — confirm price with the clinic.",
                 primaryCta: "View products",
                 secondaryCta: "Product inquiry",
                 imageAlt: "Herbal products",
@@ -731,7 +726,7 @@ function buildUiExtension(lang) {
               herbal: {
                 label: "جڑی بوٹی و قدرتی علاج",
                 title: "مانوس مصنوعات",
-                subtitle: "عطر، تیل، کریم — قیمت کلینک سے۔",
+                subtitle: "تیل، کریم اور صابن — قیمت کلینک سے۔",
                 primaryCta: "مصنوعات",
                 secondaryCta: "پوچھ گچھ",
                 imageAlt: "مصنوعات",
@@ -805,7 +800,14 @@ function buildUiExtension(lang) {
 for (const lang of ["en", "ur"]) {
   const file = join(i18nDir, `${lang}.json`);
   const base = JSON.parse(readFileSync(file, "utf8"));
-  deepMerge(base, { pages: buildPages(lang), ...buildUiExtension(lang) });
+  const pages = buildPages(lang);
+  deepMerge(base, { pages, ...buildUiExtension(lang) });
+  // Replace product items wholesale so removed products do not linger via deepMerge
+  if (pages.products?.items) {
+    base.pages = base.pages || {};
+    base.pages.products = base.pages.products || {};
+    base.pages.products.items = pages.products.items;
+  }
   writeFileSync(file, `${JSON.stringify(base, null, 2)}\n`);
   console.log(`Updated ${lang}.json`);
 }

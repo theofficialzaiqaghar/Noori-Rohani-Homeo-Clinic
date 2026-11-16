@@ -197,7 +197,7 @@
         "herbal": {
           "label": "جڑی بوٹی و قدرتی علاج",
           "title": "مانوس مصنوعات",
-          "subtitle": "عطر، تیل، کریم — قیمت کلینک سے۔",
+          "subtitle": "تیل، کریم اور صابن — قیمت کلینک سے۔",
           "primaryCta": "مصنوعات",
           "secondaryCta": "پوچھ گچھ",
           "imageAlt": "مصنوعات"
@@ -1075,9 +1075,9 @@
     "products": {
       "hub": {
         "documentTitle": "جڑی بوٹی مصنوعات | نوری روحانی ہومیو کلینک",
-        "metaDescription": "عطر، تیل، صابن — قیمت کلینک سے۔",
+        "metaDescription": "تیل، صابن اور جڑی بوٹی مصنوعات — قیمت کلینک سے۔",
         "kicker": "دکان",
-        "title": "جڑی بوٹی مصنوعات و عطر",
+        "title": "جڑی بوٹی مصنوعات",
         "lead": "[PLACEHOLDER] تصاویر و متن درست کریں۔",
         "breadcrumbCurrent": "مصنوعات",
         "gridHeading": "مصنوعات کی فہرست",
@@ -1094,16 +1094,6 @@
         "inquiryCta": "رابطہ صفحہ پر پوچھیں"
       },
       "items": {
-        "attar-perfumes": {
-          "title": "پرفیوم و عطر",
-          "short": "پرفیوم و عطر — کلینک کی جڑی بوٹی رینج؛ دستیابی 0314-1000717 پر پوچھیں۔",
-          "documentTitle": "پرفیوم و عطر | نوری روحانی ہومیو کلینک",
-          "metaDescription": "پرفیوم و عطر — نوری روحانی ہومیو کلینک، سرجانی ٹاؤن۔",
-          "imageAlt": "پرفیوم و عطر — کلینک",
-          "price": "قیمت: کلینک یا واٹس ایپ 0314-1000717 پر تصدیق کریں",
-          "details": "Traditional attar and perfume available at the clinic. Ask for current stock and fragrances.",
-          "usage": "For external use only. Patch-test if you have sensitive skin."
-        },
         "hair-oil": {
           "title": "بالوں کا تیل",
           "short": "بالوں کا تیل — کلینک کی جڑی بوٹی رینج؛ دستیابی 0314-1000717 پر پوچھیں۔",

@@ -1,78 +1,55 @@
-import { createContext, useContext, useEffect, useRef, useState } from "react";
-import Lenis from "lenis";
-import { gsap } from "gsap";
+import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { fixStuckRevealItems } from "../lib/revealStuck";
 
-gsap.registerPlugin(ScrollTrigger);
-
-const LenisContext = createContext(null);
-
+/** Native scroll only — Lenis removed for faster, natural scrolling. */
 export function useLenis() {
-  return useContext(LenisContext);
+  return null;
 }
 
 export function SmoothScrollProvider({ children }) {
-  const lenisRef = useRef(null);
-  const [lenisReady, setLenisReady] = useState(null);
-
   useEffect(() => {
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduceMotion) {
-      setLenisReady(null);
-      return undefined;
-    }
+    let ticking = false;
+    let lastY = -1;
 
-    const lenis = new Lenis({
-      duration: 1.1,
-      smoothWheel: true,
-      syncTouch: false,
-    });
-    lenisRef.current = lenis;
-    setLenisReady(lenis);
-
-    const root = document.documentElement;
-
-    ScrollTrigger.scrollerProxy(root, {
-      scrollTop(value) {
-        if (arguments.length) {
-          lenis.scrollTo(value, { immediate: true });
-        }
-        return lenis.scroll;
-      },
-      getBoundingClientRect() {
-        return {
-          top: 0,
-          left: 0,
-          width: window.innerWidth,
-          height: window.innerHeight,
-        };
-      },
-      pinType: root.style.transform ? "transform" : "fixed",
-    });
-
-    const onRefresh = () => lenis.resize();
-    ScrollTrigger.addEventListener("refresh", onRefresh);
-
-    lenis.on("scroll", (instance) => {
+    const publish = () => {
+      ticking = false;
+      const y = window.scrollY || document.documentElement.scrollTop || 0;
+      if (y === lastY) return;
+      lastY = y;
       ScrollTrigger.update();
-      window.dispatchEvent(new CustomEvent("site-scroll", { detail: { y: instance.scroll } }));
-    });
+      window.dispatchEvent(new CustomEvent("site-scroll", { detail: { y } }));
+    };
 
-    const tick = (time) => lenis.raf(time * 1000);
-    gsap.ticker.add(tick);
-    gsap.ticker.lagSmoothing(0);
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(publish);
+    };
 
-    requestAnimationFrame(() => ScrollTrigger.refresh());
+    const onResize = () => {
+      lastY = -1;
+      onScroll();
+      ScrollTrigger.refresh();
+    };
+
+    const onLoad = () => {
+      fixStuckRevealItems();
+      ScrollTrigger.refresh();
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onResize, { passive: true });
+    window.addEventListener("load", onLoad);
+    requestAnimationFrame(onLoad);
 
     return () => {
-      ScrollTrigger.removeEventListener("refresh", onRefresh);
-      ScrollTrigger.scrollerProxy(root, {});
-      gsap.ticker.remove(tick);
-      lenis.destroy();
-      lenisRef.current = null;
-      setLenisReady(null);
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onResize);
+      window.removeEventListener("load", onLoad);
     };
   }, []);
 
-  return <LenisContext.Provider value={lenisReady}>{children}</LenisContext.Provider>;
+  return children;
 }

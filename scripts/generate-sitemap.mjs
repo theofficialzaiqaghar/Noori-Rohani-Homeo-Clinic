@@ -33,7 +33,6 @@ const SPIRITUAL = [
 ];
 
 const PRODUCTS = [
-  "attar-perfumes",
   "hair-oil",
   "ban-child-bam-bam",
   "winter-lotion",

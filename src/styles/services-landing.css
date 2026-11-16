@@ -24,7 +24,25 @@
 }
 
 .services-grid--dense {
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15.5rem), 1fr));
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 40rem) {
+  .services-grid--dense {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 64rem) {
+  .services-grid--dense {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 90rem) {
+  .services-grid--dense {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 .services-section__all {
@@ -42,7 +60,20 @@
   padding: 0;
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+@media (min-width: 40rem) {
+  .why-choose-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 64rem) {
+  .why-choose-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 .why-choose-card {

@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { useReveal } from "../hooks/useReveal";
 import { useI18n } from "../providers/I18nProvider";
-import { HOMEOPATHY_SERVICE_SLUGS } from "../lib/homeopathyServiceData";
+import { HOMEOPATHY_SERVICES } from "../lib/homeopathyServiceData";
 import { Icon } from "../components/Icon";
 import { SectionVisual } from "../components/SectionVisual";
 import { Button } from "../components/Button";
 
-const PREVIEW = HOMEOPATHY_SERVICE_SLUGS.slice(0, 6);
+const PREVIEW = HOMEOPATHY_SERVICES.slice(0, 6);
 
 export function HomeopathyServicesSection() {
   const { t } = useI18n();
@@ -16,7 +16,7 @@ export function HomeopathyServicesSection() {
     <section id="homeopathy-services" className="section section--paper" aria-labelledby="homeopathy-services-title">
       <div className="shell homeopathy-services" ref={ref}>
         <div className="homeopathy-services__intro">
-          <header className="section-head section-head--wide">
+          <header className="section-head section-head--split">
             <p className="section-head__kicker" data-reveal-item>
               {t("home.homeopathySection.label")}
             </p>
@@ -35,14 +35,14 @@ export function HomeopathyServicesSection() {
           </div>
         </div>
         <ul className="homeopathy-services__grid">
-          {PREVIEW.map((slug) => (
-            <li key={slug} data-reveal-item>
-              <Link to={`/services/homeopathy/${slug}`} className="homeopathy-services__card">
+          {PREVIEW.map((item) => (
+            <li key={item.slug} data-reveal-item>
+              <Link to={`/services/homeopathy/${item.slug}`} className="homeopathy-services__card">
                 <span className="homeopathy-services__icon" aria-hidden="true">
-                  <Icon name="icon-flask" />
+                  <Icon name={item.icon} />
                 </span>
-                <h3 className="homeopathy-services__card-title">{t(`pages.homeopathy.items.${slug}.title`)}</h3>
-                <p className="homeopathy-services__card-desc">{t(`pages.homeopathy.items.${slug}.summary`)}</p>
+                <h3 className="homeopathy-services__card-title">{t(`pages.homeopathy.items.${item.slug}.title`)}</h3>
+                <p className="homeopathy-services__card-desc">{t(`pages.homeopathy.items.${item.slug}.summary`)}</p>
                 <span className="homeopathy-services__card-link">
                   {t("home.services.learnMore")}
                   <Icon name="icon-arrow-right" className="service-card__arrow" />

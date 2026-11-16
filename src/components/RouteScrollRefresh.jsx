@@ -1,17 +1,20 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { fixStuckRevealItems } from "../lib/revealStuck";
+import { useI18n } from "../providers/I18nProvider";
 
-/** Re-measure scroll positions after client navigations (Lenis + inner pages). */
+/** Re-measure scroll + unhide content after navigation or i18n load. */
 export function RouteScrollRefresh() {
   const { pathname } = useLocation();
+  const { ready } = useI18n();
 
   useEffect(() => {
-    const run = () => ScrollTrigger.refresh();
+    const run = () => fixStuckRevealItems();
+    run();
     requestAnimationFrame(run);
-    const t = window.setTimeout(run, 120);
-    return () => window.clearTimeout(t);
-  }, [pathname]);
+    const timers = [80, 200, 500].map((ms) => window.setTimeout(run, ms));
+    return () => timers.forEach((id) => window.clearTimeout(id));
+  }, [pathname, ready]);
 
   return null;
 }

@@ -197,7 +197,7 @@
         "herbal": {
           "label": "Herbal & natural care",
           "title": "Products made familiar",
-          "subtitle": "Attar, oils, creams, and soaps — confirm price with the clinic.",
+          "subtitle": "Oils, creams, and soaps — confirm price with the clinic.",
           "primaryCta": "View products",
           "secondaryCta": "Product inquiry",
           "imageAlt": "Herbal products"
@@ -1074,10 +1074,10 @@
     },
     "products": {
       "hub": {
-        "documentTitle": "Herbal products & perfumes | Noori Roohani Homeo Clinic",
-        "metaDescription": "Attar, oils, soaps, and herbal products — confirm price with clinic.",
+        "documentTitle": "Herbal products | Noori Roohani Homeo Clinic",
+        "metaDescription": "Oils, soaps, and herbal products — confirm price with clinic.",
         "kicker": "Shop",
-        "title": "Herbal products & perfumes",
+        "title": "Herbal products",
         "lead": "Placeholder catalogue — replace images and copy when labels are ready.",
         "breadcrumbCurrent": "Products",
         "gridHeading": "Product catalogue",
@@ -1094,16 +1094,6 @@
         "inquiryCta": "Ask on contact page"
       },
       "items": {
-        "attar-perfumes": {
-          "title": "Perfume & attar",
-          "short": "Perfume & attar from the clinic herbal range — enquire stock and price on 0314-1000717.",
-          "documentTitle": "Perfume & attar | Noori Roohani Homeo Clinic",
-          "metaDescription": "Perfume & attar at Noori Roohani Homeo Clinic, Surjani Town. Confirm price and directions before use.",
-          "imageAlt": "Perfume & attar — Noori Roohani Homeo Clinic",
-          "price": "Price: confirm at clinic or on WhatsApp 0314-1000717",
-          "details": "Traditional attar and perfume available at the clinic. Ask for current stock and fragrances.",
-          "usage": "For external use only. Patch-test if you have sensitive skin."
-        },
         "hair-oil": {
           "title": "Hair oil",
           "short": "Hair oil from the clinic herbal range — enquire stock and price on 0314-1000717.",

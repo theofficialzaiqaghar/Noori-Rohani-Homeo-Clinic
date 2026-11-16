@@ -1,7 +1,7 @@
 import { SkipLink } from "../components/SkipLink";
 import { SiteHeader } from "../components/SiteHeader";
 import { SiteFooter } from "../components/SiteFooter";
-import { BackToTop } from "../components/BackToTop";
+import { WhatsAppFab } from "../components/WhatsAppFab";
 
 export function PublicLayout({ children, headerOverlay = false }) {
   return (
@@ -10,7 +10,7 @@ export function PublicLayout({ children, headerOverlay = false }) {
       <SiteHeader overlay={headerOverlay} />
       {children}
       <SiteFooter />
-      <BackToTop />
+      <WhatsAppFab />
     </>
   );
 }

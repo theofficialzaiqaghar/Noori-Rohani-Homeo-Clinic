@@ -91,7 +91,8 @@ const PRODUCTS = [
   ["hair-oil", "Hair oil", "بالوں کا تیل"],
   ["ban-child-bam-bam", "Child Bam Bam", "چائلڈ بم بم"],
   ["winter-lotion", "Winter lotion", "موسم سرما لوشن"],
-  ["herbal-soap", "Herbal soap (acne & whitening)", "جڑی بوٹی صابن (مہاسوں و فیئرنس)"],
+  ["herbal-soap", "Herbal soap acne", "جڑی بوٹی صابن (مہاسے)"],
+  ["herbal-soap-whitening", "Herbal soap whitening", "جڑی بوٹی صابن (whitening)"],
   ["acne-whitening-cream", "Acne & whitening cream", "مہاسوں و whitening کریم"],
   ["majoon-e-khas", "Majoon-e-Khas", "معجون خاص"],
 ];
@@ -110,8 +111,12 @@ const PRODUCT_DETAIL = {
     usage: "Apply to clean skin. Discontinue if irritation occurs.",
   },
   "herbal-soap": {
-    details: "Herbal soap formulated for acne and whitening support alongside regular skincare.",
+    details: "Herbal soap formulated for acne-prone skin alongside regular skincare.",
     usage: "Use on face or body as labelled. Rinse well; avoid broken or irritated skin.",
+  },
+  "herbal-soap-whitening": {
+    details: "Herbal soap formulated for whitening support alongside regular skincare.",
+    usage: "Use on face or body as labelled. Rinse well; sun protection is recommended with whitening products.",
   },
   "acne-whitening-cream": {
     details: "Acne and whitening cream from the clinic herbal range. Confirm suitability for your skin type.",

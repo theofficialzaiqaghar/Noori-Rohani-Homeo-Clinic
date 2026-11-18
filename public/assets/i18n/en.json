@@ -1126,14 +1126,24 @@
           "usage": "Apply to clean skin. Discontinue if irritation occurs."
         },
         "herbal-soap": {
-          "title": "Herbal soap (acne & whitening)",
-          "short": "Herbal soap (acne & whitening) from the clinic herbal range — enquire stock and price on 0314-1000717.",
-          "documentTitle": "Herbal soap (acne & whitening) | Noori Roohani Homeo Clinic",
-          "metaDescription": "Herbal soap (acne & whitening) at Noori Roohani Homeo Clinic, Surjani Town. Confirm price and directions before use.",
-          "imageAlt": "Herbal soap (acne & whitening) — Noori Roohani Homeo Clinic",
+          "title": "Herbal soap acne",
+          "short": "Herbal soap acne from the clinic herbal range — enquire stock and price on 0314-1000717.",
+          "documentTitle": "Herbal soap acne | Noori Roohani Homeo Clinic",
+          "metaDescription": "Herbal soap acne at Noori Roohani Homeo Clinic, Surjani Town. Confirm price and directions before use.",
+          "imageAlt": "Herbal soap acne — Noori Roohani Homeo Clinic",
           "price": "Price: confirm at clinic or on WhatsApp 0314-1000717",
-          "details": "Herbal soap formulated for acne and whitening support alongside regular skincare.",
+          "details": "Herbal soap formulated for acne-prone skin alongside regular skincare.",
           "usage": "Use on face or body as labelled. Rinse well; avoid broken or irritated skin."
+        },
+        "herbal-soap-whitening": {
+          "title": "Herbal soap whitening",
+          "short": "Herbal soap whitening from the clinic herbal range — enquire stock and price on 0314-1000717.",
+          "documentTitle": "Herbal soap whitening | Noori Roohani Homeo Clinic",
+          "metaDescription": "Herbal soap whitening at Noori Roohani Homeo Clinic, Surjani Town. Confirm price and directions before use.",
+          "imageAlt": "Herbal soap whitening — Noori Roohani Homeo Clinic",
+          "price": "Price: confirm at clinic or on WhatsApp 0314-1000717",
+          "details": "Herbal soap formulated for whitening support alongside regular skincare.",
+          "usage": "Use on face or body as labelled. Rinse well; sun protection is recommended with whitening products."
         },
         "acne-whitening-cream": {
           "title": "Acne & whitening cream",

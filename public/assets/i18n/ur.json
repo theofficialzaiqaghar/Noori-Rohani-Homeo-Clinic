@@ -1126,14 +1126,24 @@
           "usage": "Apply to clean skin. Discontinue if irritation occurs."
         },
         "herbal-soap": {
-          "title": "جڑی بوٹی صابن (مہاسوں و فیئرنس)",
-          "short": "جڑی بوٹی صابن (مہاسوں و فیئرنس) — کلینک کی جڑی بوٹی رینج؛ دستیابی 0314-1000717 پر پوچھیں۔",
-          "documentTitle": "جڑی بوٹی صابن (مہاسوں و فیئرنس) | نوری روحانی ہومیو کلینک",
-          "metaDescription": "جڑی بوٹی صابن (مہاسوں و فیئرنس) — نوری روحانی ہومیو کلینک، سرجانی ٹاؤن۔",
-          "imageAlt": "جڑی بوٹی صابن (مہاسوں و فیئرنس) — کلینک",
+          "title": "جڑی بوٹی صابن (مہاسے)",
+          "short": "جڑی بوٹی صابن (مہاسے) — کلینک کی جڑی بوٹی رینج؛ دستیابی 0314-1000717 پر پوچھیں۔",
+          "documentTitle": "جڑی بوٹی صابن (مہاسے) | نوری روحانی ہومیو کلینک",
+          "metaDescription": "جڑی بوٹی صابن (مہاسے) — نوری روحانی ہومیو کلینک، سرجانی ٹاؤن۔",
+          "imageAlt": "جڑی بوٹی صابن (مہاسے) — کلینک",
           "price": "قیمت: کلینک یا واٹس ایپ 0314-1000717 پر تصدیق کریں",
-          "details": "Herbal soap formulated for acne and whitening support alongside regular skincare.",
+          "details": "Herbal soap formulated for acne-prone skin alongside regular skincare.",
           "usage": "Use on face or body as labelled. Rinse well; avoid broken or irritated skin."
+        },
+        "herbal-soap-whitening": {
+          "title": "جڑی بوٹی صابن (whitening)",
+          "short": "جڑی بوٹی صابن (whitening) — کلینک کی جڑی بوٹی رینج؛ دستیابی 0314-1000717 پر پوچھیں۔",
+          "documentTitle": "جڑی بوٹی صابن (whitening) | نوری روحانی ہومیو کلینک",
+          "metaDescription": "جڑی بوٹی صابن (whitening) — نوری روحانی ہومیو کلینک، سرجانی ٹاؤن۔",
+          "imageAlt": "جڑی بوٹی صابن (whitening) — کلینک",
+          "price": "قیمت: کلینک یا واٹس ایپ 0314-1000717 پر تصدیق کریں",
+          "details": "Herbal soap formulated for whitening support alongside regular skincare.",
+          "usage": "Use on face or body as labelled. Rinse well; sun protection is recommended with whitening products."
         },
         "acne-whitening-cream": {
           "title": "مہاسوں و whitening کریم",

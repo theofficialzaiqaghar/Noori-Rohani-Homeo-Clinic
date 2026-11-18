@@ -5,6 +5,7 @@ export const HERBAL_PRODUCTS = [
   { id: "ban-child-bam-bam", slug: "ban-child-bam-bam", icon: "icon-leaf", imageKey: "productChildBam" },
   { id: "winter-lotion", slug: "winter-lotion", icon: "icon-leaf", imageKey: "productWinterLotion" },
   { id: "herbal-soap", slug: "herbal-soap", icon: "icon-leaf", imageKey: "productHerbalSoap" },
+  { id: "herbal-soap-whitening", slug: "herbal-soap-whitening", icon: "icon-leaf", imageKey: "productHerbalSoapWhitening" },
   { id: "acne-whitening-cream", slug: "acne-whitening-cream", icon: "icon-leaf", imageKey: "productWhiteningCream" },
   { id: "majoon-e-khas", slug: "majoon-e-khas", icon: "icon-leaf", imageKey: "productMajoon" },
 ];

@@ -35,6 +35,7 @@ export const SITE_IMAGES = {
   productChildBam: "/assets/img/products/child-bam.png",
   productWinterLotion: "/assets/img/products/winter-lotion.webp",
   productHerbalSoap: "/assets/img/products/herbal-soap.png",
+  productHerbalSoapWhitening: "/assets/img/products/herbal-soap-whitening.jpg",
   productWhiteningCream: "/assets/img/products/whitening-cream.webp",
   productMajoon: "/assets/img/products/majoon-e-khas.png",
 };

@@ -37,6 +37,7 @@ const PRODUCTS = [
   "ban-child-bam-bam",
   "winter-lotion",
   "herbal-soap",
+  "herbal-soap-whitening",
   "acne-whitening-cream",
   "majoon-e-khas",
 ];

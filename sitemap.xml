@@ -242,6 +242,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/products/herbal-soap"/>
   </url>
   <url>
+    <loc>https://nooriroohanihomeoclinic.com/products/herbal-soap-whitening</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/products/herbal-soap-whitening"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/products/herbal-soap-whitening?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/products/herbal-soap-whitening"/>
+  </url>
+  <url>
     <loc>https://nooriroohanihomeoclinic.com/products/acne-whitening-cream</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>

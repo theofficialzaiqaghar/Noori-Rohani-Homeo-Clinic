@@ -19,7 +19,6 @@ export function HeroSection() {
   const root = useRef(null);
   const copyRef = useRef(null);
   const progressRef = useRef(null);
-  const slideImgRefs = useRef([]);
   const autoplayTween = useRef(null);
   const contentTween = useRef(null);
 
@@ -36,58 +35,33 @@ export function HeroSection() {
 
   const runContentAnimation = useCallback(() => {
     if (!copyRef.current) return;
-    if (reduceMotion) {
-      gsap.set(copyRef.current.querySelectorAll(".hero-word__inner, .hero-reveal"), {
-        yPercent: 0,
-        opacity: 1,
-        filter: "none",
-      });
-      return;
-    }
-    contentTween.current?.kill();
     const targets = copyRef.current.querySelectorAll(".hero-word__inner, .hero-reveal");
     if (!targets.length) return;
 
+    contentTween.current?.kill();
+
+    if (reduceMotion) {
+      gsap.set(targets, { y: 0, opacity: 1 });
+      return;
+    }
+
     contentTween.current = gsap.fromTo(
       targets,
-      { yPercent: 108, opacity: 0, filter: "blur(6px)" },
+      { y: 14, opacity: 0 },
       {
-        yPercent: 0,
+        y: 0,
         opacity: 1,
-        filter: "blur(0px)",
-        duration: 0.85,
-        stagger: { each: 0.045, from: "start" },
-        ease: "power3.out",
+        duration: 0.45,
+        stagger: 0.03,
+        ease: "power2.out",
+        overwrite: "auto",
       }
     );
   }, [reduceMotion]);
 
-  const runSlideImageAnimation = useCallback(() => {
-    if (reduceMotion) return;
-    const img = slideImgRefs.current[index];
-    if (!img) return;
-    gsap.killTweensOf(img);
-    gsap.fromTo(
-      img,
-      { scale: 1.14, clipPath: "inset(12% 8% 0% 8% round 0.5rem)" },
-      { scale: 1.06, clipPath: "inset(0% 0% 0% 0% round 0)", duration: 1.35, ease: "power2.inOut" }
-    );
-  }, [index, reduceMotion]);
-
   useLayoutEffect(() => {
-    slideImgRefs.current.forEach((img, i) => {
-      if (!img) return;
-      if (i === index) {
-        img.parentElement?.classList.add("is-active");
-        gsap.set(img, { opacity: 1 });
-      } else {
-        img.parentElement?.classList.remove("is-active");
-        gsap.set(img, { opacity: reduceMotion ? (i === index ? 1 : 0) : 0 });
-      }
-    });
-    runSlideImageAnimation();
     runContentAnimation();
-  }, [index, reduceMotion, runContentAnimation, runSlideImageAnimation]);
+  }, [index, runContentAnimation]);
 
   useEffect(() => {
     autoplayTween.current?.kill();
@@ -110,18 +84,19 @@ export function HeroSection() {
   useGSAP(
     () => {
       if (reduceMotion || !root.current) return;
-      gsap.to(root.current.querySelectorAll(".hero-banner__slide.is-active .hero-banner__slide-img"), {
-        scale: 1.1,
+      const imgs = root.current.querySelectorAll(".hero-banner__slide-img");
+      gsap.to(imgs, {
+        scale: 1.06,
         ease: "none",
         scrollTrigger: {
           trigger: root.current,
           start: "top top",
           end: "bottom top",
-          scrub: 0.6,
+          scrub: 0.8,
         },
       });
     },
-    { scope: root, dependencies: [index, useCmsOnly, reduceMotion] }
+    { scope: root, dependencies: [useCmsOnly, reduceMotion] }
   );
 
   const CtaButton = ({ href, variant, className, children }) => {
@@ -163,15 +138,13 @@ export function HeroSection() {
             data-slide-index={i}
           >
             <img
-              ref={(el) => {
-                slideImgRefs.current[i] = el;
-              }}
               className="hero-banner__slide-img"
               src={slide.image}
               alt=""
               style={{ objectPosition: bgPos }}
-              loading={i === 0 ? "eager" : "lazy"}
+              loading="eager"
               decoding="async"
+              fetchPriority={i === 0 ? "high" : "low"}
             />
           </div>
         ))}

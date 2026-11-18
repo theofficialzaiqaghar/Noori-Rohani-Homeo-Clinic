@@ -13,7 +13,7 @@ export function AboutSection() {
       <div className="shell split-section__grid" ref={ref}>
         <div className="split-section__visual" data-reveal-item>
           <div className="split-section__photo about-section__photo">
-            <img src={SITE_IMAGES.aboutFounder} alt={t("home.aboutClinic.imageAlt")} loading="lazy" decoding="async" />
+            <img src={SITE_IMAGES.aboutFounder} alt={t("home.aboutClinic.imageAlt")} loading="eager" decoding="async" />
           </div>
         </div>
         <div className="split-section__content">

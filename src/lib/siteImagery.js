@@ -10,8 +10,8 @@ export const SITE_IMAGES = {
 
   /* Sections */
   hero: "/assets/img/slider/slide-professor.jpg",
-  aboutFounder: "/assets/img/sections/about-founder.jpg",
-  about: "/assets/img/sections/about-founder.jpg",
+  aboutFounder: "/assets/img/sections/new-founder.jpg",
+  about: "/assets/img/sections/new-founder.jpg",
   careTeam: "/assets/img/sections/care-team.jpg",
   consultation: "/assets/img/sections/consultation.jpg",
   education: "/assets/img/sections/education.jpg",

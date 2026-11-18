@@ -1,12 +1,11 @@
 import { SITE_IMAGES } from "./siteImagery";
 
-/** Hero carousel — same layout as single hero; content keys: home.hero.slides.{id}.* */
-/** layout drives per-slide hero composition (CSS modifier on banner) */
+/** Hero carousel — content keys: home.hero.slides.{id}.* */
 export const HERO_SLIDES = [
   {
     id: "professor",
     layout: "editorial",
-    image: SITE_IMAGES.aboutFounder,
+    image: SITE_IMAGES.slideProfessor,
     imageAltKey: "home.hero.slides.professor.imageAlt",
     primaryHref: "/contact",
     secondaryHref: "https://wa.me/923141000717",
@@ -14,7 +13,7 @@ export const HERO_SLIDES = [
   {
     id: "homeopathy",
     layout: "clinical",
-    image: SITE_IMAGES.homeopathy,
+    image: SITE_IMAGES.slideHomeopathy,
     imageAltKey: "home.hero.slides.homeopathy.imageAlt",
     primaryHref: "/services",
     secondaryHref: "/contact",
@@ -22,7 +21,7 @@ export const HERO_SLIDES = [
   {
     id: "spiritual",
     layout: "serene",
-    image: SITE_IMAGES.rohani,
+    image: SITE_IMAGES.slideSpiritual,
     imageAltKey: "home.hero.slides.spiritual.imageAlt",
     primaryHref: "/services/spiritual",
     secondaryHref: "/contact",

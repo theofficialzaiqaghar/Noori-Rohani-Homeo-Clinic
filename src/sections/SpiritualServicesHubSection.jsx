@@ -31,7 +31,7 @@ export function SpiritualServicesHubSection() {
             </Button>
           </header>
           <div className="spiritual-hub-section__visual" data-reveal-item>
-            <SectionVisual imageKey="rohani" alt={t("home.spiritualHub.imageAlt")} className="split-section__photo" />
+            <SectionVisual imageKey="spiritual" alt={t("home.spiritualHub.imageAlt")} className="split-section__photo" />
           </div>
         </div>
         <ul className="spiritual-hub-section__grid">

@@ -6,6 +6,7 @@ export const SITE_IMAGES = {
   slideProfessor: "/assets/img/slider/slide-professor.jpg",
   slideHomeopathy: "/assets/img/slider/slide-homeopathy.png",
   slideSpiritual: "/assets/img/slider/slide-spiritual.png",
+  slideHerbal: "/assets/img/slider/slide-herbal.webp",
 
   /* Sections */
   hero: "/assets/img/slider/slide-professor.jpg",
@@ -14,7 +15,8 @@ export const SITE_IMAGES = {
   careTeam: "/assets/img/sections/care-team.jpg",
   consultation: "/assets/img/sections/consultation.jpg",
   education: "/assets/img/sections/education.jpg",
-  herbal: "/assets/img/sections/herbal.jpg",
+  /* Herbal & natural care */
+  herbal: "/assets/img/slider/slide-herbal.webp",
   /* Homeopathic care section + hubs — Herbal Skincare still life */
   homeopathy: "/assets/img/slider/slide-homeopathy.png",
   /* Rohani Ilaj section */

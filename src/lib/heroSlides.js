@@ -29,7 +29,7 @@ export const HERO_SLIDES = [
   {
     id: "herbal",
     layout: "product",
-    image: SITE_IMAGES.herbal,
+    image: SITE_IMAGES.slideHerbal,
     imageAltKey: "home.hero.slides.herbal.imageAlt",
     primaryHref: "/products",
     secondaryHref: "/contact",

@@ -15,7 +15,8 @@ export function I18nProvider({ children }) {
   const [ready, setReady] = useState(false);
 
   const loadBundle = useCallback(async (code) => {
-    const res = await fetch(`/assets/i18n/${code}.json`);
+    // Bust CDN/browser cache — i18n JSON is not content-hashed like JS bundles
+    const res = await fetch(`/assets/i18n/${code}.json?v=${import.meta.env.VITE_I18N_REV || "20261119a"}`);
     if (!res.ok) throw new Error(`i18n load failed: ${code}`);
     return res.json();
   }, []);

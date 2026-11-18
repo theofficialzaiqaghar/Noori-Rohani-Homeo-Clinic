@@ -13,6 +13,7 @@ const SERVICE_LINKS = [
   { href: "/services/spiritual/rohani-ilaj", key: "nav.servicesMenu.rohani", route: true },
   { href: "/services/homeopathy", key: "nav.servicesMenu.homeo", route: true },
   { href: "/products", key: "nav.servicesMenu.herbal", route: true },
+  { href: "/umrah", key: "nav.umrah", route: true, fallback: "Umrah Package" },
   { href: "/services/spiritual/quran-teaching", key: "nav.servicesMenu.quran", route: true },
   { href: "/services/spiritual/nikah-khawan", key: "nav.servicesMenu.nikkah", route: true },
   { href: "/services/spiritual", key: "nav.servicesMenu.spiritualAll", route: true },
@@ -163,12 +164,12 @@ export function SiteHeader({ overlay = false, className = "" }) {
                   <div className="mastnav__panel" role="menu">
                     {SERVICE_LINKS.map((item) =>
                       item.route ? (
-                        <Link key={item.key} to={item.href} role="menuitem" onClick={() => setServicesOpen(false)}>
-                          {t(item.key)}
+                        <Link key={item.key + item.href} to={item.href} role="menuitem" onClick={() => setServicesOpen(false)}>
+                          {t(item.key) || item.fallback || item.key}
                         </Link>
                       ) : (
-                        <a key={item.key} href={item.href} onClick={() => setServicesOpen(false)}>
-                          {t(item.key)}
+                        <a key={item.key + item.href} href={item.href} onClick={() => setServicesOpen(false)}>
+                          {t(item.key) || item.fallback || item.key}
                         </a>
                       )
                     )}
@@ -176,7 +177,7 @@ export function SiteHeader({ overlay = false, className = "" }) {
               ) : null}
             </div>
             <Link to="/products">{t("nav.products")}</Link>
-            <Link to="/umrah">{t("nav.umrah")}</Link>
+            <Link to="/umrah">{t("nav.umrah") || "Umrah Package"}</Link>
             <Link to="/contact">{t("nav.contact")}</Link>
           </nav>
 
@@ -250,7 +251,7 @@ export function SiteHeader({ overlay = false, className = "" }) {
                   {t("nav.drawer.mehfil")}
                 </Link>
                 <Link to="/umrah" onClick={() => setOpen(false)}>
-                  {t("nav.umrah")}
+                  {t("nav.umrah") || "Umrah Package"}
                 </Link>
                 <Link to="/contact" onClick={() => setOpen(false)}>
                   {t("nav.contact")}

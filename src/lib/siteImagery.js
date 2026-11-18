@@ -15,8 +15,8 @@ export const SITE_IMAGES = {
   consultation: "/assets/img/sections/consultation.jpg",
   education: "/assets/img/sections/education.jpg",
   herbal: "/assets/img/sections/herbal.jpg",
-  /* Homeopathic care section + related hubs */
-  homeopathy: "/assets/img/sections/homeopathy.avif",
+  /* Homeopathic care section + hubs — Herbal Skincare still life */
+  homeopathy: "/assets/img/slider/slide-homeopathy.png",
   /* Rohani Ilaj section */
   rohani: "/assets/img/sections/spiritual.avif",
   /* Islamic & spiritual / educational section + spiritual slide */

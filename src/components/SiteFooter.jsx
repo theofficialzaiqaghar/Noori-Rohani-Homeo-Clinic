@@ -125,6 +125,7 @@ export function SiteFooter() {
           <Link to="/services/spiritual">{t("footer.quickLinks.spiritual")}</Link>
           <Link to="/products">{t("nav.products")}</Link>
           <Link to="/events/mehfil">{t("footer.quickLinks.mehfil")}</Link>
+          <Link to="/umrah">{t("nav.umrah")}</Link>
           <Link to="/contact">{t("nav.contact")}</Link>
         </nav>
 

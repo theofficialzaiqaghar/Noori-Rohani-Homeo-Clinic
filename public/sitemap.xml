@@ -265,4 +265,12 @@
     <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/events/mehfil?lang=ur"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/events/mehfil"/>
   </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/umrah</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/umrah"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/umrah?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/umrah"/>
+  </url>
 </urlset>

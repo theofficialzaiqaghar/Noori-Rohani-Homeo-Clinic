@@ -7,6 +7,7 @@ import "./styles/responsive.css";
 import "./styles/inner-pages.css";
 import "./styles/services-landing.css";
 import "./styles/hero-premium.css";
+import "./styles/umrah-package.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

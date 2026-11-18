@@ -176,6 +176,7 @@ export function SiteHeader({ overlay = false, className = "" }) {
               ) : null}
             </div>
             <Link to="/products">{t("nav.products")}</Link>
+            <Link to="/umrah">{t("nav.umrah")}</Link>
             <Link to="/contact">{t("nav.contact")}</Link>
           </nav>
 
@@ -247,6 +248,9 @@ export function SiteHeader({ overlay = false, className = "" }) {
                 </Link>
                 <Link to="/events/mehfil" onClick={() => setOpen(false)}>
                   {t("nav.drawer.mehfil")}
+                </Link>
+                <Link to="/umrah" onClick={() => setOpen(false)}>
+                  {t("nav.umrah")}
                 </Link>
                 <Link to="/contact" onClick={() => setOpen(false)}>
                   {t("nav.contact")}

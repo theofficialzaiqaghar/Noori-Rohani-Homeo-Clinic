@@ -53,6 +53,7 @@ const PATHS = [
   "/products",
   ...PRODUCTS.map((s) => `/products/${s}`),
   "/events/mehfil",
+  "/umrah",
 ];
 
 function urlEntry(path, priority) {

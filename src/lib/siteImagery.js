@@ -24,6 +24,7 @@ export const SITE_IMAGES = {
   /* Islamic & spiritual / educational section + spiritual slide */
   spiritual: "/assets/img/slider/slide-spiritual.png",
   mehfil: "/assets/img/sections/monthly-mehfil.webp",
+  umrahHero: "/assets/img/sections/umrah-hero.jpg",
   services: "/assets/img/sections/consultation.jpg",
   why: "/assets/img/sections/care-team.jpg",
   process: "/assets/img/sections/consultation.jpg",

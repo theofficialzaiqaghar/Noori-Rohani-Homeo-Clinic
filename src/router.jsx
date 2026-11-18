@@ -14,6 +14,7 @@ import ServiceDetailSpiritualPage from "./pages/ServiceDetailSpiritualPage";
 import ProductsHubPage from "./pages/ProductsHubPage";
 import ProductDetailPage from "./pages/ProductDetailPage";
 import MehfilPage from "./pages/MehfilPage";
+import UmrahPackagePage from "./pages/UmrahPackagePage";
 import { AdminLoginPage } from "./admin/pages/AdminLoginPage";
 import { AdminLayout } from "./admin/AdminLayout";
 import { DashboardPage } from "./admin/pages/DashboardPage";
@@ -43,6 +44,7 @@ export function AppRouter() {
         <Route path="/products" element={<ProductsHubPage />} />
         <Route path="/products/:slug" element={<ProductDetailPage />} />
         <Route path="/events/mehfil" element={<MehfilPage />} />
+        <Route path="/umrah" element={<UmrahPackagePage />} />
         <Route path="/admin/login" element={<AdminLoginPage />} />
         <Route
           path="/admin"

@@ -19,19 +19,19 @@ export const HERO_SLIDES = [
     secondaryHref: "/contact",
   },
   {
-    id: "herbal",
-    layout: "product",
-    image: SITE_IMAGES.slideHerbal,
-    imageAltKey: "home.hero.slides.herbal.imageAlt",
-    primaryHref: "/products",
-    secondaryHref: "/contact",
-  },
-  {
     id: "professor",
     layout: "editorial",
     image: SITE_IMAGES.slideProfessor,
     imageAltKey: "home.hero.slides.professor.imageAlt",
     primaryHref: "/contact",
     secondaryHref: "https://wa.me/923141000717",
+  },
+  {
+    id: "herbal",
+    layout: "product",
+    image: SITE_IMAGES.slideHerbal,
+    imageAltKey: "home.hero.slides.herbal.imageAlt",
+    primaryHref: "/products",
+    secondaryHref: "/contact",
   },
 ];

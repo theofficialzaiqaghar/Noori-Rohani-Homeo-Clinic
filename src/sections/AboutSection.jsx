@@ -3,6 +3,7 @@ import { useReveal } from "../hooks/useReveal";
 import { useI18n } from "../providers/I18nProvider";
 import { Button } from "../components/Button";
 import { SITE_IMAGES } from "../lib/siteImagery";
+import { FOUNDER } from "../lib/founderProfile";
 
 export function AboutSection() {
   const { t } = useI18n();
@@ -18,17 +19,30 @@ export function AboutSection() {
         </div>
         <div className="split-section__content">
           <p className="section-head__kicker" data-reveal-item>
-            {t("home.aboutClinic.label")}
+            Founder spotlight
           </p>
           <h2 id="about-clinic-title" className="section-head__title" data-reveal-item>
-            {t("home.aboutClinic.title")}
+            {FOUNDER.name}
           </h2>
-          <p className="split-section__lede" data-reveal-item>
-            {t("home.aboutClinic.text")}
+          <p className="about-section__role" data-reveal-item>
+            <strong>{FOUNDER.title}</strong>
           </p>
-          <Button as={Link} to="/contact" data-reveal-item>
-            {t("btn.bookAppointment")}
-          </Button>
+          <p className="split-section__lede" data-reveal-item>
+            {FOUNDER.homeBlurb}
+          </p>
+          <ul className="about-section__chips" data-reveal-item>
+            {["Ph.D. Islamic Studies", "DHMS", "Homeopathic Council", "Research Council", "Sheikh-e-Tareeqat"].map((chip) => (
+              <li key={chip}>{chip}</li>
+            ))}
+          </ul>
+          <div className="about-section__actions" data-reveal-item>
+            <Button as={Link} to="/about">
+              View full founder profile
+            </Button>
+            <Button as={Link} to="/contact" variant="ghost">
+              {t("btn.bookAppointment")}
+            </Button>
+          </div>
         </div>
       </div>
     </section>

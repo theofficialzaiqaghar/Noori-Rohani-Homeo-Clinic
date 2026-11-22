@@ -19,7 +19,7 @@ export const SITE_IMAGES = {
   herbal: "/assets/img/slider/slide-herbal.webp",
   /* Homeopathic care section + hubs — Herbal Skincare still life */
   homeopathy: "/assets/img/slider/slide-homeopathy.png",
-  /* Rohani Ilaj section */
+  /* Roohani Ilaj section */
   rohani: "/assets/img/sections/spiritual.avif",
   /* Islamic & spiritual / educational section + spiritual slide */
   spiritual: "/assets/img/slider/slide-spiritual.png",

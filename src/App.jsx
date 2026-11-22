@@ -1,10 +1,10 @@
-import { SkipLink } from "./components/SkipLink";
+﻿import { SkipLink } from "./components/SkipLink";
 import { SiteHeader } from "./components/SiteHeader";
 import { SiteFooter } from "./components/SiteFooter";
 import { WhatsAppFab } from "./components/WhatsAppFab";
 import { HeroSection } from "./sections/HeroSection";
 import { ServicesSection } from "./sections/ServicesSection";
-import { RohaniSection } from "./sections/RohaniSection";
+import { RoohaniSection } from "./sections/RoohaniSection";
 import { HomeoHerbalSection } from "./sections/HomeoHerbalSection";
 import { EducationSection } from "./sections/EducationSection";
 import { WhySection } from "./sections/WhySection";
@@ -20,7 +20,7 @@ export default function App() {
       <main id="main" tabIndex={-1}>
         <HeroSection />
         <ServicesSection />
-        <RohaniSection />
+        <RoohaniSection />
         <HomeoHerbalSection />
         <EducationSection />
         <WhySection />

@@ -1407,6 +1407,178 @@ html[lang="ur"] .footer-grid h3 {
   gap: 1rem;
 }
 
+.footer-hours {
+  margin-top: 0.75rem;
+}
+
+.footer-hours__label {
+  margin: 0 0 0.35rem;
+  font-weight: 700;
+}
+
+.footer-hours__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.footer-hours__list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: var(--text-sm);
+}
+
+.footer-hours__list strong {
+  font-weight: 700;
+}
+
+.footer-credit {
+  margin: 0.75rem auto 0;
+  text-align: center;
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}
+
+.footer-credit a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.mastnav__panel--scroll {
+  max-height: min(70vh, 28rem);
+  overflow: auto;
+  min-width: 16rem;
+}
+
+.mastnav__panel strong,
+.drawer__nav strong,
+.product-tile__name,
+.service-card__title,
+.homeopathy-services__card h3,
+.spiritual-hub-section__card h3 {
+  font-weight: 800;
+}
+
+.drawer__nav-sub {
+  padding-inline-start: 1rem !important;
+  font-size: 0.92rem;
+}
+
+.about-section__role {
+  margin: 0 0 0.65rem;
+  color: var(--accent);
+}
+
+.about-section__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  list-style: none;
+  margin: 0 0 1.1rem;
+  padding: 0;
+}
+
+.about-section__chips li {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.about-section__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.founder-layout {
+  align-items: start;
+}
+
+.founder-card {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  background: var(--paper-elevated);
+}
+
+.founder-card__kicker {
+  margin: 0 0 0.5rem;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.founder-block {
+  margin-top: 1.35rem;
+}
+
+.founder-block__title {
+  margin: 0 0 0.55rem;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.founder-block__list {
+  margin: 0;
+  padding-inline-start: 1.15rem;
+  display: grid;
+  gap: 0.35rem;
+  color: var(--ink-muted);
+}
+
+.research-council,
+.research-council-home {
+  padding-block: clamp(2.5rem, 6vw, 4rem);
+}
+
+.research-council__role {
+  margin: 0 0 1rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.research-council__text {
+  max-width: 48rem;
+  color: var(--ink-muted);
+  line-height: 1.65;
+}
+
+.research-council-home__grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 56rem) {
+  .research-council-home__grid {
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.8fr);
+    align-items: start;
+  }
+}
+
+.research-council-home__aside {
+  padding: 1.15rem 1.25rem;
+  border: 1px solid var(--line);
+  background: var(--paper-elevated);
+}
+
+.research-council-home__points {
+  margin: 0;
+  padding-inline-start: 1.1rem;
+  display: grid;
+  gap: 0.55rem;
+  font-weight: 600;
+}
+
 .footer-disclaimer {
   margin: 0;
   padding-block: 0 var(--space-3);

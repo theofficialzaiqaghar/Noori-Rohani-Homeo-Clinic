@@ -1,22 +1,25 @@
-import { writeFileSync } from "node:fs";
+﻿import { writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { SITE_URL } from "../src/lib/clinicInfo.js";
+import {
+  SITE_URL,
+  CLINIC_ADDRESS_EN,
+  CLINIC_PHONE_DISPLAY,
+} from "../src/lib/clinicInfo.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const base = (process.env.VITE_SITE_URL || SITE_URL).replace(/\/$/, "");
 
 const body = `# Noori Roohani Homeo Clinic
 
-> Rohani ilaj, homeopathic consultations, herbal products, Quran teaching, and community education in Karachi, Pakistan.
+> Roohani ilaj, homeopathic consultations, herbal products, Quran teaching, and community education in Karachi, Pakistan.
 
 ## Business
 
 - Name: Noori Roohani Homeo Clinic
 - Website: ${base}/
-- Address: Plot No. CI-05, Moon Arcade, Flat, Sector L-1, Near Makkah Hotel, Surjani Town, Karachi, Pakistan
-- Phone: 0314-1000717
-- Email: nooriroohaniclinic@gmail.com
+- Address: ${CLINIC_ADDRESS_EN}
+- Phone / WhatsApp: ${CLINIC_PHONE_DISPLAY}
 - Hours: Sunday–Thursday 7:00 PM – 9:00 PM; Friday and Saturday closed
 
 ## Main pages
@@ -29,6 +32,7 @@ const body = `# Noori Roohani Homeo Clinic
 - Islamic & spiritual services: ${base}/services/spiritual
 - Products: ${base}/products
 - Monthly Mehfil: ${base}/events/mehfil
+- Umrah Package: ${base}/umrah
 
 ## Note
 

@@ -7,6 +7,8 @@ import { Button } from "./Button";
 import { Icon } from "./Icon";
 import { CLINIC_PHONE_DISPLAY, CLINIC_PHONE_E164, CLINIC_WHATSAPP } from "../lib/clinicInfo";
 import { BRAND_LOGO_SRC } from "../lib/brandAssets";
+import { HERBAL_PRODUCTS } from "../lib/productCatalog";
+import { HOMEOPATHY_SERVICES } from "../lib/homeopathyServiceData";
 
 const SERVICE_LINKS = [
   { href: "/services", key: "nav.servicesMenu.all", route: true },
@@ -20,6 +22,31 @@ const SERVICE_LINKS = [
   { href: "/events/mehfil", key: "nav.servicesMenu.mehfilNav", route: true },
 ];
 
+function NavDropdown({ label, open, setOpen, children, wide = false }) {
+  return (
+    <div
+      className={`mastnav__drop${wide ? " mastnav__drop--wide" : ""}`}
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <button
+        type="button"
+        className="mastnav__trigger"
+        aria-expanded={open}
+        onClick={() => setOpen((v) => !v)}
+      >
+        {label}
+        <Icon name="icon-chevron" />
+      </button>
+      {open ? (
+        <div className={`mastnav__panel${wide ? " mastnav__panel--scroll" : ""}`} role="menu">
+          {children}
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
 export function SiteHeader({ overlay = false, className = "" }) {
   const { t, lang, setLanguage } = useI18n();
   const { getSlot } = useSiteSettings() || {};
@@ -28,6 +55,8 @@ export function SiteHeader({ overlay = false, className = "" }) {
   const [solid, setSolid] = useState(!overlay);
   const [open, setOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [productsOpen, setProductsOpen] = useState(false);
+  const [homeoOpen, setHomeoOpen] = useState(false);
 
   useEffect(() => {
     if (!overlay) {
@@ -62,12 +91,21 @@ export function SiteHeader({ overlay = false, className = "" }) {
   }, [open]);
 
   useEffect(() => {
-    if (!servicesOpen) return undefined;
+    const anyOpen = servicesOpen || productsOpen || homeoOpen;
+    if (!anyOpen) return undefined;
     const onKey = (e) => {
-      if (e.key === "Escape") setServicesOpen(false);
+      if (e.key === "Escape") {
+        setServicesOpen(false);
+        setProductsOpen(false);
+        setHomeoOpen(false);
+      }
     };
     const onPointer = (e) => {
-      if (!e.target.closest(".mastnav__drop")) setServicesOpen(false);
+      if (!e.target.closest(".mastnav__drop")) {
+        setServicesOpen(false);
+        setProductsOpen(false);
+        setHomeoOpen(false);
+      }
     };
     document.addEventListener("keydown", onKey);
     document.addEventListener("pointerdown", onPointer);
@@ -75,7 +113,7 @@ export function SiteHeader({ overlay = false, className = "" }) {
       document.removeEventListener("keydown", onKey);
       document.removeEventListener("pointerdown", onPointer);
     };
-  }, [servicesOpen]);
+  }, [servicesOpen, productsOpen, homeoOpen]);
 
   const mastClass = [
     "masthead",
@@ -89,6 +127,12 @@ export function SiteHeader({ overlay = false, className = "" }) {
   const chromeClass = ["site-chrome", overlay ? "site-chrome--overlay" : "", solid ? "site-chrome--solid" : "", className]
     .filter(Boolean)
     .join(" ");
+
+  const closeAll = () => {
+    setServicesOpen(false);
+    setProductsOpen(false);
+    setHomeoOpen(false);
+  };
 
   return (
     <div className={chromeClass}>
@@ -146,37 +190,33 @@ export function SiteHeader({ overlay = false, className = "" }) {
           <nav className="mastnav" aria-label={t("nav.label")}>
             <Link to="/">{t("nav.home")}</Link>
             <Link to="/about">{t("nav.about")}</Link>
-            <div
-              className="mastnav__drop"
-              onMouseEnter={() => setServicesOpen(true)}
-              onMouseLeave={() => setServicesOpen(false)}
-            >
-              <button
-                type="button"
-                className="mastnav__trigger"
-                aria-expanded={servicesOpen}
-                onClick={() => setServicesOpen((v) => !v)}
-              >
-                {t("nav.services")}
-                <Icon name="icon-chevron" />
-              </button>
-              {servicesOpen ? (
-                  <div className="mastnav__panel" role="menu">
-                    {SERVICE_LINKS.map((item) =>
-                      item.route ? (
-                        <Link key={item.key + item.href} to={item.href} role="menuitem" onClick={() => setServicesOpen(false)}>
-                          {t(item.key) || item.fallback || item.key}
-                        </Link>
-                      ) : (
-                        <a key={item.key + item.href} href={item.href} onClick={() => setServicesOpen(false)}>
-                          {t(item.key) || item.fallback || item.key}
-                        </a>
-                      )
-                    )}
-                  </div>
-              ) : null}
-            </div>
-            <Link to="/products">{t("nav.products")}</Link>
+            <NavDropdown label={t("nav.services")} open={servicesOpen} setOpen={setServicesOpen}>
+              {SERVICE_LINKS.map((item) => (
+                <Link key={item.key + item.href} to={item.href} role="menuitem" onClick={closeAll}>
+                  <strong>{t(item.key) || item.fallback || item.key}</strong>
+                </Link>
+              ))}
+            </NavDropdown>
+            <NavDropdown label={t("nav.drawer.homeopathy")} open={homeoOpen} setOpen={setHomeoOpen} wide>
+              <Link to="/services/homeopathy" role="menuitem" onClick={closeAll}>
+                <strong>All homeopathy services</strong>
+              </Link>
+              {HOMEOPATHY_SERVICES.map((item) => (
+                <Link key={item.slug} to={`/services/homeopathy/${item.slug}`} role="menuitem" onClick={closeAll}>
+                  <strong>{t(`pages.homeopathy.items.${item.slug}.title`) || item.slug}</strong>
+                </Link>
+              ))}
+            </NavDropdown>
+            <NavDropdown label={t("nav.products")} open={productsOpen} setOpen={setProductsOpen}>
+              <Link to="/products" role="menuitem" onClick={closeAll}>
+                <strong>All products</strong>
+              </Link>
+              {HERBAL_PRODUCTS.map((item) => (
+                <Link key={item.slug} to={`/products/${item.slug}`} role="menuitem" onClick={closeAll}>
+                  <strong>{t(`pages.products.items.${item.slug}.title`) || item.slug}</strong>
+                </Link>
+              ))}
+            </NavDropdown>
             <Link to="/umrah">{t("nav.umrah") || "Umrah Package"}</Link>
             <Link to="/contact">{t("nav.contact")}</Link>
           </nav>
@@ -239,14 +279,34 @@ export function SiteHeader({ overlay = false, className = "" }) {
                   {t("nav.servicesMenu.all")}
                 </Link>
                 <Link to="/services/homeopathy" onClick={() => setOpen(false)}>
-                  {t("nav.drawer.homeopathy")}
+                  <strong>{t("nav.drawer.homeopathy")}</strong>
                 </Link>
+                {HOMEOPATHY_SERVICES.slice(0, 12).map((item) => (
+                  <Link
+                    key={item.slug}
+                    to={`/services/homeopathy/${item.slug}`}
+                    className="drawer__nav-sub"
+                    onClick={() => setOpen(false)}
+                  >
+                    <strong>{t(`pages.homeopathy.items.${item.slug}.title`) || item.slug}</strong>
+                  </Link>
+                ))}
                 <Link to="/services/spiritual" onClick={() => setOpen(false)}>
                   {t("nav.drawer.spiritual")}
                 </Link>
                 <Link to="/products" onClick={() => setOpen(false)}>
-                  {t("nav.products")}
+                  <strong>{t("nav.products")}</strong>
                 </Link>
+                {HERBAL_PRODUCTS.map((item) => (
+                  <Link
+                    key={item.slug}
+                    to={`/products/${item.slug}`}
+                    className="drawer__nav-sub"
+                    onClick={() => setOpen(false)}
+                  >
+                    <strong>{t(`pages.products.items.${item.slug}.title`) || item.slug}</strong>
+                  </Link>
+                ))}
                 <Link to="/events/mehfil" onClick={() => setOpen(false)}>
                   {t("nav.drawer.mehfil")}
                 </Link>

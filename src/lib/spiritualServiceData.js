@@ -21,8 +21,27 @@ const SPIRITUAL_ICONS = {
   "international-research-center": "icon-flask",
 };
 
+/** English banner chips per spiritual service */
+export const SPIRITUAL_BANNER_CHIPS = {
+  "rohani-ilaj": [
+    "Spiritual guidance",
+    "Nazar concerns",
+    "Household peace",
+    "Privacy-first care",
+    "Respectful counsel",
+  ],
+  istikhara: [
+    "Istakhara for Marriage",
+    "Istakhara for Business",
+    "Istakhara for Career",
+    "Istakhara for Travel",
+    "Istakhara for Family",
+  ],
+};
+
 export const SPIRITUAL_SERVICES = SPIRITUAL_SERVICE_SLUGS.map((slug) => ({
   slug,
   icon: SPIRITUAL_ICONS[slug] || "icon-star",
   imageKey: "rohani",
+  chips: SPIRITUAL_BANNER_CHIPS[slug] || [],
 }));

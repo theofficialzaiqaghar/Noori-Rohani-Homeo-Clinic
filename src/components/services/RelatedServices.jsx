@@ -15,7 +15,7 @@ export function RelatedServices({ items, heading, className = "related-cards" })
         {items.map((item) => (
           <li key={item.href}>
             <Link to={item.href} className="related-cards__tile">
-              <span className="related-cards__tile-title">{t(item.titleKey)}</span>
+              <strong className="related-cards__tile-title">{t(item.titleKey)}</strong>
               {item.summaryKey ? <span className="related-cards__tile-desc">{t(item.summaryKey)}</span> : null}
             </Link>
           </li>

@@ -687,6 +687,34 @@ html[dir="rtl"] .service-card:hover .service-card__arrow {
   color: var(--accent);
 }
 
+.inner-page-hero__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.inner-page-hero__chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+
+.inner-page-hero__actions {
+  margin-top: 1.15rem;
+}
+
+
 html[lang="ur"] .contact-page-hero__kicker {
   letter-spacing: 0;
   text-transform: none;

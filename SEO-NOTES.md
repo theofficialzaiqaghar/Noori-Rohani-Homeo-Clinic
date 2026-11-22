@@ -1,4 +1,4 @@
-# SEO & launch checklist — Noori Roohani Homeo Clinic
+﻿# SEO & launch checklist — Noori Roohani Homeo Clinic
 
 Replace every placeholder before go-live. Run `npm run qa` to verify i18n key parity.
 
@@ -126,7 +126,7 @@ No service worker (skipped — static assets already cache well with headers).
 
 ## Title & description length (English)
 
-- **Title:** `Noori Roohani Homeo Clinic | Rohani Ilaj & Homeo` (~48 characters)
+- **Title:** `Noori Roohani Homeo Clinic | Roohani Ilaj & Homeo` (~48 characters)
 - **Description:** under 160 characters (see `assets/i18n/en.json` → `meta.description`)
 
 Urdu equivalents in `ur.json` → `meta.title` / `meta.description` (updated by `i18n.js` on switch).

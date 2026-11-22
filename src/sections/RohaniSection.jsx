@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { useReveal } from "../hooks/useReveal";
 import { useI18n } from "../providers/I18nProvider";
 import { Button } from "../components/Button";
@@ -6,7 +6,7 @@ import { SectionVisual } from "../components/SectionVisual";
 
 const ITEMS = ["nazar", "jadu", "bandish", "rishton", "beAulaadi", "berozgari", "asraat"];
 
-export function RohaniSection() {
+export function RoohaniSection() {
   const { t } = useI18n();
   const ref = useReveal({ childSelector: "[data-reveal-item]" });
 

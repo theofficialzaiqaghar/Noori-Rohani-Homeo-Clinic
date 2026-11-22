@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useI18n } from "../providers/I18nProvider";
 import { Button } from "./Button";
-import { CLINIC_EMAIL, CLINIC_WHATSAPP, CLINIC_PHONE_DISPLAY } from "../lib/clinicInfo";
+import { CLINIC_WHATSAPP, CLINIC_PHONE_DISPLAY } from "../lib/clinicInfo";
 
 export function ContactForm({ idPrefix = "", className = "" }) {
   const { t } = useI18n();
@@ -91,8 +91,10 @@ export function ContactForm({ idPrefix = "", className = "" }) {
       <Button type="submit">{t("home.form.submit")}</Button>
       {status && <p className="form-status">{status}</p>}
       <p className="form-fallback">
-        {t("home.form.fallback")}{" "}
-        <a href={`mailto:${CLINIC_EMAIL}`}>{t("home.form.emailLink")}</a>
+        Prefer WhatsApp?{" "}
+        <a href={`https://wa.me/${CLINIC_WHATSAPP}`} rel="noopener noreferrer">
+          Message {CLINIC_PHONE_DISPLAY}
+        </a>
       </p>
     </form>
   );

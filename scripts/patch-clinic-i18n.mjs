@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Inject official clinic address, hours, phone, email into en.json / ur.json (synced to public/).
  */
 import { readFileSync, writeFileSync } from "node:fs";
@@ -13,24 +13,23 @@ import {
   CLINIC_HOURS_TOPBAR_EN,
   CLINIC_HOURS_TOPBAR_UR,
   CLINIC_PHONE_DISPLAY,
-  CLINIC_EMAIL,
 } from "../src/lib/clinicInfo.js";
 import { HOME_SERVICES_COPY } from "./home-services-copy.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
 const EN = {
-  metaDescription: `${CLINIC_NAME} — Rohani ilaj, homeopathy, and herbal care in Surjani Town, Karachi. ${CLINIC_HOURS_SHORT_EN_PHRASE()}`,
+  metaDescription: `${CLINIC_NAME} — Roohani ilaj, homeopathy, and herbal care in Surjani Town, Karachi. ${CLINIC_HOURS_SHORT_EN_PHRASE()}`,
   topbarPhone: CLINIC_PHONE_DISPLAY,
   topbarHours: CLINIC_HOURS_TOPBAR_EN,
   footerPhone: CLINIC_PHONE_DISPLAY,
   footerWhatsapp: CLINIC_PHONE_DISPLAY,
-  footerEmail: CLINIC_EMAIL,
+  footerEmail: "",
   footerAddress: CLINIC_ADDRESS_EN,
   footerHours: CLINIC_HOURS_EN,
   contactAsideAddress: CLINIC_ADDRESS_EN,
   contactAsideHours: CLINIC_HOURS_EN,
-  mapNote: `Find us at ${CLINIC_ADDRESS_EN} Open in Google Maps for directions. Call ${CLINIC_PHONE_DISPLAY} before your visit.`,
+  mapNote: `Find us at ${CLINIC_ADDRESS_EN} Open in Google Maps for directions. Call or WhatsApp ${CLINIC_PHONE_DISPLAY} before your visit.`,
   phonePlaceholder: CLINIC_PHONE_DISPLAY,
 };
 
@@ -41,7 +40,7 @@ const UR = {
   topbarHours: CLINIC_HOURS_TOPBAR_UR,
   footerPhone: CLINIC_PHONE_DISPLAY,
   footerWhatsapp: CLINIC_PHONE_DISPLAY,
-  footerEmail: CLINIC_EMAIL,
+  footerEmail: "",
   footerAddress: CLINIC_ADDRESS_UR,
   footerHours: CLINIC_HOURS_UR,
   contactAsideAddress: CLINIC_ADDRESS_UR,
@@ -70,15 +69,19 @@ function patch(file, lang) {
     data.footer.contact.hours = copy.footerHours;
     data.footer.contact.phone = copy.footerPhone;
     data.footer.contact.whatsapp = copy.footerWhatsapp;
-    data.footer.contact.email = copy.footerEmail;
+    delete data.footer.contact.email;
+  }
+  if (data.footer) {
+    data.footer.disclaimer = "";
   }
   if (data.home?.contact?.aside) {
     data.home.contact.aside.address = copy.contactAsideAddress;
     data.home.contact.aside.hours = copy.contactAsideHours;
     data.home.contact.aside.phone =
       lang === "en" ? `Phone: ${copy.footerPhone}` : `فون: ${copy.footerPhone}`;
-    data.home.contact.aside.email =
-      lang === "en" ? `Email: ${copy.footerEmail}` : `ای میل: ${copy.footerEmail}`;
+    data.home.contact.aside.whatsapp =
+      lang === "en" ? `WhatsApp: ${copy.footerWhatsapp}` : `واٹس ایپ: ${copy.footerWhatsapp}`;
+    delete data.home.contact.aside.email;
   }
   data.page = data.page || {};
   data.page.about = data.page.about || {};
@@ -88,7 +91,7 @@ function patch(file, lang) {
       : `کلینک کے بارے میں | ${CLINIC_NAME}`;
   data.page.about.metaDescription =
     lang === "en"
-      ? `Learn about ${CLINIC_NAME} in Surjani Town, Karachi — homeopathy, Rohani ilaj, and herbal care. ${CLINIC_HOURS_EN}`
+      ? `Learn about ${CLINIC_NAME} in Surjani Town, Karachi — homeopathy, Roohani ilaj, and herbal care.`
       : `سرجانی ٹاؤن — ${CLINIC_NAME}، ہومیو اور روحانی علاج۔`;
 
   data.page.contact = data.page.contact || {};
@@ -98,12 +101,12 @@ function patch(file, lang) {
     data.page.contact.openMaps = lang === "en" ? "Open in Google Maps" : "گوگل میپس کھولیں";
     data.page.contact.metaDescription =
       lang === "en"
-        ? `Contact ${CLINIC_NAME} in Surjani Town, Karachi. ${CLINIC_HOURS_EN} Phone ${CLINIC_PHONE_DISPLAY}, WhatsApp, or form.`
+        ? `Contact ${CLINIC_NAME} in Surjani Town, Karachi. Phone / WhatsApp ${CLINIC_PHONE_DISPLAY}.`
         : `سرجانی ٹاؤن — ${CLINIC_NAME}۔ رابطہ: ${CLINIC_PHONE_DISPLAY}`;
   }
   if (data.home?.form) {
     data.home.form.phonePlaceholder = copy.phonePlaceholder;
-    data.home.form.emailValue = copy.footerEmail;
+    delete data.home.form.emailValue;
   }
 
   data.home = data.home || {};
@@ -132,4 +135,4 @@ function patch(file, lang) {
 
 patch(join(root, "assets", "i18n", "en.json"), "en");
 patch(join(root, "assets", "i18n", "ur.json"), "ur");
-console.log("Clinic address, hours, phone & email patched in i18n.");
+console.log("Clinic address, hours, phone & WhatsApp patched in i18n.");

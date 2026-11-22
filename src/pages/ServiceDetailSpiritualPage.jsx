@@ -43,6 +43,7 @@ export default function ServiceDetailSpiritualPage() {
           kicker={t("pages.spiritual.detail.kicker")}
           title={t(`pages.spiritual.items.${slug}.title`)}
           lead={t(`pages.spiritual.items.${slug}.summary`)}
+          chips={serviceMeta.chips}
           actions={
             <Button as={Link} to="/contact">
               {t("pages.spiritual.detail.contactCta")}

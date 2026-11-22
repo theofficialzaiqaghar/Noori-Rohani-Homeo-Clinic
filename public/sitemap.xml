@@ -42,12 +42,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy"/>
   </url>
   <url>
-    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/kidney-problems</loc>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/mens-health</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/kidney-problems"/>
-    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/kidney-problems?lang=ur"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/kidney-problems"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/mens-health"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/mens-health?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/mens-health"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/sexual-health</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/sexual-health"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/sexual-health?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/sexual-health"/>
   </url>
   <url>
     <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/skin-scalp-concerns</loc>
@@ -66,28 +74,28 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/hair-problems"/>
   </url>
   <url>
-    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/male-female-infertility</loc>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/womens-health</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/male-female-infertility"/>
-    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/male-female-infertility?lang=ur"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/male-female-infertility"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/womens-health"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/womens-health?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/womens-health"/>
   </url>
   <url>
-    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/sexual-health</loc>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/childrens-health</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/sexual-health"/>
-    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/sexual-health?lang=ur"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/sexual-health"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/childrens-health"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/childrens-health?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/childrens-health"/>
   </url>
   <url>
-    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/psychological-mental-health</loc>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/kidney-problems</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/psychological-mental-health"/>
-    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/psychological-mental-health?lang=ur"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/psychological-mental-health"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/kidney-problems"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/kidney-problems?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/kidney-problems"/>
   </url>
   <url>
     <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/digestive-problems</loc>
@@ -106,28 +114,212 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/joint-muscular-problems"/>
   </url>
   <url>
-    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/womens-health</loc>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/psychological-mental-health</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/womens-health"/>
-    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/womens-health?lang=ur"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/womens-health"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/psychological-mental-health"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/psychological-mental-health?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/psychological-mental-health"/>
   </url>
   <url>
-    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/childrens-health</loc>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/male-female-infertility</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/childrens-health"/>
-    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/childrens-health?lang=ur"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/childrens-health"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/male-female-infertility"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/male-female-infertility?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/male-female-infertility"/>
   </url>
   <url>
-    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/mens-health</loc>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/allergies</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/mens-health"/>
-    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/mens-health?lang=ur"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/mens-health"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/allergies"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/allergies?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/allergies"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/asthma-respiratory</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/asthma-respiratory"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/asthma-respiratory?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/asthma-respiratory"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/migraine-headache</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/migraine-headache"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/migraine-headache?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/migraine-headache"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/diabetes-support</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/diabetes-support"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/diabetes-support?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/diabetes-support"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/blood-pressure</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/blood-pressure"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/blood-pressure?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/blood-pressure"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/thyroid-concerns</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/thyroid-concerns"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/thyroid-concerns?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/thyroid-concerns"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/obesity-weight</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/obesity-weight"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/obesity-weight?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/obesity-weight"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/sleep-insomnia</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/sleep-insomnia"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/sleep-insomnia?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/sleep-insomnia"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/back-pain</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/back-pain"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/back-pain?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/back-pain"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/arthritis</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/arthritis"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/arthritis?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/arthritis"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/acne-skin</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/acne-skin"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/acne-skin?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/acne-skin"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/eczema-psoriasis</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/eczema-psoriasis"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/eczema-psoriasis?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/eczema-psoriasis"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/sinusitis</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/sinusitis"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/sinusitis?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/sinusitis"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/liver-problems</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/liver-problems"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/liver-problems?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/liver-problems"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/urinary-problems</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/urinary-problems"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/urinary-problems?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/urinary-problems"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/piles-constipation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/piles-constipation"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/piles-constipation?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/piles-constipation"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/prostate-concerns</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/prostate-concerns"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/prostate-concerns?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/prostate-concerns"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/pcos-support</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/pcos-support"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/pcos-support?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/pcos-support"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/general-weakness</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/general-weakness"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/general-weakness?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/general-weakness"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/immunity-support</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/immunity-support"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/immunity-support?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/immunity-support"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/gout</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/gout"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/gout?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/gout"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/varicose-veins</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/varicose-veins"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/varicose-veins?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/varicose-veins"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/fever-flu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/fever-flu"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/fever-flu?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/fever-flu"/>
+  </url>
+  <url>
+    <loc>https://nooriroohanihomeoclinic.com/services/homeopathy/anxiety-stress</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nooriroohanihomeoclinic.com/services/homeopathy/anxiety-stress"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://nooriroohanihomeoclinic.com/services/homeopathy/anxiety-stress?lang=ur"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nooriroohanihomeoclinic.com/services/homeopathy/anxiety-stress"/>
   </url>
   <url>
     <loc>https://nooriroohanihomeoclinic.com/services/spiritual</loc>

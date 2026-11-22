@@ -1,4 +1,4 @@
-/** Official homepage services grid — titles & descriptions. */
+﻿/** Official homepage services grid — titles & descriptions. */
 export const HOME_SERVICES_COPY = {
   en: {
     label: "What we do",
@@ -7,7 +7,7 @@ export const HOME_SERVICES_COPY = {
     learnMore: "Learn more",
     items: {
       rohani: {
-        title: "Rohani Ilaj",
+        title: "Roohani Ilaj",
         desc: "Guidance for nazar, blockages, and worries, with respect for your privacy.",
       },
       homeo: {
@@ -24,7 +24,7 @@ export const HOME_SERVICES_COPY = {
       },
       mehfil: {
         title: "Mehfil Conduct",
-        desc: "Arrangement of mehfils with adab and simple, dignified planning.",
+        desc: "Arrangement of mehfils with respect and simple, dignified planning.",
       },
       quran: {
         title: "Quran Teaching",

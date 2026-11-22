@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "Noori Roohani Homeo Clinic | Rohani Ilaj & Homeo",
-    "description": "Noori Roohani Homeo Clinic — Rohani ilaj, homeopathy, and herbal care in Surjani Town, Karachi. Evening consultations Sunday–Thursday, 7–9 PM. Friday & Saturday closed.",
-    "ogTitle": "Noori Roohani Homeo Clinic | Rohani Ilaj & Homeo",
-    "ogDescription": "Noori Roohani Homeo Clinic — Rohani ilaj, homeopathy, and herbal care in Surjani Town, Karachi. Evening consultations Sunday–Thursday, 7–9 PM. Friday & Saturday closed."
+    "title": "Noori Roohani Homeo Clinic | Roohani Ilaj & Homeo",
+    "description": "Noori Roohani Homeo Clinic — Roohani ilaj, homeopathy, and herbal care in Surjani Town, Karachi. Evening consultations Sunday–Thursday, 7–9 PM. Friday & Saturday closed.",
+    "ogTitle": "Noori Roohani Homeo Clinic | Roohani Ilaj & Homeo",
+    "ogDescription": "Noori Roohani Homeo Clinic — Roohani ilaj, homeopathy, and herbal care in Surjani Town, Karachi. Evening consultations Sunday–Thursday, 7–9 PM. Friday & Saturday closed."
   },
   "topbar": {
     "phone": "0314-1000717",
@@ -33,7 +33,7 @@
     "umrah": "Umrah Package",
     "contact": "Contact",
     "servicesMenu": {
-      "rohani": "Rohani Ilaj",
+      "rohani": "Roohani Ilaj",
       "homeo": "Homeopathy",
       "herbal": "Herbal Products",
       "quran": "Quran & Madrasa",
@@ -70,7 +70,7 @@
       "whatsappAria": "Message the clinic on WhatsApp"
     },
     "about": {
-      "line1": "A trusted centre for Rohani Ilaj, homeopathy, and herbal care, serving families with compassion and discretion.",
+      "line1": "A trusted centre for Roohani Ilaj, homeopathy, and herbal care, serving families with compassion and discretion.",
       "line2": "We also support Quran teaching, madrasa education, and dignified Nikkah and community services."
     },
     "social": {
@@ -88,7 +88,7 @@
     },
     "services": {
       "title": "Our Services",
-      "rohani": "Rohani Ilaj",
+      "rohani": "Roohani Ilaj",
       "homeo": "Homeo",
       "herbal": "Herbal Products",
       "istikhara": "Istikhara",
@@ -101,15 +101,14 @@
     "contact": {
       "title": "Contact",
       "addressLabel": "Address",
-      "address": "Plot No. CI-05, Moon Arcade, Flat, Sector L-1, Near Makkah Hotel, Surjani Town, Karachi, Pakistan.",
+      "address": "Plot No. CI-05, Moon Arcade, Flat, Sector L-1, Makkah Hotel, Chai Chowrangi, Surjani Town, Karachi, Pakistan.",
       "phoneLabel": "Phone",
       "phone": "0314-1000717",
       "whatsappLabel": "WhatsApp",
       "whatsapp": "0314-1000717",
       "emailLabel": "Email",
-      "email": "nooriroohaniclinic@gmail.com",
       "hoursLabel": "Clinic timings",
-      "hours": "Sunday–Thursday: 7:00 PM – 9:00 PM · Friday: Closed · Saturday: Closed"
+      "hours": "Sunday: 7:00 PM – 9:00 PM · Monday: 7:00 PM – 9:00 PM · Tuesday: 7:00 PM – 9:00 PM · Wednesday: 7:00 PM – 9:00 PM · Thursday: 7:00 PM – 9:00 PM · Friday: Closed · Saturday: Closed"
     },
     "nav": {
       "quickLinks": "Footer quick links",
@@ -121,7 +120,7 @@
       "privacy": "Privacy Policy",
       "terms": "Terms of Use"
     },
-    "disclaimer": "Information on this website is for general guidance and does not replace professional medical advice."
+    "disclaimer": ""
   },
   "a11y": {
     "skipToContent": "Skip to main content",
@@ -134,21 +133,21 @@
       "heroKicker": "Contact",
       "heroTitle": "Visit or message the clinic",
       "heroLead": "Call, WhatsApp, or send the form below. We reply during clinic hours.",
-      "mapNote": "Find us at Plot No. CI-05, Moon Arcade, Flat, Sector L-1, Near Makkah Hotel, Surjani Town, Karachi, Pakistan. Open in Google Maps for directions. Call 0314-1000717 before your visit.",
+      "mapNote": "Find us at Plot No. CI-05, Moon Arcade, Flat, Sector L-1, Makkah Hotel, Chai Chowrangi, Surjani Town, Karachi, Pakistan. Open in Google Maps for directions. Call or WhatsApp 0314-1000717 before your visit.",
       "viewContactPage": "Full contact page",
-      "metaDescription": "Contact Noori Roohani Homeo Clinic in Surjani Town, Karachi. Sunday–Thursday: 7:00 PM – 9:00 PM · Friday: Closed · Saturday: Closed Phone 0314-1000717, WhatsApp, or form.",
+      "metaDescription": "Contact Noori Roohani Homeo Clinic in Surjani Town, Karachi. Phone / WhatsApp 0314-1000717.",
       "clinicName": "Noori Roohani Homeo Clinic",
       "openMaps": "Open in Google Maps"
     },
     "about": {
       "documentTitle": "About the clinic | Noori Roohani Homeo Clinic",
-      "metaDescription": "Learn about Noori Roohani Homeo Clinic in Surjani Town, Karachi — homeopathy, Rohani ilaj, and herbal care. Sunday–Thursday: 7:00 PM – 9:00 PM · Friday: Closed · Saturday: Closed"
+      "metaDescription": "Learn about Noori Roohani Homeo Clinic in Surjani Town, Karachi — homeopathy, Roohani ilaj, and herbal care."
     }
   },
   "home": {
     "hero": {
       "label": "Noori Roohani Homeo Clinic",
-      "title": "Homeopathy and Rohani ilaj",
+      "title": "Homeopathy and Roohani ilaj",
       "subtitle": "Walk-in consultations, herbal products, and Quran education — in person or on WhatsApp.",
       "whatsapp": "WhatsApp Us",
       "whatsappAria": "Message us on WhatsApp",
@@ -156,7 +155,7 @@
       "trust2": "Quran teaching and Madrasa support",
       "trust3": "Private consultation for sensitive matters",
       "chips": {
-        "rohani": "Rohani Ilaj",
+        "rohani": "Roohani Ilaj",
         "homeo": "Homeo",
         "herbal": "Herbal",
         "quran": "Quran",
@@ -174,7 +173,7 @@
         "professor": {
           "label": "Professor & specialist",
           "title": "Experienced guidance for families",
-          "subtitle": "Consultation-led care across homeopathy, herbal support, and Rohani ilaj.",
+          "subtitle": "Consultation-led care across homeopathy, herbal support, and Roohani ilaj.",
           "primaryCta": "Book appointment",
           "secondaryCta": "WhatsApp us",
           "imageAlt": "Clinic founder"
@@ -189,8 +188,8 @@
         },
         "spiritual": {
           "label": "Spiritual services",
-          "title": "Rohani ilaj & Islamic support",
-          "subtitle": "Confidential guidance with dua and adab — no sensational claims.",
+          "title": "Roohani ilaj & Islamic support",
+          "subtitle": "Confidential guidance with respect — no sensational claims.",
           "primaryCta": "Spiritual services",
           "secondaryCta": "Ask a question",
           "imageAlt": "Spiritual support"
@@ -212,7 +211,7 @@
       "learnMore": "Learn more",
       "items": {
         "rohani": {
-          "title": "Rohani Ilaj",
+          "title": "Roohani Ilaj",
           "desc": "Guidance for nazar, blockages, and worries, with respect for your privacy."
         },
         "homeo": {
@@ -229,7 +228,7 @@
         },
         "mehfil": {
           "title": "Mehfil Conduct",
-          "desc": "Arrangement of mehfils with adab and simple, dignified planning."
+          "desc": "Arrangement of mehfils with respect and simple, dignified planning."
         },
         "quran": {
           "title": "Quran Teaching",
@@ -262,7 +261,7 @@
       }
     },
     "rohani": {
-      "label": "Rohani Ilaj",
+      "label": "Roohani Ilaj",
       "title": "When the heart feels heavy",
       "text": "Many families come to us quietly. We take time to understand your situation, offer ruqyah and guidance, and remind you that relief is with Allah. We do not claim instant results.",
       "cta": "Private consultation",
@@ -371,11 +370,11 @@
         },
         "two": {
           "title": "One roof for many needs",
-          "text": "Rohani Ilaj, homeo, herbal products, and education links in one place."
+          "text": "Roohani Ilaj, homeo, herbal products, and education links in one place."
         },
         "three": {
           "title": "Privacy matters",
-          "text": "Sensitive cases are handled quietly and with adab."
+          "text": "Sensitive cases are handled quietly and with respect."
         },
         "four": {
           "title": "Community work continues",
@@ -422,7 +421,7 @@
       "label": "Questions",
       "title": "Common questions",
       "one": {
-        "q": "Do you guarantee cure in Rohani Ilaj?",
+        "q": "Do you guarantee cure in Roohani Ilaj?",
         "a": "No. We offer ruqyah and guidance with sincerity. Healing is with Allah's will, and results differ for each person."
       },
       "two": {
@@ -443,7 +442,7 @@
       },
       "six": {
         "q": "What should I bring to the first visit?",
-        "a": "Your ID, any previous reports, and a list of medicines you use. For Rohani cases, come with wudu if you can."
+        "a": "Your ID, any previous reports, and a list of medicines you use. For Roohani cases, come with wudu if you can."
       }
     },
     "contact": {
@@ -452,9 +451,9 @@
       "lead": "Message or call Noori Roohani Homeo Clinic during clinic hours (Sun–Thu: 7:00 PM – 9:00 PM · Fri & Sat: Closed). For urgent spiritual matters, please phone rather than wait on a reply.",
       "aside": {
         "phone": "Phone: 0314-1000717",
-        "address": "Plot No. CI-05, Moon Arcade, Flat, Sector L-1, Near Makkah Hotel, Surjani Town, Karachi, Pakistan.",
-        "hours": "Sunday–Thursday: 7:00 PM – 9:00 PM · Friday: Closed · Saturday: Closed",
-        "email": "Email: nooriroohaniclinic@gmail.com"
+        "address": "Plot No. CI-05, Moon Arcade, Flat, Sector L-1, Makkah Hotel, Chai Chowrangi, Surjani Town, Karachi, Pakistan.",
+        "hours": "Sunday: 7:00 PM – 9:00 PM · Monday: 7:00 PM – 9:00 PM · Tuesday: 7:00 PM – 9:00 PM · Wednesday: 7:00 PM – 9:00 PM · Thursday: 7:00 PM – 9:00 PM · Friday: Closed · Saturday: Closed",
+        "whatsapp": "WhatsApp: 0314-1000717"
       }
     },
     "form": {
@@ -465,7 +464,7 @@
       "service": "Service",
       "servicePlaceholder": "Choose a service",
       "serviceOptions": {
-        "rohani": "Rohani Ilaj",
+        "rohani": "Roohani Ilaj",
         "homeo": "Homeo",
         "herbal": "Herbal products",
         "education": "Education / Madrasa",
@@ -483,8 +482,7 @@
         "phone": "Please enter a valid phone number.",
         "service": "Please choose a service.",
         "summary": "Please fix the highlighted fields."
-      },
-      "emailValue": "nooriroohaniclinic@gmail.com"
+      }
     },
     "homeopathySection": {
       "label": "Homeopathic care",
@@ -496,15 +494,15 @@
     "spiritualHub": {
       "label": "Islamic & spiritual",
       "title": "Spiritual and educational services",
-      "lead": "Rohani ilaj, Quran, madrasa, nikkah, and community programmes.",
+      "lead": "Roohani ilaj, Quran, madrasa, nikkah, and community programmes.",
       "viewAll": "All Islamic services",
       "imageAlt": "Community services"
     },
     "mehfilPreview": {
       "label": "Community",
       "title": "Monthly Mehfil",
-      "lead": "Held in the second week of each month — {week}. Confirm dates with the clinic.",
-      "dateNote": "[PLACEHOLDER] Next date: confirm with clinic",
+      "lead": "Held in the second week of each month, plus Dars-e-Quran mehfil every Friday. Confirm dates with the clinic.",
+      "dateNote": "Second week monthly · Friday Dars-e-Quran — confirm with clinic",
       "cta": "Mehfil details",
       "contactCta": "Contact to join",
       "imageAlt": "Mehfil"
@@ -630,7 +628,7 @@
           "documentTitle": "Sexual health concerns — Homeopathy | Noori Roohani Homeo Clinic",
           "metaDescription": "Sexual health concerns at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
           "imageAlt": "Sexual health concerns — consultation at Noori Roohani Homeo Clinic",
-          "overview": "Sensitive sexual health matters for men and women. Sessions are confidential and conducted with adab.",
+          "overview": "Sensitive sexual health matters for men and women. Sessions are confidential and conducted with respect.",
           "approach": "Often linked with stress or general health — we take a whole-person history before any remedy plan.",
           "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
           "whoBenefits": "Adults and families seeking a private homeopathic consultation for sexual health concerns. Suitable when you want case-based care — not emergency treatment.",
@@ -831,20 +829,644 @@
               "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
             }
           }
+        },
+        "allergies": {
+          "title": "Allergies",
+          "summary": "Homeopathic consultation for allergies. General information only — not medical advice.",
+          "documentTitle": "Allergies — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Allergies at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Allergies — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for allergies at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for allergies. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request allergies?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "asthma-respiratory": {
+          "title": "Asthma & respiratory",
+          "summary": "Homeopathic consultation for asthma & respiratory. General information only — not medical advice.",
+          "documentTitle": "Asthma & respiratory — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Asthma & respiratory at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Asthma & respiratory — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for asthma & respiratory at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for asthma & respiratory. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request asthma & respiratory?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "migraine-headache": {
+          "title": "Migraine & headache",
+          "summary": "Homeopathic consultation for migraine & headache. General information only — not medical advice.",
+          "documentTitle": "Migraine & headache — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Migraine & headache at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Migraine & headache — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for migraine & headache at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for migraine & headache. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request migraine & headache?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "diabetes-support": {
+          "title": "Diabetes support",
+          "summary": "Homeopathic consultation for diabetes support. General information only — not medical advice.",
+          "documentTitle": "Diabetes support — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Diabetes support at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Diabetes support — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for diabetes support at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for diabetes support. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request diabetes support?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "blood-pressure": {
+          "title": "Blood pressure",
+          "summary": "Homeopathic consultation for blood pressure. General information only — not medical advice.",
+          "documentTitle": "Blood pressure — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Blood pressure at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Blood pressure — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for blood pressure at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for blood pressure. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request blood pressure?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "thyroid-concerns": {
+          "title": "Thyroid concerns",
+          "summary": "Homeopathic consultation for thyroid concerns. General information only — not medical advice.",
+          "documentTitle": "Thyroid concerns — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Thyroid concerns at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Thyroid concerns — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for thyroid concerns at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for thyroid concerns. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request thyroid concerns?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "obesity-weight": {
+          "title": "Weight & obesity",
+          "summary": "Homeopathic consultation for weight & obesity. General information only — not medical advice.",
+          "documentTitle": "Weight & obesity — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Weight & obesity at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Weight & obesity — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for weight & obesity at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for weight & obesity. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request weight & obesity?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "sleep-insomnia": {
+          "title": "Sleep & insomnia",
+          "summary": "Homeopathic consultation for sleep & insomnia. General information only — not medical advice.",
+          "documentTitle": "Sleep & insomnia — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Sleep & insomnia at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Sleep & insomnia — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for sleep & insomnia at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for sleep & insomnia. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request sleep & insomnia?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "back-pain": {
+          "title": "Back pain",
+          "summary": "Homeopathic consultation for back pain. General information only — not medical advice.",
+          "documentTitle": "Back pain — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Back pain at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Back pain — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for back pain at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for back pain. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request back pain?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "arthritis": {
+          "title": "Arthritis",
+          "summary": "Homeopathic consultation for arthritis. General information only — not medical advice.",
+          "documentTitle": "Arthritis — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Arthritis at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Arthritis — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for arthritis at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for arthritis. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request arthritis?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "acne-skin": {
+          "title": "Acne & skin care",
+          "summary": "Homeopathic consultation for acne & skin care. General information only — not medical advice.",
+          "documentTitle": "Acne & skin care — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Acne & skin care at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Acne & skin care — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for acne & skin care at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for acne & skin care. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request acne & skin care?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "eczema-psoriasis": {
+          "title": "Eczema & psoriasis",
+          "summary": "Homeopathic consultation for eczema & psoriasis. General information only — not medical advice.",
+          "documentTitle": "Eczema & psoriasis — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Eczema & psoriasis at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Eczema & psoriasis — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for eczema & psoriasis at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for eczema & psoriasis. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request eczema & psoriasis?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "sinusitis": {
+          "title": "Sinusitis",
+          "summary": "Homeopathic consultation for sinusitis. General information only — not medical advice.",
+          "documentTitle": "Sinusitis — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Sinusitis at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Sinusitis — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for sinusitis at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for sinusitis. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request sinusitis?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "liver-problems": {
+          "title": "Liver problems",
+          "summary": "Homeopathic consultation for liver problems. General information only — not medical advice.",
+          "documentTitle": "Liver problems — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Liver problems at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Liver problems — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for liver problems at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for liver problems. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request liver problems?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "urinary-problems": {
+          "title": "Urinary problems",
+          "summary": "Homeopathic consultation for urinary problems. General information only — not medical advice.",
+          "documentTitle": "Urinary problems — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Urinary problems at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Urinary problems — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for urinary problems at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for urinary problems. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request urinary problems?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "piles-constipation": {
+          "title": "Piles & constipation",
+          "summary": "Homeopathic consultation for piles & constipation. General information only — not medical advice.",
+          "documentTitle": "Piles & constipation — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Piles & constipation at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Piles & constipation — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for piles & constipation at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for piles & constipation. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request piles & constipation?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "prostate-concerns": {
+          "title": "Prostate concerns",
+          "summary": "Homeopathic consultation for prostate concerns. General information only — not medical advice.",
+          "documentTitle": "Prostate concerns — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Prostate concerns at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Prostate concerns — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for prostate concerns at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for prostate concerns. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request prostate concerns?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "pcos-support": {
+          "title": "PCOS support",
+          "summary": "Homeopathic consultation for pcos support. General information only — not medical advice.",
+          "documentTitle": "PCOS support — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "PCOS support at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "PCOS support — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for pcos support at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for pcos support. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request pcos support?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "general-weakness": {
+          "title": "General weakness",
+          "summary": "Homeopathic consultation for general weakness. General information only — not medical advice.",
+          "documentTitle": "General weakness — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "General weakness at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "General weakness — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for general weakness at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for general weakness. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request general weakness?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "immunity-support": {
+          "title": "Immunity support",
+          "summary": "Homeopathic consultation for immunity support. General information only — not medical advice.",
+          "documentTitle": "Immunity support — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Immunity support at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Immunity support — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for immunity support at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for immunity support. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request immunity support?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "gout": {
+          "title": "Gout",
+          "summary": "Homeopathic consultation for gout. General information only — not medical advice.",
+          "documentTitle": "Gout — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Gout at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Gout — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for gout at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for gout. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request gout?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "varicose-veins": {
+          "title": "Varicose veins",
+          "summary": "Homeopathic consultation for varicose veins. General information only — not medical advice.",
+          "documentTitle": "Varicose veins — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Varicose veins at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Varicose veins — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for varicose veins at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for varicose veins. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request varicose veins?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "fever-flu": {
+          "title": "Fever & flu",
+          "summary": "Homeopathic consultation for fever & flu. General information only — not medical advice.",
+          "documentTitle": "Fever & flu — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Fever & flu at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Fever & flu — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for fever & flu at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for fever & flu. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request fever & flu?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
+        },
+        "anxiety-stress": {
+          "title": "Anxiety & stress",
+          "summary": "Homeopathic consultation for anxiety & stress. General information only — not medical advice.",
+          "documentTitle": "Anxiety & stress — Homeopathy | Noori Roohani Homeo Clinic",
+          "metaDescription": "Anxiety & stress at Noori Roohani Homeo Clinic, Surjani Town, Karachi. Evening consultations Sun–Thu, 7–9 PM.",
+          "imageAlt": "Anxiety & stress — consultation at Noori Roohani Homeo Clinic",
+          "overview": "Consultation for anxiety & stress at the clinic.",
+          "approach": "History-led homeopathic care with follow-up when needed.",
+          "whoBenefits": "Adults and families seeking a private homeopathic consultation for anxiety & stress. Suitable when you want case-based care — not emergency treatment.",
+          "benefits": "Private consultation at Surjani Town; history-led remedy selection; follow-up during clinic hours; clear guidance without online diagnosis.",
+          "consult": "Book at Noori Roohani Homeo Clinic, Surjani Town — call 0314-1000717 or WhatsApp during Sun–Thu 7–9 PM.",
+          "faq": {
+            "one": {
+              "q": "How do I request anxiety & stress?",
+              "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
+            },
+            "two": {
+              "q": "Is this medical advice on the website?",
+              "a": "No. Pages share general clinic information only. The doctor assesses your case in person or by agreed contact."
+            },
+            "three": {
+              "q": "What should I bring to a visit?",
+              "a": "Bring any recent reports you have, a list of medicines you use, and arrive during published clinic hours."
+            }
+          }
         }
       }
     },
     "spiritual": {
       "hub": {
         "documentTitle": "Islamic & spiritual services | Noori Roohani Homeo Clinic",
-        "metaDescription": "Rohani ilaj, Quran teaching, madrasa, nikkah, and community programmes.",
+        "metaDescription": "Roohani ilaj, Quran teaching, madrasa, nikkah, and community programmes.",
         "kicker": "Community",
         "title": "Islamic & spiritual services",
-        "lead": "Educational and spiritual support with clear adab.",
+        "lead": "Educational and spiritual support with clear respect.",
         "breadcrumbCurrent": "Islamic services",
         "gridHeading": "Islamic service list",
         "visualAlt": "Spiritual services",
-        "noteTitle": "Privacy and adab",
+        "noteTitle": "Privacy and respect",
         "noteText": "Sensitive cases are handled quietly. Confirm details with the clinic.",
         "cta": "Contact for guidance"
       },
@@ -860,23 +1482,23 @@
         "faqLabel": "Questions",
         "faqHeading": "Service FAQs",
         "finalCtaTitle": "Speak with the clinic",
-        "finalCtaLede": "Confirm timing and adab for this service before you visit."
+        "finalCtaLede": "Confirm timing and respect for this service before you visit."
       },
       "items": {
         "rohani-ilaj": {
-          "title": "Rohani Ilaj",
-          "summary": "Rohani Ilaj at Noori Roohani Homeo Clinic with adab, privacy, and community care.",
-          "documentTitle": "Rohani Ilaj | Noori Roohani Homeo Clinic",
-          "metaDescription": "Rohani Ilaj in Surjani Town, Karachi. Contact 0314-1000717 — Sun–Thu 7–9 PM.",
-          "imageAlt": "Rohani Ilaj — Noori Roohani Homeo Clinic",
-          "overview": "Our clinic provides rohani ilaj as part of Rohani and community services listed on the official schedule.",
+          "title": "Roohani Ilaj",
+          "summary": "Roohani Ilaj at Noori Roohani Homeo Clinic with respect, privacy, and community care.",
+          "documentTitle": "Roohani Ilaj | Noori Roohani Homeo Clinic",
+          "metaDescription": "Roohani Ilaj in Surjani Town, Karachi. Contact 0314-1000717 — Sun–Thu 7–9 PM.",
+          "imageAlt": "Roohani Ilaj — Noori Roohani Homeo Clinic",
+          "overview": "Our clinic provides roohani ilaj as part of Roohani and community services listed on the official schedule.",
           "whatToExpect": "Call ahead to confirm timing, requirements, and whether an appointment is needed.",
-          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours.",
-          "whoBenefits": "Individuals seeking confidential Rohani guidance with adab — including concerns about nazar, jadu, or household unrest.",
-          "benefits": "Handled with privacy and adab; clear next steps after you contact the clinic; no sensational claims online.",
+          "contactNote": "Phone or WhatsApp 0314-1000717 during clinic hours.",
+          "whoBenefits": "Individuals seeking confidential Roohani guidance with respect — including concerns about nazar, jadu, or household unrest.",
+          "benefits": "Handled with privacy and respect; clear next steps after you contact the clinic; no sensational claims online.",
           "faq": {
             "one": {
-              "q": "How do I request rohani ilaj?",
+              "q": "How do I request roohani ilaj?",
               "a": "Call 0314-1000717, WhatsApp, or use the contact page. Clinic hours: Sunday–Thursday, 7:00–9:00 PM."
             },
             "two": {
@@ -891,15 +1513,15 @@
         },
         "istikhara": {
           "title": "Istakhara",
-          "summary": "Istakhara at Noori Roohani Homeo Clinic with adab, privacy, and community care.",
+          "summary": "Istakhara at Noori Roohani Homeo Clinic with respect, privacy, and community care.",
           "documentTitle": "Istakhara | Noori Roohani Homeo Clinic",
           "metaDescription": "Istakhara in Surjani Town, Karachi. Contact 0314-1000717 — Sun–Thu 7–9 PM.",
           "imageAlt": "Istakhara — Noori Roohani Homeo Clinic",
-          "overview": "Our clinic provides istakhara as part of Rohani and community services listed on the official schedule.",
+          "overview": "Our clinic provides istakhara as part of Roohani and community services listed on the official schedule.",
           "whatToExpect": "Call ahead to confirm timing, requirements, and whether an appointment is needed.",
-          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours.",
+          "contactNote": "Phone or WhatsApp 0314-1000717 during clinic hours.",
           "whoBenefits": "Those who need istakhara through the clinic's Islamic and community services.",
-          "benefits": "Handled with privacy and adab; clear next steps after you contact the clinic; no sensational claims online.",
+          "benefits": "Handled with privacy and respect; clear next steps after you contact the clinic; no sensational claims online.",
           "faq": {
             "one": {
               "q": "How do I request istakhara?",
@@ -917,15 +1539,15 @@
         },
         "quran-teaching": {
           "title": "Quran teaching",
-          "summary": "Quran teaching at Noori Roohani Homeo Clinic with adab, privacy, and community care.",
+          "summary": "Quran teaching at Noori Roohani Homeo Clinic with respect, privacy, and community care.",
           "documentTitle": "Quran teaching | Noori Roohani Homeo Clinic",
           "metaDescription": "Quran teaching in Surjani Town, Karachi. Contact 0314-1000717 — Sun–Thu 7–9 PM.",
           "imageAlt": "Quran teaching — Noori Roohani Homeo Clinic",
-          "overview": "Our clinic provides quran teaching as part of Rohani and community services listed on the official schedule.",
+          "overview": "Our clinic provides quran teaching as part of Roohani and community services listed on the official schedule.",
           "whatToExpect": "Call ahead to confirm timing, requirements, and whether an appointment is needed.",
-          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours.",
+          "contactNote": "Phone or WhatsApp 0314-1000717 during clinic hours.",
           "whoBenefits": "Those who need quran teaching through the clinic's Islamic and community services.",
-          "benefits": "Handled with privacy and adab; clear next steps after you contact the clinic; no sensational claims online.",
+          "benefits": "Handled with privacy and respect; clear next steps after you contact the clinic; no sensational claims online.",
           "faq": {
             "one": {
               "q": "How do I request quran teaching?",
@@ -943,15 +1565,15 @@
         },
         "madarsa": {
           "title": "Madarsa",
-          "summary": "Madarsa at Noori Roohani Homeo Clinic with adab, privacy, and community care.",
+          "summary": "Madarsa at Noori Roohani Homeo Clinic with respect, privacy, and community care.",
           "documentTitle": "Madarsa | Noori Roohani Homeo Clinic",
           "metaDescription": "Madarsa in Surjani Town, Karachi. Contact 0314-1000717 — Sun–Thu 7–9 PM.",
           "imageAlt": "Madarsa — Noori Roohani Homeo Clinic",
-          "overview": "Our clinic provides madarsa as part of Rohani and community services listed on the official schedule.",
+          "overview": "Our clinic provides madarsa as part of Roohani and community services listed on the official schedule.",
           "whatToExpect": "Call ahead to confirm timing, requirements, and whether an appointment is needed.",
-          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours.",
+          "contactNote": "Phone or WhatsApp 0314-1000717 during clinic hours.",
           "whoBenefits": "Those who need madarsa through the clinic's Islamic and community services.",
-          "benefits": "Handled with privacy and adab; clear next steps after you contact the clinic; no sensational claims online.",
+          "benefits": "Handled with privacy and respect; clear next steps after you contact the clinic; no sensational claims online.",
           "faq": {
             "one": {
               "q": "How do I request madarsa?",
@@ -969,15 +1591,15 @@
         },
         "nikah-khawan": {
           "title": "Nikah Khawan (Nikkah services)",
-          "summary": "Nikah Khawan (Nikkah services) at Noori Roohani Homeo Clinic with adab, privacy, and community care.",
+          "summary": "Nikah Khawan (Nikkah services) at Noori Roohani Homeo Clinic with respect, privacy, and community care.",
           "documentTitle": "Nikah Khawan (Nikkah services) | Noori Roohani Homeo Clinic",
           "metaDescription": "Nikah Khawan (Nikkah services) in Surjani Town, Karachi. Contact 0314-1000717 — Sun–Thu 7–9 PM.",
           "imageAlt": "Nikah Khawan (Nikkah services) — Noori Roohani Homeo Clinic",
-          "overview": "Our clinic provides nikah khawan (nikkah services) as part of Rohani and community services listed on the official schedule.",
+          "overview": "Our clinic provides nikah khawan (nikkah services) as part of Roohani and community services listed on the official schedule.",
           "whatToExpect": "Call ahead to confirm timing, requirements, and whether an appointment is needed.",
-          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours.",
+          "contactNote": "Phone or WhatsApp 0314-1000717 during clinic hours.",
           "whoBenefits": "Those who need nikah khawan (nikkah services) through the clinic's Islamic and community services.",
-          "benefits": "Handled with privacy and adab; clear next steps after you contact the clinic; no sensational claims online.",
+          "benefits": "Handled with privacy and respect; clear next steps after you contact the clinic; no sensational claims online.",
           "faq": {
             "one": {
               "q": "How do I request nikah khawan (nikkah services)?",
@@ -995,15 +1617,15 @@
         },
         "free-schooling-education": {
           "title": "Free schooling / education",
-          "summary": "Free schooling / education at Noori Roohani Homeo Clinic with adab, privacy, and community care.",
+          "summary": "Free schooling / education at Noori Roohani Homeo Clinic with respect, privacy, and community care.",
           "documentTitle": "Free schooling / education | Noori Roohani Homeo Clinic",
           "metaDescription": "Free schooling / education in Surjani Town, Karachi. Contact 0314-1000717 — Sun–Thu 7–9 PM.",
           "imageAlt": "Free schooling / education — Noori Roohani Homeo Clinic",
-          "overview": "Our clinic provides free schooling / education as part of Rohani and community services listed on the official schedule.",
+          "overview": "Our clinic provides free schooling / education as part of Roohani and community services listed on the official schedule.",
           "whatToExpect": "Call ahead to confirm timing, requirements, and whether an appointment is needed.",
-          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours.",
+          "contactNote": "Phone or WhatsApp 0314-1000717 during clinic hours.",
           "whoBenefits": "Those who need free schooling / education through the clinic's Islamic and community services.",
-          "benefits": "Handled with privacy and adab; clear next steps after you contact the clinic; no sensational claims online.",
+          "benefits": "Handled with privacy and respect; clear next steps after you contact the clinic; no sensational claims online.",
           "faq": {
             "one": {
               "q": "How do I request free schooling / education?",
@@ -1021,15 +1643,15 @@
         },
         "nazim-e-ala-ulama-mashaikh": {
           "title": "Nazim-e-Aala Ulama & Mashaikh",
-          "summary": "Nazim-e-Aala Ulama & Mashaikh at Noori Roohani Homeo Clinic with adab, privacy, and community care.",
+          "summary": "Nazim-e-Aala Ulama & Mashaikh at Noori Roohani Homeo Clinic with respect, privacy, and community care.",
           "documentTitle": "Nazim-e-Aala Ulama & Mashaikh | Noori Roohani Homeo Clinic",
           "metaDescription": "Nazim-e-Aala Ulama & Mashaikh in Surjani Town, Karachi. Contact 0314-1000717 — Sun–Thu 7–9 PM.",
           "imageAlt": "Nazim-e-Aala Ulama & Mashaikh — Noori Roohani Homeo Clinic",
-          "overview": "Our clinic provides nazim-e-aala ulama & mashaikh as part of Rohani and community services listed on the official schedule.",
+          "overview": "Our clinic provides nazim-e-aala ulama & mashaikh as part of Roohani and community services listed on the official schedule.",
           "whatToExpect": "Call ahead to confirm timing, requirements, and whether an appointment is needed.",
-          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours.",
+          "contactNote": "Phone or WhatsApp 0314-1000717 during clinic hours.",
           "whoBenefits": "Those who need nazim-e-aala ulama & mashaikh through the clinic's Islamic and community services.",
-          "benefits": "Handled with privacy and adab; clear next steps after you contact the clinic; no sensational claims online.",
+          "benefits": "Handled with privacy and respect; clear next steps after you contact the clinic; no sensational claims online.",
           "faq": {
             "one": {
               "q": "How do I request nazim-e-aala ulama & mashaikh?",
@@ -1047,15 +1669,15 @@
         },
         "international-research-center": {
           "title": "International Research Council",
-          "summary": "International Research Council at Noori Roohani Homeo Clinic with adab, privacy, and community care.",
+          "summary": "International Research Council with Dr. Ahmed Hassan Al-Mujadidi — Vice President, Seerat Research Foundation.",
           "documentTitle": "International Research Council | Noori Roohani Homeo Clinic",
           "metaDescription": "International Research Council in Surjani Town, Karachi. Contact 0314-1000717 — Sun–Thu 7–9 PM.",
           "imageAlt": "International Research Council — Noori Roohani Homeo Clinic",
-          "overview": "Our clinic provides international research council as part of Rohani and community services listed on the official schedule.",
-          "whatToExpect": "Call ahead to confirm timing, requirements, and whether an appointment is needed.",
-          "contactNote": "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours.",
-          "whoBenefits": "Those who need international research council through the clinic's Islamic and community services.",
-          "benefits": "Handled with privacy and adab; clear next steps after you contact the clinic; no sensational claims online.",
+          "overview": "Led with guidance from Dr. Ahmed Hassan Al-Mujadidi, Vice President — Seerat Research Foundation. The council advances authentic Seerah scholarship, Qur’anic sciences, Hadith, Islamic law, and classical theology with respect and academic depth.",
+          "whatToExpect": "Research initiatives, mentoring for emerging scholars, and community programmes that promote an accurate understanding of the life and teachings of Prophet Muhammad ﷺ.",
+          "contactNote": "Phone or WhatsApp 0314-1000717 during clinic hours.",
+          "whoBenefits": "Scholars, students, and community members interested in Seerah research and authentic Islamic scholarship.",
+          "benefits": "Handled with privacy and respect; clear next steps after you contact the clinic; no sensational claims online.",
           "faq": {
             "one": {
               "q": "How do I request international research council?",
@@ -1169,25 +1791,25 @@
     },
     "mehfil": {
       "documentTitle": "Monthly Mehfil | Noori Roohani Homeo Clinic",
-      "metaDescription": "Monthly mehfil in the second week of each month.",
+      "metaDescription": "Monthly mehfil in the second week of each month, plus Friday Dars-e-Quran mehfil.",
       "kicker": "Events",
       "title": "Monthly Mehfil",
-      "lead": "Community gathering — exact dates confirmed monthly.",
+      "lead": "Second week of each month, and Dars-e-Quran mehfil every Friday — confirm dates with the clinic.",
       "breadcrumbCurrent": "Monthly Mehfil",
       "imageAlt": "Mehfil gathering",
       "scheduleHeading": "Schedule",
-      "scheduleText": "Planned for the {week} week of each month. [PLACEHOLDER] Set your fixed day.",
-      "upcomingDate": "[PLACEHOLDER] Next event: [DATE]",
+      "scheduleText": "Monthly gathering in the {week} week of each month, plus Dars-e-Quran mehfil every Friday.",
+      "upcomingDate": "Confirm next date on WhatsApp 0314-1000717",
       "aboutHeading": "About the gathering",
-      "aboutText": "[PLACEHOLDER] Describe adab, venue, and who may attend.",
+      "aboutText": "A respectful community gathering for remembrance and learning. Venue and seating details are shared when you contact the clinic.",
       "participateHeading": "Participate",
-      "participateText": "[PLACEHOLDER] RSVP or contact instructions.",
+      "participateText": "Message on WhatsApp or call 0314-1000717 to confirm timing and place.",
       "cta": "Contact about Mehfil"
     },
     "services": {
       "index": {
         "documentTitle": "Clinic services | Noori Roohani Homeo Clinic",
-        "metaDescription": "Homeopathic consultations, Rohani ilaj, Quran teaching, herbal products, and community programmes in Surjani Town, Karachi.",
+        "metaDescription": "Homeopathic consultations, Roohani ilaj, Quran teaching, herbal products, and community programmes in Surjani Town, Karachi.",
         "breadcrumbCurrent": "Services",
         "kicker": "Our services",
         "title": "Complete clinic services",
@@ -1199,7 +1821,7 @@
         "intro": {
           "label": "At the clinic",
           "title": "Care across body, spirit, and community",
-          "lede": "Noori Roohani Homeo Clinic combines evening homeopathic consultations with Rohani ilaj and education listed on the official schedule.",
+          "lede": "Noori Roohani Homeo Clinic combines evening homeopathic consultations with Roohani ilaj and education listed on the official schedule.",
           "body": "Browse by category below or open any service for overview, who it may help, what to expect, and how to book. General information only — not medical advice online.",
           "imageAlt": "Clinic consultation room"
         },
@@ -1224,11 +1846,11 @@
             },
             "two": {
               "title": "Clear contact",
-              "text": "Phone 0314-1000717, WhatsApp, and nooriroohaniclinic@gmail.com."
+              "text": "Phone and WhatsApp 0314-1000717 during clinic hours."
             },
             "three": {
-              "title": "Adab in spiritual care",
-              "text": "Rohani and Islamic services handled with privacy — no sensational claims."
+              "title": "Respect in spiritual care",
+              "text": "Roohani and Islamic services handled with privacy — no sensational claims."
             },
             "four": {
               "title": "Follow-up care",

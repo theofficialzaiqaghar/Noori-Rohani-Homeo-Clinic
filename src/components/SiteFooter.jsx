@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 import { useI18n } from "../providers/I18nProvider";
 import {
-  CLINIC_EMAIL,
-  CLINIC_HOURS_EN,
-  CLINIC_HOURS_UR,
+  CLINIC_HOURS_DAYS_EN,
+  CLINIC_HOURS_DAYS_UR,
   CLINIC_NAME,
   CLINIC_ADDRESS_EN,
   CLINIC_ADDRESS_UR,
@@ -12,6 +11,7 @@ import {
   CLINIC_WHATSAPP,
   CLINIC_SOCIAL_FACEBOOK,
   CLINIC_SOCIAL_YOUTUBE,
+  CLINIC_SOCIAL_INSTAGRAM,
 } from "../lib/clinicInfo";
 import { BRAND_LOGO_SRC } from "../lib/brandAssets";
 import { useSiteSettings } from "../providers/SiteSettingsProvider";
@@ -21,7 +21,7 @@ import { Button } from "./Button";
 export function SiteFooter() {
   const { t, lang } = useI18n();
   const address = lang === "ur" ? CLINIC_ADDRESS_UR : CLINIC_ADDRESS_EN;
-  const hours = lang === "ur" ? CLINIC_HOURS_UR : CLINIC_HOURS_EN;
+  const hoursDays = lang === "ur" ? CLINIC_HOURS_DAYS_UR : CLINIC_HOURS_DAYS_EN;
   const telHref = `tel:${CLINIC_PHONE_E164.replace(/\s/g, "")}`;
   const waHref = `https://wa.me/${CLINIC_WHATSAPP}`;
   const { settings, getSlot } = useSiteSettings() || {};
@@ -109,7 +109,11 @@ export function SiteFooter() {
               </a>
             </li>
             <li>
-              <a href={social.socialInstagram || "https://instagram.com/"} rel="noopener noreferrer" aria-label={t("footer.social.instagram")}>
+              <a
+                href={social.socialInstagram || CLINIC_SOCIAL_INSTAGRAM}
+                rel="noopener noreferrer"
+                aria-label={t("footer.social.instagram")}
+              >
                 <Icon name="icon-instagram" />
               </a>
             </li>
@@ -151,8 +155,7 @@ export function SiteFooter() {
             {t("footer.contact.addressLabel")}: {address}
           </p>
           <p>
-            {t("footer.contact.phoneLabel")}:{" "}
-            <a href={telHref}>{CLINIC_PHONE_DISPLAY}</a>
+            {t("footer.contact.phoneLabel")}: <a href={telHref}>{CLINIC_PHONE_DISPLAY}</a>
           </p>
           <p>
             {t("footer.contact.whatsappLabel")}:{" "}
@@ -160,12 +163,17 @@ export function SiteFooter() {
               {CLINIC_PHONE_DISPLAY}
             </a>
           </p>
-          <p>
-            {t("footer.contact.emailLabel")}: <a href={`mailto:${CLINIC_EMAIL}`}>{CLINIC_EMAIL}</a>
-          </p>
-          <p>
-            {t("footer.contact.hoursLabel")}: {hours}
-          </p>
+          <div className="footer-hours">
+            <p className="footer-hours__label">{t("footer.contact.hoursLabel")}</p>
+            <ul className="footer-hours__list">
+              {hoursDays.map((row) => (
+                <li key={row.day}>
+                  <span>{row.day}</span>
+                  <strong>{row.hours}</strong>
+                </li>
+              ))}
+            </ul>
+          </div>
         </address>
       </div>
 
@@ -177,7 +185,12 @@ export function SiteFooter() {
             <Link to="/contact">{t("footer.legal.terms")}</Link>
           </nav>
         </div>
-        <p className="shell footer-disclaimer">{t("footer.disclaimer")}</p>
+        <p className="shell footer-credit">
+          Design and development by{" "}
+          <a href="https://premiumdevelopers.com" rel="noopener noreferrer">
+            Premium Developers
+          </a>
+        </p>
       </div>
     </footer>
   );

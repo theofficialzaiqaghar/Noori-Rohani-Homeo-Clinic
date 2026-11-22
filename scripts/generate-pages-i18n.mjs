@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Merges generated `pages.*` copy and UI extensions into assets/i18n/en.json and ur.json.
  * Run: node scripts/generate-pages-i18n.mjs
  */
@@ -10,29 +10,51 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const i18nDir = join(root, "assets", "i18n");
 
 const HOMEOPATHY = [
-  ["kidney-problems", "Kidney problems", "گردے کے مسائل"],
+  ["mens-health", "Men's health", "مردوں کی صحت"],
+  ["sexual-health", "Sexual health concerns", "جنسی صحت کے مسائل"],
   ["skin-scalp-concerns", "Skin disorders & scalp concerns", "جلدی امراض اور کھوپڑی کے مسائل"],
   ["hair-problems", "Hair problems", "بالوں کے مسائل"],
-  ["male-female-infertility", "Infertility (male & female)", "مردانہ و زنانہ بانجھ پن"],
-  ["sexual-health", "Sexual health concerns", "جنسی صحت کے مسائل"],
-  ["psychological-mental-health", "Psychological issues", "نفسیاتی مسائل"],
+  ["womens-health", "Women's health", "خواتین کی صحت"],
+  ["childrens-health", "Children's health", "بچوں کی صحت"],
+  ["kidney-problems", "Kidney problems", "گردے کے مسائل"],
   ["digestive-problems", "Digestive problems", "معدے کے مسائل"],
   ["joint-muscular-problems", "Joint & muscular complaints", "جوڑوں اور عضلات کی شکایات"],
-  ["womens-health", "Women's health", "خواتین کی صحت"],
-  ["mens-health", "Men's health", "مردوں کی صحت"],
-  ["childrens-health", "Children's health", "بچوں کی صحت"],
+  ["psychological-mental-health", "Psychological issues", "نفسیاتی مسائل"],
+  ["male-female-infertility", "Infertility (male & female)", "مردانہ و زنانہ بانجھ پن"],
+  ["allergies", "Allergies", "الرجی"],
+  ["asthma-respiratory", "Asthma & respiratory", "دمہ اور سانس کے مسائل"],
+  ["migraine-headache", "Migraine & headache", "مائگرین اور سر درد"],
+  ["diabetes-support", "Diabetes support", "ذیابیطس سپورٹ"],
+  ["blood-pressure", "Blood pressure", "بلڈ پریشر"],
+  ["thyroid-concerns", "Thyroid concerns", "تھائیرائیڈ"],
+  ["obesity-weight", "Weight & obesity", "وزن اور موٹاپا"],
+  ["sleep-insomnia", "Sleep & insomnia", "نیند کے مسائل"],
+  ["back-pain", "Back pain", "کمر درد"],
+  ["arthritis", "Arthritis", "گٹھیا"],
+  ["acne-skin", "Acne & skin care", "مہاسے اور جلد"],
+  ["eczema-psoriasis", "Eczema & psoriasis", "ایکزیما اور پسوریاسس"],
+  ["sinusitis", "Sinusitis", "سائنس"],
+  ["liver-problems", "Liver problems", "جگر کے مسائل"],
+  ["urinary-problems", "Urinary problems", "پیشاب کے مسائل"],
+  ["piles-constipation", "Piles & constipation", "بواسیر اور قبض"],
+  ["prostate-concerns", "Prostate concerns", "پروسٹیٹ"],
+  ["pcos-support", "PCOS support", "پی سی او ایس"],
+  ["general-weakness", "General weakness", "عام کمزوری"],
+  ["immunity-support", "Immunity support", "مدافعت"],
+  ["gout", "Gout", "گاؤٹ"],
+  ["varicose-veins", "Varicose veins", "ویریکوز رگیں"],
+  ["fever-flu", "Fever & flu", "بخار اور فلو"],
+  ["anxiety-stress", "Anxiety & stress", "بے چینی اور تناؤ"],
 ];
 
-/** Clinic copy from official service list — general info only, not medical advice. */
+/** Clinic copy from official service list — general info only. */
 const HOMEOPATHY_DETAIL = {
   "kidney-problems": {
-    overview:
-      "Homeopathic case-taking for kidney-related complaints. We discuss your symptoms, history, and reports you bring to the clinic.",
+    overview: "Homeopathic case-taking for kidney-related complaints. We discuss your symptoms, history, and reports you bring to the clinic.",
     approach: "Consultations are private. Remedy selection follows classical homeopathy with follow-up visits when needed.",
   },
   "skin-scalp-concerns": {
-    overview:
-      "Support for skin disorders and scalp concerns such as itching, rash, dryness, or recurring irritation.",
+    overview: "Support for skin disorders and scalp concerns such as itching, rash, dryness, or recurring irritation.",
     approach: "Skin and scalp cases need careful history. We avoid online diagnosis — visit or call during clinic hours.",
   },
   "hair-problems": {
@@ -40,18 +62,15 @@ const HOMEOPATHY_DETAIL = {
     approach: "We note pattern, duration, and triggers before suggesting homeopathic support alongside lifestyle advice where helpful.",
   },
   "male-female-infertility": {
-    overview:
-      "Male and female infertility concerns are handled with discretion. Couples may attend together when comfortable.",
+    overview: "Male and female infertility concerns are handled with discretion. Couples may attend together when comfortable.",
     approach: "We review medical history and prior tests you share. Treatment plans are adjusted at follow-up — no guaranteed outcomes.",
   },
   "sexual-health": {
-    overview:
-      "Sensitive sexual health matters for men and women. Sessions are confidential and conducted with adab.",
+    overview: "Sensitive sexual health matters for men and women. Sessions are confidential and conducted with respect.",
     approach: "Often linked with stress or general health — we take a whole-person history before any remedy plan.",
   },
   "psychological-mental-health": {
-    overview:
-      "Psychological and emotional difficulties such as anxiety, low mood, stress, or sleep disturbance.",
+    overview: "Psychological and emotional difficulties such as anxiety, low mood, stress, or sleep disturbance.",
     approach: "Homeopathic support complements — not replaces — urgent psychiatric care. Seek emergency help when needed.",
   },
   "digestive-problems": {
@@ -77,7 +96,7 @@ const HOMEOPATHY_DETAIL = {
 };
 
 const SPIRITUAL = [
-  ["rohani-ilaj", "Rohani Ilaj", "روحانی علاج"],
+  ["rohani-ilaj", "Roohani Ilaj", "روحانی علاج"],
   ["istikhara", "Istakhara", "استخارہ"],
   ["quran-teaching", "Quran teaching", "قرآن کی تعلیم"],
   ["madarsa", "Madarsa", "مدرسہ"],
@@ -214,37 +233,51 @@ function homeoItem(slug, enTitle, urTitle) {
 function spiritualItem(slug, enTitle, urTitle) {
   const whoEn =
     slug === "rohani-ilaj"
-      ? "Individuals seeking confidential Rohani guidance with adab — including concerns about nazar, jadu, or household unrest."
+      ? "Individuals seeking confidential Roohani guidance with respect — including concerns about nazar, jadu, or household unrest."
+      : slug === "international-research-center"
+        ? "Scholars, students, and community members interested in Seerah research and authentic Islamic scholarship."
       : `Those who need ${enTitle.toLowerCase()} through the clinic's Islamic and community services.`;
   const whoUr =
     slug === "rohani-ilaj"
-      ? "روحانی رہنمائی چاہنے والے — ناز، جادو، یا گھریلو پریشانی — ادب کے ساتھ۔"
+      ? "روحانی رہنمائی چاہنے والے — ناز، جادو، یا گھریلو پریشانی — احترام کے ساتھ۔"
       : `${urTitle} کے لیے کلینک کی اسلامی و کمیونٹی خدمات چاہنے والے۔`;
+  const ircOverview =
+    "Led with guidance from Dr. Ahmed Hassan Al-Mujadidi, Vice President — Seerat Research Foundation. The council advances authentic Seerah scholarship, Qur’anic sciences, Hadith, Islamic law, and classical theology with respect and academic depth.";
+  const ircExpect =
+    "Research initiatives, mentoring for emerging scholars, and community programmes that promote an accurate understanding of the life and teachings of Prophet Muhammad ﷺ.";
   return {
     en: {
       title: enTitle,
-      summary: `${enTitle} at Noori Roohani Homeo Clinic with adab, privacy, and community care.`,
-      documentTitle: `${enTitle} | Noori Roohani Homeo Clinic`,
-      metaDescription: `${enTitle} in Surjani Town, Karachi. Contact 0314-1000717 — Sun–Thu 7–9 PM.`,
+      summary:
+        slug === "international-research-center"
+          ? "International Research Council with Dr. Ahmed Hassan Al-Mujadidi — Vice President, Seerat Research Foundation."
+          : `${enTitle} at Noori Roohani Homeo Clinic with respect, privacy, and community care.`,
+      documentTitle: `${enTitle} | Noori Roohani Homeo Clinic`,      metaDescription: `${enTitle} in Surjani Town, Karachi. Contact 0314-1000717 — Sun–Thu 7–9 PM.`,
       imageAlt: `${enTitle} — Noori Roohani Homeo Clinic`,
-      overview: `Our clinic provides ${enTitle.toLowerCase()} as part of Rohani and community services listed on the official schedule.`,
-      whatToExpect: "Call ahead to confirm timing, requirements, and whether an appointment is needed.",
+      overview:
+        slug === "international-research-center"
+          ? ircOverview
+          : `Our clinic provides ${enTitle.toLowerCase()} as part of Roohani and community services listed on the official schedule.`,
+      whatToExpect:
+        slug === "international-research-center"
+          ? ircExpect
+          : "Call ahead to confirm timing, requirements, and whether an appointment is needed.",
       whoBenefits: whoEn,
-      benefits: "Handled with privacy and adab; clear next steps after you contact the clinic; no sensational claims online.",
-      contactNote: "Phone 0314-1000717 or email nooriroohaniclinic@gmail.com during clinic hours.",
+      benefits: "Handled with privacy and respect; clear next steps after you contact the clinic; no sensational claims online.",
+      contactNote: "Phone or WhatsApp 0314-1000717 during clinic hours.",
       faq: faqBlockEn(enTitle.toLowerCase()),
     },
     ur: {
       title: urTitle,
-      summary: `${urTitle} — نوری روحانی ہومیو کلینک میں ادب اور رازداری کے ساتھ۔`,
+      summary: `${urTitle} — نوری روحانی ہومیو کلینک میں احترام اور رازداری کے ساتھ۔`,
       documentTitle: `${urTitle} | نوری روحانی ہومیو کلینک`,
       metaDescription: `${urTitle} — سرجانی ٹاؤن۔ رابطہ: 0314-1000717`,
       imageAlt: `${urTitle} — کلینک`,
       overview: `کلینک کی سرکاری فہرست کے مطابق ${urTitle} کی سہولت۔`,
       whatToExpect: "وقت اور ضروریات کے لیے پہلے فون کریں۔",
       whoBenefits: whoUr,
-      benefits: "رازداری و ادب؛ رابطے کے بعد اگلے قدم؛ آن لائن کوئی دعوے نہیں۔",
-      contactNote: "0314-1000717 یا nooriroohaniclinic@gmail.com",
+      benefits: "رازداری و احترام؛ رابطے کے بعد اگلے قدم؛ آن لائن کوئی دعوے نہیں۔",
+      contactNote: "فون یا واٹس ایپ 0314-1000717 — کلینک کے اوقات میں۔",
       faq: faqBlockUr(urTitle),
     },
   };
@@ -323,14 +356,14 @@ function buildPages(lang) {
   const hubSpiritual = isEn
     ? {
         documentTitle: "Islamic & spiritual services | Noori Roohani Homeo Clinic",
-        metaDescription: "Rohani ilaj, Quran teaching, madrasa, nikkah, and community programmes.",
+        metaDescription: "Roohani ilaj, Quran teaching, madrasa, nikkah, and community programmes.",
         kicker: "Community",
         title: "Islamic & spiritual services",
-        lead: "Educational and spiritual support with clear adab.",
+        lead: "Educational and spiritual support with clear respect.",
         breadcrumbCurrent: "Islamic services",
         gridHeading: "Islamic service list",
         visualAlt: "Spiritual services",
-        noteTitle: "Privacy and adab",
+        noteTitle: "Privacy and respect",
         noteText: "Sensitive cases are handled quietly. Confirm details with the clinic.",
         cta: "Contact for guidance",
       }
@@ -377,19 +410,19 @@ function buildPages(lang) {
   const mehfil = isEn
     ? {
         documentTitle: "Monthly Mehfil | Noori Roohani Homeo Clinic",
-        metaDescription: "Monthly mehfil in the second week of each month.",
+        metaDescription: "Monthly mehfil in the second week of each month, plus Friday Dars-e-Quran mehfil.",
         kicker: "Events",
         title: "Monthly Mehfil",
-        lead: "Community gathering — exact dates confirmed monthly.",
+        lead: "Second week of each month, and Dars-e-Quran mehfil every Friday — confirm dates with the clinic.",
         breadcrumbCurrent: "Monthly Mehfil",
         imageAlt: "Mehfil gathering",
         scheduleHeading: "Schedule",
-        scheduleText: "Planned for the {week} week of each month. [PLACEHOLDER] Set your fixed day.",
-        upcomingDate: "[PLACEHOLDER] Next event: [DATE]",
+        scheduleText: "Monthly gathering in the {week} week of each month, plus Dars-e-Quran mehfil every Friday.",
+        upcomingDate: "Confirm next date on WhatsApp 0314-1000717",
         aboutHeading: "About the gathering",
-        aboutText: "[PLACEHOLDER] Describe adab, venue, and who may attend.",
+        aboutText: "A respectful community gathering for remembrance and learning. Venue and seating details are shared when you contact the clinic.",
         participateHeading: "Participate",
-        participateText: "[PLACEHOLDER] RSVP or contact instructions.",
+        participateText: "Message on WhatsApp or call 0314-1000717 to confirm timing and place.",
         cta: "Contact about Mehfil",
       }
     : {
@@ -451,7 +484,7 @@ function buildPages(lang) {
         faqLabel: "Questions",
         faqHeading: "Service FAQs",
         finalCtaTitle: "Speak with the clinic",
-        finalCtaLede: "Confirm timing and adab for this service before you visit.",
+        finalCtaLede: "Confirm timing and respect for this service before you visit.",
       }
     : {
         kicker: "اسلامی خدمت",
@@ -490,7 +523,7 @@ function buildPages(lang) {
     ? {
         documentTitle: "Clinic services | Noori Roohani Homeo Clinic",
         metaDescription:
-          "Homeopathic consultations, Rohani ilaj, Quran teaching, herbal products, and community programmes in Surjani Town, Karachi.",
+          "Homeopathic consultations, Roohani ilaj, Quran teaching, herbal products, and community programmes in Surjani Town, Karachi.",
         breadcrumbCurrent: "Services",
         kicker: "Our services",
         title: "Complete clinic services",
@@ -502,7 +535,7 @@ function buildPages(lang) {
         intro: {
           label: "At the clinic",
           title: "Care across body, spirit, and community",
-          lede: "Noori Roohani Homeo Clinic combines evening homeopathic consultations with Rohani ilaj and education listed on the official schedule.",
+          lede: "Noori Roohani Homeo Clinic combines evening homeopathic consultations with Roohani ilaj and education listed on the official schedule.",
           body: "Browse by category below or open any service for overview, who it may help, what to expect, and how to book. General information only — not medical advice online.",
           imageAlt: "Clinic consultation room",
         },
@@ -522,8 +555,8 @@ function buildPages(lang) {
           lede: "Verified clinic details — no invented statistics.",
           items: {
             one: { title: "Evening appointments", text: "Sunday–Thursday, 7:00–9:00 PM at Surjani Town — easy for working families." },
-            two: { title: "Clear contact", text: "Phone 0314-1000717, WhatsApp, and nooriroohaniclinic@gmail.com." },
-            three: { title: "Adab in spiritual care", text: "Rohani and Islamic services handled with privacy — no sensational claims." },
+            two: { title: "Clear contact", text: "Phone and WhatsApp 0314-1000717 during clinic hours." },
+            three: { title: "Respect in spiritual care", text: "Roohani and Islamic services handled with privacy — no sensational claims." },
             four: { title: "Follow-up care", text: "Homeopathic cases include follow-up visits when your doctor advises." },
           },
         },
@@ -673,7 +706,7 @@ function buildUiExtension(lang) {
               professor: {
                 label: "Professor & specialist",
                 title: "Experienced guidance for families",
-                subtitle: "Consultation-led care across homeopathy, herbal support, and Rohani ilaj.",
+                subtitle: "Consultation-led care across homeopathy, herbal support, and Roohani ilaj.",
                 primaryCta: "Book appointment",
                 secondaryCta: "WhatsApp us",
                 imageAlt: "Clinic founder",
@@ -688,8 +721,8 @@ function buildUiExtension(lang) {
               },
               spiritual: {
                 label: "Spiritual services",
-                title: "Rohani ilaj & Islamic support",
-                subtitle: "Confidential guidance with dua and adab — no sensational claims.",
+                title: "Roohani ilaj & Islamic support",
+                subtitle: "Confidential guidance with respect — no sensational claims.",
                 primaryCta: "Spiritual services",
                 secondaryCta: "Ask a question",
                 imageAlt: "Spiritual support",
@@ -768,7 +801,7 @@ function buildUiExtension(lang) {
         ? {
             label: "Islamic & spiritual",
             title: "Spiritual and educational services",
-            lead: "Rohani ilaj, Quran, madrasa, nikkah, and community programmes.",
+            lead: "Roohani ilaj, Quran, madrasa, nikkah, and community programmes.",
             viewAll: "All Islamic services",
             imageAlt: "Community services",
           }
@@ -783,8 +816,8 @@ function buildUiExtension(lang) {
         ? {
             label: "Community",
             title: "Monthly Mehfil",
-            lead: "Held in the second week of each month — {week}. Confirm dates with the clinic.",
-            dateNote: "[PLACEHOLDER] Next date: confirm with clinic",
+            lead: "Held in the second week of each month, plus Dars-e-Quran mehfil every Friday. Confirm dates with the clinic.",
+            dateNote: "Second week monthly · Friday Dars-e-Quran — confirm with clinic",
             cta: "Mehfil details",
             contactCta: "Contact to join",
             imageAlt: "Mehfil",
@@ -792,8 +825,8 @@ function buildUiExtension(lang) {
         : {
             label: "کمیونٹی",
             title: "ماہانہ محفل",
-            lead: "ہر ماہ دوسرے ہفتے — {week}۔ تاریخ کلینک سے۔",
-            dateNote: "[PLACEHOLDER] اگلی تاریخ",
+            lead: "ہر ماہ دوسرے ہفتے، اور ہر جمعہ درسِ قرآن کی محفل۔ تاریخ کلینک سے تصدیق کریں۔",
+            dateNote: "ماہانہ دوسرا ہفتہ · جمعہ درسِ قرآن — کلینک سے تصدیق",
             cta: "محفل کی تفصیل",
             contactCta: "شرکت کے لیے رابطہ",
             imageAlt: "محفل",

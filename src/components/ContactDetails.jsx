@@ -4,9 +4,8 @@ import { Button } from "./Button";
 import {
   CLINIC_ADDRESS_EN,
   CLINIC_ADDRESS_UR,
-  CLINIC_EMAIL,
-  CLINIC_HOURS_EN,
-  CLINIC_HOURS_UR,
+  CLINIC_HOURS_DAYS_EN,
+  CLINIC_HOURS_DAYS_UR,
   CLINIC_MAP_URL,
   CLINIC_NAME,
   CLINIC_PHONE_DISPLAY,
@@ -18,7 +17,7 @@ export function ContactDetails({ variant = "compact" }) {
   const { t, lang } = useI18n();
   const isPage = variant === "page";
   const address = lang === "ur" ? CLINIC_ADDRESS_UR : CLINIC_ADDRESS_EN;
-  const hours = lang === "ur" ? CLINIC_HOURS_UR : CLINIC_HOURS_EN;
+  const hoursDays = lang === "ur" ? CLINIC_HOURS_DAYS_UR : CLINIC_HOURS_DAYS_EN;
   const telHref = `tel:${CLINIC_PHONE_E164.replace(/\s/g, "")}`;
 
   const items = [
@@ -41,12 +40,6 @@ export function ContactDetails({ variant = "compact" }) {
       external: true,
     },
     {
-      icon: "icon-email",
-      label: t("footer.contact.emailLabel"),
-      value: CLINIC_EMAIL,
-      href: `mailto:${CLINIC_EMAIL}`,
-    },
-    {
       icon: "icon-location",
       label: t("footer.contact.addressLabel"),
       value: address,
@@ -54,16 +47,27 @@ export function ContactDetails({ variant = "compact" }) {
       external: true,
       linkLabel: lang === "ur" ? "گوگل میپس" : "Google Maps",
     },
-    {
-      icon: "icon-clock",
-      label: t("footer.contact.hoursLabel"),
-      value: hours,
-    },
   ];
+
+  const hoursBlock = (
+    <div className="contact-hours">
+      <p className="contact-hours__label">
+        <strong>{t("footer.contact.hoursLabel")}</strong>
+      </p>
+      <ul className="footer-hours__list">
+        {hoursDays.map((row) => (
+          <li key={row.day}>
+            <span>{row.day}</span>
+            <strong>{row.hours}</strong>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 
   if (!isPage) {
     return (
-      <ul className={`contact-grid__meta contact-grid__meta--rich${isPage ? "" : ""}`}>
+      <ul className="contact-grid__meta contact-grid__meta--rich">
         {items.map((item) => (
           <li key={item.label} className="contact-grid__meta-item">
             <strong>{item.label}:</strong>{" "}
@@ -80,6 +84,7 @@ export function ContactDetails({ variant = "compact" }) {
             )}
           </li>
         ))}
+        <li className="contact-grid__meta-item contact-grid__meta-item--hours">{hoursBlock}</li>
       </ul>
     );
   }
@@ -108,6 +113,12 @@ export function ContactDetails({ variant = "compact" }) {
             </div>
           </li>
         ))}
+        <li className="contact-details__item">
+          <span className="contact-details__icon" aria-hidden="true">
+            <Icon name="icon-clock" />
+          </span>
+          <div>{hoursBlock}</div>
+        </li>
       </ul>
       <div className="contact-details__actions">
         <Button as="a" href={telHref}>

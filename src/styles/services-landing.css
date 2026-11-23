@@ -187,3 +187,108 @@
   font-size: var(--text-sm);
   font-weight: 700;
 }
+
+/* Homeopathy hub — category multi-filters */
+.homeo-filters {
+  margin: 1.25rem 0 1.75rem;
+  padding: 1.15rem 1.2rem;
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(246, 243, 236, 0.92));
+}
+
+.homeo-filters__title {
+  margin: 0 0 0.35rem;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.homeo-filters__hint {
+  margin: 0 0 0.9rem;
+  color: var(--ink-muted);
+  font-size: var(--text-sm);
+}
+
+.homeo-filters__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.homeo-filters__chip {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: border-color var(--ease), background var(--ease), color var(--ease);
+}
+
+.homeo-filters__chip:hover {
+  border-color: var(--accent);
+}
+
+.homeo-filters__chip.is-active {
+  border-color: var(--navy, #0b1c26);
+  background: var(--navy, #0b1c26);
+  color: #fff;
+}
+
+.homeo-filters__meta {
+  margin: 0.85rem 0 0;
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}
+
+.homeo-filters__clear {
+  appearance: none;
+  border: 0;
+  background: none;
+  padding: 0;
+  color: var(--accent);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.homeo-filters__empty {
+  margin: 1rem 0 2rem;
+  color: var(--ink-muted);
+}
+
+.homeo-category-groups {
+  display: grid;
+  gap: 2rem;
+}
+
+.homeo-category-group__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.homeo-category-group__title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.homeo-category-group__count {
+  min-width: 1.75rem;
+  height: 1.75rem;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(11, 28, 38, 0.08);
+  font-size: 0.75rem;
+  font-weight: 800;
+}

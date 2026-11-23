@@ -138,54 +138,133 @@
   padding-top: 2.5rem;
 }
 
-.related-cards__list--rich {
-  display: grid;
-  gap: 0.75rem;
+.related-cards--highlight {
+  margin-top: 1.75rem;
+  padding: 1.25rem 1.2rem 1.35rem;
+  border: 1px solid rgba(184, 148, 31, 0.35);
+  background:
+    linear-gradient(180deg, rgba(255, 252, 245, 0.98), rgba(246, 241, 230, 0.94));
+  box-shadow: 0 10px 28px rgba(11, 28, 38, 0.06);
 }
 
-.related-cards h3 {
+.related-cards__head {
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid rgba(184, 148, 31, 0.45);
+}
+
+.related-cards__kicker {
+  margin: 0 0 0.3rem;
+  font-size: 0.72rem;
   font-weight: 800;
-  letter-spacing: -0.01em;
-  margin-bottom: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.related-cards__heading,
+.related-cards h3 {
+  margin: 0;
+  font-size: clamp(1.35rem, 1.1rem + 0.8vw, 1.7rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  line-height: 1.15;
+}
+
+.related-cards__list--rich {
+  display: grid;
+  gap: 0.7rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .related-cards__tile {
-  display: block;
-  padding: 1rem 1.15rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(248, 246, 241, 0.9));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.85rem;
+  padding: 1rem 1.1rem;
+  border: 1.5px solid rgba(11, 28, 38, 0.12);
+  border-radius: 1.15rem;
+  background: #fff;
   text-decoration: none;
   color: inherit;
   box-shadow: 0 1px 0 rgba(11, 28, 38, 0.04);
-  transition: border-color var(--ease), transform var(--ease), box-shadow var(--ease);
+  transition: border-color var(--ease), transform var(--ease), box-shadow var(--ease), background var(--ease);
 }
 
 .related-cards__tile:hover {
   border-color: var(--accent);
-  transform: translateY(-1px);
-  box-shadow: 0 8px 20px rgba(11, 28, 38, 0.08);
+  background: rgba(255, 255, 255, 0.98);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(11, 28, 38, 0.1);
+}
+
+.related-cards__tile-copy {
+  min-width: 0;
+  flex: 1;
 }
 
 .related-cards__tile-title {
   display: block;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 1.05rem;
   color: var(--ink);
+  line-height: 1.25;
 }
 
 .related-cards__tile-desc {
   display: block;
   font-size: var(--text-sm);
   color: var(--ink-muted);
-  margin-top: 0.3rem;
+  margin-top: 0.28rem;
   line-height: 1.45;
 }
 
+.related-cards__tile-arrow {
+  flex-shrink: 0;
+  width: 2.1rem;
+  height: 2.1rem;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  border: 1px solid rgba(184, 148, 31, 0.45);
+  color: var(--accent-deep);
+  background: rgba(184, 148, 31, 0.1);
+  transition: background var(--ease), transform var(--ease);
+}
+
+.related-cards__tile-arrow .icon {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+.related-cards__tile:hover .related-cards__tile-arrow {
+  background: rgba(184, 148, 31, 0.2);
+  transform: translateX(2px);
+}
+
+html[dir="rtl"] .related-cards__tile:hover .related-cards__tile-arrow {
+  transform: translateX(-2px);
+}
+
 .related-cards__back {
-  margin: 1.1rem 0 0;
+  margin: 1.15rem 0 0;
   font-size: var(--text-sm);
-  font-weight: 700;
+  font-weight: 800;
+}
+
+.related-cards__back a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.1rem;
+}
+
+.related-cards__back a:hover {
+  color: var(--accent-deep);
 }
 
 /* Homeopathy hub — category multi-filters */

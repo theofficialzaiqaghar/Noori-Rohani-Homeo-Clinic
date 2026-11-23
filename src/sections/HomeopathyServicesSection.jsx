@@ -5,6 +5,7 @@ import { HOMEOPATHY_SERVICES } from "../lib/homeopathyServiceData";
 import { Icon } from "../components/Icon";
 import { SectionVisual } from "../components/SectionVisual";
 import { Button } from "../components/Button";
+import { SITE_IMAGES } from "../lib/siteImagery";
 
 const PREVIEW = HOMEOPATHY_SERVICES.slice(0, 6);
 
@@ -37,9 +38,14 @@ export function HomeopathyServicesSection() {
         <ul className="homeopathy-services__grid">
           {PREVIEW.map((item) => (
             <li key={item.slug} data-reveal-item>
-              <Link to={`/services/homeopathy/${item.slug}`} className="homeopathy-services__card">
-                <span className="homeopathy-services__icon" aria-hidden="true">
-                  <Icon name={item.icon} />
+              <Link to={`/services/homeopathy/${item.slug}`} className="homeopathy-services__card homeopathy-services__card--photo">
+                <span className="homeopathy-services__photo">
+                  <img
+                    src={SITE_IMAGES[item.imageKey] || SITE_IMAGES.homeoDropper}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </span>
                 <h3 className="homeopathy-services__card-title">{t(`pages.homeopathy.items.${item.slug}.title`)}</h3>
                 <p className="homeopathy-services__card-desc">{t(`pages.homeopathy.items.${item.slug}.summary`)}</p>

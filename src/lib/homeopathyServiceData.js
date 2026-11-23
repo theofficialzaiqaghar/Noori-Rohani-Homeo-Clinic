@@ -89,6 +89,47 @@ const HOMEOPATHY_CATEGORY_MAP = {
   "varicose-veins": ["general", "chronic"],
 };
 
+/** tube = topical cream | dropper = liquid remedy | pills = tablets/globules */
+const HOMEOPATHY_IMAGE_KEY = {
+  "skin-scalp-concerns": "homeoTube",
+  "hair-problems": "homeoTube",
+  "acne-skin": "homeoTube",
+  "eczema-psoriasis": "homeoTube",
+  "varicose-veins": "homeoTube",
+  arthritis: "homeoTube",
+  gout: "homeoTube",
+
+  "mens-health": "homeoDropper",
+  "sexual-health": "homeoDropper",
+  "womens-health": "homeoDropper",
+  "childrens-health": "homeoDropper",
+  "psychological-mental-health": "homeoDropper",
+  "male-female-infertility": "homeoDropper",
+  "sleep-insomnia": "homeoDropper",
+  "anxiety-stress": "homeoDropper",
+  allergies: "homeoDropper",
+  "asthma-respiratory": "homeoDropper",
+  "migraine-headache": "homeoDropper",
+  "pcos-support": "homeoDropper",
+  "prostate-concerns": "homeoDropper",
+  sinusitis: "homeoDropper",
+  "fever-flu": "homeoDropper",
+  "general-weakness": "homeoDropper",
+  "immunity-support": "homeoDropper",
+
+  "kidney-problems": "homeoPills",
+  "digestive-problems": "homeoPills",
+  "joint-muscular-problems": "homeoPills",
+  "diabetes-support": "homeoPills",
+  "blood-pressure": "homeoPills",
+  "thyroid-concerns": "homeoPills",
+  "obesity-weight": "homeoPills",
+  "back-pain": "homeoPills",
+  "liver-problems": "homeoPills",
+  "urinary-problems": "homeoPills",
+  "piles-constipation": "homeoPills",
+};
+
 const HOMEOPATHY_ICONS = {
   "kidney-problems": "icon-droplet",
   "skin-scalp-concerns": "icon-sparkles",
@@ -106,7 +147,7 @@ const HOMEOPATHY_ICONS = {
 export const HOMEOPATHY_SERVICES = HOMEOPATHY_SERVICE_SLUGS.map((slug) => ({
   slug,
   icon: HOMEOPATHY_ICONS[slug] || "icon-flask",
-  imageKey: "homeopathy",
+  imageKey: HOMEOPATHY_IMAGE_KEY[slug] || "homeoDropper",
   categories: HOMEOPATHY_CATEGORY_MAP[slug] || ["general"],
 }));
 

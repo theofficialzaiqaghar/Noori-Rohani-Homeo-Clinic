@@ -17,8 +17,12 @@ export const SITE_IMAGES = {
   education: "/assets/img/sections/education.jpg",
   /* Herbal & natural care */
   herbal: "/assets/img/slider/slide-herbal.webp",
-  /* Homeopathic care section + hubs — Herbal Skincare still life */
-  homeopathy: "/assets/img/slider/slide-homeopathy.png",
+  /* Homeopathic care section + hubs */
+  homeopathy: "/assets/img/homeopathy/dropper.png",
+  homeoDropper: "/assets/img/homeopathy/dropper.png",
+  homeoTube: "/assets/img/homeopathy/tube.png",
+  homeoPills: "/assets/img/homeopathy/pills.png",
+
   /* Roohani Ilaj section */
   rohani: "/assets/img/sections/spiritual.avif",
   /* Islamic & spiritual / educational section + spiritual slide */

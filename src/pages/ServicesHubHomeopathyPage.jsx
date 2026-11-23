@@ -125,10 +125,14 @@ export default function ServicesHubHomeopathyPage() {
                       <Link
                         key={`${group.id}-${item.slug}`}
                         to={`/services/homeopathy/${item.slug}`}
-                        className="service-card service-card--hub"
+                        className="service-card service-card--hub service-card--photo"
                       >
-                        <span className="service-card__icon" aria-hidden="true">
-                          <Icon name={item.icon} />
+                        <span className="service-card__photo">
+                          <SectionVisual
+                            imageKey={item.imageKey}
+                            alt={t(`pages.homeopathy.items.${item.slug}.imageAlt`)}
+                            className="service-card__photo-visual"
+                          />
                         </span>
                         <h3 className="service-card__title">{t(`pages.homeopathy.items.${item.slug}.title`)}</h3>
                         <p className="service-card__desc">{t(`pages.homeopathy.items.${item.slug}.summary`)}</p>

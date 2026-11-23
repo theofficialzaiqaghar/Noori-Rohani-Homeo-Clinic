@@ -386,6 +386,40 @@
   transition: border-color var(--ease), transform var(--ease), box-shadow var(--ease);
 }
 
+.homeopathy-services__card--photo {
+  padding: 0;
+  overflow: hidden;
+}
+
+.homeopathy-services__photo {
+  display: block;
+  aspect-ratio: 4 / 3;
+  background: #f3efe6;
+  overflow: hidden;
+}
+
+.homeopathy-services__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  padding: 0.65rem;
+}
+
+.homeopathy-services__card--photo .homeopathy-services__card-title,
+.homeopathy-services__card--photo .homeopathy-services__card-desc,
+.homeopathy-services__card--photo .homeopathy-services__card-link {
+  padding-inline: 1.1rem;
+}
+
+.homeopathy-services__card--photo .homeopathy-services__card-title {
+  margin-top: 0.85rem;
+}
+
+.homeopathy-services__card--photo .homeopathy-services__card-link {
+  padding-bottom: 1.1rem;
+}
+
 .homeopathy-services__card:hover,
 .spiritual-hub-section__card:hover {
   border-color: var(--accent);

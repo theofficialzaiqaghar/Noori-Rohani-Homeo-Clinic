@@ -45,7 +45,11 @@ export function ServiceDetailLayout({ category, slug, imageKey, relatedItems }) 
         />
         <div className="detail-article__layout">
           <div className="detail-article__media" data-reveal-item>
-            <SectionVisual imageKey={imageKey} alt={t(`${item}.imageAlt`)} className="inner-page__visual" />
+            <SectionVisual
+              imageKey={imageKey}
+              alt={t(`${item}.imageAlt`)}
+              className={`inner-page__visual${category === "homeopathy" ? " inner-page__visual--contain" : ""}`}
+            />
           </div>
           <div className="detail-article__body">
             <section data-reveal-item>

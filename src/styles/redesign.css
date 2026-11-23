@@ -799,6 +799,35 @@ html[lang="ur"] .contact-page-hero__kicker {
   color: var(--ink-muted);
 }
 
+.contact-page__map-section {
+  padding-block: clamp(2.25rem, 5vw, 3.5rem);
+}
+
+.contact-page__map-head {
+  max-width: 40rem;
+  margin-bottom: 1.15rem;
+}
+
+.contact-page__map-embed {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--paper-elevated);
+  aspect-ratio: 16 / 10;
+  min-height: 16rem;
+}
+
+.contact-page__map-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.contact-page__map-actions--below {
+  margin-top: 1rem;
+}
+
 .contact-details__list {
   margin: 0;
   padding: 0;

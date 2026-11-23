@@ -4,7 +4,7 @@ import { PublicLayout } from "../layout/PublicLayout";
 import { ContactForm } from "../components/ContactForm";
 import { ContactDetails } from "../components/ContactDetails";
 import { useReveal } from "../hooks/useReveal";
-import { CLINIC_MAP_URL, CLINIC_NAME } from "../lib/clinicInfo";
+import { CLINIC_MAP_EMBED_SRC, CLINIC_MAP_URL, CLINIC_NAME } from "../lib/clinicInfo";
 import { Button } from "../components/Button";
 
 export default function ContactPage() {
@@ -58,6 +58,34 @@ function ContactPageMain() {
           </div>
           <div className="contact-page__form-wrap" data-reveal-item>
             <ContactForm idPrefix="contact-page-" className="contact-form--page" />
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--sand contact-page__map-section" aria-labelledby="contact-map-heading">
+        <div className="shell">
+          <header className="contact-page__map-head" data-reveal-item>
+            <h2 id="contact-map-heading" className="section-head__title">
+              Find us on Google Maps
+            </h2>
+            <p className="split-section__lede">{t("page.contact.mapNote")}</p>
+          </header>
+          <div className="contact-page__map-embed" data-reveal-item>
+            <iframe
+              title={`${CLINIC_NAME} location on Google Maps`}
+              src={CLINIC_MAP_EMBED_SRC}
+              width="600"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
+          </div>
+          <div className="contact-page__map-actions contact-page__map-actions--below">
+            <Button as="a" href={CLINIC_MAP_URL} rel="noopener noreferrer">
+              {t("page.contact.openMaps")}
+            </Button>
           </div>
         </div>
       </section>

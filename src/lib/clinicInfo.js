@@ -52,9 +52,18 @@ export const CLINIC_WHATSAPP = "923141000717";
 export const CLINIC_EMAIL = "";
 
 export const CLINIC_MAP_QUERY =
-  "Plot CI-05 Moon Arcade Sector L-1 Chai Chowrangi Surjani Town Karachi Makkah Hotel";
+  "Rohani Homeo Clinic Surjani Town Karachi";
 
-export const CLINIC_MAP_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(CLINIC_MAP_QUERY)}`;
+/** Official Google Maps place listing */
+export const CLINIC_MAP_URL =
+  "https://www.google.com/maps/place/Rohani+Homeo+Clinic/@24.9753047,67.0659066,17z/data=!3m1!4b1!4m6!3m5!1s0x3eb340e918371b65:0xe7f9746b0e36fd7b!8m2!3d24.9753047!4d67.0659066!16s%2Fg%2F11zq3ypxv";
+
+/** Google Maps embed for contact page */
+export const CLINIC_MAP_EMBED_SRC =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.7298400967734!2d67.06590659999999!3d24.975304699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb340e918371b65%3A0xe7f9746b0e36fd7b!2sRohani%20Homeo%20Clinic!5e0!3m2!1sen!2s!4v1795467923330!5m2!1sen!2s";
+
+export const CLINIC_MAP_LAT = 24.9753047;
+export const CLINIC_MAP_LNG = 67.0659066;
 
 export const CLINIC_SOCIAL_FACEBOOK = "https://www.facebook.com/share/1CKiMegiXf/";
 export const CLINIC_SOCIAL_YOUTUBE = "https://www.youtube.com/@nooriroohaniclinic";

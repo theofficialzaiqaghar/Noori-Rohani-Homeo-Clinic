@@ -5,7 +5,6 @@ import { HomeopathyServicesSection } from "./sections/HomeopathyServicesSection"
 import { RoohaniSection } from "./sections/RoohaniSection";
 import { SpiritualServicesHubSection } from "./sections/SpiritualServicesHubSection";
 import { AboutSection } from "./sections/AboutSection";
-import { ResearchCouncilSection } from "./sections/ResearchCouncilSection";
 import { ProductsSection } from "./sections/ProductsSection";
 import { MehfilPreviewSection } from "./sections/MehfilPreviewSection";
 import { EducationSection } from "./sections/EducationSection";
@@ -40,7 +39,6 @@ export default function PublicApp() {
         <RoohaniSection />
         <SpiritualServicesHubSection />
         <AboutSection />
-        <ResearchCouncilSection />
         <ProductsSection />
         <MehfilPreviewSection />
         <EducationSection />

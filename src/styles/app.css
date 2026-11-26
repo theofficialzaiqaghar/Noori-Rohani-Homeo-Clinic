@@ -1518,14 +1518,25 @@ html[lang="ur"] .footer-grid h3 {
   color: var(--accent);
 }
 
+.founder-bio p {
+  color: var(--ink-muted);
+  line-height: 1.7;
+}
+
 .founder-block {
-  margin-top: 1.35rem;
+  margin-top: 1.5rem;
 }
 
 .founder-block__title {
-  margin: 0 0 0.55rem;
-  font-size: 1.05rem;
+  margin: 0 0 0.65rem;
+  font-size: 1.1rem;
   font-weight: 800;
+}
+
+.founder-block__text {
+  margin: 0 0 0.85rem;
+  color: var(--ink-muted);
+  line-height: 1.7;
 }
 
 .founder-block__list {

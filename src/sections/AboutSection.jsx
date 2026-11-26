@@ -10,16 +10,16 @@ export function AboutSection() {
   const ref = useReveal({ childSelector: "[data-reveal-item]" });
 
   return (
-    <section id="homeo" className="section section--sand split-section about-section" aria-labelledby="about-clinic-title">
+    <section id="about" className="section section--sand split-section about-section" aria-labelledby="about-clinic-title">
       <div className="shell split-section__grid" ref={ref}>
         <div className="split-section__visual" data-reveal-item>
           <div className="split-section__photo about-section__photo">
-            <img src={SITE_IMAGES.aboutFounder} alt={t("home.aboutClinic.imageAlt")} loading="eager" decoding="async" />
+            <img src={SITE_IMAGES.aboutFounder} alt={FOUNDER.name} loading="eager" decoding="async" />
           </div>
         </div>
         <div className="split-section__content">
           <p className="section-head__kicker" data-reveal-item>
-            Founder spotlight
+            Founder
           </p>
           <h2 id="about-clinic-title" className="section-head__title" data-reveal-item>
             {FOUNDER.name}
@@ -31,13 +31,13 @@ export function AboutSection() {
             {FOUNDER.homeBlurb}
           </p>
           <ul className="about-section__chips" data-reveal-item>
-            {["Ph.D. Islamic Studies", "DHMS", "Homeopathic Council", "Research Council", "Sheikh-e-Tareeqat"].map((chip) => (
+            {FOUNDER.chips.map((chip) => (
               <li key={chip}>{chip}</li>
             ))}
           </ul>
           <div className="about-section__actions" data-reveal-item>
             <Button as={Link} to="/about">
-              View full founder profile
+              Read full biography
             </Button>
             <Button as={Link} to="/contact" variant="ghost">
               {t("btn.bookAppointment")}

@@ -1,102 +1,66 @@
 /** Founder profile — shown on About page and highlighted on Home. */
 export const FOUNDER = {
-  name: "Dr. Noori Roohani",
-  title: "Founder · Professor & Specialist",
-  personal: {
-    address: "R. 205, 5C-4, North Karachi, Karachi.",
-    domicile: "Karachi",
-    gender: "Male",
-    dateOfBirth: "04 June 1983",
-    nationality: "Pakistani",
-  },
-  roles: [
-    "Muhtamim Jamia Anwar e Mustafa",
-    "Muhtamim Jamia Amjadia Muhammadia",
-    "Muhtamim Jamia Assran",
-    "Admin — AM Education System",
-    "HOD Islamic Learning Department at University",
-    "17 Grade Officer — Education & Literacy Department Sindh",
-    "Member of Homeopathic Council",
-    "Director Research Council",
-    "Sheikh-e-Tareeqat in Silsila Mujaddiya, Safiya, and Qadriya",
-  ],
-  workExperience: [
-    "Assistant Professor at University — teaching different medical departments",
-    "Five years’ experience teaching O’ Levels at Beaconhouse School System",
-    "Two years developing new syllabus and courses for educational organisations to meet STEM requirements",
-    "Lectures for NGOs including Kausain, The Leaders’ Academy, and Al-Maqsood Foundation",
-    "Three years as Visiting Lecturer of Business Communication at Dadabhoy Institute of Higher Education",
-    "Two years teaching as English lecturer at K.B.V (Civil Aviation Authority College P.I.A)",
-    "One year teaching English and Economics at Azeemi Public College",
-    "Four years teaching English up to Graduation in different centres",
-    "Three years teaching Business Communication in different centres",
-    "Member of rescue team for earthquake victims in Kashmir",
-  ],
-  education: [
-    "2023 — Ph.D. Department of Islamic Studies, Federal Urdu University",
-    "2022 — Doctor of Homoeopathic Medicine and Surgery, Bioron Homeopathic College",
-    "2019 — M.Phil. Department of Islamic Studies, Federal Urdu University",
-    "2018 — B.Ed. from Preston University",
-    "2014 — M.A. (Islamic Studies), Federal Urdu University",
-    "2009 — M.A. (English Literature), Federal Urdu University",
-    "2007 — B.A. Hons. (English Literature), Federal Urdu University",
-    "2002 — H.S.C. (Board of Intermediate Education) Karachi",
-    "1999 — S.S.C. (Board of Secondary Education) Karachi",
-  ],
-  certificates: [
-    "Primary Teachers Certificate from Allama Iqbal Open University",
-    "Teaching Information Program",
-    "O.T.C. (Arabic Language Teachers Course) from Hyderabad Board",
-    "Certified Junior Brigade, Karachi",
-    "Dars-e-Nizami, World Federation of Islamic Missions",
-    "English and Arabic Language courses",
-    "3 years course of Islamic Studies and Modern Science from World Federation Islamic Missionary University (AL-JAMIAT-UL-ALEEMIYAH)",
-    "Fazil Uloom-e-Shurqiah",
-    "Aalim-e-Uloom-e-Shurqiah",
-    "Adeeb-e-Uloom-e-Shurqiah",
-  ],
-  media: [
-    "News One — Tafseer-e-Quran during Ramzan",
-    "T.V. One — Visiting speaker, Alim Time (Live Q & A) at Sehri time",
-    "QTV — Islam in the Perspective of Modern Education",
-    "QTV — Noqosh-e-Seerat (different lectures)",
-    "Abtak — Unity of Ummah",
-    "QTV — MAJU (Shahra-e-Faisal) family life in the light of Seerat",
-    "Indus Vision — Spirituality of Salat",
-  ],
-  literary: [
-    "Composing Urdu poetries",
-    "Writing articles for religious books and magazines",
-    "Designing language courses",
-    "Notes for Intermediate and Graduation classes",
-    "Motivational lectures on different stages",
-    "Lectures about Islam and its universal teachings in different gatherings",
-  ],
-  publications: [
-    "Article: “Deen E Islam As Code Of Life” — AL Maqsood Magazine, Islamic Mission International, July 2013",
-    "Article: “Husne Akhlaq Ki Ahmyat” — Maarif-e-Raza, Idara Tehqeeqat Imam Ahmad Raza International, June 2018",
-    "Article: “Mubaligh E Islam Hazrat Allama Molana Syed Sadat Ali Qadri — A Review On His Religious, Literary And Preaching Work” — The International Research Journal Usooluddin, June 2021",
-  ],
-  highlights: [
-    "First Position in speech competition at Arts Club on Iqbal Day 2024",
-    "First position in speech competition on SEERAT by Education and Literacy Department, Sindh 2023",
-    "Gold medallist in debates / Pakistan speech",
-    "1st position in all Pakistan universities speech competition, 2004",
-    "EX-Chairman of English Debating Club (Federal Urdu University)",
-    "Marvellous motivational speaker and student counsellor",
-    "National social services for less privileged areas",
-  ],
+  name: "Dr. Ahmed Hassan",
+  title: "Islamic Scholar | Educationist | Academic Leader | Researcher | Speaker | Sheikh-e-Tareeqat",
+  journeyTitle: "A Journey of Knowledge, Spirituality and Service",
   homeBlurb:
-    "Ph.D. Islamic Studies · DHMS · Assistant Professor · Sheikh-e-Tareeqat · Member Homeopathic Council · Director Research Council. Serving families through homeopathy, Roohani guidance, and education.",
-};
-
-export const RESEARCH_COUNCIL = {
-  title: "International Research Council",
-  person: "Dr. Ahmed Hassan Al-Mujadidi",
-  role: "Vice President — Seerat Research Foundation",
-  paragraphs: [
-    "Dr. Ahmed Hassan is a distinguished scholar of Islamic Studies and a leading academic voice in contemporary Seerah scholarship. Serving as the Vice President of Seerat Research Foundation, he plays a pivotal role in guiding the institution’s intellectual vision, research initiatives, and global outreach efforts.",
-    "He holds a Ph.D. in Islamic Studies and serves as a respected Professor at Iqra University, where he has supervised numerous research projects and mentored emerging scholars in the fields of Qur’anic sciences, Hadith, Islamic law, and classical theology. His academic depth is complemented by his traditional grounding in the Islamic sciences; he completed the Dars-e-Nizami curriculum and subsequently pursued Takhassus (Specialization) in Islamic Jurisprudence, earning advanced expertise in fiqh, usul al-fiqh, and comparative Islamic law.",
-    "In addition to his academic stature, Dr. Ahmed Hassan is a recognized spiritual guide, having received Khilāfah in the Naqshbandiyah Mujadidyah Sufi order. This spiritual lineage enriches his scholarship with depth, balance, and insight, enabling him to engage both the intellectual and spiritual dimensions of Islamic learning. As part of the leadership at Seerat Research Foundation, he remains committed to advancing authentic scholarship and promoting an accurate understanding of the life and teachings of Prophet Muhammad ﷺ across the globe.",
+    "Dr. Ahmed Hassan is a distinguished Islamic scholar, accomplished educationist, academic leader, researcher, and spiritual guide whose life and work reflect a profound commitment to knowledge, Islamic teachings, spiritual enlightenment, and the betterment of society.",
+  chips: [
+    "Islamic Scholar",
+    "Educationist",
+    "Academic Leader",
+    "Researcher",
+    "Speaker",
+    "Sheikh-e-Tareeqat",
+  ],
+  intro: [
+    "Dr. Ahmed Hassan is a distinguished Islamic scholar, accomplished educationist, academic leader, researcher, and spiritual guide whose life and work reflect a profound commitment to the pursuit of knowledge, the propagation of Islamic teachings, spiritual enlightenment, and the betterment of society. With a rich academic background and extensive experience spanning education, religious scholarship, research, institutional leadership, and community service, he represents a distinguished blend of intellectual depth, spiritual dedication, and social responsibility.",
+    "His academic journey is marked by a multidisciplinary approach to knowledge. He holds a Ph.D. and an M.Phil. in Islamic Studies from the Federal Urdu University, along with a Doctor of Homoeopathic Medicine and Surgery (DHMS). His academic accomplishments further include postgraduate qualifications in English Literature and a Bachelor's degree in English Literature. This diverse educational foundation reflects his dedication to understanding, teaching, and connecting different dimensions of knowledge.",
+  ],
+  sections: [
+    {
+      title: "Academic Leadership & Institutional Contributions",
+      paragraphs: [
+        "Throughout his professional career, Dr. Ahmed Hassan has undertaken significant academic and administrative responsibilities, contributing to the development of educational institutions and the advancement of learning. He has served as Muhtamim of Jamia Anwar-e-Mustafa, Jamia Amjadia Muhammadia, and Jamia Assran. His leadership responsibilities also include serving as Administrator of AM Education System and Head of the Islamic Learning Department at a university.",
+        "In addition to his educational leadership, he serves as a Grade-17 officer in the Education & Literacy Department, Government of Sindh. He is also associated with the Homeopathic Council as a member and serves as Director of the Research Council. These diverse responsibilities reflect his engagement with education, institutional development, professional affairs, and academic research.",
+      ],
+    },
+    {
+      title: "Spiritual Association & Religious Services",
+      paragraphs: [
+        "Beyond his academic and professional achievements, Dr. Ahmed Hassan maintains a deep association with the spiritual traditions of Islamic scholarship. As a Sheikh-e-Tareeqat, he is affiliated with the Silsila-e-Mujaddidiya, Silsila-e-Safiya, and Silsila-e-Qadriya.",
+        "His spiritual journey reflects a commitment to the values of Islamic teachings, moral refinement, character development, and spiritual awareness. Through religious guidance and scholarly engagement, he remains devoted to promoting the teachings of Islam and encouraging individuals towards knowledge, righteousness, and a meaningful way of life.",
+      ],
+    },
+    {
+      title: "Scholarly Work, Research & Public Discourse",
+      paragraphs: [
+        "An accomplished speaker and researcher, Dr. Ahmed Hassan has contributed to religious, academic, and intellectual discourse through lectures, scholarly writings, educational initiatives, and public engagements. His expertise and communication skills have enabled him to address audiences on a wide range of subjects, including Islamic teachings, Seerat-un-Nabi ﷺ, spirituality, contemporary education, family values, and the broader principles of Islam.",
+        "His scholarly contributions have reached various television platforms, including QTV, TV One, News One, and Indus Vision, where he has participated in religious programmes and delivered lectures on important Islamic and educational subjects.",
+        "His literary and academic pursuits include research articles published in academic and religious publications, articles on Islamic teachings and moral values, Urdu poetry, educational course development, and academic learning materials. His work reflects a continued interest in research, intellectual development, and the dissemination of beneficial knowledge.",
+      ],
+    },
+    {
+      title: "National Recognition & Distinctions",
+      paragraphs: [
+        "Dr. Ahmed Hassan's dedication to public speaking and intellectual expression has also earned him recognition in national-level competitions. He has achieved distinctions in speech and debating competitions, including first positions in prestigious university-level and inter-university competitions. His achievements include recognition in All Pakistan Universities Speech Competition and competitions organized around Iqbal Day and Seerat-un-Nabi ﷺ.",
+        "His ability to communicate complex ideas with clarity and purpose has established public speaking and motivational discourse as important dimensions of his professional and academic journey.",
+      ],
+    },
+    {
+      title: "Social Welfare & Humanitarian Commitment",
+      paragraphs: [
+        "For Dr. Ahmed Hassan, the value of knowledge extends beyond academic institutions and formal education. He believes in the importance of serving humanity, supporting those in need, and contributing to the development of a more educated and compassionate society.",
+        "His involvement in national social services, particularly initiatives aimed at supporting underprivileged communities and less privileged areas, reflects his commitment to humanitarian values and collective well-being. His earlier participation as a member of a rescue team serving earthquake victims in Kashmir further demonstrates his engagement with community support and humanitarian service.",
+      ],
+    },
+    {
+      title: "A Commitment to Knowledge, Character & Humanity",
+      paragraphs: [
+        "Through his diverse contributions as an Islamic scholar, educationist, academic administrator, researcher, speaker, and spiritual guide, Dr. Ahmed Hassan continues to pursue a vision rooted in knowledge, faith, character building, and service to humanity.",
+        "His journey reflects the belief that true achievement lies not merely in academic qualifications or professional positions, but in the positive influence one creates through knowledge, guidance, ethical values, and service to others.",
+        "His enduring commitment remains the promotion of beneficial knowledge, the strengthening of moral and spiritual values, the guidance of future generations, and the service of humanity.",
+      ],
+    },
   ],
 };

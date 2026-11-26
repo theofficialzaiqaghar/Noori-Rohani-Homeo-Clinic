@@ -189,6 +189,7 @@ export function SiteHeader({ overlay = false, className = "" }) {
 
           <nav className="mastnav" aria-label={t("nav.label")}>
             <Link to="/">{t("nav.home")}</Link>
+            <Link to="/about">{t("nav.about")}</Link>
             <NavDropdown label={t("nav.services")} open={servicesOpen} setOpen={setServicesOpen}>
               {SERVICE_LINKS.map((item) => (
                 <Link key={item.key + item.href} to={item.href} role="menuitem" onClick={closeAll}>
@@ -270,6 +271,9 @@ export function SiteHeader({ overlay = false, className = "" }) {
               <nav className="drawer__nav">
                 <Link to="/" onClick={() => setOpen(false)}>
                   {t("nav.home")}
+                </Link>
+                <Link to="/about" onClick={() => setOpen(false)}>
+                  {t("nav.about")}
                 </Link>
                 <Link to="/services" onClick={() => setOpen(false)}>
                   {t("nav.servicesMenu.all")}

@@ -134,6 +134,22 @@
   object-fit: cover;
 }
 
+/* Founder portrait — show full image without cropping */
+.inner-page__visual--founder {
+  aspect-ratio: auto;
+  background: #f3efe6;
+  min-height: 18rem;
+}
+
+.inner-page__visual--founder img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: center top;
+  display: block;
+}
+
 .inner-page__cta-panel {
   display: grid;
   gap: 1.5rem;

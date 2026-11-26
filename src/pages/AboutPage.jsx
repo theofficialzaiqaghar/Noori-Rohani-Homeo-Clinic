@@ -42,7 +42,11 @@ export default function AboutPage() {
             />
             <div className="detail-article__layout founder-layout">
               <div className="detail-article__media" data-reveal-item>
-                <SectionVisual imageKey="aboutFounder" alt={FOUNDER.name} className="inner-page__visual" />
+                <SectionVisual
+                  imageKey="aboutFounder"
+                  alt={FOUNDER.name}
+                  className="inner-page__visual inner-page__visual--founder"
+                />
               </div>
               <div className="detail-article__body founder-bio">
                 <section data-reveal-item>

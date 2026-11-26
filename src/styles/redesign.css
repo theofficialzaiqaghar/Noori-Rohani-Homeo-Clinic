@@ -662,8 +662,18 @@ html[dir="rtl"] .service-card:hover .service-card__arrow {
   font-size: 0.875rem;
 }
 
+.about-section__photo {
+  background: #f3efe6;
+  overflow: hidden;
+}
+
 .about-section__photo img {
-  object-position: center 15%;
+  width: 100%;
+  height: auto;
+  max-height: 34rem;
+  object-fit: contain;
+  object-position: center top;
+  display: block;
 }
 
 /* Contact page */
